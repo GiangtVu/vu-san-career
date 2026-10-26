@@ -221,6 +221,27 @@ button:disabled { cursor: default; opacity: 0.45; }
   box-shadow: 0 6px 12px rgba(8, 36, 92, 0.18), 0 34px 64px rgba(8, 36, 92, 0.5) !important;
 }
 
+/* ---------- Page entrance & scroll reveal ---------- */
+/* `.pg` is each page's root. Sections and cards fade up as they scroll in,
+   where the browser supports scroll-driven animations. */
+@keyframes pg-in { from { opacity: 0; translate: 0 14px; } }
+@keyframes rv-in { from { opacity: 0; translate: 0 28px; } }
+@media (prefers-reduced-motion: no-preference) {
+  .pg { animation: pg-in .45s cubic-bezier(.2, .7, .2, 1) backwards; }
+  @supports (animation-timeline: view()) {
+    .pg section, .pg footer {
+      animation: rv-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 30%;
+    }
+    .lift, .jl-card, .jd-related__item {
+      animation: rv-in linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 45%;
+    }
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0ms !important; animation-duration: 0ms !important; }

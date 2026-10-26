@@ -4,7 +4,7 @@ import '../styles/job.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
 import { useMediaQuery } from '../lib/hooks.js';
-import { CONTACT, hotFirst, jobPath, LoadState, useJobs } from '../lib/jobs.jsx';
+import { CONTACT, hotFirst, jobPath, LoadState, placeLabel, placesOf, useJobs } from '../lib/jobs.jsx';
 
 const SAVED_KEY = 'vs-saved-jobs';
 
@@ -91,7 +91,7 @@ export default function JobDetail() {
 
   if (!job) {
     return (
-      <div className="jd-page">
+      <div className="pg jd-page">
         <SiteHeader navClass="u-not-phone" cvHref="/#lien-he" />
         <div className="container jd-missing">
           {status === 'ready' ? (
@@ -108,7 +108,6 @@ export default function JobDetail() {
   const d = job.detail || {};
   const duties = d.duties || [job.desc];
   const skills = d.skills || job.stack;
-  const address = data.offices[job.location] || job.location;
   const accordion = { isPhone, openSec, setOpenSec };
 
   const info = [
@@ -122,7 +121,7 @@ export default function JobDetail() {
   ].filter(Boolean);
 
   return (
-    <div className="jd-page">
+    <div className="pg jd-page">
       <SiteHeader navClass="u-not-phone" cvHref="#nguoi-phu-trach" />
 
       <section className="jd-banner">
@@ -198,11 +197,40 @@ export default function JobDetail() {
           </Section>
 
           <Section n={5} title="Môi trường làm việc" icon="building" accordion={accordion}>
-            <dl className="jd-env">
-              <div><dt>Địa điểm</dt><dd>{address}</dd></div>
-              <div><dt>Giờ làm việc</dt><dd>8:30 – 12:00 và 13:00 – 17:30</dd></div>
-              <div><dt>Ngày làm việc</dt><dd>Thứ 2 – Thứ 6, nghỉ cuối tuần</dd></div>
-            </dl>
+            <div className="jd-env">
+              <div className="jd-env__item jd-env__item--wide">
+                <span className="jd-env__icon"><Icon name="pin" size={20} /></span>
+                <div className="jd-env__body">
+                  <h3 className="jd-env__label">Địa điểm</h3>
+                  <ul className="jd-env__places">
+                    {placesOf(job).map((p) => (
+                      <li key={p}>
+                        <strong>{placeLabel(p)}</strong>
+                        {data.offices[p] && <span>{data.offices[p]}</span>}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="jd-env__item">
+                <span className="jd-env__icon"><Icon name="clock" size={20} /></span>
+                <div className="jd-env__body">
+                  <h3 className="jd-env__label">Giờ làm việc</h3>
+                  <dl className="jd-env__hours">
+                    <div><dt>Sáng</dt><dd>8:30 – 12:00</dd></div>
+                    <div><dt>Chiều</dt><dd>13:00 – 17:30</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div className="jd-env__item">
+                <span className="jd-env__icon"><Icon name="calendar" size={20} /></span>
+                <div className="jd-env__body">
+                  <h3 className="jd-env__label">Ngày làm việc</h3>
+                  <strong className="jd-env__value">Thứ 2 – Thứ 6</strong>
+                  <span className="jd-env__note">Nghỉ thứ 7 và chủ nhật</span>
+                </div>
+              </div>
+            </div>
           </Section>
         </main>
 

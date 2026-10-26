@@ -5,13 +5,16 @@ import { hotFirst, jobPath, LoadState, matches, norm } from '../../lib/jobs.jsx'
 
 const PREVIEW = 6; // jobs shown on the home page; the rest live on /viec-lam
 const GROUP_ICONS = { eng: 'code', ai: 'database', biz: 'briefcase', ops: 'infinity' };
+// The home page paints these two groups in brighter inks than the list and detail pages do.
+const HOME_INK = { ai: '#7C3AED', ops: '#C2410C' };
+const groupColors = (k, g) => ({ '--soft': g.soft, '--ink-c': HOME_INK[k] || g.ink });
 
 function JobCard({ job, group }) {
   return (
     <article className="job-card u-desktop">
       <div className="job-card__head">
         <span className="job-card__badges">
-          <span className="pill pill--group" style={{ '--soft': group.soft, '--ink-c': group.ink }}>{group.label}</span>
+          <span className="pill pill--group" style={groupColors(job.group, group)}>{group.label}</span>
           {job.hot && <span className="pill pill--hot"><Icon name="flame" size={12} />HOT</span>}
         </span>
         <span className="job-card__deadline">Hạn: {job.deadline}</span>
@@ -88,7 +91,7 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
                     key={k}
                     type="button"
                     className="cat-card"
-                    style={{ '--soft': g.soft, '--ink-c': g.ink }}
+                    style={groupColors(k, g)}
                     aria-pressed={sel}
                     onClick={() => setGroup(sel ? null : k)}
                   >

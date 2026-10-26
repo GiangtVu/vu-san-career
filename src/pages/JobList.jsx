@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import '../styles/jobs.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
-import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, useJobs } from '../lib/jobs.jsx';
+import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placesOf, useJobs } from '../lib/jobs.jsx';
 
 const PER_PAGE = 6;
 const LEVELS = ['Junior', 'Middle', 'Senior'];
@@ -16,6 +16,61 @@ const toggleIn = (arr, v) => (arr.includes(v) ? arr.filter((x) => x !== v) : arr
 function isUrgent(deadline) {
   const days = (parseDate(deadline) - new Date()) / 86400000;
   return days >= 0 && days <= URGENT_DAYS;
+}
+
+// Location picker in the hero search: a button that opens a list of places with job counts.
+// `options` is [{ value, label, n }], the first one being "all places" (value '').
+function LocationPicker({ value, options, onChange }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+  const current = options.find((o) => o.value === value) || options[0];
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const onDown = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    document.addEventListener('pointerdown', onDown);
+    return () => document.removeEventListener('pointerdown', onDown);
+  }, [open]);
+
+  return (
+    <div className="jl-loc" ref={ref} onKeyDown={(e) => { if (e.key === 'Escape') setOpen(false); }}>
+      <button
+        type="button"
+        className={'jl-loc__btn' + (open ? ' is-open' : '')}
+        aria-haspopup="true"
+        aria-expanded={open}
+        aria-label={'Địa điểm làm việc: ' + current.label}
+        onClick={() => setOpen(!open)}
+      >
+        <Icon name="pin" className="jl-loc__pin" />
+        <span className="jl-loc__text">
+          <span className="jl-loc__eyebrow">Địa điểm</span>
+          <span className="jl-loc__value">{current.label}</span>
+        </span>
+        <Icon name="chevron-down" size={18} sw={2.2} className="jl-loc__chev" />
+      </button>
+      {open && (
+        <div className="jl-dd">
+          <span className="jl-dd__title">Chọn địa điểm làm việc</span>
+          <div className="jl-dd__list">
+            {options.map((o) => {
+              const sel = o.value === current.value;
+              return (
+                <button key={o.value || 'all'} type="button" className="jl-opt" aria-pressed={sel} onClick={() => { onChange(o.value); setOpen(false); }}>
+                  <span className="jl-opt__icon"><Icon name={o.value ? 'pin' : 'globe'} size={18} /></span>
+                  <span className="jl-opt__text">
+                    <span className="jl-opt__label">{o.label}</span>
+                    <span className="jl-opt__n">{o.n} vị trí đang tuyển</span>
+                  </span>
+                  {sel && <Icon name="check" size={18} sw={2.6} className="jl-opt__check" />}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default function JobList() {
@@ -50,13 +105,18 @@ export default function JobList() {
     setPage(1);
   };
 
-  const locations = useMemo(() => Array.from(new Set(jobs.map((j) => j.location))), [jobs]);
+  const locations = useMemo(() => Array.from(new Set(jobs.flatMap(placesOf))), [jobs]);
+  const locOptions = [{ value: '', label: 'Tất cả địa điểm', n: jobs.length }].concat(locations.map((l) => ({
+    value: l,
+    label: placeLabel(l),
+    n: jobs.filter((j) => placesOf(j).includes(l)).length
+  })));
 
   const nq = norm(q.trim());
   let list = jobs.filter((j) =>
     (!sel.groups.length || sel.groups.includes(j.group))
     && (!sel.levels.length || sel.levels.includes(j.level))
-    && (!sel.loc || j.location === sel.loc)
+    && (!sel.loc || placesOf(j).includes(sel.loc))
     && (!sel.hotOnly || j.hot)
     && matches(j, nq));
   list = sort === 'deadline'
@@ -81,20 +141,23 @@ export default function JobList() {
   const hasFilter = active.length > 0;
 
   return (
-    <div className="jl-page">
+    <div className="pg jl-page">
       <SiteHeader wide navClass="u-wide" cvHref="#lien-he" />
 
       <section className="jl-hero">
-        <svg className="jl-hero__pattern" aria-hidden="true" width="420" height="320">
-          <defs>
-            <pattern id="jl-pat" width="44" height="44" patternUnits="userSpaceOnUse">
-              <path d="M22 4L40 22L22 40L4 22Z" fill="none" stroke="#FFFFFF" strokeWidth="1.5" />
-              <path d="M22 15L29 22L22 29L15 22Z" fill="#FFFFFF" />
-            </pattern>
-          </defs>
-          <rect width="420" height="320" fill="url(#jl-pat)" />
-        </svg>
-        <span className="jl-hero__deco" aria-hidden="true"></span>
+        {/* Decorations are clipped in their own layer so the location list can hang below the hero. */}
+        <div className="jl-hero__bg" aria-hidden="true">
+          <svg className="jl-hero__pattern" width="420" height="320">
+            <defs>
+              <pattern id="jl-pat" width="44" height="44" patternUnits="userSpaceOnUse">
+                <path d="M22 4L40 22L22 40L4 22Z" fill="none" stroke="#FFFFFF" strokeWidth="1.5" />
+                <path d="M22 15L29 22L22 29L15 22Z" fill="#FFFFFF" />
+              </pattern>
+            </defs>
+            <rect width="420" height="320" fill="url(#jl-pat)" />
+          </svg>
+          <span className="jl-hero__deco"></span>
+        </div>
         <div className="container container--wide jl-hero__inner">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link to="/">Trang chủ</Link>
@@ -112,14 +175,7 @@ export default function JobList() {
               <span className="sr-only">Từ khóa</span>
               <input type="search" value={draft} onChange={(e) => setDraft(e.target.value)} placeholder="Vị trí, kỹ năng hoặc công nghệ…" />
             </label>
-            <label className="jl-search__loc">
-              <Icon name="pin" />
-              <span className="sr-only">Địa điểm</span>
-              <select value={sel.loc} onChange={(e) => update({ loc: e.target.value })}>
-                <option value="">Tất cả địa điểm</option>
-                {locations.map((l) => <option key={l} value={l}>{l}</option>)}
-              </select>
-            </label>
+            <LocationPicker value={sel.loc} options={locOptions} onChange={(loc) => update({ loc })} />
             <button type="submit" className="jl-search__btn" aria-label="Tìm kiếm">
               <span className="u-wide">Tìm kiếm</span>
               <Icon name="search" size={22} sw={2.2} className="u-compact" />

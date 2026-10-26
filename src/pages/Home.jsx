@@ -56,7 +56,7 @@ export default function Home() {
   const closeGreet = () => setGreetClosed(true);
 
   return (
-    <div id="top" className={entered ? 'is-entered' : undefined}>
+    <div id="top" className={'pg' + (entered ? ' is-entered' : '')}>
       <HomeHeader total={jobs.length} />
       <main>
         <HeroDesktop
@@ -71,6 +71,7 @@ export default function Home() {
         />
         <HeroMobile
           total={Math.round(jobs.length * heroP)}
+          count={jobs.length}
           hotJobs={hotJobs}
           role={role}
           roleOut={out}

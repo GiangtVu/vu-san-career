@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Icon from '../../components/Icon.jsx';
 import Logo from '../../components/Logo.jsx';
 
@@ -22,6 +23,11 @@ export default function HomeHeader({ total }) {
         </a>
         <nav className="main-nav" aria-label="Điều hướng chính">
           {LINKS.map((l) => <a key={l.href} className="nav-link" href={l.href}>{l.label}</a>)}
+          <span className="nav-sep" aria-hidden="true"></span>
+          <Link className="nav-jobs" to="/viec-lam">
+            <Icon name="briefcase" size={18} />Tất cả việc làm
+            {total > 0 && <span className="nav-jobs__badge">{total}</span>}
+          </Link>
           <a className="btn btn--primary" href="#lien-he">Gửi CV</a>
         </nav>
       </div>
@@ -46,6 +52,11 @@ export default function HomeHeader({ total }) {
         </div>
         {open && (
           <nav className="mnav" id="mobile-menu" aria-label="Điều hướng chính">
+            <Link className="nav-jobs nav-jobs--menu" to="/viec-lam">
+              <Icon name="briefcase" size={20} />
+              <span className="nav-jobs__label">Tất cả việc làm</span>
+              <Icon name="arrow-right" size={18} sw={2.2} />
+            </Link>
             {LINKS.map((l) => (
               <a key={l.href} href={l.href} onClick={close}>
                 {l.mobile || l.label}

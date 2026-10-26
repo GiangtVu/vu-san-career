@@ -104,7 +104,8 @@ export function HeroDesktop({ total, groupCount, role, roleOut, q, onSearch, onS
   );
 }
 
-export function HeroMobile({ total, hotJobs, role, roleOut, q, onSearch, listUrl }) {
+// `total` counts up on entry; `count` is the settled number for the "see all" link.
+export function HeroMobile({ total, count, hotJobs, role, roleOut, q, onSearch, listUrl }) {
   const openList = useOpenList(listUrl);
   return (
     <section className="mhero u-mobile">
@@ -175,7 +176,7 @@ export function HeroMobile({ total, hotJobs, role, roleOut, q, onSearch, listUrl
       <div className="hotjobs reveal" style={{ '--d': '360ms' }} id="hot-jobs">
         <div className="hotjobs__head">
           <span className="hot-label"><Icon name="flame" size={14} />HOT JOB</span>
-          <Link to="/viec-lam">Xem tất cả {total} vị trí</Link>
+          <Link to="/viec-lam">Xem tất cả {count} vị trí</Link>
         </div>
         {hotJobs.length > 0 && (
           <div className="hotjobs__list">

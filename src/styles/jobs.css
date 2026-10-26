@@ -5,11 +5,11 @@
 /* ---------- Hero + search ---------- */
 .jl-hero {
   position: relative;
-  z-index: 0;
-  overflow: hidden;
+  z-index: 3;
   background: linear-gradient(135deg, #0F4FA8 0%, #1668DC 55%, #2F80EA 100%);
   color: #FFFFFF;
 }
+.jl-hero__bg { position: absolute; z-index: -1; inset: 0; overflow: hidden; pointer-events: none; }
 .jl-hero__pattern { position: absolute; z-index: -1; right: -60px; top: -60px; display: block; opacity: 0.12; }
 .jl-hero__deco {
   position: absolute;
@@ -42,7 +42,8 @@
   background: #FFFFFF;
   box-shadow: 0 2px 4px rgba(8, 36, 92, 0.12), 0 24px 50px rgba(8, 36, 92, 0.35);
 }
-.jl-search__kw, .jl-search__loc {
+.jl-search__kw {
+  flex: 999 1 300px;
   min-width: 0;
   display: flex;
   align-items: center;
@@ -51,20 +52,94 @@
   border-radius: 12px;
   color: var(--muted);
 }
-.jl-search__kw { flex: 999 1 300px; }
-.jl-search__loc { flex: 1 1 200px; background: var(--bg-page); }
-.jl-search input, .jl-search select {
+.jl-search input {
   flex: 1;
   min-width: 0;
   min-height: 52px;
   border: 0;
   background: transparent;
   color: var(--ink);
+  font-size: 16px;
   outline: none;
 }
-.jl-search input { font-size: 16px; }
-.jl-search select { font-size: 15px; cursor: pointer; }
-.jl-search__kw:focus-within, .jl-search__loc:focus-within { box-shadow: inset 0 0 0 2px #7FB0F5; }
+.jl-search__kw:focus-within { box-shadow: inset 0 0 0 2px #7FB0F5; }
+
+/* Location picker */
+.jl-loc { flex: 1 1 230px; position: relative; min-width: 0; }
+.jl-loc__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 14px;
+  border: 1.5px solid var(--bg-page);
+  border-radius: 12px;
+  background: var(--bg-page);
+  color: var(--muted);
+  text-align: left;
+  transition: border-color .2s ease, background-color .2s ease;
+}
+.jl-loc__btn:hover { border-color: #9DBBEF; }
+.jl-loc__btn.is-open { border-color: var(--blue); background: #FFFFFF; }
+.jl-loc__pin { flex: none; color: var(--blue); }
+.jl-loc__text { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.2; }
+.jl-loc__eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.jl-loc__value { font-size: 15px; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.jl-loc__chev { flex: none; transition: transform .2s ease; }
+.jl-loc__btn.is-open .jl-loc__chev { transform: rotate(180deg); }
+
+@keyframes dd-in { from { opacity: 0; translate: 0 -6px; } }
+.jl-dd {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  min-width: 260px;
+  padding: 6px;
+  border-radius: 16px;
+  background: #FFFFFF;
+  border: 1px solid var(--line-soft);
+  box-shadow: 0 4px 10px rgba(11, 31, 77, 0.08), 0 24px 48px rgba(11, 31, 77, 0.22);
+  color: var(--ink);
+}
+@media (prefers-reduced-motion: no-preference) { .jl-dd { animation: dd-in .18s ease-out; } }
+.jl-dd__title { display: block; padding: 8px 10px 6px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.jl-dd__list { display: flex; flex-direction: column; gap: 2px; }
+.jl-opt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  transition: background-color .15s ease;
+}
+.jl-opt:hover { background: #F1F5FC; }
+.jl-opt[aria-pressed="true"] { background: var(--blue-50); }
+.jl-opt__icon {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #EEF3FB;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jl-opt[aria-pressed="true"] .jl-opt__icon { background: var(--blue); color: #FFFFFF; }
+.jl-opt__text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.jl-opt__label { font-size: 15px; font-weight: 600; }
+.jl-opt[aria-pressed="true"] .jl-opt__label { color: var(--blue); }
+.jl-opt__n { font-size: 13px; color: var(--muted); }
+.jl-opt__check { flex: none; color: var(--blue); }
 .jl-search__btn {
   flex: 1 1 140px;
   display: inline-flex;
@@ -84,7 +159,7 @@
 .jl-search__btn:hover { background: var(--blue-700); }
 @media (max-width: 1023.98px) {
   .jl-search__kw { flex: 1 1 0%; }
-  .jl-search__loc { flex: 1 1 100%; order: 3; }
+  .jl-loc { flex: 1 1 100%; order: 3; }
   .jl-search__btn { flex: 0 0 52px; padding: 0; }
 }
 
@@ -122,7 +197,7 @@
 
 .jl-filters {
   flex: 1 1 260px;
-  min-width: 0;
+  min-width: min-content; /* wide enough to keep each group name on one line */
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -199,7 +274,7 @@
 .jl-check { display: flex; align-items: center; gap: 10px; min-height: 40px; font-size: 15px; cursor: pointer; }
 .jl-check input { width: 18px; height: 18px; margin: 0; accent-color: var(--blue); }
 .jl-check__dot { width: 10px; height: 10px; border-radius: 3px; }
-.jl-check__label { flex: 1; }
+.jl-check__label { flex: 1; white-space: nowrap; }
 .jl-check__n {
   min-width: 26px;
   padding: 2px 8px;
@@ -309,6 +384,9 @@
 .jl-card h3 { margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; }
 .jl-card h3 a { color: var(--ink); text-decoration: none; }
 .jl-card h3 a:hover { color: var(--blue); }
+/* The title link covers the whole card; the action buttons sit above it. */
+.jl-card h3 a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.jl-card__actions .btn { position: relative; z-index: 1; }
 .jl-card p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--muted); }
 .jl-card__meta { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .jl-card__meta li {
@@ -360,7 +438,7 @@
 .jl-empty > span:not(.jl-empty__icon) { max-width: 420px; font-size: 15px; line-height: 1.6; color: var(--muted); }
 .jl-empty__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 
-.jl-pager { display: flex; justify-content: center; align-items: center; gap: 8px; padding-top: 8px; }
+.jl-pager { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; padding-top: 8px; }
 .jl-pager__btn {
   min-width: 44px;
   height: 44px;
