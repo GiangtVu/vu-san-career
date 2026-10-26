@@ -1,9 +1,10 @@
-// Crawl job openings from https://fptsmartcloud.com/co-hoi-nghe-nghiep/ into
+// Crawl job openings from https://fptsmartcloud.com/co-hoi-nghe-nghiep/ about the site's focus topics into
 // public/data/fptsmartcloud-jobs.json. Run with: node scripts/crawl-fptsmartcloud.mjs
 import { writeFile, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from 'cheerio';
+import { classifyJob, isFocusJob, mayBeFocus } from './job-rules.mjs';
 
 const BASE = 'https://fptsmartcloud.com/co-hoi-nghe-nghiep/';
 const OUT = fileURLToPath(new URL('../public/data/fptsmartcloud-jobs.json', import.meta.url));
@@ -74,22 +75,41 @@ async function crawlList() {
   return [...jobs.values()];
 }
 
-// Split the detail body into sections at each <h5>; <h3>/<h4> inside a section start a sub-group.
+// Section headings are written either as <h5> or as a paragraph that is entirely bold.
+function isSectionHeading($, el, tag) {
+  if (tag === 'h5') return true;
+  if (tag !== 'p') return false;
+  const text = clean($(el).text());
+  const bold = clean($(el).find('strong, b').text());
+  return text.length > 0 && text.length <= 80 && bold === text;
+}
+
+// Split the detail body into sections at each heading; <h3>/<h4> inside a section start a sub-group.
 function parseDetail(html) {
   const $ = load(html);
   $('[data-cfemail]').each((_, el) => { $(el).replaceWith(decodeCfEmail($(el).attr('data-cfemail'))); });
-  const body = $('.bota_job_deatils_desc');
+  // Some posts wrap part of the body in extra <div>s; flatten them into one block list.
+  const blocks = [];
+  const flatten = (el) => $(el).children().each((_, c) => (c.tagName.toLowerCase() === 'div' ? flatten(c) : blocks.push(c)));
+  flatten($('.bota_job_deatils_desc').first());
+
   const sections = [];
   let section = { title: null, text: [], groups: [] };
   let group = null;
 
+  // Some posts repeat a block (e.g. "Working Environment") twice; keep the first copy.
+  const seen = new Set();
   const push = () => {
-    if (section.title || section.text.length || section.groups.length) sections.push(section);
+    const key = JSON.stringify(section);
+    if ((section.title || section.text.length || section.groups.length) && !seen.has(key)) {
+      seen.add(key);
+      sections.push(section);
+    }
   };
 
-  body.children().each((_, el) => {
+  blocks.forEach((el) => {
     const tag = el.tagName.toLowerCase();
-    if (tag === 'h5') {
+    if (isSectionHeading($, el, tag)) {
       push();
       section = { title: clean($(el).text()), text: [], groups: [] };
       group = null;
@@ -102,9 +122,17 @@ function parseDetail(html) {
         section.groups.push(group);
       }
       // Only top-level items; nested lists are folded into their parent's text.
+      // A <br> followed by a typed marker starts a sub-item ("…theo từng lớp:<br>– API testing");
+      // any other <br> just continues the same item.
       $(el).children('li').each((_, li) => {
-        const t = clean($(li).text());
-        if (t) group.items.push(t);
+        $(li).find('br').replaceWith('\n');
+        const items = [];
+        for (const line of $(li).text().split('\n').map(clean)) {
+          if (!line) continue;
+          if (items.length && !/^[–—•·]/.test(line)) items[items.length - 1] += ' ' + line;
+          else items.push(line);
+        }
+        group.items.push(...items);
       });
     } else {
       // <br> separates lines inside one paragraph (e.g. the contact block).
@@ -132,11 +160,16 @@ async function mapLimit(items, limit, fn) {
 const list = await crawlList();
 if (!list.length) throw new Error('No jobs found on the listing page; the site layout may have changed.');
 
-const jobs = await mapLimit(list, CONCURRENCY, async (job) => {
+// Keep only jobs about the site's focus topics (see FOCUS in job-rules.mjs). Jobs whose title
+// already rules them out are skipped before their detail page is fetched.
+const candidates = list.filter((job) => mayBeFocus(job.title));
+const detailed = await mapLimit(candidates, CONCURRENCY, async (job) => {
   const detail = parseDetail(await fetchHtml(job.url));
   return { ...job, title: detail.title || job.title, sections: detail.sections };
 });
+const jobs = detailed.filter((job) => isFocusJob(classifyJob(job)));
+if (!jobs.length) throw new Error(`None of the ${list.length} listed jobs matches the focus topics.`);
 
-await mkdir(dirname(OUT.pathname.replace(/^\/(\w:)/, '$1')), { recursive: true });
+await mkdir(dirname(OUT), { recursive: true });
 await writeFile(OUT, JSON.stringify({ source: BASE, jobs }, null, 2) + '\n');
-console.log(`Saved ${jobs.length} jobs to ${OUT}`);
+console.log(`Saved ${jobs.length} of ${list.length} listed jobs to ${OUT} (fetched ${candidates.length} detail pages)`);

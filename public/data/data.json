@@ -1,0 +1,3691 @@
+{
+  "groups": {
+    "eng": {
+      "label": "Engineering",
+      "ink": "#1668DC",
+      "soft": "#E7F0FE",
+      "roles": "Fullstack Developer"
+    },
+    "ai": {
+      "label": "AI & Data",
+      "ink": "#6D28D9",
+      "soft": "#F1EAFE",
+      "roles": "AI Engineer · Data Engineer · Data Scientist · AI Consultant"
+    },
+    "biz": {
+      "label": "Product & Business",
+      "ink": "#0F766E",
+      "soft": "#DDF4F0",
+      "roles": "Business Analyst · Product Owner · Project Manager"
+    },
+    "ops": {
+      "label": "DevOps",
+      "ink": "#B43C0B",
+      "soft": "#FFEDE3",
+      "roles": "DevOps Engineer"
+    }
+  },
+  "offices": {
+    "Hà Nội": "Tầng 22, Vinacomin Tower, 3 Dương Đình Nghệ, Cầu Giấy, Hà Nội"
+  },
+  "jobs": [
+    {
+      "id": "ai-research-ai-vision",
+      "hot": true,
+      "group": "ai",
+      "title": "AI Research – AI Vision",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Research, develop, and optimize deep learning algorithms for Computer Vision and Multimodal AI applications.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai research – ai vision  python docker linux pytorch tensorflow triton",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-research-ai-vision/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Research, develop, and optimize deep learning algorithms for Computer Vision and Multimodal AI applications.",
+          "Design, implement, and improve models for object detection, tracking, segmentation, OCR, document understanding, face recognition, face anti-spoofing, video understanding, and Vision-Language Models (VLMs).",
+          "Read, reproduce, evaluate, and improve state-of-the-art methods from leading AI conferences and open-source projects.",
+          "Design experiments, analyze results, and evaluate models using appropriate metrics.",
+          "Build scalable training pipelines and optimize models for efficient deployment using TensorRT, ONNX, or similar inference frameworks.",
+          "Collaborate with software engineers to deploy AI models into production and contribute to technical documentation and knowledge sharing.",
+          "Stay up to date with the latest advances in Computer Vision, Foundation Models, Multimodal AI, and Generative AI."
+        ],
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Must-Have Qualifications",
+            "items": [
+              "2+ years of experience in Computer Vision, Deep Learning, or related AI research. Strong programming skills in Python, with hands-on experience using PyTorch or TensorFlow.",
+              "Solid understanding of modern deep learning techniques, including CNNs, transformers",
+              "Strong knowledge of Computer Vision, including object detection, tracking, segmentation, OCR, document understanding, face recognition, and face anti-spoofing.",
+              "Hands-on experience training and optimizing deep learning models on large-scale datasets.",
+              "Ability to design experiments, analyze quantitative results, and improve models based on evaluation metrics.",
+              "Ability to read, understand, reproduce, and implement ideas from academic papers.",
+              "Familiarity with Git, Linux, and Docker."
+            ]
+          },
+          {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Bachelor’s degree in Computer Science, Artificial Intelligence, Machine Learning, Computer Vision, or a related field.",
+              "Publications in leading AI conferences (CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI) or equivalent research contributions.",
+              "Experience with Vision-Language Models (VLMs)",
+              "Experience deploying AI models using TensorRT, ONNX Runtime, Triton Inference Server, NVIDIA DeepStream, or similar frameworks.",
+              "Experience developing AI applications on NVIDIA Jetson or other embedded AI platforms."
+            ]
+          },
+          {
+            "title": "What We Look For",
+            "items": [
+              "Passion for AI research and continuous learning.",
+              "Ability to independently solve open-ended research problems through systematic experimentation and data-driven analysis.",
+              "Strong analytical thinking and problem-solving skills.",
+              "Excellent communication and collaboration across research, engineering, and product teams.",
+              "Ability to balance research innovation with practical engineering to deliver production-ready AI solutions.",
+              "Ownership mindset, self-motivation, and the ability to thrive in a fast-paced environment."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "PyTorch",
+          "TensorFlow",
+          "Triton"
+        ]
+      }
+    },
+    {
+      "id": "product-tester-bss",
+      "hot": true,
+      "group": "eng",
+      "title": "Product Tester (BSS)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Closely work with development team, Product Owner & Scrum Master to address any concerns during sprint planning & sprint execution phase",
+      "stack": [
+        "Python",
+        "AWS",
+        "GCP"
+      ],
+      "keywords": "product tester  python aws gcp",
+      "source": "https://fptsmartcloud.com/job_opportunity/product-tester-bss/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Closely work with development team, Product Owner & Scrum Master to address any concerns during sprint planning & sprint execution phase",
+          "Closely work with PO, Developers to ensure product quality, prepare for products and features launching",
+          "Work with other adjacent teams (Infrastructure team, Operation team…) to address or provide product insights, supports if need be",
+          "Cooperating with PO, Developers to set user stories, define Definition of Done, write Acceptance Criteria before starting work on the coding and testing of any feature.",
+          "Reviewing and analyzing product requirement specifications, user stories ==>> Help building up SRS (create requirement specification/ user story for simple features)",
+          "Defining the appropriate test cases/ test scripts (manual) to be carried out including the test data to be used, test metrics to be managed.",
+          "Executing test case/ test scripts (manual/ automation, integration test, system test, regression test, re-test after the release of fixes) and reviewing results to make sure that our products and the new features that we release are robust and working at their optimum performance.",
+          "Reporting and documenting technical issues/ bugs, testing metrics",
+          "Support product before & after release Troubleshooting issues Building up user manual/ guideline (optional)",
+          "Setting the test strategy, test approach, test metrics and planning for test including functional test, performance test, security test & others (the user stories should be divided into testing tasks with the estimation from the Tester about the amount of work that is needed)",
+          "Recommending technical and process additions to improve testing quality & productivity (especially automated testing items to get higher test productivity & product quality)",
+          "Participate in community group’s activities to research new technology, sharing knowledge between teams",
+          "Participate in 1-1 review with team leader / line manager for progress reporting and feedback and career development"
+        ],
+        "experience": "Từ 7 năm",
+        "requirements": [
+          {
+            "title": "Prerequisites",
+            "items": [
+              "Bachelor’s degree in computer science or IT.",
+              "A minimum of 7 years’ experience in testing Able to create test cases, execute tests, bug logging and communicate with developers Able to set the test strategy and test approach Able to create plans for test Able to define & track testing metrics",
+              "Experience in test techniques and programming.",
+              "Knowledge of software development, database management",
+              "Automation test",
+              "JIRA / Confluence",
+              "Data analytics tool (Google Data Studio, Google Tag Manager, Google Analytics, Excel, Python, Tableau)",
+              "Previously work as senior QC/Tester for product team / company in 2 years",
+              "Having strong knowledge of Agile/ Scum",
+              "Communicate status of work effectively to the team and leader",
+              "Collaboration and work in-person with other team members",
+              "Able to work independently and highly focus on work",
+              "Pay attention to details",
+              "Analytical thinking and problem-solving skills",
+              "Presentation skills",
+              "Accept feedback graciously and able to learn from past mistakes",
+              "Problem-solving skills and decisive knowledge of appropriate testing methods.",
+              "Project management skills and task prioritization",
+              "Familiar with OKR management methodology",
+              "Lean startup / Lean UX methodology",
+              "Have general understanding on computer science topics (client, server)"
+            ]
+          },
+          {
+            "title": "Optional",
+            "items": [
+              "Have general understanding of how Cloud provider works. Have experience working with cloud platforms (AWS / GCP / Digital Ocean / Linode)",
+              "Having strong technical background is a plus point"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "AWS",
+          "GCP"
+        ]
+      }
+    },
+    {
+      "id": "ai-engineer-genai",
+      "hot": true,
+      "group": "ai",
+      "title": "AI Engineer (GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Designing, developing, and fine-tuning models using state-of-the-art AI algorithms and techniques, encompassing computer vision and natural language processing.",
+      "stack": [
+        "Python",
+        "Elasticsearch",
+        "Qdrant",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai engineer genai python elasticsearch qdrant pytorch tensorflow langchain langgraph llamaindex",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Model Development: Designing, developing, and fine-tuning models using state-of-the-art AI algorithms and techniques, encompassing computer vision and natural language processing. Leverage frameworks such as TensorFlow, PyTorch, or similar to implement these models effectively.",
+          "Research and Experimentation: Experimenting with state-of-the-art AI model architectures and approaches to enhance the performance and accuracy of existing products. Stay at the forefront of cutting-edge developments in AI and apply them to real-world projects.",
+          "Data Preprocessing: Working on data preprocessing, feature engineering, and data augmentation to optimize and improve model training processes.",
+          "Integration: Developing API interfaces for model interaction, closely collaborating with software engineering teams to integrate and deploy generalized AI models into real-world applications and systems. This will enhance customer interaction, automate processes, and improve decision-making capabilities.",
+          "Mentorship: Providing technical guidance and mentorship to junior members of the AI team."
+        ],
+        "department": "GenAI",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Background & Experience",
+            "items": [
+              "Education: Bachelor’s degree in Computer Science, Artificial Intelligence, Information Technology, or a related field. A solid background in AI, Machine Learning (ML), and Deep Learning (DL) is required.",
+              "Experience: At least 3+ years of experience as an AI/ML Engineer, including at least 1 year of experience deploying LLM/GenAI applications into Production environments."
+            ]
+          },
+          {
+            "title": "Technical Skills (AI Agents & LLM)",
+            "items": [
+              "Frameworks: Proficiency in AI Agent frameworks such as LangGraph, LangChain, LlamaIndex, etc.",
+              "Core Concepts: Strong understanding of Planning (ReAct), Memory (Short-term/Long-term), Tool/Function Calling, and Agent Harness.",
+              "Techniques: Hands-on experience with Harness Engineering and Agent Evaluation using tools such as Ragas/TruLens.",
+              "Data & Infrastructure: Experience in document ingestion, proficiency with Vector Databases such as Elasticsearch and Qdrant, and hands-on experience deploying GenAI applications.",
+              "Programming & System Design: Strong proficiency in Python and solid System Design skills."
+            ]
+          },
+          {
+            "title": "Mindset & Soft Skills",
+            "items": [
+              "Product-minded: A strong product-oriented mindset, with the ability to apply technology to solve real-world product and business problems.",
+              "R&D: Ability to independently read, understand, and quickly apply the latest AI research papers to practical applications."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Elasticsearch",
+          "Qdrant",
+          "PyTorch",
+          "TensorFlow",
+          "LangChain",
+          "LangGraph",
+          "LlamaIndex"
+        ]
+      }
+    },
+    {
+      "id": "cloud-automation-solution-architecture-self-driving",
+      "hot": false,
+      "group": "eng",
+      "title": "Cloud Automation Solution Architecture (Self Driving)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế và xây dựng automation test framework dùng chung cùng hệ tooling hỗ trợ cho các sản phẩm cloud (API, integration và end-to-end testing).",
+      "stack": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "Kubernetes"
+      ],
+      "keywords": "cloud automation solution architecture self driving python java javascript typescript kubernetes docker terraform aws azure gcp jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/cloud-automation-solution-architecture-self-driving/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế và xây dựng automation test framework dùng chung cùng hệ tooling hỗ trợ cho các sản phẩm cloud (API, integration và end-to-end testing).",
+          "Tích hợp framework vào CI/CD pipeline, đảm bảo automated testing nhanh và tin cậy cho các team phát triển.",
+          "Định nghĩa chuẩn, pattern và best practice về test automation cho toàn tổ chức.",
+          "Lead,coaching và phát triển đội automation engineer.",
+          "Làm việc với các team phát triển để thúc đẩy adoption của framework và nâng mức độ trưởng thành automation"
+        ],
+        "department": "Self Driving",
+        "experience": "Từ 8 năm",
+        "requirements": [
+          {
+            "title": "Kỹ thuật",
+            "items": [
+              "8+ năm kinh nghiệm software engineering hoặc test automation engineering, kỹ năng lập trình vững với ít nhất một ngôn ngữ phổ biến (Java, Python, Go hoặc TypeScript/JavaScript)",
+              "Đã từng thiết kế và xây dựng test automation framework từ đầu (không chỉ viết test script trên framework có sẵn).",
+              "Thành thạo các công cụ automation theo từng lớp:",
+              "API/service testing: REST Assured, Karate, Postman/Newman hoặc tương đương",
+              "UI/E2Etesting: Playwright, Selenium hoặc Cypress",
+              "Unit/test runner: JUnit/TestNG, pytest hoặc Jest",
+              "Contract testing: Pact hoặc tương đương",
+              "Performance testing: k6, JMeter hoặc Gatling",
+              "Môitrường/tích hợp: Testcontainers, WireMock/mock server",
+              "Nắm vững chiến lược testing cho hệ thống phân tán/microservices: test pyramid, API testing, integration và contract testing, mocking/stubbing, quản lý test data.",
+              "Kinh nghiệm vững với CI/CD pipeline (Jenkins, GitLab CI, GitHub Actions hoặc Azure DevOps) và tích hợp automated testing vào pipeline.",
+              "Quen thuộc với ít nhất một cloud platform lớn (AWS, Azure hoặc GCP) — thành thạo việc test các dịch vụ chạy trên cloud và sử dụng các dịch vụ core (compute, storage, queue, managed database, IAM) trong test setup.",
+              "Kiến thức vững về công nghệ cloud-native: Docker, Kubernetes, Helm và infrastructure-as-code (Terraform hoặc tương đương).",
+              "Kinh nghiệm xử lý độ tin cậy của test ở quy mô lớn: chạy song song, cô lập môi trường, quản lý flaky test."
+            ]
+          },
+          {
+            "title": "AI & công cụ hiện đại",
+            "items": [
+              "Kinh nghiệm thực tế ứng dụng AI vào test automation: sinh và bảo trì test bằng AI (self-healing locator, visual testing), hoặc dùng công cụ LLM để tăng tốc viết test và review code.",
+              "Thành thạo AI coding assistant (GitHub Copilot, Claude hoặc tương đương) trong công việc hàng ngày, và có khả năng xây dựng chuẩn sử dụng hiệu quả, an toàn cho team.",
+              "Hiểu biết về cách test các tính năng tích hợp AI (output không xác định, validate prompt/response) là lợi thế."
+            ]
+          },
+          {
+            "title": "Lãnh đạo &kỹ năng mềm",
+            "items": [
+              "5+ năm kinh nghiệm lead hoặc mentor kỹ sư; có khả năng định hướng kỹ thuật và review công việc của người khác.",
+              "Khả năng thúc đẩy adoption trên nhiều team: giao tiếp, coaching và quản lý stakeholder.",
+              "Tư duy sản phẩm thực dụng với tooling nội bộ – xây thứ mà các team thực sự dụng"
+            ]
+          },
+          {
+            "title": "Lợi thế",
+            "items": [
+              "Kinh nghiệm trong các team platform engineering, developer experience (DevEx) hoặc engineering productivity.",
+              "Kinh nghiệm automation về performance/load testing hoặc security testing.",
+              "Kinh nghiệm làm việc trong tổ chức đang chuyển đổi từ manual QA sang mô hình developer tự làm automation"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "JavaScript",
+          "TypeScript",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "senior-business-analyst-bss",
+      "hot": false,
+      "group": "biz",
+      "title": "Senior Business Analyst (BSS)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Conduct comprehensive market and business analysis to identify growth opportunities and expansion strategies",
+      "stack": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "SQL"
+      ],
+      "keywords": "senior business analyst cloud aws azure gcp sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-bss/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Conduct comprehensive market and business analysis to identify growth opportunities and expansion strategies",
+          "Develop business cases and feasibility studies for new initiatives",
+          "Create and maintain detailed business requirements documentation (BRD, URD, SRS)",
+          "Analyze business processes, identify bottlenecks, and recommend optimization solutions",
+          "Create reports, dashboards and visualizations to understand business performance",
+          "Partner with Product Managers on roadmap planning, feature prioritization, and release planning",
+          "Influence and align cross-functional teams toward common business objectives",
+          "Validate requirements with stakeholders and ensure successful implementation",
+          "Communicate complex findings to both technical and non-technical audiences",
+          "Evaluate existing business processes and recommend scalable improvements",
+          "Conduct user acceptance testing and validate business process implementations",
+          "Support change management initiatives and adoption of new processes",
+          "Build consensus among diverse groups with competing priorities and objectives",
+          "Champion new processes and guide teams through organizational transformations",
+          "Support junior analysts and share best practices across the organization",
+          "PM/ Scrum Master, PO for requirement/ business issues/ bugs, metrics",
+          "Product Manager / Line manager for day to day work and support, career path and development"
+        ],
+        "department": "Cloud",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Prerequisites",
+            "items": [
+              "Bachelor’s degree in Business Administration, Computer Science, Information Technology, or related field",
+              "5+ years of progressive business analyst experience with demonstrated leadership on complex projects",
+              "Proven track record of managing multi-stakeholder, cross-functional initiatives",
+              "Experience with software development lifecycle (SDLC) and project delivery",
+              "Microsoft Access and/or SQL experience is strongly preferred",
+              "Agile/Scrum methodology experience with related tools",
+              "Business intelligence tools familiarity"
+            ]
+          },
+          {
+            "title": "Business Competencies",
+            "items": [
+              "Detail-oriented, analytical and inquisitive mindset",
+              "Stakeholder management and workshop facilitation skills",
+              "Cross-functional collaboration and influence without direct authority",
+              "Business intelligence tools familiarity for reporting and analysis"
+            ]
+          },
+          {
+            "title": "Nice-to-Have",
+            "items": [
+              "Data visualization tools – Tableau, Power BI, or similar (user level, not developer)",
+              "Cloud platform concepts – AWS, GCP, Azure understanding (not hands-on administration)",
+              "PMP, Scrum Master, or equivalent certifications preferred"
+            ]
+          }
+        ],
+        "skills": [
+          "AWS",
+          "Azure",
+          "GCP",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "fullstack-software-engineer-agentic-ai-platform-ai-lab",
+      "hot": false,
+      "group": "eng",
+      "title": "Fullstack Software Engineer – Agentic AI Platform (AI Lab)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Develop backend APIs and core platform services.",
+      "stack": [
+        "Python",
+        "Golang",
+        "Java",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "keywords": "fullstack software engineer – agentic ai platform ai lab python golang java javascript typescript reactjs node.js postgresql langgraph ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-software-engineer-agentic-ai-platform-ai-lab/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Develop backend APIs and core platform services. Our current technology stack primarily uses TypeScript and Bun, but we are open to other programming languages and runtimes.",
+          "Build fullstack web applications while contributing to the development and integration of mobile and desktop applications when required.",
+          "Design, optimize, and maintain PostgreSQL databases.",
+          "Develop AI Agent Runtime, Workflow Engine, Tool Calling capabilities, and integrate with Model Context Protocol (MCP).",
+          "Build Context Management, Memory, Retrieval-Augmented Generation (RAG), and AI output evaluation mechanisms.",
+          "Develop real-time services using WebSocket, Server-Sent Events (SSE), and background job workers.",
+          "Integrate AI models and AI services from multiple providers.",
+          "Effectively leverage AI-powered development tools throughout the software development lifecycle, including requirement analysis, system design, coding, testing, code reviews, and troubleshooting.",
+          "Optimize system performance, scalability, reliability, and operational cost.",
+          "Participate in system architecture design, technology selection, and cross-system integration solutions.",
+          "Analyze functional and non-functional requirements to propose appropriate technical solutions.",
+          "Produce architecture documentation, data flow diagrams, API contracts, and key technical design decisions.",
+          "Participate in design reviews, code reviews, and continuously improve engineering standards across the team."
+        ],
+        "department": "AI Lab",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Required Qualifications",
+            "items": [
+              "At least 3 years of software development experience using JavaScript, TypeScript, or other suitable programming languages.",
+              "Strong proficiency in at least one backend technology such as Node.js, Bun, Java, Go, Python, or equivalent platforms.",
+              "Hands-on experience developing modern web applications using React or an equivalent frontend framework.",
+              "Strong fullstack mindset with a solid understanding of the entire product lifecycle, including frontend, backend APIs, databases, deployment, and production operations.",
+              "Ability to work with or quickly expand into mobile and desktop application development as product needs evolve.",
+              "Experience working with PostgreSQL or other relational database management systems.",
+              "Solid understanding of REST APIs, HTTP, WebSocket, and system communication patterns.",
+              "Strong knowledge of software architecture, system design, scalability, security, and reliability.",
+              "Ability to analyze business and technical requirements and translate them into practical system-level solutions.",
+              "Proven ability to effectively utilize AI-assisted development tools while validating the correctness, quality, and safety of AI-generated outputs.",
+              "Proficient with Git and collaborative software development workflows.",
+              "Good English reading skills for technical documentation."
+            ]
+          },
+          {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Experience building AI Agents or Generative AI applications.",
+              "Hands-on experience with frameworks such as LangGraph, CrewAI, OpenAI Agents SDK, or equivalent technologies.",
+              "Experience with Workflow Engines, Tool Calling, Model Context Protocol (MCP), Memory, Context Management, or Retrieval-Augmented Generation (RAG).",
+              "Experience designing solution architectures, including system integration, service decomposition, and technology selection.",
+              "Experience developing mobile applications using React Native, Flutter, or equivalent technologies.",
+              "Experience developing desktop applications using Electron, Tauri, or equivalent frameworks.",
+              "Experience building distributed systems, real-time platforms, or applications serving large-scale concurrent users.",
+              "Experience with containers, cloud platforms, CI/CD, observability, and operating production-grade systems."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Java",
+          "JavaScript",
+          "TypeScript",
+          "ReactJS",
+          "Node.js",
+          "PostgreSQL",
+          "LangGraph",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "lead-fullstack-engineer",
+      "hot": false,
+      "group": "eng",
+      "title": "Lead Fullstack Engineer (BSS)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Dẫn dắt định hướng kỹ thuật và đưa ra các quyết định về kiến trúc cho một hoặc nhiều nhóm sản phẩm.",
+      "stack": [
+        "Python",
+        "Golang",
+        "ReactJS",
+        "VueJS",
+        "Node.js"
+      ],
+      "keywords": "lead fullstack engineer cloud python golang reactjs vuejs node.js kubernetes docker linux aws azure gcp mysql ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/lead-fullstack-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Dẫn dắt định hướng kỹ thuật và đưa ra các quyết định về kiến trúc cho một hoặc nhiều nhóm sản phẩm.",
+          "Phối hợp với các thành viên khác trong team để phát triển tính năng mới (coding, viết unit test, integration test, end-to-end test, review code và triển khai – DevOps) theo đúng hướng dẫn của Scrum.",
+          "Hỗ trợ và duy trì các hệ thống đang vận hành, xác minh lỗi và xử lý sự cố. Theo dõi trạng thái hệ thống, SLA tổng thể và đưa ra biện pháp xử lý hoặc escalate khi cần",
+          "Làm việc với Architect để đóng góp vào kiến trúc và thiết kế tổng thể của ứng dụng.",
+          "Thường xuyên cập nhật tài liệu để phản ánh trạng thái mới nhất của hệ thống (bao gồm logic và chức năng).",
+          "Rà soát thiết kế kiến trúc, tiêu chí chấp nhận của các yêu cầu quan trọng. Tham gia phân tích yêu cầu chức năng và thiết kế nhằm cải thiện giải pháp và cách triển khai hệ thống.",
+          "Phối hợp với Product Owner/Business Analyst và các bên liên quan để chuyển đổi yêu cầu nghiệp vụ thành giải pháp kỹ thuật.",
+          "Phân tích các tính năng phức tạp thành các nhiệm vụ nhỏ và cung cấp ước lượng kỹ thuật chính xác.",
+          "Đảm bảo bàn giao tính năng chất lượng cao đúng tiến độ dự án.",
+          "Chủ động xác định và giảm thiểu rủi ro kỹ thuật.",
+          "Mentor và huấn luyện các kỹ sư và thành viên trong nhóm về kỹ năng kỹ thuật.",
+          "Thực hiện code review và đưa ra phản hồi mang tính xây dựng nhằm nâng cao chất lượng code.",
+          "Dẫn dắt các buổi thảo luận kỹ thuật và chia sẻ kiến thức nội bộ.",
+          "Xác định khoảng trống kỹ năng trong đội và xây dựng kế hoạch phát triển phù hợp."
+        ],
+        "department": "CLoud",
+        "experience": "Từ 8 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "8+ năm kinh nghiệm phát triển phần mềm thực tế.",
+              "Thành thạo ở mức chuyên gia trong phát triển ứng dụng web hiện đại bằng ReactJS hoặc Vue.",
+              "Có kinh nghiệm mạnh với các ngôn ngữ backend: NodeJS, Golang hoặc Python.",
+              "Có kinh nghiệm viết Unit Test (Jest), áp dụng quy trình Test-Driven Development (TDD).",
+              "Hiểu sâu về thiết kế RESTful API, GraphQL và nhiều Design Pattern (SOLID, DDD, CQRS,…).",
+              "Kinh nghiệm phong phú với hệ thống phân tán, kiến trúc Microservices và Event-Driven Architecture.",
+              "Có trải nghiệm với source control, hệ thống build, CI/CD, Docker, Kubernetes.",
+              "Có kinh nghiệm làm việc và tối ưu hiệu năng với Relational Database (MySQL) hoặc NoSQL.",
+              "Hiểu rõ các phương pháp viết code bảo mật và đảm bảo an toàn ứng dụng.",
+              "Thành thạo Linux (Ubuntu/CentOS) và web server (Nginx/Apache).",
+              "Có kinh nghiệm thực tế với ít nhất một nền tảng cloud lớn: GCP, AWS hoặc Azure",
+              "Hiệu quả công việc & Kỹ năng mềm",
+              "Kỹ năng lãnh đạo mạnh mẽ, có khả năng dẫn dắt và tạo ảnh hưởng trong đội ngũ kỹ thuật.",
+              "Kỹ năng giao tiếp xuất sắc – truyền đạt được các khái niệm kỹ thuật phức tạp cho nhiều đối tượng khác nhau."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "ReactJS",
+          "VueJS",
+          "Node.js",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "MySQL",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "fullstack-engineer-isdd",
+      "hot": false,
+      "group": "eng",
+      "title": "Fullstack Engineer (ISDD)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Work directly with the Sales, Accounting, and Marketing teams.",
+      "stack": [
+        "JavaScript",
+        "ReactJS",
+        "Node.js",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "fullstack engineer isdd javascript reactjs node.js kubernetes docker linux mysql mongodb jenkins gitlab ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-isdd/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Work directly with the Sales, Accounting, and Marketing teams.",
+          "Develop and enhance features for the company’s CRM and Asset Management systems.",
+          "Design, build, and optimize RESTful APIs to ensure high performance, security, and scalability.",
+          "Work with SQL/NoSQL databases, optimize queries, and handle server-side data processing.",
+          "Collaborate with Frontend Developers, Data Engineers, and DevOps Engineers to deploy and maintain systems.",
+          "Integrate internal systems to enable seamless data exchange.",
+          "Research and develop internal tools to support business operations, sales, customer service, and system administration.."
+        ],
+        "department": "ISDD",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree in Computer Science, Information Technology, or a related field.",
+              "At least 3 years of experience as a PHP Developer.",
+              "Hands-on experience with PHP frameworks such as Laravel, CodeIgniter, or similar.",
+              "Experience with HTML/CSS, JavaScript (jQuery, Ajax, JSON), and Bootstrap.",
+              "Experience working with MySQL and MongoDB.",
+              "Experience developing PHP web services and RESTful APIs.",
+              "Familiarity with frontend frameworks such as AngularJS or React.",
+              "Experience with template engines such as Smarty or Blade.",
+              "Solid understanding of Object-Oriented Programming (OOP), MVC, and ORM concepts.",
+              "Good knowledge of web servers such as Apache and Nginx.",
+              "Experience working in Linux environments (CentOS, Ubuntu, etc.).",
+              "Strong database design skills, including relational database design and SQL query optimization.",
+              "Ability to write clean, maintainable, and well-structured code while following coding standards and best practices.",
+              "Experience using version control systems such as Git, GitHub, or GitLab.",
+              "Strong analytical and problem-solving skills, with a systematic mindset and the ability to quickly learn new technologies."
+            ]
+          },
+          {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Young, proactive, eager to learn, and creative.",
+              "Experience with system security concepts such as Authentication, Authorization, and JWT.",
+              "Experience with Node.js and NestJS.",
+              "Experience with Docker and Kubernetes (K8s).",
+              "Experience building and maintaining CI/CD pipelines using tools such as Jenkins, GitLab CI/CD, or GitHub Actions.",
+              "Strong product mindset with a high sense of ownership.",
+              "Experience working with ERP and CRM systems."
+            ]
+          }
+        ],
+        "skills": [
+          "JavaScript",
+          "ReactJS",
+          "Node.js",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "MySQL",
+          "MongoDB",
+          "Jenkins",
+          "GitLab",
+          "CI/CD",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-isdd",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst (ISDD)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Gather and clarify requirements from internal departments, proactively asking questions to understand workflows and edge cases.",
+      "stack": [],
+      "keywords": "business analyst isdd",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-isdd/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Gather and clarify requirements from internal departments, proactively asking questions to understand workflows and edge cases.",
+          "Provide business consulting and design standardized operational processes aligned with practical business needs.",
+          "Work closely with end-users and project teams to standardize input data and build structured data models.",
+          "Prepare detailed documentation including SRS, Wireframes, and User Stories.",
+          "Collaborate with technical teams on customization requests, integrations, and specialized reporting requirements.",
+          "Support system operations after Go-live; receive and handle arising requests/issues.",
+          "Collect user feedback, analyze whether issues are system defects or user-operation errors, and report findings to PM/Dev teams."
+        ],
+        "department": "ISDD",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Minimum 3 years of experience as a Business Analyst, with strong hands-on experience in ERP, CRM, or HRM systems (Mandatory).",
+              "Strong logical thinking with the ability to identify edge cases that may cause system issues.",
+              "Good knowledge of business analysis techniques and business process modeling, including business function models, relational data models, UML, Use Cases, BPMN, etc.",
+              "Strong documentation skills (especially SRS writing) and ability to create standard Flowcharts/BPMN diagrams.",
+              "Ability to build product prototypes/mockups.",
+              "Good communication and presentation skills, critical thinking, negotiation skills, and meeting facilitation abilities."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-evaluation-specialist-ai-quality-control-engineer-ai-lab",
+      "hot": false,
+      "group": "ai",
+      "title": "AI Evaluation Specialist/ AI Quality Control Engineer (AI Delivery)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Evaluate AI outputs for accuracy, intent understanding, response quality, consistency, and user experience.",
+      "stack": [
+        "Python",
+        "SQL"
+      ],
+      "keywords": "ai evaluation specialist/ ai quality control engineer ai delivery python sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-evaluation-specialist-ai-quality-control-engineer-ai-lab/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Evaluate AI outputs for accuracy, intent understanding, response quality, consistency, and user experience.",
+          "Perform quality validation for AI Agent solutions before customer delivery and go",
+          "Identify incorrect responses, edge cases, conversation breakdowns, and",
+          "Validate AI behavior against enterprise business flows, scripts, and acceptance",
+          "Execute and contribute to AI evaluation frameworks, test cases, and quality checklists.",
+          "Design evaluation scenarios based on real customer use cases and business flows.",
+          "Support regression testing for new releases, prompt changes, and model updates.",
+          "Document test results, defects, and quality risks clearly.",
+          "Monitor AI quality after deployment using logs, reports, and customer feedback.",
+          "Provide structured feedback to AI Builders and PMs for prompt optimization and model improvement.",
+          "Support root-cause analysis for AI quality incidents in production. Cross-functional Collaboration",
+          "Work closely with PMs, BAs, AI Builders and Customer Success teams.",
+          "Support UAT, customer acceptance, and go-live quality validation.",
+          "Act as a quality assurance partner during solution design and delivery phases."
+        ],
+        "department": "AI Delivery",
+        "requirements": [
+          {
+            "title": "Must-have",
+            "items": [
+              "Bachelor degree in Computer Science, IT, Data Science, AI, or related fields.",
+              "Strong analytical thinking and attention to detail.",
+              "Ability to evaluate AI behavior from both technical and business perspectives.",
+              "Good documentation and communication skills."
+            ]
+          },
+          {
+            "title": "Nice-to-have",
+            "items": [
+              "Experience with Conversational AI and Vision AI.",
+              "Familiarity with AI delivery or customer-facing AI projects.",
+              "Basic knowledge of Python, SQL, or log analysis tools."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "devops-engineer-cdc",
+      "hot": false,
+      "group": "ops",
+      "title": "DevOps Engineer (CDC)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Khảo sát, đánh giá hiện trạng hệ thống Kubernetes, ứng dụng, CI/CD pipeline của khách hàng.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Ansible"
+      ],
+      "keywords": "devops engineer cdc python kubernetes docker terraform ansible openstack ceph linux redis kafka prometheus grafana jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/devops-engineer-cdc/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Khảo sát, đánh giá hiện trạng hệ thống Kubernetes, ứng dụng, CI/CD pipeline của khách hàng.",
+          "Thiết kế kiến trúc ứng dụng mới trên FPT Smart Cloud phù hợp với hiện trạng hệ thống khách hàng hiện tại: FKE, Ingress Controller, Load Balancer, API Gateway, Registry (Quay, Harbor, Nexus), Software Defind Storage (NFS, Ceph, Longhorn…), CNI, CSI.",
+          "Lập kế hoạch/triển khai/migrate manifest (statefulset, deployment, secret, configmap, crd …) theo mô hình Gitops (ArgoCD, FluxCD).",
+          "Triển khai/migrate middleware stack – (Kafka, RabbitMQ, Redis…) hoặc tích hợp ứng dụng kubernetes với giải pháp PAAS do FPT Smart Cloud cung cấp.",
+          "Lập kế hoạch/triển khai migrate data – PV Backup & Restore (Velero, Restic, Kasten K10 (Veeam), Trilio).",
+          "Thiết lập/migrate CI/CD pipeline trên môi trường mới: SCM, SCA, SAST, DAST, Container Image Sanning.",
+          "Tích hợp bảo mật/hardening hạ tầng kubernetes: K8s hardening (CIS), Runtime Security (Falco), Network Policy, Service mesh (Istio/Linkerd).",
+          "Thiết lập hệ thống giám sát (monitoring/logging/alerting) cho hạ tầng và ứng dụng sau migrate: FMON, Prometheus, Grafana, Loki/ELK, Alertmanager hoặc giải pháp tương đương.",
+          "On-call support, phối hợp với các team nội bộ, khách hàng để kiểm tra và xử lý lỗi phát sinh trong giai đoạn hypercare.",
+          "Xây dựng tài liệu thiết kế, quy trình migrate, kịch bản kiểm thử, runbook vận hành và hướng dẫn chuyển giao cho khách hàng."
+        ],
+        "department": "CDC",
+        "requirements": [
+          {
+            "title": "Kỹ năng bắt buộc (Mandatory)",
+            "items": [
+              "Kubernetes: nắm vững kiến trúc và các đối tượng cốt lõi (Deployment, StatefulSet, Service, Ingress, PV/PVC, RBAC, Network Policy), sử dụng thành thạo Kubectl, Helm.",
+              "Container: Docker/containerd, viết Dockerfile tối ưu, quản lý image registry.",
+              "CI/CD: thiết kế và vận hành pipeline với ít nhất một công cụ: GitLab CI, Jenkins, Tekton hoặc tương đương.",
+              "GitOps: kinh nghiệm thực tế với ArgoCD hoặc FluxCD, quản lý cấu hình theo mô hình declarative.",
+              "Giám sát (Observability): triển khai và sử dụng Prometheus, Grafana, Alertmanager, tập trung log với Loki hoặc ELK. Xây dựng dashboard và cảnh báo cho hệ thống sau migrate.",
+              "Kiểm thử sau migrate: lập kế hoạch và thực hiện kiểm thử xác nhận (functional, performance/load test với K6/JMeter hoặc tương đương, HA/failover test), đánh giá kết quả so với baseline.",
+              "Linux & Scripting: quản trị Linux tốt, scripting Bash và/hoặc Python phục vụ tự động hóa.",
+              "Git: thành thạo Git workflow (branching, merge request, review).",
+              "Security cơ bản trong pipeline: image scanning (Trivy hoặc tương đương), quản lý secret (không hardcode credential), hiểu TLS/Certificate.",
+              "Kiến thức network nền tảng: Load balancer, DNS, proxy, firewall phục vụ triển khai ứng dụng."
+            ]
+          },
+          {
+            "title": "Kỹ năng ưu tiên (Optional)",
+            "items": [
+              "Kinh nghiệm sử dụng các dịch vụ self service trên môi trường public cloud.",
+              "Kinh nghiệm triển khai Kubernetes trên các nền tảng cloud/ảo hóa: OpenStack, VMware (vSphere, Tanzu, VCD/VCF), KVM.",
+              "Kinh nghiệm triển khai các giải pháp SDS (Ceph, Longhorn, NFS).",
+              "Hiểu biết môi trường ảo hóa VMware và KVM.",
+              "Công cụ migrate/backup workload: Velero, Restic, Kasten K10.",
+              "Tracing/APM: Jaeger, OpenTelemetry, Elastic APM, Apache SkyWarking",
+              "Infrastructure as Code: Terraform, Ansible.",
+              "Secret management nâng cao: HashiCorp Vault, policy engine: OPA/Gatekeeper, Kyverno.",
+              "Service mesh: Istio/Linkerd.",
+              "Registry: Harbor registry, Nexus, Quay.",
+              "Keycloak/SSO/OIDC.",
+              "Chứng chỉ: CKA, CKAD, CKS.",
+              "Tiếng Anh đọc hiểu, giao tiếp tốt."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "OpenStack",
+          "Ceph",
+          "Linux",
+          "Redis",
+          "Kafka",
+          "Prometheus",
+          "Grafana",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "project-manager-ai-lab",
+      "hot": false,
+      "group": "biz",
+      "title": "Project Manager (AI Lab)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Lead the implementation of AI projects (VoiceBot, ChatBot, AI Agents, OCR/KYC, and other AI solutions) for government agencies, ministries, and public…",
+      "stack": [],
+      "keywords": "project manager ai lab",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-ai-lab/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Lead the implementation of AI projects (VoiceBot, ChatBot, AI Agents, OCR/KYC, and other AI solutions) for government agencies, ministries, and public sector organizations.",
+          "Take full ownership of the project lifecycle—from project kickoff through Go-Live and final acceptance—ensuring projects are delivered on schedule, within scope, with high quality, and to the satisfaction of customers."
+        ],
+        "department": "AI Lab",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree from a reputable university in Information Technology, Computer Science, or a related field.",
+              "Minimum 3 years of experience in IT project management, preferably with experience delivering projects for government or public sector clients.",
+              "Strong understanding of AI technologies, including Natural Language Processing (NLP), Chatbots, Voice AI, Large Language Models (LLMs), and the ability to work effectively with technical teams.",
+              "PMI-PMP certification is an advantage.",
+              "Excellent communication and stakeholder management skills, with the ability to collaborate effectively with customers, technical teams, and senior management.",
+              "Familiarity with government administrative processes, regulations, and operational practices is a strong plus."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "senior-business-analyst-pmo",
+      "hot": false,
+      "group": "biz",
+      "title": "Senior Business Analyst (PMO)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thu thập, phân tích và làm rõ yêu cầu nghiệp vụ từ khách hàng, đối tác hoặc các phòng ban nội bộ.",
+      "stack": [
+        "SQL"
+      ],
+      "keywords": "senior business analyst pmo sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-pmo/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thu thập, phân tích và làm rõ yêu cầu nghiệp vụ từ khách hàng, đối tác hoặc các phòng ban nội bộ.",
+          "Phân tích quy trình nghiệp vụ hiện tại, đề xuất cải tiến, tối ưu hóa mô hình vận hành.",
+          "Chuyển đổi yêu cầu nghiệp vụ thành tài liệu đặc tả chức năng (SRS/FRD/BRD) cho đội phát triển.",
+          "Phối hợp với kiến trúc sư, đội phát triển và QA để đảm bảo sản phẩm được xây dựng đúng yêu cầu.",
+          "Tham gia xây dựng luồng nghiệp vụ, mockup màn hình, use case, user story.",
+          "Kiểm thử chấp nhận (UAT) và hỗ trợ triển khai hệ thống.",
+          "Đào tạo người dùng cuối, chuẩn bị tài liệu hướng dẫn khi cần."
+        ],
+        "department": "PMO",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Tốt nghiệp đại học ngành Hệ thống thông tin, Công nghệ thông tin, Khoa học máy tính hoặc liên quan.",
+              "Tối thiểu 05 năm kinh nghiệm làm Business Analyst trong mảng hệ thống phần mềm.",
+              "Hiểu biết rõ về: Hệ thống tính cước (Billing systems) Hệ thống quản lý khách hàng (Customer Management / CRM) Quy trình đăng ký dịch vụ, đối soát cước, quản lý vòng đời khách hàng",
+              "Có kinh nghiệm phân tích dữ liệu và nghiệp vụ trong các hệ thống lớn (ưu tiên viễn thông hoặc tài chính).",
+              "Khả năng viết tài liệu rõ ràng, logic, dễ hiểu.",
+              "Kỹ năng giao tiếp, trình bày và phân tích tốt."
+            ]
+          },
+          {
+            "title": "Kỹ năng ưu tiên",
+            "items": [
+              "Có kinh nghiệm làm việc với Agile/Scrum. Biết sử dụng các công cụ: Jira, Confluence, Figma/Balsamiq, SQL cơ bản. Kiến thức về API, mô hình dữ liệu, tích hợp hệ thống."
+            ]
+          }
+        ],
+        "skills": [
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-product-owner-ncp",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst & Product Owner (NCP)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Own the product vision, roadmap, and feature prioritization for AI Platform products, including: AI Inference Services (LLM APIs, Model Serving, AI Gateway,…",
+      "stack": [
+        "Kubernetes",
+        "OpenStack",
+        "AWS",
+        "Azure",
+        "vLLM"
+      ],
+      "keywords": "business analyst & product owner ncp kubernetes openstack aws azure vllm triton sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-product-owner-ncp/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Own the product vision, roadmap, and feature prioritization for AI Platform products, including: AI Inference Services (LLM APIs, Model Serving, AI Gateway, AI Studio, AI Agent Platform). AI Infrastructure Services (GPU VM, GPU Container, Bare Metal, Storage, Networking, AI Cloud Platform).",
+          "Conduct market research, competitor benchmarking, and customer discovery to identify opportunities and define product strategy.",
+          "Translate business objectives into measurable product outcomes and KPIs.",
+          "Gather and analyze requirements from customers, internal stakeholders, engineering teams, and business units.",
+          "Create Product Requirement Documents (PRD), Business Requirement Documents (BRD), User Stories, Acceptance Criteria, Process Flows, and Software Requirement Specifications (SRS).",
+          "Define product workflows, service lifecycle, billing scenarios, quota management, IAM, resource provisioning, and operational processes.",
+          "Own and maintain the product backlog and sprint priorities.",
+          "Collaborate closely with Engineering, Architecture, Operations, UI/UX, and GTM teams throughout the product lifecycle.",
+          "Drive product releases from ideation to launch and continuous improvement.",
+          "Monitor product performance and user feedback to continuously optimize product experience and business outcomes.",
+          "Present product strategy, roadmap, and business cases to leadership.",
+          "Work with Sales, Customer Success, and Marketing teams to support product positioning and customer adoption.",
+          "Coordinate cross-functional teams to ensure successful product delivery."
+        ],
+        "department": "NCP",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Must-have",
+            "items": [
+              "5+ years of experience as a Product Owner, Product Manager, Business Analyst, or similar product role.",
+              "Strong experience managing software products throughout the entire product lifecycle.",
+              "Hands-on experience with Agile/Scrum methodologies and backlog management.",
+              "Strong analytical and problem-solving skills.",
+              "Excellent communication and stakeholder management skills.",
+              "Fluent in English for product documentation and cross-functional collaboration."
+            ]
+          },
+          {
+            "title": "Preferred for AI Infrastructure Platform",
+            "items": [
+              "Solid understanding of Cloud Computing concepts: Virtual Machines (VM) Containers/Kubernetes GPU Infrastructure Networking Storage Systems Bare Metal Services",
+              "Familiarity with cloud platforms such as AWS, Azure, Google Cloud, OpenStack, or similar environments.",
+              "Understanding of cloud billing, quota management, IAM/RBAC, monitoring, and resource orchestration."
+            ]
+          },
+          {
+            "title": "Preferred for AI Inference Platform",
+            "items": [
+              "Understanding of Generative AI and Large Language Model (LLM) ecosystems.",
+              "Familiarity with Model Serving technologies such as vLLM, NVIDIA NIM, Triton Inference Server, Ray Serve, or similar solutions.",
+              "Understanding of AI APIs, AI Agents, Embeddings, RAG, Vector Databases, and AI application architecture.",
+              "Experience working with AI/ML products, AI platforms, or SaaS products is highly preferred."
+            ]
+          },
+          {
+            "title": "Nice to Have",
+            "items": [
+              "Experience in Cloud, AI, SaaS, DevOps, MLOps, or Platform Products.",
+              "Experience working with APIs and system integrations.",
+              "Basic knowledge of SQL and data analysis.",
+              "Familiarity with AI-assisted product development tools such as Copilot, Claude, Cursor, Lovable, or similar AI productivity tools."
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "OpenStack",
+          "AWS",
+          "Azure",
+          "vLLM",
+          "Triton",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "python-engineer",
+      "hot": false,
+      "group": "eng",
+      "title": "Python Engineer",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Platform as a Service Platform Development:",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Redis",
+        "Kafka"
+      ],
+      "keywords": "python engineer cloud python kubernetes docker redis kafka ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/python-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Platform as a Service Platform Development:",
+          "Participate in the development of Container Engine platform (Docker, Kubernetes)",
+          "Participating in the development of subsystems",
+          "Participating in Cloud Migration projects, FPT’s strategic projects",
+          "Application Server, Database as a Service",
+          "API Management",
+          "Application Performance Monitoring"
+        ],
+        "department": "Cloud",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Graduated from Faculty of IT / Mathematics / Computer Science / … Universities of Technology, Engineering (HUST, VNU, …)",
+              "Core Expertise: Senior/Lead Backend Engineer with 5+ years of professional backend engineering experience with Python",
+              "Experience in developing microservices, APIs, good at architecture design.",
+              "Languages: Python, FastAPI, Kafka, Redis, grpc",
+              "Modern DevOps Mindset: CI/CD, Docker, Kubernetes",
+              "Database: SQL & no-SQL",
+              "Experience in using AI Coding Tools & Agents"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Redis",
+          "Kafka",
+          "CI/CD",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-product-owner",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst/Product Owner (Self Driving)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Develop xPlat Platform (Platform as a Service.)",
+      "stack": [],
+      "keywords": "business analyst/product owner cloud",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-product-owner/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Develop xPlat Platform (Platform as a Service.)",
+          "Responsible for the product for one or more initiatives. Playing a well-defined Product Owner role in the scrum guide ensures an efficient sprint.",
+          "Work closely with scrum team including Development team and Scrum master to discuss together to clarify customer requirements during the sprint.",
+          "Work with customers to identify and clarify customer needs. Interview customer needs, work with sales to develop, arrange new features.",
+          "Work closely with Designer, Marketing team to prepare to launch new products and features.",
+          "Work with the Sales team to assess customer needs and identify sales advantages. Analyze competitors and track competitor features.",
+          "Work with technical teams, other scrum teams in the company to give product information if needed. Participate in technology sharing and learning activities.",
+          "Create and maintain user persona",
+          "Create and maintain customer journey",
+          "JIRA / Confluence",
+          "Data analytics tool",
+          "Be able to listen, speak, read and write well in English"
+        ],
+        "department": "Cloud",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Have BA/PO experience",
+              "Knowledge of Agile / Scum",
+              "Ability to research competitors, interview customers",
+              "Ability to prototype and work with customers",
+              "Ability to write User Story",
+              "Ability to draw wireframe and work with Developer",
+              "Ability to plan data collection, and analyze data after product launch for evaluation",
+              "Ability to work under high pressure, with a sense of responsibility",
+              "Capable of teamwork",
+              "Good problem-solving skills",
+              "Desire to learn and test new technology",
+              "Demands high-quality products"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-engineer-ai-global",
+      "hot": false,
+      "group": "ai",
+      "title": "AI Engineer (AI Global)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design and optimize conversation flows, automation flows, and tool-integration/operational workflows for AI Agents to meet each client’s requirements.",
+      "stack": [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "LlamaIndex"
+      ],
+      "keywords": "ai engineer ai global python langchain langgraph llamaindex",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-ai-global/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design and optimize conversation flows, automation flows, and tool-integration/operational workflows for AI Agents to meet each client’s requirements.",
+          "Develop and deploy AI applications powered by LLMs, including building RAG pipelines (data processing, embeddings, vector search, and prompt optimization) using vector databases and search/embedding tools.",
+          "Evaluate the performance and quality of LLMs and RAG systems.",
+          "Monitor production performance and proactively identify and fix operational issues and inaccurate or off-target AI responses, covering latency, cost, reliability, and response quality.",
+          "Combine programming (Python, vector databases) with linguistic analysis to “teach” AI Agents to respond accurately and naturally, minimizing hallucination.",
+          "Build and optimize internal tools that automate the deployment and operation of AI projects.",
+          "Propose and implement platform improvements based on market trends and customer feedback.",
+          "Research, evaluate, and adopt emerging LLM technologies, frameworks, and best practices."
+        ],
+        "department": "AI Global",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree in Computer Science, Artificial Intelligence, Data Science, or a related field.",
+              "Minimum 2 years of experience in Machine Learning or AI development.",
+              "Hands-on experience in Natural Language Processing (NLP) is highly preferred.",
+              "Solid understanding of Large Language Models (LLMs) and Generative AI technologies.",
+              "Experience building production-grade RAG systems.",
+              "Strong Python programming skills.",
+              "Experience with one or more LLM frameworks such as LangChain or LlamaIndex.",
+              "Familiarity with vector databases and semantic search technologies.",
+              "Interest in or background in linguistics, applied language studies, or dialogue/content writing is a plus, to help refine AI response accuracy, tone, and naturalness.",
+              "Experience with agent/automation orchestration tools (e.g., n8n, LangGraph, Flowise) is a plus.",
+              "Understanding of embeddings, transformers, prompt engineering, and retrieval pipelines.",
+              "Experience working with REST APIs and backend development.",
+              "Good problem-solving, analytical, and research skills.",
+              "Strong written and spoken English communication skills."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "LangChain",
+          "LangGraph",
+          "LlamaIndex"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-genai",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst (GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Collaborate with Product Managers and stakeholders to gather, analyze, and clarify business requirements.",
+      "stack": [],
+      "keywords": "business analyst genai",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Collaborate with Product Managers and stakeholders to gather, analyze, and clarify business requirements.",
+          "Translate business requirements into detailed product documentation, including: User Stories Acceptance Criteria Feature Specifications Business Flow / Process Flow Basic Wireframes",
+          "Analyze business processes and user journeys to propose optimal solutions from both business and user experience perspectives.",
+          "Work closely with Designers, Software Engineers, and QA throughout the product development lifecycle.",
+          "Clarify requirements during implementation and support engineering teams in resolving business-related issues.",
+          "Participate in feature validation and user acceptance testing to ensure delivered solutions meet business requirements.",
+          "Gather customer and stakeholder feedback and recommend product improvements.",
+          "Stay up to date with emerging AI technologies, market trends, and best practices to contribute innovative product ideas.",
+          "PMP certificate",
+          "Experienced in AI"
+        ],
+        "department": "GenAI",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Experience",
+            "items": [
+              "2–4 years of experience as a Business Analyst, Product Analyst, or similar role in software development.",
+              "Experience working in Agile/Scrum environments.",
+              "Strong experience creating: User Stories Process Flows Acceptance Criteria Business Analysis documentation",
+              "Ability to read and understand technical documentation in English."
+            ]
+          },
+          {
+            "title": "Technical Knowledge",
+            "items": [
+              "Good understanding of the Software Development Life Cycle (SDLC).",
+              "Strong analytical thinking and process modeling skills.",
+              "Basic understanding of: REST APIs Databases Authentication mechanisms System integrations",
+              "Ability to bridge business requirements, user experience, and technical solutions."
+            ]
+          },
+          {
+            "title": "Skills",
+            "items": [
+              "Strong analytical and problem-solving abilities.",
+              "Able to ask the right questions to uncover real business needs rather than simply documenting requirements.",
+              "Capable of breaking down complex problems into clear and actionable requirements.",
+              "Systems thinking with the ability to understand relationships across different product components.",
+              "Excellent communication and cross-functional collaboration skills.",
+              "Self-driven, responsible, and able to work independently.",
+              "Fast learner with the ability to adapt quickly to new technologies and business domains."
+            ]
+          },
+          {
+            "title": "Requirements",
+            "items": [
+              "Experience working on Platform products, SaaS solutions, Workflow Builders, or Low-code/No-code platforms.",
+              "Knowledge of Generative AI, Large Language Models (LLMs), AI Agents, or Prompt Engineering.",
+              "Hands-on experience with API tools such as Postman or Swagger/OpenAPI.",
+              "Familiarity with collaboration and design tools including: Figma, Miro, Draw.io, Notion, Jira"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "project-manager-ai-delivery-2",
+      "hot": false,
+      "group": "biz",
+      "title": "Project Manager (AI Delivery)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Define project scope, goals and deliverables that support business goals in collaboration with senior management and stakeholders.",
+      "stack": [],
+      "keywords": "project manager ai delivery",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-ai-delivery-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Define project scope, goals and deliverables that support business goals in collaboration with senior management and stakeholders.",
+          "Develop and maintain project plans, schedules, budgets, and resource allocation to ensure project success.",
+          "Manage day-to-day project activities, including scheduling, status updates, risk management, issue resolution, and team communication.",
+          "Monitor project progress and adjust plans as needed to ensure delivery of high-quality solutions on time and within budget.",
+          "Coordinate project team activities and ensure effective communication and collaboration between team members. (Presale, BA, DA, Dev, AI Engineers…)",
+          "Build and maintain relationships with internal and external stakeholders to ensure project success.",
+          "Ensure project documentation is complete, current, and stored appropriately.",
+          "Continuously evaluate project performance and implement improvements as necessary.",
+          "PMP certificate",
+          "Experienced in AI"
+        ],
+        "department": "AI Delivery",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "At least 3 years of working experience in a similar position",
+              "Thorough understanding of the Project Management process’ standards",
+              "Experienced in project management with a corporate’s client",
+              "Experienced managing multiple projects at the same time"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-engineer-self-driving-cloud",
+      "hot": false,
+      "group": "ai",
+      "title": "AI Engineer (Self-Driving Cloud)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design, build, and deploy AI/ML models to solve business challenges.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Qdrant",
+        "Spark"
+      ],
+      "keywords": "ai engineer cloud python kubernetes docker qdrant spark pytorch tensorflow langchain langgraph llamaindex ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-self-driving-cloud/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design, build, and deploy AI/ML models to solve business challenges.",
+          "Develop AI applications leveraging:",
+          "Large Language Models (LLMs)",
+          "Retrieval-Augmented Generation (RAG)",
+          "AI Agents",
+          "Knowledge Graphs",
+          "Semantic Search",
+          "Build and optimize Prompt Engineering, Agent Workflows, and Agent Orchestration frameworks.",
+          "Fine-tune and optimize AI models when necessary.",
+          "Evaluate and continuously improve AI system performance, accuracy, and response quality.",
+          "AI Platform Engineering",
+          "Design scalable and maintainable AI system architectures.",
+          "Build pipelines for model training, deployment, monitoring, and lifecycle management.",
+          "Integrate AI capabilities with enterprise systems, databases, APIs, and existing applications.",
+          "Ensure solutions meet requirements for:",
+          "Performance",
+          "Reliability",
+          "Security",
+          "Scalability",
+          "Cost efficiency",
+          "Research and Innovation",
+          "Stay current with emerging AI technologies and industry trends.",
+          "Conduct Proofs of Concept (PoCs) for potential AI solutions.",
+          "Research and recommend suitable models, frameworks, and architectures for specific business use cases.",
+          "Evaluate and select appropriate open-source models and commercial AI services.",
+          "Technical Leadership and Collaboration",
+          "Work closely with Data Engineers, Software Engineers, Product Managers, and business stakeholders.",
+          "Mentor and support team members when needed.",
+          "Participate in technical design reviews and architectural decision-making.",
+          "Contribute to the establishment of AI development standards, best practices, and governance processes",
+          "Proficiency in Python and hands-on experience with: PyTorch, TensorFlow, Hugging Face, LangChain, LangGraph, LlamaIndex, CrewAI, AutoGen Or equivalent frameworks",
+          "Strong SQL skills.",
+          "Solid understanding of NoSQL databases.",
+          "Experience with Vector Databases such as: Milvus, Qdrant, Weaviate, Pinecone, Chroma",
+          "Experience processing large-scale data using: Pandas, Apache Spark, Ray Or equivalent tools",
+          "Hands-on experience with: Docker, Kubernetes, Git, CI/CD pipelines",
+          "Related DevOps tools",
+          "Knowledge of: Cloud-based AI deployment, MLOps, Model Serving",
+          "Monitoring and Observability",
+          "Model Lifecycle Management",
+          "Software Engineering",
+          "Strong software design and development background.",
+          "Understanding of:",
+          "Stateful and Stateless APIs",
+          "Microservices Architecture",
+          "Event-Driven Architecture",
+          "Ability to build complex, production-grade AI systems."
+        ],
+        "department": "Cloud",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Education",
+            "items": [
+              "Bachelor’s or Master’s degree in one of the following fields: Computer Science, Artificial Intelligence … Or a related discipline"
+            ]
+          },
+          {
+            "title": "Experience",
+            "items": [
+              "Minimum 5 years of experience in one or more of the following areas:",
+              "AI Engineering",
+              "Machine Learning",
+              "Data Science",
+              "Software Engineering",
+              "Minimum 2 years of hands-on experience with Generative AI and Large Language Models (LLMs).",
+              "Proven experience deploying AI solutions in production environments involving Big Data and real-time processing requirements.",
+              "Experience working on large-scale enterprise projects is highly preferred"
+            ]
+          },
+          {
+            "title": "Technical Skills",
+            "items": [
+              "AI & Machine Learning",
+              "Strong understanding of:",
+              "Machine Learning",
+              "Deep Learning",
+              "Natural Language Processing (NLP)",
+              "Computer Vision",
+              "Generative AI",
+              "Experience with:",
+              "Foundation Models",
+              "Production deployment of:",
+              "RAG systems",
+              "Agentic AI systems",
+              "Embedding Models",
+              "Vector Search",
+              "Model Evaluation frameworks"
+            ]
+          },
+          {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Experience building large-scale data and AI platforms, including:",
+              "Enterprise AI Assistants",
+              "Internal Chatbots",
+              "AI Copilots",
+              "AI Agent Platforms",
+              "Knowledge Management Platforms",
+              "Data Intelligence Platforms"
+            ]
+          },
+          {
+            "title": "Knowledge of",
+            "items": [
+              "Responsible AI",
+              "AI Governance",
+              "AI Security",
+              "LLM Evaluation",
+              "Prompt Security",
+              "Contributions to AI-related open-source projects.",
+              "Professional certifications in AI, Cloud, or Data Engineering."
+            ]
+          },
+          {
+            "title": "Soft Skills",
+            "items": [
+              "Strong analytical thinking and problem-solving skills.",
+              "Excellent communication and presentation abilities.",
+              "Self-driven and capable of working independently.",
+              "Passion for continuous learning and emerging technologies.",
+              "Technical leadership and mentoring capabilities"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Qdrant",
+          "Spark",
+          "PyTorch",
+          "TensorFlow",
+          "LangChain",
+          "LangGraph",
+          "LlamaIndex",
+          "CI/CD",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "fullstack-engineer-self-driving",
+      "hot": false,
+      "group": "eng",
+      "title": "Fullstack Engineer (Self driving)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Build and maintain Admin Console, Tenant Portal, Observability Dashboard using React / Next.js",
+      "stack": [
+        "Python",
+        "Java",
+        "TypeScript",
+        "ReactJS",
+        "Kubernetes"
+      ],
+      "keywords": "fullstack engineer cloud python java typescript reactjs kubernetes docker postgresql redis kafka gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-self-driving/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Build and maintain Admin Console, Tenant Portal, Observability Dashboard using React / Next.js",
+          "Implement API Catalog, Model Catalog, Agent Registry, Event Catalog UI",
+          "Develop real-time monitoring dashboards: metrics, logs, dependency graph visualization",
+          "Build forms and workflows for policy management, tenant provisioning, rate limit config",
+          "Ensure responsive, accessible UI with performance optimization",
+          "Design and implement RESTful/gRPC APIs for Core Platform services",
+          "Develop Tenant Management service: auto-provision, isolation, quota management",
+          "Implement Cost Engine: usage metering, chargeback calculation, budget alerts",
+          "Build API & Event Registry: catalog CRUD, version management, consumer tracking",
+          "Integrate with Kafka, PostgreSQL, Redis, Neo4j as part of ODS (Operational Data Store)",
+          "Implement authentication and authorization flows using Ory Stack (Kratos/Hydra/Keto), SPIFFE/SPIRE",
+          "Work with Kubernetes (K8s) for deployment, scaling, and configuration management",
+          "Write Helm charts and deployment configurations for components",
+          "Implement observability hooks: structured logging, metrics collection, distributed tracing",
+          "Participate in code reviews, write unit and integration tests",
+          "Work closely with Tech Lead, Product Manager, and Solution Architects",
+          "Participate in sprint planning, backlog grooming, and retrospectives (Agile/Scrum)",
+          "Write technical documentation for APIs and internal services",
+          "Support junior developers through code reviews and pair programming"
+        ],
+        "department": "Cloud",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree in Computer Science, Information Technology, Software Engineering or equivalent",
+              "Graduates from HUST, VNU, RMIT, UET or equivalent universities preferred",
+              "Minimum 2 years of professional fullstack development experience",
+              "Proven experience building and shipping production web applications",
+              "Experience with microservices architecture and RESTful API design",
+              "Proficient in React.js / Next.js, TypeScript",
+              "State management: Redux, React Query",
+              "UI component libraries: Tailwind CSS, Material UI",
+              "Proficient in at least one: Java, Go (preferred), Python",
+              "Experience with PostgreSQL, Kafka, Redis (caching, pub/sub, counters, …), Neo4j",
+              "REST API design, gRPC basics, OpenAPI/Swagger specification",
+              "Docker and Kubernetes: deployment, config maps, services",
+              "CI/CD pipelines: GitHub Actions, GitLab CI, or ArgoCD",
+              "Knowledge with OAuth2 / OIDC flows, JWT, mTLS basics",
+              "Good English: reading technical documentation, writing API docs",
+              "Strong problem-solving and analytical thinking",
+              "Team player with good communication skills in an Agile environment"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "TypeScript",
+          "ReactJS",
+          "Kubernetes",
+          "Docker",
+          "PostgreSQL",
+          "Redis",
+          "Kafka",
+          "GitLab",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "program-manager-japan-market",
+      "hot": false,
+      "group": "biz",
+      "title": "Program Manager (Japan Market)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Drive end-to-end execution of AI business programs for the Japan market.",
+      "stack": [],
+      "keywords": "program manager ai",
+      "source": "https://fptsmartcloud.com/job_opportunity/program-manager-japan-market/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Drive end-to-end execution of AI business programs for the Japan market.",
+          "Coordinate cross-functional teams across Sales, Consulting, Product, Delivery, Customer Success, and Operations.",
+          "Establish structured workflows, governance, KPI tracking, reporting, and operational cadence.",
+          "Manage program timelines, risks, dependencies, and escalation processes.",
+          "Build and maintain visibility across pipeline, POC, pilot, implementation, and post-sales activities.",
+          "Coordinate execution of the Japan GTM strategy for AI Agents, Voice AI Agents, and AI Mentor solutions.",
+          "Work closely with: FPT Japan Holdings FPT Consulting Japan Sales/account teams in Tokyo, Osaka, Nagoya, and strategic partners.",
+          "Support market penetration initiatives across target domains: Banking & Financial Services Manufacturing Retail & E-commerce Logistics Healthcare",
+          "Act as the main coordination point between Japan stakeholders and Vietnam delivery/product teams.",
+          "Ensure alignment between sales expectations, solution scope, delivery capability, and product roadmap.",
+          "Facilitate communication across multilingual and multicultural teams.",
+          "Organize steering meetings, project reviews, business updates, and executive reporting.",
+          "Coordinate presales activities including: Demo planning Requirement gathering Proposal tracking POC/Pilot execution",
+          "Ensure smooth handover from presales to implementation and AMS/support teams.",
+          "Monitor delivery quality, timeline, resource allocation, and customer satisfaction.",
+          "Support continuous improvement of delivery and collaboration processes.",
+          "Identify operational gaps and drive scalable process improvements.",
+          "Build reusable frameworks, templates, SOPs, and reporting mechanisms.",
+          "Support localization initiatives for Japanese market readiness: Product localization Workflow adaptation Japanese business process alignment Customer support readiness",
+          "Contribute to long-term operational scaling for Japan business growth.",
+          "Number of successful POCs/Pilots converted to production.",
+          "Program delivery quality and timeline adherence.",
+          "Revenue/pipeline coordination support effectiveness.",
+          "Stakeholder satisfaction across JP & VN teams.",
+          "Operational efficiency improvements.",
+          "Customer retention and expansion support."
+        ],
+        "department": "AI",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Experience",
+            "items": [
+              "3+ years of experience in: Program Management Business Operations Consulting SaaS/Technology Project Management AI/Digital Transformation programs",
+              "Experience working with enterprise customers or large-scale cross-functional programs.",
+              "Experience in Japan market or Japanese clients is highly preferred"
+            ]
+          },
+          {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Experience in AI/GenAI, SaaS, Contact Center, Automation, or Digital Transformation domains.",
+              "Experience working with Japanese enterprises or SI ecosystem.",
+              "PMP, Scrum, Agile, or equivalent certifications are a plus.",
+              "Japanese language capability (Business Japanese/N1) is highly preferred.",
+              "Experience coordinating offshore/onshore delivery models is a strong advantage."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "database",
+      "hot": false,
+      "group": "ops",
+      "title": "Database Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Assess the current database environment, including database engine, deployment model, version, database size, data structure, read/write frequency, and…",
+      "stack": [
+        "Python",
+        "OpenStack",
+        "AWS",
+        "Azure",
+        "GCP"
+      ],
+      "keywords": "database engineer cloud python openstack aws azure gcp postgresql mysql mongodb redis kafka prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/database/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Assessment & Architecture Design: Assess the current database environment, including database engine, deployment model, version, database size, data structure, read/write frequency, and system dependencies, to propose an appropriate database architecture.",
+          "Database System Deployment: Install and configure Single Instance, Primary-Secondary, Multi-Primary, and Database Clustering architectures for open-source databases, including MySQL/MariaDB, PostgreSQL, MongoDB, and Redis, as well as search and streaming systems such as OpenSearch/ELK and Kafka.",
+          "High Availability & Disaster Recovery: Design, implement, and operate HA/DR solutions, including Sync/Async Replication, Automated Failover, and cluster configurations such as Galera, InnoDB Cluster, Patroni, MongoDB Replica Set/Sharded Cluster, and Redis Sentinel/Cluster.",
+          "Backup, Restore & Recovery: Establish comprehensive backup strategies, perform regular restore testing, and configure Point-in-Time Recovery (PITR) for critical systems, ensuring RPO ≤ 1 hour and RTO ≤ 4 hours.",
+          "Database Migration: Utilize specialized Database Migration (CDC/Replication) tools for open-source databases and perform cut-over activities following a standardized playbook: Stop Write → Final Delta Sync → Switch Connection String → Verify. Re-establish reverse replication after cut-over to ensure rollback capability.",
+          "Monitoring & Alerting: Deploy and maintain comprehensive Database Monitoring and Alerting systems to proactively detect abnormalities related to performance, capacity, replication, and cluster health.",
+          "Performance Optimization: Optimize Indexes, Queries, Buffer Pool/Shared Buffers, and Cache parameters, and perform Capacity Planning to ensure database performance and scalability.",
+          "Hypervisor Optimization for Databases: Collaborate with the infrastructure team to optimize resources at the virtualization layer (OpenStack, VMware), including CPU Pinning/NUMA configuration, Memory allocation, Storage I/O, and Network optimization, to ensure optimal performance of database services running on top of the virtualization platform.",
+          "Operations Support: Troubleshoot database incidents and issues, and develop Knowledge Base (KB) documentation and training materials to support L2 operations teams."
+        ],
+        "department": "Cloud",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Required Skills",
+            "items": [
+              "Open-source Database Administration: Minimum 2–3 years of hands-on experience in designing, deploying, operating, and performing advanced optimization for PostgreSQL, MySQL/MariaDB, MongoDB, and Redis.",
+              "High Availability & Clustering: Proven hands-on experience deploying and administering Cluster/High Availability (HA) architectures, including Patroni, Galera Cluster, InnoDB Cluster, MongoDB Replica Set/Sharded Cluster, and Redis Sentinel/Cluster. Strong troubleshooting skills for replication issues such as Replication Lag, Split-brain, and Broken Replication.",
+              "Backup/Restore & PITR: Experience designing and operating comprehensive backup and restore strategies, performing regular restore testing, and configuring Point-in-Time Recovery (PITR) for critical systems.",
+              "Open-source Database Migration: Hands-on experience migrating open-source database systems using CDC/Replication tools such as Debezium, AWS DMS, or equivalent. Experience with cut-over activities and post-migration data integrity validation.",
+              "Monitoring & Alerting: Experience deploying and configuring database monitoring tools such as Prometheus/Grafana, Zabbix, PMM, or equivalent to monitor database performance, capacity, cluster health, and replication status.",
+              "Performance Tuning & Capacity Planning: Strong experience in Index Optimization, Query Tuning, Cache/Buffer Configuration, and capacity planning to improve system performance and optimize infrastructure costs.",
+              "Search & Streaming Systems: Hands-on experience deploying and operating OpenSearch/ELK Stack and Apache Kafka.",
+              "Hypervisor Knowledge: Practical knowledge and experience with virtualization platforms such as OpenStack and/or VMware, including CPU/Memory Allocation, Storage I/O, and Networking. Ability to optimize resources at the hypervisor layer to improve the performance of database services running on top of it.",
+              "Documentation & Communication: Strong technical documentation and communication skills, with the ability to work effectively with stakeholders, including customers and operations teams."
+            ]
+          },
+          {
+            "title": "Preferred / Nice-to-have Skills",
+            "items": [
+              "Experience with Debezium, Kafka Connect, or other CDC/Replication tools.",
+              "Experience operating and optimizing open-source databases across different workloads, such as OLTP and OLAP.",
+              "Experience deploying and operating DBaaS (Database as a Service) on public cloud platforms, such as Amazon RDS or equivalent services.",
+              "Experience with Proxy/Connection Pooling solutions such as ProxySQL, HAProxy, and PgBouncer.",
+              "Scripting skills in Python and/or Bash for task automation.",
+              "Relevant Database, Cloud (AWS/GCP/Azure), or Virtualization (VMware/OpenStack) certifications are a plus.",
+              "English: Good reading comprehension and communication skills in English."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "OpenStack",
+          "AWS",
+          "Azure",
+          "GCP",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "Kafka",
+          "Prometheus",
+          "Grafana"
+        ]
+      }
+    },
+    {
+      "id": "backend-engineer-ai-infrastructure",
+      "hot": false,
+      "group": "eng",
+      "title": "Backend Engineer (AI Infrastructure)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Usage metering (GPU, API, storage)",
+      "stack": [
+        "Python",
+        "Golang",
+        "Kubernetes",
+        "Docker",
+        "AWS"
+      ],
+      "keywords": "backend engineer ncp python golang kubernetes docker aws azure gcp postgresql mysql redis kafka",
+      "source": "https://fptsmartcloud.com/job_opportunity/backend-engineer-ai-infrastructure/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Usage metering (GPU, API, storage)",
+          "Billing engine & pricing logic",
+          "Credit / quota management",
+          "AI training jobs",
+          "Inference APIs",
+          "Container / GPU lifecycle",
+          "High throughput (large volume of usage events)",
+          "Low latency (real-time credit deduction)",
+          "Accuracy & consistency"
+        ],
+        "department": "NCP",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "3+ years of backend development experience",
+              "Proficient in Golang/ Python",
+              "Strong experience with: Distributed systems Microservices architecture REST/gRPC APIs",
+              "Hands-on with: Message queues (Kafka / RabbitMQ) Cache (Redis) Databases (PostgreSQL / MySQL)",
+              "Experience building: Billing / payment / metering systems Event-driven or stream processing systems",
+              "Familiar with: Kubernetes / Docker Cloud platforms (AWS / GCP / Azure)"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Kubernetes",
+          "Docker",
+          "AWS",
+          "Azure",
+          "GCP",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "Kafka"
+        ]
+      }
+    },
+    {
+      "id": "full-stack-engineer-ai-infrastructure",
+      "hot": false,
+      "group": "eng",
+      "title": "Full-stack Engineer (AI Infrastructure)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Work with microservices architecture and integrate with internal or external services.",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "Kubernetes",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "keywords": "full-stack engineer ncp python reactjs kubernetes docker postgresql mysql redis grafana ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/full-stack-engineer-ai-infrastructure/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Work with microservices architecture and integrate with internal or external services.",
+          "Design, develop, and maintain backend APIs for infrastructure services.",
+          "Build and improve business logic for infrastructure provisioning, resource lifecycle management, billing, usage tracking, audit logs, and data synchronization.",
+          "Work with relational or NoSQL databases, ORM tools, background jobs, and workers.",
+          "Integrate with Redis, message queues, internal services, and cloud infrastructure services.",
+          "Implement robust error handling, retries, idempotency, logging, monitoring, and operational visibility for production systems.Develop frontend features using React.js, Next.js, or similar frameworks when require",
+          "Work with Docker, Kubernetes, CI/CD, Grafana, Sentry, or similar infrastructure and observability tools."
+        ],
+        "department": "NCP",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Experience: Middle level: 3+ years of backend engineering experience Senior level: 5+ years of backend engineering experience",
+              "Strong experience with Python backend development and FastAPI or similar frameworks",
+              "Solid understanding of RESTful API design, async programming, request validation, authentication, and authorization",
+              "Database Experience: MySQL or PostgreSQL with ORM tools like SQLAlchemy or SQLModel; Database migrations using Alembic or equivalent",
+              "Experience with microservices architecture and service-to-service integration",
+              "Experience with Redis, background jobs, schedulers, or message queue systems like Celery or Dramatiq",
+              "Familiarity with Docker, Kubernetes, Git, CI/CD workflows, Grafana, Sentry, or similar tools",
+              "Strong debugging skills, including reading logs, tracing issues, and resolving incidents in staging or production",
+              "Understanding of backend system design concepts: transactions, idempotency, retries, timeouts, concurrency control, and data consistency"
+            ]
+          },
+          {
+            "title": "Personal Skills",
+            "items": [
+              "Take pride in building high-quality systems and owning your work",
+              "Communicate clearly and collaborate effectively across teams",
+              "Naturally curious and driven to learn proactively",
+              "Senior-Level ExpectationsIn addition to the competencies above, Senior candidates are expected to: Design backend modules or services from scratch and improve existing systems Review technical designs, review code, and mentor Middle or Junior engineers Possess strong understanding of database performance, distributed jobs, race conditions, locking, cache strategy, and observability Handle production incidents, identify root causes, and implement long-term solutions Work directly with product or business stakeholders to translate requirements into technical designs Make pragmatic engineering decisions that balance delivery speed, reliability, and maintainability"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "Kubernetes",
+          "Docker",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "Grafana",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "devops-engineer-ncp",
+      "hot": false,
+      "group": "ops",
+      "title": "Devops Engineer (NCP)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Kubernetes clusters",
+      "stack": [
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Ansible",
+        "Linux"
+      ],
+      "keywords": "devops engineer ncp kubernetes docker terraform ansible linux kafka prometheus grafana jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/devops-engineer-ncp/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Kubernetes clusters",
+          "CI/CD pipelines",
+          "Container platforms",
+          "Internal developer platforms",
+          "Docker images",
+          "Container registries",
+          "Secrets management",
+          "Networking",
+          "Observability systems",
+          "Build automation pipelines for: Build Testing Security scanning Deployment",
+          "Optimize release workflows",
+          "Design and implement GitOps workflows",
+          "Automate infrastructure provisioning",
+          "Prometheus",
+          "Grafana",
+          "Loki",
+          "ELK Stack",
+          "System availability",
+          "Performance",
+          "Cost efficiency",
+          "Troubleshoot production systems and incidents",
+          "Implement security best practices",
+          "Manage IAM/RBAC policies",
+          "Design backup and disaster recovery strategies",
+          "Perform capacity planning",
+          "Support multi-environment deployments"
+        ],
+        "department": "NCP",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Must-have",
+            "items": [
+              "3+ years of experience in DevOps/SRE roles",
+              "Strong hands-on experience with: Docker Kubernetes Linux Bash scripting",
+              "Experience with: CI/CD pipelines GitHub Actions / GitLab CI / Jenkins Terraform / Ansible Nginx / API Gateway",
+              "Solid understanding of: Networking DNS SSL/TLS Reverse proxy"
+            ]
+          },
+          {
+            "title": "Nice-to-have",
+            "items": [
+              "Experience with: GPU infrastructure NVIDIA stack AI workload deployment Kafka Temporal ArgoCD Service mesh",
+              "Experience operating: High-traffic systems Multi-cluster environments Cloud-native platforms"
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "Kafka",
+          "Prometheus",
+          "Grafana",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "mlops-engineer-ai-inference-platform-llm-serving-optimization",
+      "hot": false,
+      "group": "ai",
+      "title": "MLOps Engineer – AI Inference Platform (LLM Serving & Optimization)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design, deploy, and operate LLM inference services on the Model-as-a-Service (MaaS) marketplace, serving open-source foundation models (Llama 4, Qwen3,…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Linux",
+        "vLLM"
+      ],
+      "keywords": "mlops engineer – ai inference platform ncp python kubernetes docker linux vllm prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/mlops-engineer-ai-inference-platform-llm-serving-optimization/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design, deploy, and operate LLM inference services on the Model-as-a-Service (MaaS) marketplace, serving open-source foundation models (Llama 4, Qwen3, DeepSeek V3/R1) and multi-modal workloads (text generation, TTS, STT, vision, embeddings) at production scale across Vietnam and Japan regions.",
+          "Tune and optimize inference engines (vLLM, TensorRT-LLM, SGLang, NVIDIA Dynamo, LMCache) using continuous batching, PagedAttention, Prefix Caching, Chunked Prefill, Speculative Decoding, and FlashAttention, FlashInfer to reduce TTFT, increase throughput, and lower cost-per-token.",
+          "Build and maintain OpenAI-compatible API gateways (Kong, LiteLLM) supporting streaming SSE, function calling, multi-LoRA hot-swap, per-tenant rate limiting and quota, token-accurate billing telemetry, and cross-region routing.",
+          "Solve LLM cold-start and serverless challenges for 70B+ parameter models: fast model loading (safetensors mmap, tensor streaming, Run:AI Model Streamer, Tensorizer), warm pool management, predictive scaling, and snapshot/restore (CRIU, Nydus, lazy container layers).",
+          "Operate distributed inference at scale: Tensor / Pipeline / Expert Parallelism (for MoE models like DeepSeek V3, Qwen3-MoE), disaggregated prefill/decode workers, KV cache sizing and CPU/disk offload across H100 / H200 / B300 GPU fleets; apply FP8, FP4 quantization with measured accuracy/latency trade-offs.",
+          "Run Kubernetes + GPU infrastructure with GitOps (ArgoCD, Helmfile): GPU operator, KEDA and custom HPA on token throughput, multi-tenant GPU sharing (MIG), canary and A/B rollouts for new model versions, and chaos testing (GPU failure injection, OOM scenarios).",
+          "Build LLM-specific observability and SLOs: GPU metrics (NVIDIA DCGM), inference metrics (TTFT, ITL, tokens/sec, KV cache hit rate, queue time), per-token billing accuracy, response quality monitoring, plus security and safety controls (prompt injection defense, prompt/KV cache isolation between tenants, content moderation, PII redaction, audit logging for cross-border compliance including Japan APPI). Own on-call response with runbooks for LLM failure modes (loop generation, KV cache corruption, model load timeout)."
+        ],
+        "department": "NCP",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "5+ years of experience in MLOps / Platform / Infrastructure Engineering, with at least 2 years operating LLM or large-scale model serving in production.",
+              "Production experience deploying LLMs ≥ 7B parameters with verifiable metrics — QPS, P95 TTFT/ITL, and cost per 1M tokens — not just calling pre-built APIs.",
+              "Hands-on tuning expertise in vLLM, TensorRT-LLM, or SGLang beyond default configuration; deep understanding of continuous batching, PagedAttention, prefix caching, and KV cache management.",
+              "Strong Kubernetes skills with production GPU scheduling experience: GPU operator, KEDA, custom HPA, node feature discovery, MIG, and multi-tenant GPU isolation.",
+              "Ability to measure and optimize TTFT (Time To First Token), ITL (Inter-Token Latency), throughput, and cost-per-token using DCGM, Prometheus, and Grafana — not standard HTTP latency.",
+              "Working knowledge of GPU architecture (H100/H200, NVLink, HBM3, CUDA Cores, Tensor Cores) and CUDA basics — able to read CUDA code and debug; kernel writing not required.",
+              "Experience with distributed inference: Tensor Parallelism, Pipeline Parallelism, Expert Parallelism for MoE models, and prefill/decode disaggregation.",
+              "(Preferred) Production experience with multi-LoRA serving (S-LoRA, Punica, vLLM multi-LoRA) and MoE models (DeepSeek V3, Mixtral, Qwen3-MoE).",
+              "(Preferred) Experience building OpenAI-compatible gateways from scratch or via LiteLLM / vLLM router, supporting streaming, tool calling, vision and audio.",
+              "Proficient in Python at source-reading level (able to read and debug vLLM / TensorRT-LLM internals); Go or Rust for high-performance gateway/proxy services is a strong plus. Expert in Bash, Docker, and Linux performance tooling.",
+              "(Preferred) FP8 / FP4 Weight Quantization, KV Cache Quantization deployed in production; open-source contributions to vLLM / SGLang / TGI, or technical blog/talks on LLM inference."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "vLLM",
+          "Prometheus",
+          "Grafana"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-2",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst (Cloud Products)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Receive and clarify requests for new cloud products, product enhancements, processes, features, pricing/packaging updates, and customer-facing materials…",
+      "stack": [
+        "AWS",
+        "Azure"
+      ],
+      "keywords": "business analyst cloud products aws azure",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Receive and clarify requests for new cloud products, product enhancements, processes, features, pricing/packaging updates, and customer-facing materials from Product Owner, sales, presales, operations, and customers.",
+          "Analyze customer needs, business context, usage data, market trends, and cloud provider references such as Google Cloud, Microsoft Azure, AWS, and Alibaba Cloud to support feasible solution proposals and product/service roadmap inputs.",
+          "Create clear product requirement documents, business flows, user stories, acceptance criteria, DoR/DoD inputs, and related working materials for Product, Development, Architecture, Technical, and Testing teams.",
+          "Support testing/UAT to ensure developed outcomes meet business requirements, integration needs, and operational readiness.",
+          "Prepare resources for product launch and go-to-market activities, including Sales Kits, service overview decks, buyer guides, internal product introduction, and training materials for Sales/Presales and internal teams.",
+          "Participate in internal communication and handover preparation to SRE, Operations Center, and Customer Support so the product/service can be operated and supported effectively after launch.",
+          "Act as a coordination point for development requests and cross-team actions related to assigned cloud products or service groups, working with Product, Development, Architecture, Technical, Presales, Sales, SRE, Operations Center, and Customer Support.",
+          "Prepare packeging, design SKUs & pricing cloud services; support Sales and Presales during customer engagement, consultation, workshops, and pitching sessions; collect customer feedback, service usage insights, and business requirements to improve product-market fit.",
+          "Monitor and evaluate business performance, adoption, customer feedback, and operational status of assigned products/services; propose improvements to features, processes, documentation, packaging, and service quality.",
+          "Participate in Agile ways of working, especially Scrum and Kanban, to improve backlog clarity, prioritization, coordination, and continuous improvement."
+        ],
+        "department": "Cloud Products",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Over 3 years of experience as a Business Analyst (BA), Product Owner (PO), Product Analyst, Product Specialist, or similar role for technology products/services",
+              "Experience in Cloud, platform, SaaS, managed services, or B2B technology products/services is preferred; experience in product launch or go-to-market support is an advantage.",
+              "Bachelor degree in Technology, IT, Telecommunications, Business, or related fields",
+              "Good Business Analysis skills, including requirement gathering, stakeholder clarification, process mapping, documentation, user story writing, acceptance criteria, and UAT support",
+              "Good product thinking and business understanding, with the ability to connect customer needs, market signals, product direction, and technical feasibility",
+              "Good project coordination skills and ability to work effectively with Product, Development, Architecture, Technical teams, Presales, Sales, Operations, and Customer Support",
+              "Basic understanding of cloud products/services such as IaaS, PaaS, data, security, or major cloud providers like AWS, Azure, Google Cloud, and Alibaba Cloud is a plus",
+              "Good analytical/critical thinking, problem-solving skills, communication skills, customer-oriented mindset, and ability to work independently",
+              "Good listening, speaking, reading, and writing skills in English; knowledge of Agile/Scrum/Kanban or Design Thinking is an advantage"
+            ]
+          }
+        ],
+        "skills": [
+          "AWS",
+          "Azure"
+        ]
+      }
+    },
+    {
+      "id": "system-infrastructure-operation-engineer",
+      "hot": false,
+      "group": "ops",
+      "title": "System/Infrastructure Operation Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Vận hành, giám sát và quản trị hạ tầng CNTT trên nền tảng ảo hóa VMware.",
+      "stack": [
+        "Python",
+        "OpenStack",
+        "Linux"
+      ],
+      "keywords": "system/infrastructure operation engineer cloud python openstack linux",
+      "source": "https://fptsmartcloud.com/job_opportunity/system-infrastructure-operation-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Vận hành, giám sát và quản trị hạ tầng CNTT trên nền tảng ảo hóa VMware.",
+          "Quản lý hệ thống: VMware vSphere (ESXi, vCenter, vCloud), Máy ảo (lifecycle, performance, resource)",
+          "Tham gia vận hành, mở rộng và tối ưu hệ thống Cloud Desktop (Horizon VDI).",
+          "Triển khai và vận hành các dịch vụ hệ thống: AD, DNS, NTP,DHCP, Web server",
+          "Troubleshooting sự cố đa lớp: OS – Virtualization – Network – Application",
+          "Thu thập log, phân tích RCA và lập báo cáo kỹ thuật.",
+          "Nghiên cứu và áp dụng script, automation, AI để tối ưu vận hành."
+        ],
+        "department": "Cloud",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tốt nghiệp Đại Học/Cao đẳng chuyên ngành CNTT, Điện tử viễn thông hoặc liên quan",
+              "Tối thiểu 02 năm kinh nghiệm vận hành hệ thống/hạ tầng.",
+              "Kinh nghiệm thực tế với: VMware ESXi, vCenter",
+              "Kinh nghiệm Linux: Cài đặt, cấu hình, vận hành, troubleshooting, quản lý service, log, performance",
+              "Hiểu và vận hành tốt: TCP/IP, AD, DNS, DHCP",
+              "Có khả năng sử dụng script / automation / AI: Bash / Shell, PowerShell, Python (basic)…",
+              "Kinh nghiệm/hiểu biết: VMware Horizon (VDI), khả năng vận hành OpenStack",
+              "Đã làm việc với hệ thống Cloud / Hybrid Cloud / Data Center quy mô vừa–lớn."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "OpenStack",
+          "Linux"
+        ]
+      }
+    },
+    {
+      "id": "ai-text-to-speech-engineer",
+      "hot": false,
+      "group": "ai",
+      "title": "Senior AI Text-To-Speech Engineer",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Tech watch and strategic planning of TTS technology development",
+      "stack": [
+        "Python",
+        "Docker",
+        "PyTorch",
+        "vLLM",
+        "Triton"
+      ],
+      "keywords": "senior ai text-to-speech engineer ai python docker pytorch vllm triton sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-text-to-speech-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tech watch and strategic planning of TTS technology development",
+          "Ownership of our TTS offering, ensuring QoS, answering PMs and project stakeholders",
+          "Design of custom TTS solutions for specific markets or client needs and management of their development",
+          "Team management and mentoring",
+          "Promoting best practices both in code / product quality and in data acquisition and management"
+        ],
+        "department": "AI",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Knowledge of modern TTS techniques combined with a good understanding of speech signals.",
+              "Expert Python development, familiarity with Pytorch / Huggingface.",
+              "Notions of speech dataset formats and management",
+              "Familiarity with audio processing tools and libs (Audacity, Praat, librosa…)",
+              "Team and project management",
+              "Good organization and communication",
+              "Experience with multimodal LLMs",
+              "Experience working with inference frameworks like Triton, Ray Serve, vLLM…",
+              "Experience of containerization (docker), deployment (k8s, AWX…) and monitoring (sentry, monit…)",
+              "Data management: databases (SQL), storage (S3).."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "PyTorch",
+          "vLLM",
+          "Triton",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-bss",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst (BSS)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "TP. HCM",
+      "desc": "Conduct comprehensive market and business analysis to identify growth opportunities and expansion strategies",
+      "stack": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "SQL"
+      ],
+      "keywords": "business analyst bss aws azure gcp sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-bss/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Conduct comprehensive market and business analysis to identify growth opportunities and expansion strategies",
+          "Develop business cases and feasibility studies for new initiatives",
+          "Create and maintain detailed business requirements documentation (BRD, URD, SRS)",
+          "Analyze business processes, identify bottlenecks, and recommend optimization solutions",
+          "Create reports, dashboards and visualizations to understand business performance",
+          "Partner with Product Managers on roadmap planning, feature prioritization, and release planning",
+          "Influence and align cross-functional teams toward common business objectives",
+          "Validate requirements with stakeholders and ensure successful implementation",
+          "Communicate complex findings to both technical and non-technical audiences",
+          "Evaluate existing business processes and recommend scalable improvements",
+          "Conduct user acceptance testing and validate business process implementations",
+          "Support change management initiatives and adoption of new processes",
+          "Build consensus among diverse groups with competing priorities and objectives",
+          "Champion new processes and guide teams through organizational transformations",
+          "Support junior analysts and share best practices across the organization",
+          "PM/ Scrum Master, PO for requirement/ business issues/ bugs, metrics",
+          "Product Manager / Line manager for day to day work and support, career path and development"
+        ],
+        "department": "BSS",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree in Business Administration, Computer Science, Information Technology, or related field",
+              "5+ years of progressive business analyst experience with demonstrated leadership on complex projects",
+              "Proven track record of managing multi-stakeholder, cross-functional initiatives",
+              "Experience with software development lifecycle (SDLC) and project delivery",
+              "Microsoft Access and/or SQL experience is strongly preferred",
+              "Agile/Scrum methodology experience with related tools",
+              "Business intelligence tools familiarity",
+              "Detail-oriented, analytical and inquisitive mindset",
+              "Stakeholder management and workshop facilitation skills",
+              "Cross-functional collaboration and influence without direct authority",
+              "Business intelligence tools familiarity for reporting and analysis",
+              "Data visualization tools – Tableau, Power BI, or similar (user level, not developer)",
+              "Cloud platform concepts – AWS, GCP, Azure understanding (not hands-on administration)",
+              "PMP, Scrum Master, or equivalent certifications preferred",
+              "Leadership experience – mentoring junior analysts or leading BA teams",
+              "Change management experience with organizational transformations",
+              "Strategic thinking – ability to connect tactical work to broader business objectives"
+            ]
+          }
+        ],
+        "skills": [
+          "AWS",
+          "Azure",
+          "GCP",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "site-reliability-engineer-sre",
+      "hot": false,
+      "group": "ops",
+      "title": "Site Reliability Engineer (SRE)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM / Remote",
+      "desc": "Possess a solid understanding of the Software Development Life Cycle (SDLC).",
+      "stack": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "site reliability engineer sre python java javascript kubernetes docker linux aws azure gcp sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/site-reliability-engineer-sre/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Possess a solid understanding of the Software Development Life Cycle (SDLC).",
+          "Adhere strictly to operational processes and procedures; develop automation tools or leverage existing tools to automate information management, change management, and upgrade processes.",
+          "Apply and integrate AI technologies into operational tools for incident troubleshooting and root cause analysis.",
+          "Analyze, investigate, and resolve post-incident issues through log and event analysis.",
+          "Monitor, evaluate, and define Service Level Objectives (SLOs) and Service Level Indicators (SLIs) to ensure system and service quality.",
+          "Have knowledge of Big Data technologies, including data standardization, centralized data collection, data visualization, and reporting using common tools such as Power BI, Excel, Tableau, etc.",
+          "Develop and maintain operational runbooks, system profiles, and system/service deployment documentation.",
+          "Participate in project implementation and system expansion activities, ensuring high availability (HA), load balancing, and security requirements are met."
+        ],
+        "department": "SRE",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree in Information Technology, Computer Science, Telecommunications, Mathematics & Informatics, or related disciplines from reputable technology or engineering universities.",
+              "Minimum 2 years of experience as a System Administrator or Developer supporting IT monitoring and operations platforms, with strong foundational knowledge of Linux, networking, Kubernetes, and security.",
+              "Knowledge and hands-on experience in the following areas are preferred; relevant international certifications are considered an advantage: Linux operating systems and open-source software (LPI 1/2/3 certifications preferred) Networking technologies (CCNA, CCNP certifications preferred) Container Platforms such as Docker, Kubernetes, OKD (CKA, CKS certifications preferred) API Management DevOps and/or DevSecOps practices Public Cloud platforms such as AWS, Microsoft Azure, and Google Cloud Platform (GCP); certifications such as AWS Certified SysOps Administrator, Azure Administrator Associate, or Associate Cloud Engineer are highly desirable"
+            ]
+          },
+          {
+            "title": "Required Skills",
+            "items": [
+              "Proficient in system administration and configuration through Command Line Interface (CLI); capable of leveraging AI tools to solve operational and technical problems.",
+              "Basic programming proficiency in at least one common programming language such as Python, Java, or JavaScript.",
+              "Experience working with relational databases (RDBMS) and writing SQL queries.",
+              "Strong analytical thinking and problem-solving skills, with the ability to conduct in-depth technical investigations.",
+              "Good English communication skills, including listening, speaking, reading, and technical documentation writing."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "JavaScript",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "fullstack-engineer-cloud-paas",
+      "hot": false,
+      "group": "eng",
+      "title": "Fullstack Engineer (Cloud PaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Research emerging cloud-native technologies and propose suitable solutions.",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "VueJS",
+        "Kubernetes",
+        "AWS"
+      ],
+      "keywords": "fullstack engineer cloud paas python reactjs vuejs kubernetes aws azure gcp postgresql mongodb redis kafka ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-cloud-paas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Research emerging cloud-native technologies and propose suitable solutions.",
+          "Design, develop, and maintain cloud-native PaaS/SaaS applications.",
+          "Build and enhance frontend components using ReactJS or VueJS.",
+          "Develop backend services and RESTful APIs using Python (Flask/FastAPI).",
+          "Integrate and manage message queue systems (Redis, RabbitMQ, Kafka).",
+          "Work with databases such as MongoDB and PostgreSQL for data modeling and optimization.",
+          "Deploy, monitor, and maintain applications on Kubernetes clusters.",
+          "Implement and maintain CI/CD pipelines for automated testing and deployment.",
+          "Collaborate with DevOps, Product, and other engineering teams to deliver high-quality features.",
+          "Optimize system performance, scalability, and reliability.",
+          "Troubleshoot and resolve production issues in a timely manner.",
+          "Write clean, maintainable, and well-documented code following best practices.",
+          "Participate in code reviews and contribute to technical discussions."
+        ],
+        "department": "Cloud PaaS",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "Minimum 2+ years of experience in software development.",
+              "Strong experience with ReactJS or VueJS for frontend development.",
+              "Solid backend development experience with Python (Flask or FastAPI).",
+              "Hands-on experience with message queue systems such as Redis, RabbitMQ, or Kafka.",
+              "Experience working with MongoDB and PostgreSQL.",
+              "Practical experience with Kubernetes and containerized environments.",
+              "Experience in building and maintaining CI/CD pipelines.",
+              "Good understanding of microservices architecture and distributed systems.",
+              "Familiarity with RESTful API design and integration.",
+              "Knowledge of cloud platforms (AWS, GCP, Azure, or private cloud environments) is a plus.",
+              "Experience with Git and Agile/Scrum methodologies.",
+              "Strong problem-solving skills and ability to work independently.",
+              "Good English reading comprehension skills."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "VueJS",
+          "Kubernetes",
+          "AWS",
+          "Azure",
+          "GCP",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Kafka",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "kubernetes-platform-engineer-cloud-paas",
+      "hot": false,
+      "group": "ops",
+      "title": "Kubernetes Platform Engineer (Cloud PaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Contribute to building automation features including monitoring, anomaly detection, auto-remediation, and self-healing capabilities.",
+      "stack": [
+        "Python",
+        "Golang",
+        "Java",
+        "Node.js",
+        "Kubernetes"
+      ],
+      "keywords": "kubernetes platform engineer cloud paas python golang java node.js kubernetes terraform ansible linux aws azure gcp ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/kubernetes-platform-engineer-cloud-paas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Contribute to building automation features including monitoring, anomaly detection, auto-remediation, and self-healing capabilities.",
+          "Support the operation, monitoring, and optimization of the Managed Kubernetes Engine platform.",
+          "Develop tools, scripts, or workflow automation to reduce manual operations.",
+          "Contribute to backend development (preferably in Golang) for internal platform modules.",
+          "Explore and work with open-source projects within the Kubernetes ecosystem.",
+          "Perform basic incident analysis and collaborate with senior engineers for troubleshooting.",
+          "Research emerging cloud-native technologies and propose suitable solutions."
+        ],
+        "department": "Cloud PaaS",
+        "requirements": [
+          {
+            "title": "Must have",
+            "items": [
+              "Fundamental knowledge of Kubernetes or experience working with containers and cloud-native applications.",
+              "Basic backend programming skills (Golang is a strong advantage; Python, Java, or Node.js are also acceptable).",
+              "Experience with automation tools such as Bash, Ansible, or Terraform is a plus.",
+              "Basic understanding of networking, Linux, CI/CD, or observability concepts.",
+              "Strong learning mindset with the ability to read documentation and explore new technologies independently.",
+              "Ability to read and understand open-source code, with interest in how large-scale systems work."
+            ]
+          },
+          {
+            "title": "Nice to have",
+            "items": [
+              "Experience developing or using Kubernetes controllers/operators/CRDs.",
+              "Participation in open-source projects or an active GitHub profile demonstrating self-learning and research",
+              "Experience deploying applications on cloud environments such as AWS, GCP, Azure, or FPT Cloud."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Java",
+          "Node.js",
+          "Kubernetes",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "ai-product-manager-ai-conversation-global",
+      "hot": false,
+      "group": "biz",
+      "title": "AI Product Manager (AI Conversation/Global)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Define product strategy, vision, and execution plan for your domain",
+      "stack": [],
+      "keywords": "ai product manager ai conversation/global",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-product-manager-ai-conversation-global/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Define product strategy, vision, and execution plan for your domain",
+          "Own the product roadmap from ideation to launch and growth",
+          "Work with engineering, design, data science, and GTM teams",
+          "Conduct market research and customer discovery in your target region",
+          "Identify customer needs and translate them into compelling product features",
+          "Partner with sales and marketing to drive adoption and retention"
+        ],
+        "department": "AI Conversation/Global",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "Have 3+ years of product management experience (AI/Software preferred)",
+              "Possess domain knowledge in AI, ML, or conversational systems.",
+              "Are comfortable operating in or leading initiatives for Vietnam, Japan, or SEA markets",
+              "Strong communication skills — English fluency is preferred",
+              "Can influence without authority and thrive in collaborative environments Bonus if you’ve worked with: AI/ML products",
+              "Voice and Conversational UX",
+              "Cross-cultural/global teams"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "data-analytics-engineer",
+      "hot": false,
+      "group": "ai",
+      "title": "Data Analytics Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "TP. HCM",
+      "desc": "We are looking for a hybrid Data Analyst / Data Engineer who can deliver end-to-end data solutions, from raw data ingestion to final business-ready…",
+      "stack": [
+        "Python",
+        "Docker",
+        "Airflow",
+        "SQL"
+      ],
+      "keywords": "data analytics engineer data suite python docker airflow sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/data-analytics-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "We are looking for a hybrid Data Analyst / Data Engineer who can deliver end-to-end data solutions, from raw data ingestion to final business-ready dashboards and report templates.",
+          "This role is divided into two main phases:",
+          "Report Design & Mockup",
+          "Collaborate with the Product team to gather business requirements.",
+          "Design report concepts, create mockups, and define key business metrics and KPIs.",
+          "Data Modeling & Metrics",
+          "Prepare sample datasets (Excel), upload data, and design data models within Data Suite.",
+          "Develop measures and calculations to support analytical use cases.",
+          "Template Packaging & Publishing",
+          "Convert completed reports into standardized templates.",
+          "Publish templates to the Data Suite Marketplace.",
+          "Documentation & Product Content",
+          "Write product descriptions, value propositions, and define target user profiles.",
+          "Prepare high-quality visuals and screenshots for product showcase.",
+          "Source System Analysis",
+          "Analyze ERP source systems such as MISA and Bravo.",
+          "Understand database structures, business logic, and data quality challenges.",
+          "Data Architecture Design",
+          "Design a Common Data Model (CDM).",
+          "Build department-specific Data Marts to support analytical needs.",
+          "ETL Pipeline Development",
+          "Develop transformation logic using DBT and SQL.",
+          "Perform data cleansing, standardization, and query performance optimization.",
+          "Deployment & Operations",
+          "Configure data ingestion using Logstash and Docker.",
+          "Implement data testing (unit & integration tests).",
+          "Deploy and operate the data pipeline in production environments."
+        ],
+        "department": "Data Suite",
+        "requirements": [
+          {
+            "title": "Core Skills",
+            "items": [
+              "DBT: Strong experience in managing models, sources, testing, and deployment.",
+              "Advanced SQL: Proficient in CTEs, window functions, and performance optimization.",
+              "Data Modeling: Hands-on experience with dimensional modeling (Star/Snowflake schemas) and Data Marts.",
+              "BI Tools: Strong proficiency in Power BI or equivalent BI platforms for dashboarding and metric management."
+            ]
+          },
+          {
+            "title": "Additional Skills & Knowledge",
+            "items": [
+              "Source Systems: Understanding of ERP data structures (MISA, Bravo) and inter-module relationships.",
+              "Data Visualization: Basic UI/UX mindset with the ability to select appropriate chart types for clear insights.",
+              "Engineering Tools: Familiarity with Git, Docker, Python, and orchestration tools such as Airflow or Dagster."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Airflow",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-ai-global",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst (AI Global)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Analyze business requirements and customer needs related to AI products and solutions for global markets.",
+      "stack": [],
+      "keywords": "business analyst ai global",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-ai-global/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Analyze business requirements and customer needs related to AI products and solutions for global markets.",
+          "Define and control PoC/Demo/Project scope, including inputs, outputs, KPIs, assumptions, and constraints.",
+          "Develop and standardize business documentation such as BRD, use cases, user flows, and process flows for global markets.",
+          "Collaborate with Global AI Consultants to ensure solutions align with product strategy and market positioning.",
+          "Work closely with Solution Architects to translate business requirements into feasible technical solutions.",
+          "Ensure deliverables meet customer expectations and minimize risks of oversell or underdeliver.",
+          "Support proposal review, scope validation, and assumption alignment before submission to global customers."
+        ],
+        "department": "AI Global",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "2–5 years of experience as a Business Analyst, preferably in AI, Data, SaaS, or technology solutions.",
+              "Solid understanding of AI/ML, Generative AI, NLP, or Computer Vision at a business level.",
+              "Experience working on AI PoCs, demos, or customer-tailored AI solutions.",
+              "Strong ability to produce clear business documentation in English.",
+              "Structured thinking, strong communication, and stakeholder management skills.",
+              "Experience working with global or cross-cultural teams is a plus."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "project-manager-2",
+      "hot": false,
+      "group": "biz",
+      "title": "Project Manager (AI Global)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Manage AI engagements end-to-end within early delivery scope, including scope, timeline, resources, and budget.",
+      "stack": [],
+      "keywords": "project manager ai global",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Manage AI engagements end-to-end within early delivery scope, including scope, timeline, resources, and budget.",
+          "Coordinate Solution Architects, Business Analysts, AI Consultants, technical teams, and local Sales/Presales.",
+          "Control scope, risks, and change requests to prevent delays, over-commitment, and expectation gaps.",
+          "Ensure deliverables meet agreed KPIs, acceptance criteria, and SLA commitments.",
+          "Act as the primary point of contact for customers throughout the engagement lifecycle.",
+          "Support internal alignment to transition smoothly into full delivery phases (when applicable)."
+        ],
+        "department": "AI Global",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "At least 3 years of working experience in a similar position",
+              "Good English/Japanese communication skills, able to work effectively with regional and international stakeholders.",
+              "Proven experience managing AI, data, or technology-driven projects.",
+              "Experience with multi-country or regional projects is strongly preferred.",
+              "Strong capability in stakeholder management, ambiguity handling, and expectation control.",
+              "Comfortable managing projects with evolving scope and limited resources.",
+              "This role does not involve managing large, long-term delivery teams."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "project-manager-ai",
+      "hot": false,
+      "group": "biz",
+      "title": "Project Manager (AI)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "TP. HCM",
+      "desc": "Define project scope, goals and deliverables that support business goals in collaboration with senior management and stakeholders.",
+      "stack": [],
+      "keywords": "project manager ai delivery",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-ai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Define project scope, goals and deliverables that support business goals in collaboration with senior management and stakeholders.",
+          "Develop and maintain project plans, schedules, budgets, and resource allocation to ensure project success.",
+          "Manage day-to-day project activities, including scheduling, status updates, risk management, issue resolution, and team communication.",
+          "Monitor project progress and adjust plans as needed to ensure delivery of high-quality solutions on time and within budget.",
+          "Coordinate project team activities and ensure effective communication and collaboration between team members. (Presale, BA, DA, Dev, AI Engineers…)",
+          "Build and maintain relationships with internal and external stakeholders to ensure project success.",
+          "Ensure project documentation is complete, current, and stored appropriately. Continuously evaluate project performance and implement improvements as necessary."
+        ],
+        "department": "AI Delivery",
+        "experience": "Từ 4 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "At least 4 years of working experience in a similar position",
+              "Thorough understanding of the Project Management process’ standards",
+              "Experienced in project management with a corporate’s client",
+              "Experienced managing multiple projects at the same time",
+              "PMP certificate",
+              "Experienced in AI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "data-engineer-2",
+      "hot": false,
+      "group": "ai",
+      "title": "Data Engineer (GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design, build, and operate distributed data pipelines using Airflow, NiFi, and Kafka.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Linux",
+        "Kafka"
+      ],
+      "keywords": "data engineer genai python kubernetes docker linux kafka airflow prometheus",
+      "source": "https://fptsmartcloud.com/job_opportunity/data-engineer-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design, build, and operate distributed data pipelines using Airflow, NiFi, and Kafka.",
+          "Organize, store, and optimize various types of data (text, audio, etc.) across multiple databases and storage systems.",
+          "Implement and manage data governance, access control, and auditing with Apache Ranger.",
+          "Containerize and deploy data services using Docker and Kubernetes.",
+          "Integrate data into analytics, catalog, and search systems such as Superset, OpenMetadata, OpenSearch, Nessie, and Trino.",
+          "Monitor system health and pipeline performance using Prometheus and related tooling.",
+          "Collaborate with Data Scientists and ML Engineers to standardize and deliver data for AI/ML applications.",
+          "Ensure reliability, scalability, and operational stability of data pipelines."
+        ],
+        "department": "GenAI",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "Programming: Proficiency in Python is essential. Experience with asynchronous programming and API development (FastAPI/Flask).",
+              "Generative AI & LLMs: Deep understanding of Large Language Models (LLMs), Vision Language Models, their capabilities, limitations",
+              "Deployment: Expertise in deploying AI applications using containerization (Docker, Kubernetes)",
+              "Collaboration: Work closely with cross-functional teams to integrate agentic solutions into broader product ecosystems.",
+              "Innovation: Stay at the forefront of Generative AI research, experimenting with new frameworks and techniques to drive continuous improvement.",
+              "Experience with using LLM for structured data extraction.",
+              "Experience working in Linux environments",
+              "Demonstrated experience building or maintaining data pipelines",
+              "Knowledge of workflow scheduling techniques (e.g. Airflow)"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "Kafka",
+          "Airflow",
+          "Prometheus"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-jlpt-n2-n1",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst (JLPT N2/N1)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Collect, analyze, and document business requirements.",
+      "stack": [],
+      "keywords": "business analyst ai conversation",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-jlpt-n2-n1/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Collect, analyze, and document business requirements.",
+          "Conduct data analysis to identify trends and improvement opportunities.",
+          "Develop and optimize business process models.",
+          "Prepare functional specifications and ensure clear communication between stakeholders.",
+          "Assess business needs and propose actionable recommendations.",
+          "Work closely with technical teams to ensure successful solution implementation."
+        ],
+        "department": "AI Conversation",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "Bachelor’s degree in Business Administration, Information Systems, or related field.",
+              "Strong analytical skills with proven Business Analysis experience.",
+              "Solid knowledge of business process modeling and optimization.",
+              "Excellent requirement gathering and documentation abilities.",
+              "Outstanding communication skills in both written and verbal forms.",
+              "Proficiency in Japanese (JLPT N2/N1) and English.",
+              "Ability to work on-site in the Hanoi Capital Region.",
+              "Experience in the technology or cloud computing sector is an advantage."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "site-reliability-engineer-junior-middle",
+      "hot": false,
+      "group": "ops",
+      "title": "Site Reliability Engineer (Junior/Middle)",
+      "level": "Junior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design, build, and maintain scalable, reliable, and secure infrastructure systems.",
+      "stack": [
+        "Python",
+        "Golang",
+        "Kubernetes",
+        "Docker",
+        "Terraform"
+      ],
+      "keywords": "site reliability engineer sre python golang kubernetes docker terraform ansible linux aws azure gcp prometheus grafana ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/site-reliability-engineer-junior-middle/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design, build, and maintain scalable, reliable, and secure infrastructure systems.",
+          "Monitor system performance, availability, and capacity; respond to and resolve incidents.",
+          "Automate operational processes using scripting and infrastructure-as-code tools.",
+          "Implement and maintain CI/CD pipelines to improve software delivery.",
+          "Work with developers to design fault-tolerant and resilient applications.",
+          "Maintain observability tools (logging, metrics, tracing) to ensure system visibility.",
+          "Participate in on-call rotation and incident response.",
+          "Continuously improve system reliability through postmortem analysis and performance tuning."
+        ],
+        "department": "SRE",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "Bachelor’s degree in Computer Science, Information Technology, or related field.",
+              "At least 2 years of experience as an SRE, DevOps Engineer, or related role.",
+              "Solid understanding of Linux/Unix systems and networking fundamentals.",
+              "Hands-on experience with cloud platforms (AWS or Azure/GCP).",
+              "Familiar with containers and orchestration (Docker, Kubernetes).",
+              "Experience with Infrastructure as Code (Terraform, Ansible, CloudFormation, etc.).",
+              "Proficiency in one or more scripting languages (Python, Bash, Go, etc.).",
+              "Experience with monitoring and alerting systems (Prometheus, Grafana, ELK, Datadog, etc.).",
+              "Strong problem-solving skills and ability to troubleshoot complex systems."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Prometheus",
+          "Grafana",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "ai-solution-architecture",
+      "hot": false,
+      "group": "ai",
+      "title": "AI Solution Architecture",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design end-to-end AI/genAI/AI Agent architectures—from data processing to deployment.",
+      "stack": [
+        "Python",
+        "AWS",
+        "Azure",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai solution architecture fpt.ai python aws azure pytorch tensorflow langchain ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-solution-architecture/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design end-to-end AI/genAI/AI Agent architectures—from data processing to deployment.",
+          "Recommend appropriate tools, technologies, and frameworks based on project needs.",
+          "Lead and coordinate a team of AI developers, including task assignment, output review, and technical guidance.",
+          "Collaborate with business stakeholders to translate requirements into technical specifications.",
+          "Integrate AI modules (e.g., models, APIs) into larger products or enterprise systems.",
+          "Ensure solution quality, scalability, and maintainability throughout the project lifecycle."
+        ],
+        "department": "FPT.AI",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "Proven experience in designing and delivering AI/genAI/ML/AI Agent solutions.",
+              "Hands-on expertise in machine learning, NLP, LLMs, AI Agent computer vision, or related AI domains.",
+              "Practical experience with LLM frameworks such as LangChain, RAG, or similar.",
+              "Proficiency in Python and familiarity with major AI/ML frameworks like TensorFlow or PyTorch.",
+              "Experience with cloud platforms such as AWS, Google Cloud, or Azure.",
+              "Strong background in team leadership or technical project management.",
+              "Excellent communication and organizational skills.",
+              "Knowledge of DevOps principles, including CI/CD, MLOps, or LLMOps, is a plus.",
+              "Strong command of English, both written and spoken."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "AWS",
+          "Azure",
+          "PyTorch",
+          "TensorFlow",
+          "LangChain",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "dataops",
+      "hot": false,
+      "group": "ai",
+      "title": "DataOps / Platform Engineer (PaaS Team)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Collaborate with the team to design technical architecture for Cloud Data Platform services (Data Ingestion, Processing, Storage, Query, Visualization,…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS"
+      ],
+      "keywords": "dataops / platform engineer paas center python kubernetes docker terraform aws azure gcp kafka spark airflow prometheus grafana jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/dataops/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Collaborate with the team to design technical architecture for Cloud Data Platform services (Data Ingestion, Processing, Storage, Query, Visualization, Security, Governance).",
+          "Implement and integrate Data Platform components: Kafka, NiFi, Airflow, Spark, Flink, Iceberg, Trino, Superset, dbt…",
+          "Build and operate CI/CD systems and Infrastructure as Code (Terraform, Helm, ArgoCD…).",
+          "Research and propose new technologies to optimize performance and enhance the product.",
+          "Support deployment, configuration, and optimization of Cloud Data Platform for customers.",
+          "Monitor, troubleshoot incidents, and ensure service SLA compliance.",
+          "Operate monitoring, alerting, and logging systems (Prometheus, Grafana, ELK, Loki…).",
+          "Support troubleshooting of data pipelines, data source connections, and security incidents.",
+          "Participate in training and guiding customers on platform usage."
+        ],
+        "department": "PaaS Center",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Must-have",
+            "items": [
+              "3–5 years of experience in DataOps, DevOps, Platform Engineer, or Data Engineer roles.",
+              "Proficiency in Kubernetes, Docker, and microservices architecture.",
+              "Hands-on experience deploying or operating at least some Data Platform services (e.g., Kafka, Airflow, Spark).",
+              "Strong scripting skills (Python or Bash).",
+              "Experience with CI/CD and GitOps (GitLab CI, Jenkins, or ArgoCD).",
+              "Basic understanding of Data Pipelines and Data Engineering concepts."
+            ]
+          },
+          {
+            "title": "Nice-to-have",
+            "items": [
+              "Experience in designing or operating Data Lakehouse / Data Warehouse.",
+              "Experience providing Managed Services for enterprise customers.",
+              "Knowledge of data security (IAM, RBAC, TLS, Network Policy, etc.).",
+              "Relevant certifications in Kubernetes (CKA, CKAD) or Cloud (AWS, GCP, Azure)."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Kafka",
+          "Spark",
+          "Airflow",
+          "Prometheus",
+          "Grafana",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "dataengineer",
+      "hot": false,
+      "group": "ai",
+      "title": "Data Engineer (Data Suite)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design, develop, and maintain high-performance, scalable data pipelines to support data processing needs in both batch and real-time modes.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "AWS",
+        "Azure",
+        "MySQL"
+      ],
+      "keywords": "data engineer data suite python kubernetes aws azure mysql mongodb redis kafka spark ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/dataengineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design, develop, and maintain high-performance, scalable data pipelines to support data processing needs in both batch and real-time modes.",
+          "Implement and maintain data models, data marts, and data warehouses using standard methodologies such as Kimball and Slowly Changing Dimensions (SCD) solutions.",
+          "Collaborate with stakeholders to identify data requirements, build ETL/ELT processes, optimize data ingestion workflows, and develop reports.",
+          "Work with both cloud and on-premise data sources (e.g., AWS Redshift, Google BigQuery, ClickHouse, Druid) to collect data for ETL processes.",
+          "Develop solutions for data streaming and real-time processing using tools such as Apache Spark, Flink, Kafka, or similar.",
+          "Ensure data quality through monitoring, logging, and implementing data governance practices.",
+          "Work closely with Data Analysts to align on data architecture and reporting requirements.",
+          "Automate and optimize data workflows using CI/CD pipelines and Kubernetes infrastructure.",
+          "Stay up-to-date with big data technology trends and industry best practices."
+        ],
+        "department": "Data Suite",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "5+ years of experience in software development, with at least 3 years in Data Engineering.",
+              "Strong SQL skills with hands-on experience in common databases (Oracle, MSSQL, MySQL).",
+              "Experience with cloud data warehouses such as Redshift or Google BigQuery.",
+              "Experience with on-premise data warehouse solutions like ClickHouse, Postgres, Druid, or Kylin.",
+              "Familiarity with NoSQL databases (e.g., MongoDB, Redis, Cassandra, HBase).",
+              "In-depth understanding of data modeling principles such as Kimball methodology.",
+              "Advanced Python programming skills; Scala experience is a plus.",
+              "Experience with big data frameworks such as Hadoop, Spark, Trino, and Druid.",
+              "Experience with data streaming platforms (e.g., Spark Streaming, Flink).",
+              "Experience building data pipeline monitoring and data quality control systems.",
+              "Proficiency in building data platforms in cloud environments (Azure, AWS).",
+              "Experience with CI/CD and Git for Kubernetes deployments.",
+              "Understanding of DevOps is a plus.",
+              "Knowledge of BI tools and techniques for optimizing query latency and data platform cost."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "AWS",
+          "Azure",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "Kafka",
+          "Spark",
+          "CI/CD",
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "sre-devops-engineer-paas",
+      "hot": false,
+      "group": "ops",
+      "title": "DevOps Engineer (PaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Collaborate with the team to build and operate core components of the FPT Cloud platform, ensuring scalability, reliability, and security.",
+      "stack": [
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Ansible",
+        "Linux"
+      ],
+      "keywords": "devops engineer cloud paas kubernetes docker terraform ansible linux redis kafka prometheus grafana gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/sre-devops-engineer-paas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Collaborate with the team to build and operate core components of the FPT Cloud platform, ensuring scalability, reliability, and security.",
+          "Participate in the deployment, monitoring, and improvement of cloud-native infrastructure.",
+          "Contribute to the development and automation of internal tools, CI/CD pipelines, and platform services.",
+          "Work with modern technologies and apply best practices in system operations and DevOps.",
+          "Continuously explore, experiment with, and apply new technologies to improve system performance and efficiency."
+        ],
+        "department": "Cloud PaaS",
+        "experience": "Từ 4 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Minimum 4 years of experience in DevOps, SRE, or related roles.",
+              "Strong knowledge of Linux, Docker, and Kubernetes.",
+              "Hands-on experience with CI/CD, preferably GitLab CI.",
+              "Familiar with Redis, Kafka, or similar distributed systems.",
+              "Understanding of monitoring/logging tools like Prometheus, Grafana, or ELK.",
+              "Experience with automation tools such as Ansible, Terraform is a plus.",
+              "Team player, responsible, and eager to learn new technologies."
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "Redis",
+          "Kafka",
+          "Prometheus",
+          "Grafana",
+          "GitLab",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "software-engineer",
+      "hot": false,
+      "group": "eng",
+      "title": "Software Engineer (Python+Openstack)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Design, implement, and maintain core components of the IaaS platform based on OpenStack",
+      "stack": [
+        "Python",
+        "OpenStack",
+        "Linux",
+        "CI/CD"
+      ],
+      "keywords": "software engineer cloud iaas python openstack linux ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/software-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design, implement, and maintain core components of the IaaS platform based on OpenStack",
+          "Develop automation scripts and internal tools using Python, Bash, or other scripting languages",
+          "Integrate and troubleshoot remote communication protocols (e.g., SSH, VNC, IPMI)",
+          "Collaborate with system engineers and DevOps teams to ensure scalability, reliability, and high availability of cloud services",
+          "Contribute to performance tuning, system monitoring, and security hardening",
+          "Write clean, maintainable code and maintain clear documentation"
+        ],
+        "department": "Cloud IaaS",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree in Computer Science, Engineering, or related field",
+              "2+ years of experience in software development or system integration",
+              "Strong programming skills in Python",
+              "Hands-on experience with OpenStack components (Nova, Neutron, Glance, etc.)",
+              "Solid understanding of remote protocols and virtualization technologies",
+              "Familiarity with REST APIs, Linux systems, and CI/CD practices",
+              "Good problem-solving skills and team-oriented mindset"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "OpenStack",
+          "Linux",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "text-to-speech-engineer",
+      "hot": false,
+      "group": "ai",
+      "title": "Text-to-Speech Engineer (AI Conversation Team)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Coordinate and oversee speech data collection, including both manual recordings and automated online data acquisition.",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "Docker",
+        "Linux"
+      ],
+      "keywords": "text-to-speech engineer ai conversation team python javascript docker linux",
+      "source": "https://fptsmartcloud.com/job_opportunity/text-to-speech-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Coordinate and oversee speech data collection, including both manual recordings and automated online data acquisition.",
+          "Perform data processing tasks such as cleaning, segmentation, and automatic labeling.",
+          "Conduct quality checks and validation of speech datasets.",
+          "Gradually develop automated pipelines and tools for managing and processing speech data efficiently.",
+          "Support training and evaluation of TTS models as experience grows.",
+          "Collaborate with cross-functional AI teams to improve system performance and scalability."
+        ],
+        "department": "AI Conversation Team",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Solid Python programming skills.",
+              "Comfortable with Linux development environments, including command-line tools, bash scripting, and Docker.",
+              "Strong organization and communication skills.",
+              "Intermediate English proficiency (reading and technical communication).",
+              "Knowledge of audio signal processing and related techniques.",
+              "Experience with web backend development in Python (e.g., Flask, FastAPI).",
+              "Familiarity with AI and machine learning concepts.",
+              "Basic experience with JavaScript for front-end or tooling development."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "JavaScript",
+          "Docker",
+          "Linux"
+        ]
+      }
+    },
+    {
+      "id": "devops_engineer_infra",
+      "hot": false,
+      "group": "ops",
+      "title": "DevOps Engineer (Infra)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Consulting & Delivery solutions for customers who need to migrate infrastructure to FPT Cloud.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Ansible",
+        "OpenStack",
+        "Linux"
+      ],
+      "keywords": "devops engineer ncp center python docker ansible openstack linux mysql prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/devops_engineer_infra/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Consulting & Delivery solutions for customers who need to migrate infrastructure to FPT Cloud.",
+          "Building and deploy a monitoring system using the technology stack: Prometheus, Grafana, VictoriaMetrics, Exporter, Alertmanager.",
+          "Ensuring continuous 24/7 operation of the current monitoring system.",
+          "Configuring monitoring for newly deployed systems or expanded components of existing systems.",
+          "Writing exporters to collect additional monitoring metrics according to system requirements.",
+          "Creating Grafana dashboards to visualize data for reporting and system monitoring purposes.",
+          "Setting up alert channels and alert rules for the monitoring system. Make sure to send alerts immediately when the systems behaves abnormally.",
+          "Developing tools and script to check system. Ensuring systems operates stability.",
+          "Troubleshooting the root causes of issues occurring in the monitored system."
+        ],
+        "department": "NCP Center",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Students who are studying in the Computer Science Department, Information Technology, Electronics and Telecommunication, Electrical Department.",
+              "Knowledge of Linux and open-source softwares: Ubuntu, Ansible, Docker, HAproxy, Nginx, MySQL, Rabbitmq,…",
+              "Knowledge of Network: TCP/IP, TCP, UDP, VLAN, IPv4, DNS, DHCP.",
+              "Experience working with monitoring and logging tools: Prometheus, Grafana, Zabbix, Nagios, Cacti, ELK stack, Graylog.",
+              "Strong presentation, communication, writing and time management skills.",
+              "Ability to learn technical and product knowledge, learning materials in English.",
+              "Good working attitude, dynamic, responsible, reliable, professional."
+            ]
+          },
+          {
+            "title": "Advantages (optional)",
+            "items": [
+              "Have RHCSA, CCNA certifications.",
+              "Ability/experience in code with Bash shell, Python.",
+              "Experienced with programming language (python).",
+              "Experienced with OpenStack, KVM."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Ansible",
+          "OpenStack",
+          "Linux",
+          "MySQL",
+          "Prometheus",
+          "Grafana"
+        ]
+      }
+    },
+    {
+      "id": "business-analyst-ai-conversation",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst (AI Conversation Team)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Engage with customers, users, and internal stakeholders to capture and prioritize product requirements for the Voicebot GenAI platform.",
+      "stack": [],
+      "keywords": "business analyst ai conversation team",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-ai-conversation/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Engage with customers, users, and internal stakeholders to capture and prioritize product requirements for the Voicebot GenAI platform.",
+          "Define detailed user stories, acceptance criteria, and workflows aligned with product vision and business goals.",
+          "Collaborate closely with Product Managers, UX/UI designers, and engineers to ensure shared understanding and successful product delivery.",
+          "Analyze user behavior and feedback to identify opportunities for product improvements and new features.",
+          "Participate actively in Agile ceremonies (planning, refinement, demos) to facilitate smooth product development cycles.",
+          "Monitor product performance metrics and help define KPIs related to voice interaction quality and user satisfaction.",
+          "Stay informed on trends in Generative AI, conversational AI, and voice technologies to bring innovative ideas to the product roadmap.",
+          "Assist in managing product backlogs and roadmap updates based on evolving business priorities."
+        ],
+        "department": "AI Conversation Team",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s degree in Business, Computer Science, or related fields.",
+              "5+ years experience as a Business Analyst, preferably in product-focused roles within AI, voice tech, or conversational interfaces.",
+              "Strong English communication skills (speaking and writing) for collaboration with global teams and documentation.",
+              "Proven ability to translate user needs into clear, actionable product requirements and user stories.",
+              "Familiarity with Agile/Scrum methodologies and tools (Jira, Confluence, etc.).",
+              "Basic understanding of AI/ML concepts, especially related to voicebots and NLP, is a plus.",
+              "Analytical thinking with strong problem-solving skills and attention to detail.",
+              "Collaborative mindset with a passion for building user-centric products."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fullstack-engineer",
+      "hot": false,
+      "group": "eng",
+      "title": "Fullstack Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Develop and maintain fullstack web applications using Node.js (Express/NestJS) and ReactJS",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "Node.js",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "keywords": "fullstack engineer ai python reactjs node.js docker postgresql redis ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Develop and maintain fullstack web applications using Node.js (Express/NestJS) and ReactJS",
+          "Design robust, scalable backend APIs to support AI-driven features such as chatbots, document analysis, and voice assistants",
+          "Build interactive and responsive frontend UIs for AI-powered products",
+          "Collaborate with AI/ML engineers to integrate and visualize model outputs in user-facing interfaces",
+          "Contribute to technical architecture, write clean and maintainable code, and participate in code reviews",
+          "Optimize performance, security, and reliability across both frontend and backend components"
+        ],
+        "department": "AI",
+        "experience": "Từ 4 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "At least 4 years of professional experience in fullstack development",
+              "Proficient in Node.js (e.g., Express, NestJS) and ReactJS",
+              "Solid understanding of RESTful APIs, asynchronous programming, and component-based frontend architecture",
+              "Experience with PostgreSQL, Redis, Git, Docker, and CI/CD pipelines",
+              "Strong problem-solving and system thinking skills",
+              "Good communication and teamwork abilities",
+              "Nice to have: Experience working with Python (e.g., Flask, FastAPI) and integrating AI/ML services"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "Node.js",
+          "Docker",
+          "PostgreSQL",
+          "Redis",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "project-manager",
+      "hot": false,
+      "group": "biz",
+      "title": "Project Manager",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Coordinate internal resources and third parties/vendors for the flawless execution of projects",
+      "stack": [],
+      "keywords": "project manager cloud delivery center",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Coordinate internal resources and third parties/vendors for the flawless execution of projects",
+          "Ensure that all projects are delivered on time, within the scope",
+          "Developing project scopes and objectives, involving all relevant stakeholders, and ensuring technical feasibility",
+          "Ensure resource availability and allocation",
+          "Develop a detailed project plan to track progress",
+          "Use appropriate verification techniques to manage changes in project scope, schedule",
+          "Measure project performance using appropriate systems, tools, and techniques",
+          "Report and escalate to management as needed",
+          "Manage the relationship with the client and all stakeholders",
+          "Perform risk management to minimize project risks",
+          "Establish and maintain relationships with third parties/vendors",
+          "Create and maintain comprehensive project documentation"
+        ],
+        "department": "Cloud Delivery Center",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "At least 3 years of experience in Project Management.",
+              "Good education background, preferably in the field of computer science or engineering",
+              "Proven working experience as a project manager in the IT sector",
+              "Solid technical background, with understanding or hands-on experience in cloud technologies",
+              "Excellent client-facing and internal communication skills",
+              "Excellent written and verbal communication skills",
+              "Solid organizational skills including attention to detail and multi-tasking skills",
+              "PMP / PRINCE II certification is a plus"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iaas-software-engineer-fcd-client",
+      "hot": false,
+      "group": "eng",
+      "title": "Software Engineer – FCD",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Work closely with Product Owner and team leader to understand and implement business functionality.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "CI/CD"
+      ],
+      "keywords": "software engineer – fcd iaas center python docker linux ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/iaas-software-engineer-fcd-client/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Work closely with Product Owner and team leader to understand and implement business functionality.",
+          "Design, develop, and maintain cross-platform applications using Python and",
+          "Collaborate with product managers, designers, and other engineers to deliver high-quality software solutions.",
+          "Write clean, maintainable, and efficient code. Ensure that applications perform consistently and optimally under varying amounts of load and stress.",
+          "Implement security measures to protect sensitive information.",
+          "Take part in review and test process (develop unit test, automation test or create test cases for system test) to ensure product quality of code and technical document.",
+          "Troubleshoot, debug web application with a fast and accurate resolution.",
+          "Document development processes, code changes, and other relevant information."
+        ],
+        "department": "IaaS Center",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Bachelor’s or master’s degree in computer science, Information Systems, or a related field.",
+              "At least 3 years of experience developer role.",
+              "Proven experience with the full software development life cycle, including design, testing, deployment, and documentation activities.",
+              "Proven experience in software development using Python.",
+              "Strong knowledge of PyQt for developing graphical user interfaces.",
+              "Experience in building and deploying applications on multiple platforms (Windows, Linux, macOS).",
+              "Experienced in using git, git-flow, docker and virtual environment management tool (venv, pipenv, …). Familiarity with CI/CD pipelines.",
+              "Have experience working under Scrum/ or other Agile frameworks is plus.",
+              "Experienced in networking concepts and protocols (UDP, TCP, RDP).",
+              "Good at communication and critical thinking skills"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "ai-delivery-business-analyst",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Participate in multiple projects as a Business Analyst",
+      "stack": [],
+      "keywords": "business analyst ai delivery center",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-delivery-business-analyst/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Participate in multiple projects as a Business Analyst",
+          "Developing relationships and partnerships with key stakeholders, understand and negotiate needs and expectations of multiple stakeholders.",
+          "Provide project level analysis – producing required project analysis documentation (business requirements, system requirements, scoping, use cases, sequence diagrams, future state proposals ..etc…",
+          "Work as a consultant to help customer build the most value usecase to powered AI technology apply into any domain.",
+          "Collaborate closely with developers to implement the requirements, provide necessary guidance to testers during QA processes.",
+          "Identify improvement opportunities (proactive and reactive)",
+          "Identify ways to increase adoption and customer satisfaction.",
+          "Cooperating with Project Manager in developing project plans and specifications, estimating time and resources, monitoring milestone completion, tracking all phases of the project lifecycle, providing timely reporting of issues that impact project progress, coordinating actions and resolving conflicts"
+        ],
+        "department": "AI Delivery Center",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "At least 5 years of working experience in a Business Analyst",
+              "Ability to successfully handle multiple projects and manage multiple tasks at any given point",
+              "Effective stakeholder engagement and leadership skills.",
+              "Excellent problem-solving, communication, time management and analytical skills.",
+              "Confident presenter",
+              "Be a fast learner, have a desire to learn and apply new technology",
+              "Have a spirit of demanding high-quality product",
+              "Other priority conditions: o English o Experiences in AI projects o Experienced in working with large corporates in Banking – Finance – Securities – Insurance industry o Bachelor’s degree in business, information technology or related field o Microsoft Office: Excel, PowerPoint, Word, Project, Visio, Power BI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cloud-engineer",
+      "hot": false,
+      "group": "ops",
+      "title": "Cloud Engineer L2 (Cloud Operation Center)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Operate and maintain FPT Cloud products and services, including internal cloud systems, virtualization platforms, and physical server infrastructure.",
+      "stack": [
+        "Python",
+        "Terraform",
+        "Ansible",
+        "Linux",
+        "Prometheus"
+      ],
+      "keywords": "cloud engineer l2 cloud operation center python terraform ansible linux prometheus",
+      "source": "https://fptsmartcloud.com/job_opportunity/cloud-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Operate and maintain FPT Cloud products and services, including internal cloud systems, virtualization platforms, and physical server infrastructure.",
+          "Deploy, configure, and manage virtual machines and supporting services across VMware and private cloud environments.",
+          "Design and operate system monitoring and alerting tools to ensure performance, availability, and reliability.",
+          "Consult and support enterprise customers using FPT Cloud services; analyze and troubleshoot service issues.",
+          "Design and integrate new solutions into the cloud ecosystem (monitoring, logging, HA, load balancing, backup, etc.).",
+          "Automate routine operational tasks using scripting languages (Bash, PowerShell, Python) and tools (Ansible, Terraform).",
+          "Collaborate with other technical teams (network, security, dev) to ensure seamless cloud service delivery.",
+          "Document standard operating procedures, incident reports, and system architecture.",
+          "Xem thêm các vị trí nổi bật khác tại đây: https://fptsmartcloud.com/co-hoi-nghe-nghiep"
+        ],
+        "department": "Cloud Operation Center",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Job Requirements",
+            "items": [
+              "2–5 years of experience in Cloud, System Administration, or IT Infrastructure roles.",
+              "Strong knowledge in deploying and managing Linux & Windows Server environments.",
+              "Experience with VMware solutions (vSphere, vCenter, ESXi…).",
+              "Familiarity with server hardware platforms and enterprise storage technologies (iSCSI, FC, FCoE).",
+              "Understanding of core infrastructure services: DNS, DHCP, NTP, Firewall, Load Balancer.",
+              "Hands-on experience with system monitoring and logging tools (Zabbix, Prometheus, ELK, etc.).",
+              "Experience in automation or scripting for system administration (Bash, PowerShell, Python, etc.)."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "Prometheus"
+        ]
+      }
+    },
+    {
+      "id": "fullstack-engineer-2",
+      "hot": false,
+      "group": "eng",
+      "title": "Fullstack Engineer",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Collaborate in analyzing project requirements and designing software architecture to ensure alignment with business objectives and customer needs.",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "Docker",
+        "Linux",
+        "MySQL"
+      ],
+      "keywords": "fullstack engineer cloud iaas python reactjs docker linux mysql mongodb redis ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Analysis and Design: Collaborate in analyzing project requirements and designing software architecture to ensure alignment with business objectives and customer needs.",
+          "Software Development: Design, develop, and maintain scalable web applications using ReactJS for frontend and Python (e.g., FastAPI, Flask) for backend services.",
+          "Testing and Troubleshooting: Apply testing methodologies, mocking, and debugging tools to ensure software quality and swiftly resolve technical issues.",
+          "Performance Optimization: Optimize codebase to ensure high performance, responsiveness, and reliability of applications.",
+          "Technical Assistance: Support cross-functional teams by integrating software components and addressing technical challenges to enhance team productivity.",
+          "Write Clean and Maintainable Code: Follow best practices in software development by writing clean, modular, and well-documented code."
+        ],
+        "department": "Cloud IaaS",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Job Requirement",
+            "items": [
+              "At least 3.5 years of experience working as a Fullstack Engineer or in similar roles.",
+              "Strong proficiency in ReactJS and Python-based web frameworks (such as FastAPI or Flask).",
+              "Experience with databases like MySQL and MongoDB.",
+              "Hands-on experience in REST API design and integration.",
+              "Familiarity with Redis, Docker, Linux, and the ELK stack.",
+              "Proficient in Git for version control and collaborative development.",
+              "Experience or interest in DevOps and CI/CD pipelines is a plus."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "Docker",
+          "Linux",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "cloud_openstack_engineer",
+      "hot": false,
+      "group": "ops",
+      "title": "Cloud Openstack Engineer (IaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Research, build and operate solutions, modules/projects for the above Cloud system",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Ansible",
+        "OpenStack"
+      ],
+      "keywords": "cloud openstack engineer cloud infrastructure center python kubernetes docker ansible openstack linux aws azure gcp",
+      "source": "https://fptsmartcloud.com/job_opportunity/cloud_openstack_engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Research, build and operate solutions, modules/projects for the above Cloud system",
+          "Openstack/Kubernetes/Docket Swam platform",
+          "Learn trends, shape cloud trends in the world, test and integrate into ants",
+          "The company’s Cloud architecture.",
+          "Operate, monitor, troubleshoot, and optimize Cloud Openstack system"
+        ],
+        "department": "Cloud Infrastructure Center",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Have a lot of experience with Linux, especially Ubuntu and Centos",
+              "Have knowledge and experience in programming, especially Python, Ansible, Bash Script, and structures, microservices, Openstack, Kubernetes, Docker",
+              "Have in-depth knowledge and experience in operating Cloud, Storage, Compute, Network, Security",
+              "Have knowledge of Cloud services in the world: Azure, AWS, GCP",
+              "Have certificates in Openstack or Linux or AWS/Azure",
+              "Have presentation, communication, writing and time management skills.",
+              "Ability to learn technical and product knowledge and study materials in English. Kha",
+              "Reading comprehension and flexible English communication skills.",
+              "Teamwork skills, supporting and motivating colleagues.",
+              "Good working attitude, dynamic, responsible, reliable, professional."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Ansible",
+          "OpenStack",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP"
+        ]
+      }
+    }
+  ]
+}

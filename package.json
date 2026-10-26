@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "crawl": "node scripts/crawl-fptsmartcloud.mjs",
+    "classify": "node scripts/classify-jobs.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
