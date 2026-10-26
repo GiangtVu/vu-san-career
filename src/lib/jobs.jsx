@@ -27,6 +27,15 @@ export function jobPath(id) {
   return '/viec-lam/' + encodeURIComponent(id);
 }
 
+// Job list URL carrying the current keyword and group, read back by the list page.
+export function listPath(q, group) {
+  const params = new URLSearchParams();
+  if (q && q.trim()) params.set('q', q.trim());
+  if (group) params.set('group', group);
+  const query = params.toString();
+  return '/viec-lam' + (query ? '?' + query : '');
+}
+
 export const CONTACT = {
   email: 'vugt2@fpt.com',
   zalo: 'https://zalo.me/0973084280',

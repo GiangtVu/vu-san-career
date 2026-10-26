@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import '../styles/home.css';
-import { hotFirst, useJobs } from '../lib/jobs.jsx';
+import { hotFirst, listPath, useJobs } from '../lib/jobs.jsx';
 import { usePrefersReducedMotion, useTween } from '../lib/hooks.js';
 import HomeHeader from './home/HomeHeader.jsx';
 import { HeroDesktop, HeroMobile } from './home/Hero.jsx';
@@ -51,6 +51,7 @@ export default function Home() {
   const hotJobs = useMemo(() => jobs.filter((j) => j.hot), [jobs]);
 
   const onSuggest = (label) => { setQ(label); setGroup(null); };
+  const listUrl = listPath(q, group);
   const showGreet = greet && !greetClosed;
   const closeGreet = () => setGreetClosed(true);
 
@@ -66,6 +67,7 @@ export default function Home() {
           q={q}
           onSearch={setQ}
           onSuggest={onSuggest}
+          listUrl={listUrl}
         />
         <HeroMobile
           total={Math.round(jobs.length * heroP)}
@@ -74,6 +76,7 @@ export default function Home() {
           roleOut={out}
           q={q}
           onSearch={setQ}
+          listUrl={listUrl}
         />
         <Company />
         <JobsSection
@@ -83,6 +86,7 @@ export default function Home() {
           q={q}
           group={group}
           setGroup={setGroup}
+          listUrl={listUrl}
           clear={() => { setQ(''); setGroup(null); }}
         />
         <Process />

@@ -1,6 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Icon from '../../components/Icon.jsx';
 import { CONTACT, jobPath } from '../../lib/jobs.jsx';
+
+// Submitting a hero search opens the job list with the same keyword and group.
+function useOpenList(listUrl) {
+  const navigate = useNavigate();
+  return (e) => {
+    e.preventDefault();
+    navigate(listUrl);
+  };
+}
 
 const SUGGESTIONS = ['Python', 'Golang', 'ReactJS', 'Data', 'DevOps'];
 
@@ -25,7 +34,8 @@ function RecruiterCard() {
   );
 }
 
-export function HeroDesktop({ total, groupCount, role, roleOut, q, onSearch, onSuggest }) {
+export function HeroDesktop({ total, groupCount, role, roleOut, q, onSearch, onSuggest, listUrl }) {
+  const openList = useOpenList(listUrl);
   return (
     <section className="hero u-desktop">
       <div className="container hero__inner">
@@ -44,7 +54,7 @@ export function HeroDesktop({ total, groupCount, role, roleOut, q, onSearch, onS
           </p>
           <div className="search-block reveal" style={{ '--d': '320ms' }}>
             <label htmlFor="job-search">Bạn đang tìm vị trí nào?</label>
-            <div className="searchbar">
+            <form className="searchbar" role="search" onSubmit={openList}>
               <div className="searchbar__field">
                 <Icon name="search" />
                 <input
@@ -56,8 +66,8 @@ export function HeroDesktop({ total, groupCount, role, roleOut, q, onSearch, onS
                   autoComplete="off"
                 />
               </div>
-              <a className="btn btn--primary btn--lg" href="#viec-lam">Xem vị trí</a>
-            </div>
+              <button type="submit" className="btn btn--primary btn--lg">Xem vị trí</button>
+            </form>
             <div className="suggest">
               <span className="suggest__label">Gợi ý:</span>
               {SUGGESTIONS.map((s) => (
@@ -94,7 +104,8 @@ export function HeroDesktop({ total, groupCount, role, roleOut, q, onSearch, onS
   );
 }
 
-export function HeroMobile({ total, hotJobs, role, roleOut, q, onSearch }) {
+export function HeroMobile({ total, hotJobs, role, roleOut, q, onSearch, listUrl }) {
+  const openList = useOpenList(listUrl);
   return (
     <section className="mhero u-mobile">
       <div className="mhero__top">
@@ -143,7 +154,7 @@ export function HeroMobile({ total, hotJobs, role, roleOut, q, onSearch }) {
 
         <div className="reveal" style={{ '--d': '240ms' }}>
           <label htmlFor="job-search-m" className="sr-only">Tìm vị trí</label>
-          <div className="msearch">
+          <form className="msearch" role="search" onSubmit={openList}>
             <Icon name="search" />
             <input
               id="job-search-m"
@@ -153,8 +164,8 @@ export function HeroMobile({ total, hotJobs, role, roleOut, q, onSearch }) {
               placeholder="Vị trí, kỹ năng…"
               autoComplete="off"
             />
-            <a className="msearch__go" href="#viec-lam" aria-label="Xem vị trí"><Icon name="arrow-right" /></a>
-          </div>
+            <button type="submit" className="msearch__go" aria-label="Xem vị trí"><Icon name="arrow-right" /></button>
+          </form>
         </div>
       </div>
       <div className="mhero__curve" aria-hidden="true">

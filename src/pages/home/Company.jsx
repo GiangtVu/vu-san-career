@@ -12,7 +12,7 @@ function Tags({ className }) {
   return (
     <div className={'tag-row ' + className}>
       <span className="outline-tag"><Icon name="pin" size={14} />Hà Nội · TP. Hồ Chí Minh · Nhật Bản</span>
-      <a className="outline-tag" href="https://fptcloud.com/" target="_blank" rel="noopener noreferrer">
+      <a className="outline-tag" href="https://fptsmartcloud.com/" target="_blank" rel="noopener noreferrer">
         <Icon name="home" size={14} />FPT Smart Cloud<Icon name="arrow-up-right" size={14} />
       </a>
     </div>

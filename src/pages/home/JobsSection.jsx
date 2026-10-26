@@ -50,7 +50,7 @@ function JobMini({ job }) {
   );
 }
 
-export default function JobsSection({ jobs, groups, status, q, group, setGroup, clear }) {
+export default function JobsSection({ jobs, groups, status, q, group, setGroup, clear, listUrl }) {
   const isMobile = useMediaQuery('(max-width: 719.98px)');
   const nq = norm(q.trim());
   const list = jobs.filter((j) => (!group || j.group === group) && matches(j, nq));
@@ -61,11 +61,6 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
   const filterParts = [];
   if (group && !isMobile && groups[group]) filterParts.push(groups[group].label);
   if (q.trim()) filterParts.push('“' + q.trim() + '”');
-
-  const moreParams = new URLSearchParams();
-  if (q.trim()) moreParams.set('q', q.trim());
-  if (group) moreParams.set('group', group);
-  const moreQuery = moreParams.toString();
 
   return (
     <section className="section jobs-section" id="viec-lam">
@@ -150,7 +145,7 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
 
             {list.length > PREVIEW && (
               <div className="see-all">
-                <Link className="btn btn--outline see-all__btn" to={'/viec-lam' + (moreQuery ? '?' + moreQuery : '')}>
+                <Link className="btn btn--outline see-all__btn" to={listUrl}>
                   Xem tất cả {list.length} vị trí<Icon name="arrow-right" size={18} sw={2.2} />
                 </Link>
               </div>
