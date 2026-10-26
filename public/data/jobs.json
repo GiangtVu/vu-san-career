@@ -1,0 +1,170 @@
+{
+  "groups": {
+    "eng": { "label": "Engineering", "ink": "#1668DC", "soft": "#E7F0FE", "roles": "Fullstack Developer" },
+    "ai": { "label": "AI & Data", "ink": "#6D28D9", "soft": "#F1EAFE", "roles": "AI Engineer · Data Engineer · Data Scientist · AI Consultant" },
+    "biz": { "label": "Product & Business", "ink": "#0F766E", "soft": "#DDF4F0", "roles": "Business Analyst · Product Owner · Project Manager" },
+    "ops": { "label": "DevOps", "ink": "#B43C0B", "soft": "#FFEDE3", "roles": "DevOps Engineer" }
+  },
+  "offices": {
+    "Hà Nội": "Tầng 22, Vinacomin Tower, 3 Dương Đình Nghệ, Cầu Giấy, Hà Nội"
+  },
+  "jobs": [
+    {
+      "id": "fullstack",
+      "hot": true,
+      "group": "eng",
+      "title": "Fullstack Developer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "30/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phát triển sản phẩm end-to-end: backend Python hoặc Golang, frontend ReactJS.",
+      "stack": ["Python", "Golang", "ReactJS"],
+      "keywords": "python golang go reactjs react backend frontend"
+    },
+    {
+      "id": "ai-engineer",
+      "hot": true,
+      "group": "ai",
+      "title": "AI Engineer (GenAI)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "15/11/2026",
+      "location": "Hà Nội",
+      "desc": "Xây dựng AI Agent và ứng dụng LLM, đưa mô hình GenAI vào sản phẩm thật.",
+      "stack": [],
+      "keywords": "ai ml llm genai agent python machine learning",
+      "detail": {
+        "department": "GenAI",
+        "experience": "Từ 3 năm",
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế, phát triển và fine-tune các mô hình AI cho thị giác máy tính và xử lý ngôn ngữ tự nhiên (TensorFlow, PyTorch).",
+          "Thử nghiệm các kiến trúc mới nhất để cải thiện sản phẩm hiện có, đưa kết quả nghiên cứu vào dự án thực tế.",
+          "Tiền xử lý dữ liệu, feature engineering và data augmentation để nâng chất lượng huấn luyện.",
+          "Xây dựng API và phối hợp với đội phần mềm để tích hợp mô hình vào ứng dụng.",
+          "Hướng dẫn các thành viên junior trong team AI."
+        ],
+        "requirements": [
+          {
+            "title": "Nền tảng & kinh nghiệm",
+            "items": [
+              "Tốt nghiệp đại học chuyên ngành liên quan, nền tảng vững về AI, Machine Learning và Deep Learning.",
+              "Tối thiểu 3 năm làm AI/ML Engineer, trong đó ít nhất 1 năm triển khai ứng dụng LLM/GenAI lên production."
+            ]
+          },
+          {
+            "title": "Kỹ năng kỹ thuật (AI Agent & LLM)",
+            "items": [
+              "Có kinh nghiệm với các framework agent: LangGraph, LangChain, LlamaIndex.",
+              "Hiểu các khái niệm agent: planning (ReAct), bộ nhớ ngắn hạn và dài hạn, tool calling, agent harness.",
+              "Đã làm harness engineering và đánh giá agent với Ragas hoặc TruLens.",
+              "Kinh nghiệm document ingestion, vector database (Elasticsearch, Qdrant) và triển khai ứng dụng GenAI.",
+              "Thành thạo Python, tư duy thiết kế hệ thống tốt."
+            ]
+          },
+          {
+            "title": "Tư duy & kỹ năng mềm",
+            "items": [
+              "Tư duy sản phẩm: dùng công nghệ để giải bài toán kinh doanh.",
+              "Tự đọc và áp dụng nhanh các nghiên cứu AI mới."
+            ]
+          }
+        ],
+        "skills": ["Python", "LangGraph", "LangChain", "LlamaIndex", "PyTorch", "Qdrant", "Elasticsearch"],
+        "related": ["data-engineer", "ai-consultant", "fullstack"]
+      }
+    },
+    {
+      "id": "data-engineer",
+      "hot": true,
+      "group": "ai",
+      "title": "Data Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "20/11/2026",
+      "location": "TP. HCM",
+      "desc": "Thiết kế, xây dựng và vận hành pipeline, kho dữ liệu.",
+      "stack": [],
+      "keywords": "data etl pipeline python"
+    },
+    {
+      "id": "data-scientist",
+      "hot": false,
+      "group": "ai",
+      "title": "Data Scientist",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "05/12/2026",
+      "location": "Hà Nội",
+      "desc": "Phân tích dữ liệu, xây dựng mô hình dự đoán phục vụ ra quyết định.",
+      "stack": [],
+      "keywords": "data science ml python"
+    },
+    {
+      "id": "ai-consultant",
+      "hot": false,
+      "group": "ai",
+      "title": "AI Consultant",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "10/12/2026",
+      "location": "Hà Nội",
+      "desc": "Tư vấn và định hình giải pháp AI cho khách hàng, dự án.",
+      "stack": [],
+      "keywords": "ai consultant tu van"
+    },
+    {
+      "id": "ba",
+      "hot": false,
+      "group": "biz",
+      "title": "Business Analyst",
+      "level": "Junior",
+      "salary": "Thỏa thuận",
+      "deadline": "30/11/2026",
+      "location": "TP. HCM",
+      "desc": "Làm rõ yêu cầu nghiệp vụ, viết tài liệu, kết nối khách hàng với đội phát triển.",
+      "stack": [],
+      "keywords": "ba nghiep vu"
+    },
+    {
+      "id": "po",
+      "hot": false,
+      "group": "biz",
+      "title": "Product Owner",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "15/12/2026",
+      "location": "Hà Nội",
+      "desc": "Quản lý backlog, ưu tiên tính năng theo giá trị sản phẩm.",
+      "stack": [],
+      "keywords": "po product"
+    },
+    {
+      "id": "pm",
+      "hot": false,
+      "group": "biz",
+      "title": "Project Manager",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "20/12/2026",
+      "location": "Hà Nội",
+      "desc": "Lập kế hoạch, điều phối nguồn lực và giữ tiến độ dự án.",
+      "stack": [],
+      "keywords": "pm project du an"
+    },
+    {
+      "id": "devops",
+      "hot": false,
+      "group": "ops",
+      "title": "DevOps Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "25/11/2026",
+      "location": "TP. HCM",
+      "desc": "Xây dựng CI/CD, hạ tầng cloud và giám sát hệ thống.",
+      "stack": [],
+      "keywords": "devops cicd ci/cd cloud kubernetes"
+    }
+  ]
+}
