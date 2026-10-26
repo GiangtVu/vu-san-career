@@ -192,6 +192,9 @@ button:disabled { cursor: default; opacity: 0.45; }
   font-weight: 600;
   color: var(--body);
 }
+/* A tag that searches the job list for itself. */
+.tag--link { text-decoration: none; transition: background-color .15s ease, color .15s ease; }
+.tag--link:hover { background: var(--blue-50); color: var(--blue); }
 
 /* ---------- Footer bottom row ---------- */
 .site-footer { background: var(--blue); color: #FFFFFF; scroll-margin-top: 72px; }

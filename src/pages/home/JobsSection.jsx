@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Icon from '../../components/Icon.jsx';
 import { useMediaQuery } from '../../lib/hooks.js';
-import { hotFirst, jobPath, LoadState, matches, norm } from '../../lib/jobs.jsx';
+import { hotFirst, jobPath, LoadState, matches, norm, skillPath } from '../../lib/jobs.jsx';
 
 const PREVIEW = 6; // jobs shown on the home page; the rest live on /viec-lam
 const GROUP_ICONS = { eng: 'code', ai: 'database', biz: 'briefcase', ops: 'infinity' };
@@ -22,7 +22,9 @@ function JobCard({ job, group }) {
       <h3><Link to={jobPath(job.id)}>{job.title}</Link></h3>
       <p className="job-card__desc">{job.desc}</p>
       {job.stack.length > 0 && (
-        <div className="job-card__stack">{job.stack.map((t) => <span key={t}>{t}</span>)}</div>
+        <div className="job-card__stack">
+          {job.stack.map((t) => <Link key={t} to={skillPath(t)} title={'Tìm việc làm cần ' + t}>{t}</Link>)}
+        </div>
       )}
       <div className="job-card__meta">
         <span><Icon name="bars" size={16} />{job.level}</span>

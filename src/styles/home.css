@@ -44,6 +44,15 @@
 .mnav a:last-child { border-bottom: 0; }
 .mnav__count { font-size: 13px; font-weight: 600; color: var(--blue); }
 
+/* Full nav from 960px; the compact bar with a menu below that. */
+@media (max-width: 959.98px) { .home-nav--full { display: none !important; } }
+@media (min-width: 960px) { .home-nav--compact { display: none !important; } }
+/* Tighter link spacing so the full nav stays on one line just above 960px. */
+@media (min-width: 960px) and (max-width: 1023.98px) {
+  .home-nav--full .nav-link { padding: 0 8px; }
+  .home-nav--full .nav-sep { margin: 0 4px; }
+}
+
 /* "Tất cả việc làm": the outlined link to the full job list. */
 .nav-sep { width: 1px; height: 24px; margin: 0 8px; background: var(--line); }
 .nav-jobs {
@@ -110,8 +119,15 @@
 }
 @media (max-width: 1023.98px) {
   .hero__inner { gap: 28px; }
-  .hero__text { flex: 1 1 380px; }
+  /* 340px (design: 380px) still keeps the photo beside the text at 820px once the scrollbar takes its width. */
+  .hero__text { flex: 1 1 340px; }
   .hero__media { flex: 0 1 340px; max-width: 340px; }
+}
+/* Small tablet (720–819px): a narrower photo keeps it beside the text. */
+@media (min-width: 720px) and (max-width: 819.98px) {
+  .hero__inner { gap: 24px; }
+  .hero__text { flex: 1 1 300px; }
+  .hero__media { flex: 0 1 280px; max-width: 280px; }
 }
 
 .pill-badge {
@@ -127,6 +143,8 @@
   font-weight: 600;
   color: var(--blue);
 }
+.pill-badge--link { text-decoration: none; }
+.pill-badge--link:hover { border-color: var(--blue); background: var(--blue-50); }
 .diamond { width: 8px; height: 8px; border-radius: 2px; transform: rotate(45deg); background: var(--blue); }
 
 .hero__title {
@@ -155,7 +173,8 @@
   color: #FFFFFF;
   font-weight: 700;
 }
-.role-pill, .role-underline { transition: opacity 250ms ease, transform 250ms ease; }
+.role-pill, .role-underline { text-decoration: none; transition: opacity 250ms ease, transform 250ms ease, background-color .2s ease; }
+.role-pill:hover { background: var(--blue-700); color: #FFFFFF; }
 .role-pill.is-out, .role-underline.is-out { opacity: 0; transform: translateY(-6px); }
 
 .hero__lead {
@@ -383,7 +402,7 @@
   font-weight: 500;
   line-height: 1.4;
 }
-.role-underline { display: inline-block; font-weight: 700; border-bottom: 2px solid #FFFFFF; }
+.role-underline { display: inline-block; font-weight: 700; color: #FFFFFF; border-bottom: 2px solid #FFFFFF; }
 
 .msearch {
   position: relative;
@@ -594,8 +613,10 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
   border-radius: 16px;
   background: linear-gradient(150deg, #FFFFFF 0%, #E8F0FD 100%);
   color: var(--ink);
+  text-decoration: none;
   box-shadow: var(--shadow-lift);
 }
+.product:hover { color: var(--ink); }
 .product__icon {
   flex: none;
   width: 44px;
@@ -697,7 +718,7 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
 .filter-row__value { padding: 6px 12px; border-radius: 999px; background: var(--blue-50); color: var(--blue); font-weight: 600; }
 
 .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: clamp(10px, 1.5vw, 16px); }
-@media (max-width: 719.98px) { .job-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 819.98px) { .job-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .job-cell { display: flex; flex-direction: column; min-width: 0; }
 .job-cell > * { flex: 1; }
 
@@ -722,14 +743,21 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
 .job-card h3 a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
 .job-card__desc { margin: 0; flex: 1; font-size: 15px; line-height: 1.55; color: var(--muted); }
 .job-card__stack { display: flex; flex-wrap: wrap; gap: 6px; }
-.job-card__stack span {
+/* Skill tags open the job list for that skill; they sit above the card-wide title link. */
+.job-card__stack a {
+  position: relative;
+  z-index: 1;
   padding: 4px 10px;
   border-radius: 8px;
   border: 1px solid var(--line);
   background: #F5F7FA;
+  color: var(--ink);
   font-size: 13px;
   font-weight: 600;
+  text-decoration: none;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
+.job-card__stack a:hover { border-color: var(--blue); background: var(--blue-50); color: var(--blue); }
 .job-card__meta { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: var(--muted); }
 .job-card__meta span { display: inline-flex; align-items: center; gap: 6px; }
 .job-card .btn { position: relative; z-index: 1; margin-top: 4px; }
@@ -1002,6 +1030,7 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
 
 /* ---------- Benefits ---------- */
 .benefit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 1.5vw, 16px); }
+@media (max-width: 819.98px) { .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .benefit {
   display: flex;
   flex-direction: column;
@@ -1044,7 +1073,7 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
 .ben-time__hours { font-weight: 600; }
 
 .ben-m { position: relative; display: flex; flex-direction: column; gap: 10px; }
-.ben-m__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.ben-m__grid { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .ben-m__hint { font-size: 12px; color: var(--muted); text-align: center; }
 .ben-btn {
   display: flex;
@@ -1089,7 +1118,7 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
   z-index: 5;
   left: 0;
   right: 0;
-  top: 108px;
+  top: calc(50% + 4px); /* the top of the second row */
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -1101,7 +1130,7 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
   pointer-events: none;
 }
 .ben-pop[hidden] { display: none; }
-.ben-pop.is-below { top: calc(100% - 16px); }
+.ben-pop.is-up { top: auto; bottom: calc(50% + 4px); } /* ends at the bottom of the first row */
 .ben-pop__icon { flex: none; width: 38px; height: 38px; box-shadow: none; }
 .ben-pop__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .ben-pop__body > strong { font-size: 16px; line-height: 1.3; font-weight: 700; color: var(--ink-strong); }

@@ -34,20 +34,21 @@ function RecruiterCard() {
   );
 }
 
+// `role` is the rotating { label, url } shown after "Chúng mình đang tìm".
 export function HeroDesktop({ total, groupCount, role, roleOut, q, onSearch, onSuggest, listUrl }) {
   const openList = useOpenList(listUrl);
   return (
     <section className="hero u-desktop">
       <div className="container hero__inner">
         <div className="hero__text">
-          <span className="pill-badge reveal">
+          <Link className="pill-badge pill-badge--link reveal" to="/viec-lam">
             <span className="diamond" aria-hidden="true"></span>
             Đang tuyển{total > 0 ? ' · ' + total + ' vị trí' : ''}
-          </span>
+          </Link>
           <h1 className="hero__title reveal" style={{ '--d': '80ms' }}>Ứng tuyển cùng <span className="accent">người đồng hành</span></h1>
           <p className="hero__seeking reveal" style={{ '--d': '160ms' }}>
             Chúng mình đang tìm
-            {role && <span className={'role-pill' + (roleOut ? ' is-out' : '')} aria-live="off">{role}</span>}
+            {role && <Link className={'role-pill' + (roleOut ? ' is-out' : '')} to={role.url} aria-live="off">{role.label}</Link>}
           </p>
           <p className="hero__lead reveal" style={{ '--d': '240ms' }}>
             FPT Smart Cloud đang tuyển Fullstack, AI &amp; Data, Business Analyst, Product Owner, Project Manager và DevOps. Gửi CV trực tiếp cho mình để cùng trao đổi về vị trí phù hợp.
@@ -149,7 +150,7 @@ export function HeroMobile({ total, count, hotJobs, role, roleOut, q, onSearch, 
           </h1>
           <p className="mhero__seeking">
             Chúng mình đang tìm
-            {role && <span className={'role-underline' + (roleOut ? ' is-out' : '')} aria-live="off">{role}</span>}
+            {role && <Link className={'role-underline' + (roleOut ? ' is-out' : '')} to={role.url} aria-live="off">{role.label}</Link>}
           </p>
         </div>
 

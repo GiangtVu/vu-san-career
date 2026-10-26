@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import '../styles/jobs.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
-import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placesOf, useJobs } from '../lib/jobs.jsx';
+import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placesOf, skillsOf, useJobs } from '../lib/jobs.jsx';
 
 const PER_PAGE = 6;
 const LEVELS = ['Junior', 'Middle', 'Senior'];
@@ -87,7 +87,8 @@ export default function JobList() {
     groups: params.get('group') ? [params.get('group')] : [],
     levels: [],
     loc: '',
-    hotOnly: false
+    hotOnly: false,
+    skill: params.get('skill') || '' // set by the skill tags on a job page
   }));
   const [sort, setSort] = useState('hot');
   const [page, setPage] = useState(1);
@@ -99,7 +100,7 @@ export default function JobList() {
   const update = (patch) => { setSel((s) => ({ ...s, ...patch })); setPage(1); };
   const search = (value) => { setDraft(value); setQ(value); setPage(1); };
   const clearAll = () => {
-    setSel({ groups: [], levels: [], loc: '', hotOnly: false });
+    setSel({ groups: [], levels: [], loc: '', hotOnly: false, skill: '' });
     setDraft('');
     setQ('');
     setPage(1);
@@ -118,6 +119,7 @@ export default function JobList() {
     && (!sel.levels.length || sel.levels.includes(j.level))
     && (!sel.loc || placesOf(j).includes(sel.loc))
     && (!sel.hotOnly || j.hot)
+    && (!sel.skill || skillsOf(j).includes(sel.skill))
     && matches(j, nq));
   list = sort === 'deadline'
     ? list.slice().sort((a, b) => dateKey(a.deadline).localeCompare(dateKey(b.deadline)))
@@ -127,13 +129,16 @@ export default function JobList() {
   const cur = Math.min(page, pageCount);
   const visible = list.slice((cur - 1) * PER_PAGE, cur * PER_PAGE);
 
-  const goTo = (n) => {
-    setPage(n);
+  const toResults = () => {
     if (resultsRef.current) resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+  const goTo = (n) => { setPage(n); toResults(); };
+  // A level or place tag on a card narrows the list to it.
+  const filterBy = (patch) => { update(patch); toResults(); };
 
   const active = [];
   if (q.trim()) active.push({ key: 'q', label: '“' + q.trim() + '”', remove: () => search('') });
+  if (sel.skill) active.push({ key: 'skill', label: 'Kỹ năng: ' + sel.skill, remove: () => update({ skill: '' }) });
   sel.groups.forEach((g) => groups[g] && active.push({ key: 'g-' + g, label: groups[g].label, remove: () => update({ groups: sel.groups.filter((x) => x !== g) }) }));
   sel.levels.forEach((l) => active.push({ key: 'l-' + l, label: l, remove: () => update({ levels: sel.levels.filter((x) => x !== l) }) }));
   if (sel.loc) active.push({ key: 'loc', label: sel.loc, remove: () => update({ loc: '' }) });
@@ -282,9 +287,19 @@ export default function JobList() {
                   <h3><Link to={jobPath(j.id)}>{j.title}</Link></h3>
                   <p>{j.desc}</p>
                   <ul className="jl-card__meta">
-                    <li><Icon name="level" size={14} />{j.level}</li>
-                    <li><Icon name="pin" size={14} />{j.location}</li>
-                    <li><Icon name="clock" size={14} />Hạn: {j.deadline}</li>
+                    <li>
+                      <button type="button" className="jl-card__tag" onClick={() => filterBy({ levels: [j.level] })} title={'Lọc cấp bậc ' + j.level}>
+                        <Icon name="level" size={14} />{j.level}
+                      </button>
+                    </li>
+                    {placesOf(j).map((p) => (
+                      <li key={p}>
+                        <button type="button" className="jl-card__tag" onClick={() => filterBy({ loc: p })} title={'Lọc địa điểm ' + placeLabel(p)}>
+                          <Icon name="pin" size={14} />{p}
+                        </button>
+                      </li>
+                    ))}
+                    <li><span className="jl-card__tag"><Icon name="clock" size={14} />Hạn: {j.deadline}</span></li>
                   </ul>
                 </div>
                 <div className="jl-card__actions">

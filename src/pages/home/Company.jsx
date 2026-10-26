@@ -3,9 +3,9 @@ import Icon from '../../components/Icon.jsx';
 import { useInView, useTween } from '../../lib/hooks.js';
 
 const PRODUCTS = [
-  { icon: 'cloud', name: 'FPT Cloud', desc: 'Nền tảng điện toán đám mây quy mô lớn tại Việt Nam, xây dựng trên OpenStack.' },
-  { icon: 'chip', name: 'FPT AI Factory', desc: 'Hạ tầng GPU NVIDIA cùng AI Studio, AI Inference và AI Agents để huấn luyện, triển khai AI.' },
-  { icon: 'sparkles', name: 'FPT.AI', desc: 'Nền tảng giải pháp AI cho doanh nghiệp: FPT AI Agents, AI Chat, AI Engage, AI Read, AI eKYC.' }
+  { icon: 'cloud', name: 'FPT Cloud', url: 'https://fptcloud.com/', desc: 'Nền tảng điện toán đám mây quy mô lớn tại Việt Nam, xây dựng trên OpenStack.' },
+  { icon: 'chip', name: 'FPT AI Factory', url: 'https://factory.fpt.ai/', desc: 'Hạ tầng GPU NVIDIA cùng AI Studio, AI Inference và AI Agents để huấn luyện, triển khai AI.' },
+  { icon: 'sparkles', name: 'FPT.AI', url: 'https://fpt.ai/vi', desc: 'Nền tảng giải pháp AI cho doanh nghiệp: FPT AI Agents, AI Chat, AI Engage, AI Read, AI eKYC.' }
 ];
 
 function Tags({ className }) {
@@ -66,13 +66,13 @@ export default function Company() {
           <span className="eyebrow eyebrow--light">Sản phẩm chính</span>
           <div className="products">
             {PRODUCTS.map((pr) => (
-              <div key={pr.name} className="product lift">
+              <a key={pr.name} className="product lift" href={pr.url} target="_blank" rel="noopener noreferrer">
                 <span className="product__icon"><Icon name={pr.icon} size={22} /></span>
                 <span className="product__text">
                   <strong>{pr.name}</strong>
                   <span className="product__desc u-desktop">{pr.desc}</span>
                 </span>
-              </div>
+              </a>
             ))}
           </div>
           <Tags className="u-tabp" />

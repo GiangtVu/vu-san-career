@@ -30,6 +30,11 @@ export function placeLabel(place) {
   return PLACE_LABELS[place] || place;
 }
 
+// Every technology a post asks for; `stack` is the short list shown on cards.
+export function skillsOf(job) {
+  return (job.detail && job.detail.skills) || job.stack;
+}
+
 export function matches(job, q) {
   return !q || job.searchText.includes(q);
 }
@@ -45,6 +50,12 @@ export function listPath(q, group) {
   if (group) params.set('group', group);
   const query = params.toString();
   return '/viec-lam' + (query ? '?' + query : '');
+}
+
+// Job list filtered to posts asking for one exact skill. Unlike the keyword search,
+// "Java" here doesn't also match "JavaScript".
+export function skillPath(skill) {
+  return '/viec-lam?skill=' + encodeURIComponent(skill);
 }
 
 export const CONTACT = {

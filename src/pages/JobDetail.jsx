@@ -4,7 +4,7 @@ import '../styles/job.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
 import { useMediaQuery } from '../lib/hooks.js';
-import { CONTACT, hotFirst, jobPath, LoadState, placeLabel, placesOf, useJobs } from '../lib/jobs.jsx';
+import { CONTACT, hotFirst, jobPath, LoadState, placeLabel, placesOf, skillPath, skillsOf, useJobs } from '../lib/jobs.jsx';
 
 const SAVED_KEY = 'vs-saved-jobs';
 
@@ -107,7 +107,7 @@ export default function JobDetail() {
   const group = data.groups[job.group] || { label: job.group };
   const d = job.detail || {};
   const duties = d.duties || [job.desc];
-  const skills = d.skills || job.stack;
+  const skills = skillsOf(job);
   const accordion = { isPhone, openSec, setOpenSec };
 
   const info = [
@@ -181,7 +181,11 @@ export default function JobDetail() {
                 </div>
               ))}
               {skills.length > 0 && (
-                <div className="jd-skills">{skills.map((s) => <span key={s} className="tag">{s}</span>)}</div>
+                <div className="jd-skills">
+                  {skills.map((s) => (
+                    <Link key={s} className="tag tag--link" to={skillPath(s)} title={'Tìm việc làm cần ' + s}>{s}</Link>
+                  ))}
+                </div>
               )}
             </Section>
           )}

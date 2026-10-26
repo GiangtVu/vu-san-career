@@ -16,7 +16,7 @@ export default function HomeHeader({ total }) {
 
   return (
     <header className="site-header site-header--sticky">
-      <div className="container header-bar u-desktop">
+      <div className="container header-bar home-nav--full">
         <a className="brand" href="#top">
           <Logo size={36} />
           <strong className="brand__name">Vũ San <span>Careers</span></strong>
@@ -32,7 +32,7 @@ export default function HomeHeader({ total }) {
         </nav>
       </div>
 
-      <div className="u-mobile">
+      <div className="home-nav--compact">
         <div className="mheader">
           <a className="brand" href="#top">
             <Logo size={30} />

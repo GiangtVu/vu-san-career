@@ -77,17 +77,19 @@ export default function Benefits() {
                 <span>{b.short}</span>
               </button>
             ))}
+            {/* Covers the other row of tiles: below for the top row, above for the bottom row,
+                so it never runs into the next section. */}
+            {active && (
+              <div id="ben-pop" className={'ben-pop' + (hold > 2 ? ' is-up' : '')} role="tooltip" style={colorVars(active)}>
+                <span className="ben-pop__icon"><Icon name={active.icon} size={18} /></span>
+                <div className="ben-pop__body">
+                  <strong>{active.title}</strong>
+                  <div className="ben-pop__text"><BenefitContent b={active} /></div>
+                </div>
+              </div>
+            )}
           </div>
           <span className="ben-m__hint">Nhấn giữ vào từng mục để xem chi tiết</span>
-          {active && (
-            <div id="ben-pop" className={'ben-pop' + (hold > 2 ? ' is-below' : '')} role="tooltip" style={colorVars(active)}>
-              <span className="ben-pop__icon"><Icon name={active.icon} size={18} /></span>
-              <div className="ben-pop__body">
-                <strong>{active.title}</strong>
-                <div className="ben-pop__text"><BenefitContent b={active} /></div>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </section>

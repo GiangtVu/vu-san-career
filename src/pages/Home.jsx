@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import '../styles/home.css';
-import { hotFirst, listPath, useJobs } from '../lib/jobs.jsx';
+import { listPath, useJobs } from '../lib/jobs.jsx';
 import { usePrefersReducedMotion, useTween } from '../lib/hooks.js';
 import HomeHeader from './home/HomeHeader.jsx';
 import { HeroDesktop, HeroMobile } from './home/Hero.jsx';
@@ -45,7 +45,11 @@ export default function Home() {
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, [reduce]);
 
-  const roles = useMemo(() => hotFirst(jobs).map((j) => j.title), [jobs]);
+  // Short role names from each group ("AI Engineer · Data Engineer · …"), not the long
+  // crawled job titles, so the rotating pill stays on one line. Each links to its group's jobs.
+  const roles = useMemo(() => Object.entries(groups).flatMap(([k, g]) => (
+    g.roles ? g.roles.split(' · ').map((label) => ({ label, url: listPath('', k) })) : []
+  )), [groups]);
   const { role, out } = useRotatingRole(roles, !reduce);
   const heroP = useTween(entered, 1100, 400);
   const hotJobs = useMemo(() => jobs.filter((j) => j.hot), [jobs]);
