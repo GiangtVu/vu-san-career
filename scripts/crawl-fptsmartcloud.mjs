@@ -54,10 +54,12 @@ function parseSummary($, el) {
 
 async function crawlList() {
   const jobs = new Map();
-  for (let page = 1; page <= MAX_PAGES; page++) {
+  for (let page = 1; ; page++) {
     const $ = load(await fetchHtml(page === 1 ? BASE : `${BASE}page/${page}/`));
     const cards = $('.bota_job_opportunities_it');
     if (!cards.length) break;
+    // classify-jobs.mjs closes jobs missing from this list, so a cut-off list must not pass as complete.
+    if (page > MAX_PAGES) throw new Error(`The listing has more than ${MAX_PAGES} pages; raise MAX_PAGES.`);
     cards.each((_, card) => {
       const link = $(card).find('.bota_job_opportunities_title a');
       const url = link.attr('href');
@@ -171,5 +173,6 @@ const jobs = detailed.filter((job) => isFocusJob(classifyJob(job)));
 if (!jobs.length) throw new Error(`None of the ${list.length} listed jobs matches the focus topics.`);
 
 await mkdir(dirname(OUT), { recursive: true });
-await writeFile(OUT, JSON.stringify({ source: BASE, jobs }, null, 2) + '\n');
+// `listed` holds every job on the listing, focus or not: classify-jobs.mjs closes only jobs gone from it.
+await writeFile(OUT, JSON.stringify({ source: BASE, listed: list.map((job) => job.id), jobs }, null, 2) + '\n');
 console.log(`Saved ${jobs.length} of ${list.length} listed jobs to ${OUT} (fetched ${candidates.length} detail pages)`);

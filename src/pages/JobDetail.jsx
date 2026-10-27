@@ -82,10 +82,10 @@ export default function JobDetail() {
   const [openSec, setOpenSec] = useState(2);
   const [saved, toggleSave] = useSavedJob(id);
 
-  const job = data ? data.jobs.find((j) => j.id === id) : null;
+  const job = data ? data.allJobs.find((j) => j.id === id) : null;
 
   useEffect(() => {
-    document.title = (job ? job.title + ' · ' : '') + 'Vũ San Careers';
+    document.title = (job ? job.title + (job.closed ? ' (Đã ngừng tuyển)' : '') + ' · ' : '') + 'Vũ San Careers';
   }, [job]);
   useEffect(() => { setOpenSec(2); }, [id]);
 
@@ -117,7 +117,7 @@ export default function JobDetail() {
     d.department && ['Phòng ban', d.department],
     d.type && ['Hình thức', d.type],
     ['Địa điểm', job.location],
-    ['Hạn nộp', job.deadline, 'jd-info__deadline']
+    job.closed ? ['Trạng thái', 'Ngừng tuyển từ ' + job.closedAt, 'jd-info__deadline'] : ['Hạn nộp', job.deadline, 'jd-info__deadline']
   ].filter(Boolean);
 
   return (
@@ -145,25 +145,39 @@ export default function JobDetail() {
           <div className="jd-banner__badges">
             <span className="jd-badge">{group.label}{d.department ? ' · ' + d.department : ''}</span>
             {job.hot && <span className="jd-badge jd-badge--hot">HOT</span>}
+            {job.closed && <span className="jd-badge jd-badge--closed">Đã ngừng tuyển</span>}
           </div>
           <h1>{job.title}</h1>
           <ul className="jd-meta">
             <li><Icon name="wallet" size={18} />{job.salary}</li>
             <li><Icon name="level" size={18} />{job.level}</li>
             <li><Icon name="pin" size={18} />{job.location}</li>
-            <li><Icon name="clock" size={18} />Hạn nộp: {job.deadline}</li>
+            <li><Icon name="clock" size={18} />{job.closed ? 'Ngừng tuyển từ ' + job.closedAt : 'Hạn nộp: ' + job.deadline}</li>
           </ul>
           <div className="jd-actions">
-            <a className="btn btn--white jd-actions__apply" href="#nguoi-phu-trach">Ứng tuyển ngay<Icon name="arrow-right" size={18} sw={2.2} /></a>
-            <button type="button" className="jd-actions__save" aria-pressed={saved} onClick={toggleSave}>
-              <Icon name="bookmark" size={18} fill={saved} />{saved ? 'Đã lưu' : 'Lưu tin'}
-            </button>
+            {job.closed ? (
+              <Link className="btn btn--white jd-actions__apply" to="/viec-lam">Xem việc làm đang tuyển<Icon name="arrow-right" size={18} sw={2.2} /></Link>
+            ) : (
+              <>
+                <a className="btn btn--white jd-actions__apply" href="#nguoi-phu-trach">Ứng tuyển ngay<Icon name="arrow-right" size={18} sw={2.2} /></a>
+                <button type="button" className="jd-actions__save" aria-pressed={saved} onClick={toggleSave}>
+                  <Icon name="bookmark" size={18} fill={saved} />{saved ? 'Đã lưu' : 'Lưu tin'}
+                </button>
+              </>
+            )}
           </div>
         </div>
       </section>
 
       <div className="container jd-body">
         <main className="jd-main">
+          {job.closed && (
+            <div className="jd-card jd-closed" role="status">
+              Vị trí này đã ngừng tuyển từ {job.closedAt}. Thông tin bên dưới được giữ lại để tham khảo, bạn có thể xem
+              các <Link to="/viec-lam">vị trí đang tuyển</Link> hoặc nhắn Vũ San để được giới thiệu vị trí phù hợp.
+            </div>
+          )}
+
           <Section n={1} title="Về FPT Smart Cloud" accordion={accordion}>
             <p className="jd-text">FPT Smart Cloud (FCI) là thành viên Tập đoàn FPT, cung cấp giải pháp Trí tuệ nhân tạo và Điện toán đám mây cho doanh nghiệp tại Việt Nam và quốc tế: giải pháp may đo theo nhu cầu, nền tảng all-in-one và công nghệ sẵn sàng cho tương lai.</p>
           </Section>
@@ -246,7 +260,9 @@ export default function JobDetail() {
                 <div key={label}><dt>{label}</dt><dd className={cls}>{value}</dd></div>
               ))}
             </dl>
-            <a className="btn btn--primary jd-side__apply" href="#nguoi-phu-trach">Ứng tuyển ngay</a>
+            {job.closed
+              ? <Link className="btn btn--primary jd-side__apply" to="/viec-lam">Xem việc làm đang tuyển</Link>
+              : <a className="btn btn--primary jd-side__apply" href="#nguoi-phu-trach">Ứng tuyển ngay</a>}
           </section>
 
           <section className="jd-card jd-side__card jd-contact" id="nguoi-phu-trach">

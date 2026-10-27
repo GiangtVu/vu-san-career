@@ -25,6 +25,7 @@
   font-weight: 700;
 }
 .jd-badge--hot { background: #FFEDE3; color: #B43C0B; }
+.jd-badge--closed { background: #F1F4F9; color: #3E4450; }
 .jd-banner h1 { margin: 0; font-size: clamp(30px, 4.2vw, 52px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
 
 .jd-meta { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 15px; }
@@ -76,6 +77,8 @@
 
 .jd-card { border-radius: 20px; background: #FFFFFF; border: 1px solid var(--line-soft); }
 .jd-card--raised { box-shadow: var(--shadow-card); }
+.jd-closed { padding: 16px 20px; background: #FFF8E6; border-color: #F5DFA6; color: #5C4A12; font-size: 15px; line-height: 1.55; }
+.jd-closed a { color: var(--blue); font-weight: 600; }
 
 .jd-sec { display: flex; flex-direction: column; gap: 14px; padding: clamp(20px, 2.6vw, 32px); }
 .jd-sec h2 { margin: 0; font-size: 22px; line-height: 1.3; font-weight: 700; }
