@@ -32,6 +32,7 @@
     {
       "id": "ai-research-ai-vision",
       "hot": true,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Research – AI Vision",
       "level": "Middle",
@@ -112,6 +113,7 @@
     {
       "id": "product-tester-bss",
       "hot": true,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Product Tester (BSS)",
       "level": "Senior",
@@ -192,7 +194,8 @@
     },
     {
       "id": "ai-engineer-genai",
-      "hot": true,
+      "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Engineer (GenAI)",
       "level": "Middle",
@@ -265,6 +268,7 @@
     {
       "id": "senior-business-analyst-bss",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Senior Business Analyst (BSS)",
       "level": "Senior",
@@ -349,6 +353,7 @@
     {
       "id": "fullstack-software-engineer-agentic-ai-platform-ai-lab",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Fullstack Software Engineer – Agentic AI Platform (AI Lab)",
       "level": "Middle",
@@ -437,6 +442,7 @@
     {
       "id": "fullstack-engineer-isdd",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Fullstack Engineer (ISDD)",
       "level": "Middle",
@@ -523,6 +529,7 @@
     {
       "id": "business-analyst-isdd",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst (ISDD)",
       "level": "Middle",
@@ -568,6 +575,7 @@
     {
       "id": "ai-evaluation-specialist-ai-quality-control-engineer-ai-lab",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Evaluation Specialist/ AI Quality Control Engineer (AI Delivery)",
       "level": "Middle",
@@ -632,6 +640,7 @@
     {
       "id": "project-manager-ai-lab",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Project Manager (AI Lab)",
       "level": "Senior",
@@ -672,6 +681,7 @@
     {
       "id": "business-analyst-product-owner-ncp",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst & Product Owner (NCP)",
       "level": "Senior",
@@ -764,6 +774,7 @@
     {
       "id": "python-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Python Engineer",
       "level": "Senior",
@@ -825,6 +836,7 @@
     {
       "id": "business-analyst-product-owner",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst/Product Owner (Self Driving)",
       "level": "Middle",
@@ -880,6 +892,7 @@
     {
       "id": "ai-engineer-ai-global",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Engineer (AI Global)",
       "level": "Middle",
@@ -945,6 +958,7 @@
     {
       "id": "business-analyst-genai",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst (GenAI)",
       "level": "Middle",
@@ -1021,6 +1035,7 @@
     {
       "id": "project-manager-ai-delivery-2",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Project Manager (AI Delivery)",
       "level": "Senior",
@@ -1067,6 +1082,7 @@
     {
       "id": "ai-engineer-self-driving-cloud",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Engineer (Self-Driving Cloud)",
       "level": "Senior",
@@ -1234,6 +1250,7 @@
     {
       "id": "fullstack-engineer-self-driving",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Fullstack Engineer (Self driving)",
       "level": "Middle",
@@ -1321,6 +1338,7 @@
     {
       "id": "program-manager-japan-market",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Program Manager (Japan Market)",
       "level": "Senior",
@@ -1392,6 +1410,7 @@
     {
       "id": "database",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "Database Engineer",
       "level": "Middle",
@@ -1474,6 +1493,7 @@
     {
       "id": "backend-engineer-ai-infrastructure",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Backend Engineer (AI Infrastructure)",
       "level": "Middle",
@@ -1540,6 +1560,7 @@
     {
       "id": "full-stack-engineer-ai-infrastructure",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Full-stack Engineer (AI Infrastructure)",
       "level": "Senior",
@@ -1614,6 +1635,7 @@
     {
       "id": "devops-engineer-ncp",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "Devops Engineer (NCP)",
       "level": "Middle",
@@ -1702,6 +1724,7 @@
     {
       "id": "mlops-engineer-ai-inference-platform-llm-serving-optimization",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "MLOps Engineer – AI Inference Platform (LLM Serving & Optimization)",
       "level": "Senior",
@@ -1767,6 +1790,7 @@
     {
       "id": "business-analyst-2",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst (Cloud Products)",
       "level": "Middle",
@@ -1825,6 +1849,7 @@
     {
       "id": "ai-text-to-speech-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "Senior AI Text-To-Speech Engineer",
       "level": "Senior",
@@ -1885,6 +1910,7 @@
     {
       "id": "business-analyst-bss",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst (BSS)",
       "level": "Senior",
@@ -1962,6 +1988,7 @@
     {
       "id": "site-reliability-engineer-sre",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "Site Reliability Engineer (SRE)",
       "level": "Middle",
@@ -2033,6 +2060,7 @@
     {
       "id": "fullstack-engineer-cloud-paas",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Fullstack Engineer (Cloud PaaS)",
       "level": "Middle",
@@ -2111,6 +2139,7 @@
     {
       "id": "kubernetes-platform-engineer-cloud-paas",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "Kubernetes Platform Engineer (Cloud PaaS)",
       "level": "Middle",
@@ -2183,6 +2212,7 @@
     {
       "id": "ai-product-manager-ai-conversation-global",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "AI Product Manager (AI Conversation/Global)",
       "level": "Senior",
@@ -2228,6 +2258,7 @@
     {
       "id": "data-analytics-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "Data Analytics Engineer",
       "level": "Middle",
@@ -2309,6 +2340,7 @@
     {
       "id": "business-analyst-ai-global",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst (AI Global)",
       "level": "Middle",
@@ -2354,6 +2386,7 @@
     {
       "id": "project-manager-2",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Project Manager (AI Global)",
       "level": "Senior",
@@ -2399,6 +2432,7 @@
     {
       "id": "project-manager-ai",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Project Manager (AI)",
       "level": "Senior",
@@ -2444,6 +2478,7 @@
     {
       "id": "data-engineer-2",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "Data Engineer (GenAI)",
       "level": "Middle",
@@ -2507,6 +2542,7 @@
     {
       "id": "business-analyst-jlpt-n2-n1",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst (JLPT N2/N1)",
       "level": "Middle",
@@ -2552,6 +2588,7 @@
     {
       "id": "site-reliability-engineer-junior-middle",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "Site Reliability Engineer (Junior/Middle)",
       "level": "Junior",
@@ -2622,6 +2659,7 @@
     {
       "id": "ai-solution-architecture",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Solution Architecture",
       "level": "Senior",
@@ -2683,6 +2721,7 @@
     {
       "id": "dataops",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "DataOps / Platform Engineer (PaaS Team)",
       "level": "Middle",
@@ -2762,6 +2801,7 @@
     {
       "id": "dataengineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "Data Engineer (Data Suite)",
       "level": "Senior",
@@ -2836,6 +2876,7 @@
     {
       "id": "sre-devops-engineer-paas",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "DevOps Engineer (PaaS)",
       "level": "Middle",
@@ -2899,6 +2940,7 @@
     {
       "id": "software-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Software Engineer (Python+Openstack)",
       "level": "Middle",
@@ -2955,6 +2997,7 @@
     {
       "id": "text-to-speech-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ai",
       "title": "Text-to-Speech Engineer (AI Conversation Team)",
       "level": "Middle",
@@ -3011,6 +3054,7 @@
     {
       "id": "devops_engineer_infra",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "DevOps Engineer (Infra)",
       "level": "Middle",
@@ -3083,6 +3127,7 @@
     {
       "id": "business-analyst-ai-conversation",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst (AI Conversation Team)",
       "level": "Senior",
@@ -3131,6 +3176,7 @@
     {
       "id": "fullstack-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Fullstack Engineer",
       "level": "Middle",
@@ -3191,6 +3237,7 @@
     {
       "id": "project-manager",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Project Manager",
       "level": "Senior",
@@ -3243,6 +3290,7 @@
     {
       "id": "iaas-software-engineer-fcd-client",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Software Engineer – FCD",
       "level": "Middle",
@@ -3304,6 +3352,7 @@
     {
       "id": "ai-delivery-business-analyst",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Business Analyst",
       "level": "Senior",
@@ -3352,6 +3401,7 @@
     {
       "id": "cloud-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "Cloud Engineer L2 (Cloud Operation Center)",
       "level": "Middle",
@@ -3413,6 +3463,7 @@
     {
       "id": "fullstack-engineer-2",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Fullstack Engineer",
       "level": "Senior",
@@ -3474,6 +3525,7 @@
     {
       "id": "cloud_openstack_engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "Cloud Openstack Engineer (IaaS)",
       "level": "Middle",

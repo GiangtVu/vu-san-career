@@ -32,6 +32,7 @@
     {
       "id": "cloud-automation-solution-architecture-self-driving",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Cloud Automation Solution Architecture (Self Driving)",
       "level": "Senior",
@@ -128,6 +129,7 @@
     {
       "id": "lead-fullstack-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Lead Fullstack Engineer (BSS)",
       "level": "Senior",
@@ -209,6 +211,7 @@
     {
       "id": "devops-engineer-cdc",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "DevOps Engineer (CDC)",
       "level": "Middle",
@@ -301,6 +304,7 @@
     {
       "id": "senior-business-analyst-pmo",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "biz",
       "title": "Senior Business Analyst (PMO)",
       "level": "Senior",
@@ -357,6 +361,7 @@
     {
       "id": "system-infrastructure-operation-engineer",
       "hot": false,
+      "postedAt": "27/10/2026",
       "group": "ops",
       "title": "System/Infrastructure Operation Engineer",
       "level": "Middle",

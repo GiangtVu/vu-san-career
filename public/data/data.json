@@ -30,6 +30,86 @@
   },
   "jobs": [
     {
+      "id": "platform-engineer-cloud-desktop-iaas",
+      "hot": true,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Platform Engineer – Cloud Desktop (IaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "operate, monitor, troubleshoot and optimize the FCD service (virtual desktops, broker, gateway, golden images and service components), ensuring uptime and a…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Ansible",
+        "OpenStack"
+      ],
+      "keywords": "platform engineer – cloud desktop  python kubernetes docker ansible openstack linux aws azure prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/platform-engineer-cloud-desktop-iaas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Platform operations: operate, monitor, troubleshoot and optimize the FCD service (virtual desktops, broker, gateway, golden images and service components), ensuring uptime and a stable experience for end-users.",
+          "Feature research & development: research, design and develop new features for the FCD core service according to the product roadmap — from technical evaluation and solution design to implementation and rollout.",
+          "Service components: build and maintain golden images, automated provisioning and broker/client integration.",
+          "Automation & containers: standardize operations with Ansible/Python/Bash; operate FCD service components running on Docker/Kubernetes.",
+          "Incident management: lead RCA, rollback and remediation for FCD service incidents.",
+          "Product & presale support: provide technical input on feasibility, effort and trade-offs for the roadmap, customer PoCs and new deals (supporting role, not a sales role).",
+          "Documentation: write runbooks, architecture documents and operational procedures."
+        ],
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Must-have",
+            "items": [
+              "3+ years as a Cloud/Platform/Infrastructure Engineer operating a cloud or virtualization platform in production (OpenStack, VMware, Proxmox or equivalent).",
+              "Solid virtualization fundamentals (KVM preferred, or VMware ESXi) and ability to troubleshoot production issues (compute, storage, network).",
+              "Strong Linux administration (Ubuntu, CentOS/Rocky) and Linux networking (DNS, routing, VLAN/VXLAN).",
+              "Programming skills (Python preferred) to design and develop service features and integrations.",
+              "Automation with Ansible or Bash, and Git; familiarity with Docker/Kubernetes.",
+              "Experience with monitoring tools (Prometheus, Grafana, Zabbix or equivalent).",
+              "Product mindset: understands requirements from PO/customers and proposes solutions that balance end-user experience, cost and effort.",
+              "Able to read technical documents and communicate in English."
+            ]
+          },
+          {
+            "title": "Soft skills",
+            "items": [
+              "Ownership and composure under production pressure.",
+              "Clear communication and coordination with internal teams, vendors and customers.",
+              "Presentation, writing and time management skills.",
+              "Teamwork; willing to mentor and support colleagues.",
+              "Good working attitude, dynamic, responsible, reliable, professional."
+            ]
+          },
+          {
+            "title": "Advantages (optional)",
+            "items": [
+              "Production experience with OpenStack (Nova, Cinder, Neutron/OVN), especially deployments using Kolla-Ansible.",
+              "Experience with VDI/DaaS (VMware Horizon, Citrix, OpenUDS).",
+              "Knowledge of AD, Kerberos, LDAP, Azure AD DS.",
+              "Certifications: COA, RHCE, CKA, AWS/Azure or equivalent"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Ansible",
+          "OpenStack",
+          "Linux",
+          "AWS",
+          "Azure",
+          "Prometheus",
+          "Grafana"
+        ]
+      }
+    },
+    {
       "id": "ai-research-ai-vision",
       "hot": true,
       "postedAt": "27/10/2026",
@@ -186,7 +266,7 @@
     },
     {
       "id": "ai-engineer-genai",
-      "hot": true,
+      "hot": false,
       "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Engineer (GenAI)",
