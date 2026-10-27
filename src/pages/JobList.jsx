@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import '../styles/jobs.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
+import { LIST_TITLE } from '../lib/seo.js';
 import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placesOf, skillsOf, useJobs } from '../lib/jobs.jsx';
 
 const PER_PAGE = 6;
@@ -94,7 +95,7 @@ export default function JobList() {
   const [page, setPage] = useState(1);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  useEffect(() => { document.title = 'Việc làm · Vũ San Careers'; }, []);
+  useEffect(() => { document.title = LIST_TITLE; }, []);
 
   // Any filter change returns to the first page.
   const update = (patch) => { setSel((s) => ({ ...s, ...patch })); setPage(1); };

@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { JobsProvider } from './lib/jobs.jsx';
 import Home from './pages/Home.jsx';
 import JobList from './pages/JobList.jsx';
 import JobDetail from './pages/JobDetail.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 // On navigation: jump to the #hash target when there is one, else to the top.
 // Content can arrive after the JSON loads, so retry the hash lookup for a moment.
@@ -35,7 +36,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/viec-lam" element={<JobList />} />
         <Route path="/viec-lam/:id" element={<JobDetail />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </JobsProvider>
   );

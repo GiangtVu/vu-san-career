@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender.mjs",
     "preview": "vite preview",
     "crawl": "node scripts/crawl-fptsmartcloud.mjs",
     "classify": "node scripts/classify-jobs.mjs"

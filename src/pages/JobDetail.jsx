@@ -5,6 +5,7 @@ import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
 import { useMediaQuery } from '../lib/hooks.js';
 import { CONTACT, hotFirst, jobPath, LoadState, placeLabel, placesOf, skillPath, skillsOf, useJobs } from '../lib/jobs.jsx';
+import { jobTitle, SITE_NAME } from '../lib/seo.js';
 
 const SAVED_KEY = 'vs-saved-jobs';
 
@@ -85,7 +86,7 @@ export default function JobDetail() {
   const job = data ? data.allJobs.find((j) => j.id === id) : null;
 
   useEffect(() => {
-    document.title = (job ? job.title + (job.closed ? ' (Đã ngừng tuyển)' : '') + ' · ' : '') + 'Vũ San Careers';
+    document.title = job ? jobTitle(job) : SITE_NAME;
   }, [job]);
   useEffect(() => { setOpenSec(2); }, [id]);
 
