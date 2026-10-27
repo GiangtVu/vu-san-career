@@ -13,6 +13,20 @@ const URGENT_DAYS = 25; // deadline this close gets the "Sắp hết hạn" badg
 
 const toggleIn = (arr, v) => (arr.includes(v) ? arr.filter((x) => x !== v) : arr.concat(v));
 
+// Filters carried in the URL: ?q= keyword, ?group= field, ?skill= exact skill tag.
+function filtersFrom(params) {
+  return {
+    q: params.get('q') || '',
+    sel: {
+      groups: params.get('group') ? [params.get('group')] : [],
+      levels: [],
+      loc: '',
+      hotOnly: false,
+      skill: params.get('skill') || ''
+    }
+  };
+}
+
 function isUrgent(deadline) {
   const days = (parseDate(deadline) - new Date()) / 86400000;
   return days >= 0 && days <= URGENT_DAYS;
@@ -80,21 +94,25 @@ export default function JobList() {
   const [params] = useSearchParams();
   const resultsRef = useRef(null);
 
-  const initialQ = params.get('q') || '';
-  const [draft, setDraft] = useState(initialQ);
-  const [q, setQ] = useState(initialQ);
-  const [sel, setSel] = useState(() => ({
-    groups: params.get('group') ? [params.get('group')] : [],
-    levels: [],
-    loc: '',
-    hotOnly: false,
-    skill: params.get('skill') || '' // set by the skill tags on a job page
-  }));
+  const [draft, setDraft] = useState(() => filtersFrom(params).q);
+  const [q, setQ] = useState(() => filtersFrom(params).q);
+  const [sel, setSel] = useState(() => filtersFrom(params).sel);
   const [sort, setSort] = useState('hot');
   const [page, setPage] = useState(1);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
   useEffect(() => { document.title = 'Việc làm · Vũ San Careers'; }, []);
+
+  // The page stays mounted when only the query string changes (e.g. a tag link while
+  // already on /viec-lam), so re-apply the URL's filters whenever it changes.
+  const query = params.toString();
+  useEffect(() => {
+    const f = filtersFrom(new URLSearchParams(query));
+    setDraft(f.q);
+    setQ(f.q);
+    setSel(f.sel);
+    setPage(1);
+  }, [query]);
 
   // Any filter change returns to the first page.
   const update = (patch) => { setSel((s) => ({ ...s, ...patch })); setPage(1); };
@@ -133,7 +151,7 @@ export default function JobList() {
     if (resultsRef.current) resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   const goTo = (n) => { setPage(n); toResults(); };
-  // A level or place tag on a card narrows the list to it.
+  // A skill, level or place tag on a card narrows the list to it.
   const filterBy = (patch) => { update(patch); toResults(); };
 
   const active = [];
@@ -286,6 +304,21 @@ export default function JobList() {
                   </div>
                   <h3><Link to={jobPath(j.id)}>{j.title}</Link></h3>
                   <p>{j.desc}</p>
+                  {j.stack.length > 0 && (
+                    <ul className="jl-card__skills" aria-label="Kỹ năng">
+                      {j.stack.map((s) => (
+                        <li key={s}>
+                          <button
+                            type="button"
+                            className="jl-card__skill"
+                            aria-pressed={sel.skill === s}
+                            onClick={() => filterBy({ skill: sel.skill === s ? '' : s })}
+                            title={'Lọc việc làm cần ' + s}
+                          >{s}</button>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                   <ul className="jl-card__meta">
                     <li>
                       <button type="button" className="jl-card__tag" onClick={() => filterBy({ levels: [j.level] })} title={'Lọc cấp bậc ' + j.level}>

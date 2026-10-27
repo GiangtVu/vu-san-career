@@ -405,6 +405,25 @@
 /* Tag buttons sit above the card-wide title link. */
 button.jl-card__tag { position: relative; z-index: 1; transition: background-color .15s ease, color .15s ease; }
 button.jl-card__tag:hover { background: var(--blue-50); color: var(--blue); }
+
+/* Skill tags filter the list to posts asking for that skill. */
+.jl-card__skills { list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.jl-card__skills li { display: flex; }
+.jl-card__skill {
+  position: relative;
+  z-index: 1;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #F5F7FA;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.jl-card__skill:hover { border-color: var(--blue); background: var(--blue-50); color: var(--blue); }
+.jl-card__skill[aria-pressed="true"] { border-color: var(--blue); background: var(--blue); color: #FFFFFF; }
 .jl-card__actions {
   flex: 1 1 180px;
   display: flex;

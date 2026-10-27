@@ -1236,6 +1236,11 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
   color: var(--muted);
 }
 .greet__close:hover { background: var(--bg-tint); }
+/* The whole bubble opens Zalo: its link covers the bubble, the close button sits above. */
+.greet__cta::after, .greet__msg::after { content: ''; position: absolute; inset: -1px; border-radius: 18px; } /* -1px: over the border too */
+.greet__msg::after { border-radius: 16px; }
+.greet__close { position: relative; z-index: 1; }
+.greet__msg { font-size: 14px; line-height: 1.45; color: inherit; text-decoration: none; }
 
 .greet--mobile {
   position: absolute;

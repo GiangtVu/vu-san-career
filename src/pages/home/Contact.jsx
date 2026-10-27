@@ -77,7 +77,7 @@ export function ActionBar({ shown, onClose }) {
         <img src="/img/avatar.jpg" alt="" width="40" height="40" />
         <span className="greet__text">
           <strong>Vũ San · Talent Acquisition Business Partner</strong>
-          <span>{GREETING}</span>
+          <a className="greet__msg" href={CONTACT.zalo} target="_blank" rel="noopener noreferrer">{GREETING}</a>
         </span>
         <button type="button" className="greet__close" aria-label="Đóng lời chào" onClick={onClose}><Icon name="close" size={18} /></button>
       </div>
