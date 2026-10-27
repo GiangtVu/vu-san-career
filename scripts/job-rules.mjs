@@ -29,6 +29,9 @@ const TECH_RE = {
 };
 const techRe = (t) => TECH_RE[t] || new RegExp('\\b' + t.replace(/[.+]/g, '\\$&') + '\\b', 'i');
 
+// The known technologies a text mentions.
+export const techIn = (text) => TECH.filter((t) => techRe(t).test(text));
+
 // Only jobs matching one of these topics are kept: the search chips in src/pages/home/Hero.jsx (SUGGESTIONS)
 // plus the Product & Business roles, so the site's four groups in jobs.json are all filled.
 // Tech topics count a job when its title names the tech, or when a technical job's post asks for it.
