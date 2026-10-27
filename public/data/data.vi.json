@@ -30,6 +30,90 @@
   },
   "jobs": [
     {
+      "id": "platform-engineer-cloud-desktop-iaas",
+      "hot": true,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Platform Engineer – Cloud Desktop (IaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "vận hành, monitor, xử lý sự cố và tối ưu hóa dịch vụ FCD (virtual desktops, broker, gateway, golden images và các service component), đảm bảo uptime và trải…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Ansible",
+        "OpenStack"
+      ],
+      "keywords": "platform engineer – cloud desktop  python kubernetes docker ansible openstack linux aws azure prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/platform-engineer-cloud-desktop-iaas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Vận hành nền tảng: vận hành, monitor, xử lý sự cố và tối ưu hóa dịch vụ FCD (virtual desktops, broker, gateway, golden images và các service component), đảm bảo uptime và trải nghiệm ổn định cho end-user.",
+          "Nghiên cứu & phát triển tính năng: nghiên cứu, thiết kế và phát triển tính năng mới cho dịch vụ core của FCD theo product roadmap — từ đánh giá technical, solution design đến implementation và rollout.",
+          "Service component: xây dựng và duy trì golden images, automated provisioning và broker/client integration.",
+          "Automation & container: chuẩn hóa vận hành bằng Ansible/Python/Bash; vận hành các FCD service component chạy trên Docker/Kubernetes.",
+          "Quản lý sự cố: dẫn dắt quá trình RCA, rollback và khắc phục các sự cố dịch vụ FCD.",
+          "Hỗ trợ sản phẩm & presale: đóng góp ý kiến technical về tính khả thi, effort và trade-off cho roadmap, customer PoC và deal mới (vai trò hỗ trợ, không phải sales).",
+          "Documentation: viết runbook, tài liệu architecture và quy trình vận hành."
+        ],
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "3+ năm kinh nghiệm làm Cloud/Platform/Infrastructure Engineer vận hành nền tảng cloud hoặc virtualization trên production (OpenStack, VMware, Proxmox hoặc tương đương).",
+              "Nền tảng vững chắc về virtualization (ưu tiên KVM hoặc VMware ESXi) và khả năng troubleshoot các vấn đề trên production (compute, storage, network).",
+              "Quản trị Linux vững (Ubuntu, CentOS/Rocky) và Linux networking (DNS, routing, VLAN/VXLAN).",
+              "Kỹ năng lập trình (ưu tiên Python) để thiết kế, phát triển tính năng dịch vụ và tích hợp.",
+              "Automation với Ansible hoặc Bash, và Git; quen thuộc với Docker/Kubernetes.",
+              "Có kinh nghiệm với các công cụ monitoring (Prometheus, Grafana, Zabbix hoặc tương đương).",
+              "Product mindset: hiểu requirement từ PO/khách hàng và đề xuất solution cân bằng giữa trải nghiệm end-user, chi phí và effort.",
+              "Đọc hiểu tài liệu technical và giao tiếp bằng tiếng Anh."
+            ]
+          },
+          {
+            "title": "Kỹ năng mềm",
+            "items": [
+              "Tinh thần ownership và giữ bình tĩnh dưới áp lực trên production.",
+              "Giao tiếp rõ ràng và phối hợp tốt với các team nội bộ, vendor và khách hàng.",
+              "Kỹ năng thuyết trình, viết tài liệu và quản lý thời gian.",
+              "Teamwork; sẵn sàng mentor và hỗ trợ đồng nghiệp.",
+              "Thái độ làm việc tốt, năng động, có trách nhiệm, đáng tin cậy và chuyên nghiệp."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm chạy production với OpenStack (Nova, Cinder, Neutron/OVN), đặc biệt là các bản deploy dùng Kolla-Ansible.",
+              "Có kinh nghiệm với VDI/DaaS (VMware Horizon, Citrix, OpenUDS).",
+              "Kiến thức về AD, Kerberos, LDAP, Azure AD DS.",
+              "Các chứng chỉ: COA, RHCE, CKA, AWS/Azure hoặc tương đương"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Ansible",
+          "OpenStack",
+          "Linux",
+          "AWS",
+          "Azure",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "fdab1f31e9512857"
+      }
+    },
+    {
       "id": "ai-research-ai-vision",
       "hot": true,
       "postedAt": "27/10/2026",
