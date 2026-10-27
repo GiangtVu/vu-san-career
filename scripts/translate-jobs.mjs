@@ -1,13 +1,14 @@
-// Build a Vietnamese and an English copy of the jobs data (public/data/data.vi.json, data.en.json)
-// from public/data/data.json. A job keeps its posted text in the language it was written in (by majority)
-// and is machine-translated into the other one through an OpenAI-compatible LLM API (Woku Shop by default).
+// Machine-translate the jobs in public/data/data.json, which keeps every post as written, through an
+// OpenAI-compatible LLM API (Woku Shop by default). A post written mostly in English is translated into
+// Vietnamese and saved in public/data/data.vi.json; one written mostly in Vietnamese goes into English
+// in public/data/data.en.json. So each file holds translations only, in data.json's order.
 // Translations are reused while a job's text is unchanged, so only new or edited posts cost a call.
-// A failed translation leaves that copy in the posted language, and the next run tries again.
+// A job whose translation fails is left out of the file, and the next run tries again.
 // Run with: node scripts/translate-jobs.mjs   (needs LLM_API_KEY in the environment or in .env.local)
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { techIn } from './job-rules.mjs';
+import { shortDesc, techIn } from './job-rules.mjs';
 
 const path = (p) => fileURLToPath(new URL(p, import.meta.url));
 const SRC = path('../public/data/data.json');
@@ -21,12 +22,14 @@ try {
 const API_KEY = process.env.LLM_API_KEY;
 const API_BASE = (process.env.LLM_BASE_URL || 'https://llm.wokushop.com/v1').replace(/\/+$/, '');
 // Tried in order; a model the gateway reports as unavailable is skipped for the rest of the run.
-const MODELS = (process.env.LLM_MODEL || 'gemini-3.8-flash,gemini-3.7-flash').split(',').map((m) => m.trim()).filter(Boolean);
+// gemini-3-flash-preview answers without a thinking step, about a third of the cost of 3.8 for the same job;
+// 3.8 and 3.7 always think first (the gateway ignores reasoning_effort), so they are only the fallback.
+const MODELS = (process.env.LLM_MODEL || 'gemini-3-flash-preview,gemini-3.8-flash,gemini-3.7-flash').split(',').map((m) => m.trim()).filter(Boolean);
 const MAX_JOBS = Number(process.env.TRANSLATE_LIMIT) || 80; // jobs translated per run, a guard against runaway spend
 const CONCURRENCY = 3;
 const ATTEMPTS = 2;
 const TIMEOUT_MS = 120000;
-const PROMPT_VERSION = 1; // bump to retranslate every job after changing the prompt
+const PROMPT_VERSION = 2; // bump to retranslate every job after changing the prompt
 
 const LANG_NAME = { vi: 'Vietnamese', en: 'English' };
 
@@ -74,9 +77,9 @@ function languageOf(texts) {
 }
 
 // The prose of a job, which is what gets translated; titles, skills, levels and the like stay as posted.
+// `desc` is left out: it is the first duty's opening sentence, so it is rebuilt from the translated duties.
 function contentOf(job) {
   return {
-    desc: job.desc || '',
     duties: job.detail?.duties || [],
     requirements: (job.detail?.requirements || []).map(({ title, items }) => ({ title, items }))
   };
@@ -85,10 +88,10 @@ function contentOf(job) {
 function withContent(job, content) {
   const detail = { ...job.detail, duties: content.duties };
   if (job.detail?.requirements) detail.requirements = content.requirements;
-  return { ...job, desc: content.desc, detail };
+  return { ...job, desc: shortDesc(content.duties), detail };
 }
 
-const textsOf = (c) => [c.desc, ...c.duties, ...c.requirements.flatMap((r) => [r.title, ...r.items])];
+const textsOf = (c) => [...c.duties, ...c.requirements.flatMap((r) => [r.title, ...r.items])];
 const hashOf = (c) => createHash('sha256').update(PROMPT_VERSION + JSON.stringify(c)).digest('hex').slice(0, 16);
 
 function toEnglishLabels(job) {
@@ -114,6 +117,7 @@ async function readJobs(file) {
 
 const downModels = new Set();
 const usedModels = new Set();
+const tokens = { in: 0, out: 0 };
 
 async function chat(messages) {
   for (const model of MODELS) {
@@ -136,7 +140,10 @@ async function chat(messages) {
       err.fatal = [401, 402, 403].includes(res.status); // a bad key or an empty balance fails every call alike
       throw err;
     }
-    const text = JSON.parse(body).choices?.[0]?.message?.content;
+    const reply = JSON.parse(body);
+    tokens.in += reply.usage?.prompt_tokens || 0;
+    tokens.out += reply.usage?.completion_tokens || 0;
+    const text = reply.choices?.[0]?.message?.content;
     if (typeof text !== 'string' || !text.trim()) throw new Error('empty reply');
     usedModels.add(model);
     return text;
@@ -156,7 +163,7 @@ function parseReply(text) {
 // What is wrong with a translation; empty when it can be used.
 function problemsOf(src, out, to) {
   const isText = (t) => typeof t === 'string';
-  if (!out || !isText(out.desc) || !Array.isArray(out.duties) || !Array.isArray(out.requirements)) return ['not the input structure'];
+  if (!out || !Array.isArray(out.duties) || !Array.isArray(out.requirements)) return ['not the input structure'];
   const problems = [];
   if (out.duties.length !== src.duties.length) problems.push(`duties has ${out.duties.length} items, expected ${src.duties.length}`);
   if (out.requirements.length !== src.requirements.length) {
@@ -186,7 +193,7 @@ function problemsOf(src, out, to) {
 async function translate(content, from, to) {
   const messages = [
     { role: 'system', content: SYSTEM_PROMPT },
-    { role: 'user', content: `Translate from ${LANG_NAME[from]} into ${LANG_NAME[to]}:\n${JSON.stringify(content, null, 2)}` }
+    { role: 'user', content: `Translate from ${LANG_NAME[from]} into ${LANG_NAME[to]}:\n${JSON.stringify(content)}` }
   ];
   let last = '';
   for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
@@ -216,36 +223,34 @@ async function runPool(items, limit, fn) {
 
 const src = JSON.parse(await readFile(SRC, 'utf8'));
 const prev = { vi: await readJobs(OUT.vi), en: await readJobs(OUT.en) };
-const result = { vi: [], en: [] };
+const translations = { vi: new Map(), en: new Map() }; // job id → the job translated into that language
 const todo = [];
 let reused = 0;
 
-src.jobs.forEach((job, i) => {
+for (const job of src.jobs) {
   const content = contentOf(job);
   const from = languageOf(textsOf(content));
   const to = from === 'vi' ? 'en' : 'vi';
   const hash = hashOf(content);
-  result[from][i] = { ...job, i18n: { source: from, hash, translated: false } };
   // Copy the job's other fields from the source (deadline, closed...) and only the prose from the old translation.
   const old = prev[to].get(job.id);
-  if (old?.i18n?.translated && old.i18n.hash === hash) {
-    result[to][i] = { ...withContent(job, contentOf(old)), i18n: { source: from, hash, translated: true } };
+  if (old?.i18n?.hash === hash) {
+    translations[to].set(job.id, { ...withContent(job, contentOf(old)), i18n: { source: from, hash } });
     reused++;
   } else {
-    result[to][i] = { ...job, i18n: { source: from, hash, translated: false } };
-    todo.push({ i, job, content, from, to, hash });
+    todo.push({ job, content, from, to, hash });
   }
-});
+}
 
 let translated = 0;
 const failed = [];
 const batch = API_KEY ? todo.slice(0, MAX_JOBS) : [];
 let stop = '';
-await runPool(batch, CONCURRENCY, async ({ i, job, content, from, to, hash }) => {
+await runPool(batch, CONCURRENCY, async ({ job, content, from, to, hash }) => {
   if (stop) return failed.push(job.id);
   try {
     const out = await translate(content, from, to);
-    result[to][i] = { ...withContent(job, out), i18n: { source: from, hash, translated: true } };
+    translations[to].set(job.id, { ...withContent(job, out), i18n: { source: from, hash } });
     translated++;
     console.log(`  ${from} → ${to}  ${job.id}`);
   } catch (err) {
@@ -255,19 +260,23 @@ await runPool(batch, CONCURRENCY, async ({ i, job, content, from, to, hash }) =>
   }
 });
 
+// Jobs in data.json's order.
+const jobsIn = (lang) => src.jobs.map((j) => translations[lang].get(j.id)).filter(Boolean);
 const offices = src.offices || {};
 const files = {
-  vi: { ...src, jobs: result.vi },
+  vi: { ...src, jobs: jobsIn('vi') },
   en: {
     ...src,
     offices: Object.fromEntries(Object.entries(offices).map(([k, v]) => [EN_LABELS[k] ?? k, EN_OFFICES[v] ?? v])),
-    jobs: result.en.map(toEnglishLabels)
+    jobs: jobsIn('en').map(toEnglishLabels)
   }
 };
 for (const lang of ['vi', 'en']) await writeFile(OUT[lang], JSON.stringify(files[lang], null, 2) + '\n');
 
 const waiting = todo.length - batch.length;
 console.log(`Translated ${translated}, reused ${reused}, failed ${failed.length}` + (usedModels.size ? ` with ${[...usedModels].join(', ')}.` : '.'));
-if (!API_KEY && todo.length) console.warn(`LLM_API_KEY is not set: ${todo.length} jobs stay in their posted language.`);
+console.log(`  data.vi.json: ${files.vi.jobs.length} jobs, data.en.json: ${files.en.jobs.length} jobs`);
+if (tokens.in) console.log(`Tokens used: ${tokens.in} in, ${tokens.out} out.`);
+if (!API_KEY && todo.length) console.warn(`LLM_API_KEY is not set: ${todo.length} jobs are not translated.`);
 if (API_KEY && waiting) console.warn(`${waiting} jobs are over the per-run limit of ${MAX_JOBS} and wait for the next run.`);
 if (stop) console.warn(`Stopped calling the API: ${stop}`);

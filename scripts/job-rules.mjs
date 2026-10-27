@@ -172,7 +172,7 @@ function buildDetail(raw, level) {
   return { detail, skills, allText, level: level ?? classifyLevel(job.title, years) };
 }
 
-function shortDesc(duties) {
+export function shortDesc(duties) {
   const first = (duties[0] || '').replace(/^[^:]{1,40}:\s*/, ''); // drop a "Model Development:" style lead-in
   const sentence = first.split(/(?<=\.)\s/)[0];
   if (sentence.length <= 160) return sentence;

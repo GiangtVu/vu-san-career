@@ -7,6 +7,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { HOME_TITLE, LIST_TITLE, NOT_FOUND_TITLE, SITE_NAME, jobDescription, jobTitle } from '../src/lib/seo.js';
+import { withVietnamese } from '../src/lib/i18n.js';
 
 // React picks its build from NODE_ENV when first loaded, so set it before importing the
 // SSR bundle: the production build renders faster and without dev-only warnings.
@@ -80,6 +81,7 @@ function render(template, data, { path, title, description, robots, jsonLd }) {
     path !== null && `<link rel="canonical" href="${esc(url)}">`,
     // main.jsx needs the jobs data before it can hydrate; start loading it with the page.
     path !== null && '<link rel="preload" href="/data/data.json" as="fetch" crossorigin>',
+    path !== null && '<link rel="preload" href="/data/data.vi.json" as="fetch" crossorigin>',
     robots && `<meta name="robots" content="${robots}">`,
     '<meta property="og:type" content="website">',
     '<meta property="og:locale" content="vi_VN">',
@@ -110,7 +112,9 @@ const ROOT = '<div id="root"></div>';
 const template = await readFile(DIST('index.html'), 'utf8');
 if (!template.includes('<meta name="description"')) throw new Error('dist/index.html has no description meta to replace.');
 if (!template.includes(ROOT)) throw new Error(`dist/index.html has no ${ROOT} to render into.`);
-const data = JSON.parse(await readFile(DIST('data/data.json'), 'utf8'));
+// The same Vietnamese data the app loads (lib/jobs.jsx), so hydration matches the HTML.
+const readJson = async (file) => JSON.parse(await readFile(DIST(file), 'utf8'));
+const data = withVietnamese(await readJson('data/data.json'), await readJson('data/data.vi.json').catch(() => null));
 const homeDescription = template.match(/<meta name="description" content="([^"]*)">/)[1];
 
 const pages = [
