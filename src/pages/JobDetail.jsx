@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import '../styles/job.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
-import { useMediaQuery } from '../lib/hooks.js';
+import { useHydrated, useMediaQuery } from '../lib/hooks.js';
 import { CONTACT, hotFirst, jobPath, LoadState, placeLabel, placesOf, skillPath, skillsOf, useJobs } from '../lib/jobs.jsx';
 import { jobTitle, SITE_NAME } from '../lib/seo.js';
 
@@ -23,7 +23,9 @@ function readSaved() {
 }
 
 function useSavedJob(id) {
-  const [saved, setSaved] = useState(() => readSaved().includes(id));
+  // The prerendered page can't know what this browser saved; read it once hydrated.
+  const hydrated = useHydrated();
+  const [saved, setSaved] = useState(() => hydrated && readSaved().includes(id));
   useEffect(() => { setSaved(readSaved().includes(id)); }, [id]);
   const toggle = () => {
     const list = readSaved().filter((x) => x !== id);
@@ -44,7 +46,10 @@ function relatedJobs(job, jobs) {
   return picked;
 }
 
-// On phones each section collapses into an accordion; one open at a time.
+// On phones each section collapses into an accordion; one open at a time. Closed bodies stay
+// in the page, only hidden, so search engines indexing the phone layout still read them.
+// The prerendered HTML is the desktop layout (isPhone false); `jd-sec--phone-closed` hides,
+// with CSS on phones, the sections the accordion starts closed, so nothing jumps on hydration.
 function Section({ n, title, icon, accordion, children }) {
   const { isPhone, openSec, setOpenSec } = accordion;
   const open = !isPhone || openSec === n;
@@ -56,7 +61,7 @@ function Section({ n, title, icon, accordion, children }) {
     </>
   );
   return (
-    <section className="jd-card jd-sec">
+    <section className={'jd-card jd-sec' + (!isPhone && openSec !== n ? ' jd-sec--phone-closed' : '')}>
       <h2>
         {isPhone ? (
           <button
@@ -71,7 +76,7 @@ function Section({ n, title, icon, accordion, children }) {
           </button>
         ) : <span className="jd-sec__toggle">{label}</span>}
       </h2>
-      {open && <div className="jd-sec__body" id={bodyId}>{children}</div>}
+      <div className="jd-sec__body" id={bodyId} hidden={!open}>{children}</div>
     </section>
   );
 }

@@ -83,20 +83,30 @@ function prepare(data) {
   return { groups, jobs: allJobs.filter((j) => !j.closed), allJobs, offices: data.offices || {} };
 }
 
-export function JobsProvider({ children }) {
-  const [state, setState] = useState({ status: 'loading', data: null });
+// No cache option: the host already serves it with must-revalidate, and a plain request can
+// reuse the <link rel="preload"> the prerendered pages carry.
+export function loadJobsData() {
+  return fetch(import.meta.env.BASE_URL + 'data/data.json').then((res) => {
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return res.json();
+  });
+}
+
+// `initialData` (the raw data.json) is given when prerendering and when hydrating a
+// prerendered page, so the first render already has the jobs; otherwise they're fetched.
+export function JobsProvider({ initialData, children }) {
+  const [state, setState] = useState(() => (
+    initialData ? { status: 'ready', data: prepare(initialData) } : { status: 'loading', data: null }
+  ));
 
   useEffect(() => {
+    if (initialData) return undefined;
     let alive = true;
-    fetch(import.meta.env.BASE_URL + 'data/data.json', { cache: 'no-cache' })
-      .then((res) => {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return res.json();
-      })
+    loadJobsData()
       .then((json) => alive && setState({ status: 'ready', data: prepare(json) }))
       .catch(() => alive && setState({ status: 'error', data: null }));
     return () => { alive = false; };
-  }, []);
+  }, [initialData]);
 
   return <JobsContext.Provider value={state}>{children}</JobsContext.Provider>;
 }

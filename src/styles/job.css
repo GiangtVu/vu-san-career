@@ -110,6 +110,10 @@
 .jd-sec__chev { margin-left: auto; color: var(--muted); transition: transform 200ms ease; }
 .jd-sec__toggle[aria-expanded="true"] .jd-sec__chev { transform: rotate(180deg); }
 .jd-sec__body { display: flex; flex-direction: column; gap: 16px; }
+.jd-sec__body[hidden] { display: none; }
+@media (max-width: 639.98px) {
+  .jd-sec--phone-closed .jd-sec__body { display: none; }
+}
 
 .jd-text { margin: 0; font-size: 15px; line-height: 1.7; color: var(--body); }
 .jd-list { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.65; color: var(--body); }

@@ -1,11 +1,17 @@
-// After `vite build`, give every URL its own HTML head: title, description, canonical, Open Graph
-// tags and, for open jobs, JobPosting structured data (Google for Jobs). Also writes 404.html,
-// sitemap.xml and robots.txt. The body stays the SPA shell; React renders the page as before.
-// Vercel serves /viec-lam/<id> from dist/viec-lam/<id>.html (cleanUrls in vercel.json).
-// Run with: node scripts/prerender.mjs (npm run build runs it).
+// After the client and SSR builds, write every URL as a full HTML page: the page content
+// rendered by React (src/entry-server.jsx), plus its own title, description, canonical,
+// Open Graph tags and, for open jobs, JobPosting structured data (Google for Jobs).
+// main.jsx hydrates that HTML in the browser. Also writes 404.html (the plain SPA shell),
+// sitemap.xml and robots.txt. Vercel serves /viec-lam/<id> from dist/viec-lam/<id>.html
+// (cleanUrls in vercel.json). Run with: npm run build.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { HOME_TITLE, LIST_TITLE, NOT_FOUND_TITLE, SITE_NAME, jobDescription, jobTitle } from '../src/lib/seo.js';
+
+// React picks its build from NODE_ENV when first loaded, so set it before importing the
+// SSR bundle: the production build renders faster and without dev-only warnings.
+process.env.NODE_ENV = 'production';
+const { render: renderApp } = await import(new URL('../dist-server/entry-server.js', import.meta.url).href);
 
 const SITE = (process.env.SITE_URL || 'https://www.vusan.site').replace(/\/$/, '');
 const DIST = (p) => fileURLToPath(new URL('../dist/' + p, import.meta.url));
@@ -66,11 +72,14 @@ function jobPosting(job, offices, url) {
   return posting;
 }
 
-// The built index.html with this page's head tags in place of the generic ones.
-function render(template, { path, title, description, robots, jsonLd }) {
+// The built index.html with this page's head tags in place of the generic ones and, unless
+// it's the 404 page, the page content rendered into #root.
+function render(template, data, { path, title, description, robots, jsonLd }) {
   const url = SITE + path;
   const tags = [
     path !== null && `<link rel="canonical" href="${esc(url)}">`,
+    // main.jsx needs the jobs data before it can hydrate; start loading it with the page.
+    path !== null && '<link rel="preload" href="/data/data.json" as="fetch" crossorigin>',
     robots && `<meta name="robots" content="${robots}">`,
     '<meta property="og:type" content="website">',
     '<meta property="og:locale" content="vi_VN">',
@@ -86,13 +95,21 @@ function render(template, { path, title, description, robots, jsonLd }) {
     jsonLd && `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`
   ].filter(Boolean).join('\n');
   // Replacer functions, so a "$" in job text isn't read as a replacement pattern.
-  return template
+  let html = template
     .replace(/<title>[^<]*<\/title>/, () => `<title>${esc(title)}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, () => `<meta name="description" content="${esc(description)}">\n${tags}`);
+  if (path !== null) {
+    const body = renderApp(path, data);
+    html = html.replace(ROOT, () => `<div id="root" data-ssr="${esc(path)}">${body}</div>`);
+  }
+  return html;
 }
+
+const ROOT = '<div id="root"></div>';
 
 const template = await readFile(DIST('index.html'), 'utf8');
 if (!template.includes('<meta name="description"')) throw new Error('dist/index.html has no description meta to replace.');
+if (!template.includes(ROOT)) throw new Error(`dist/index.html has no ${ROOT} to render into.`);
 const data = JSON.parse(await readFile(DIST('data/data.json'), 'utf8'));
 const homeDescription = template.match(/<meta name="description" content="([^"]*)">/)[1];
 
@@ -121,7 +138,7 @@ for (const job of data.jobs) {
 }
 
 await mkdir(DIST('viec-lam'), { recursive: true });
-for (const page of pages) await writeFile(DIST(page.file), render(template, page));
+for (const page of pages) await writeFile(DIST(page.file), render(template, data, page));
 
 const indexed = pages.filter((p) => p.path !== null && !p.robots);
 await writeFile(DIST('sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

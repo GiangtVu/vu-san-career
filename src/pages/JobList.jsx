@@ -4,6 +4,7 @@ import '../styles/jobs.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
 import { LIST_TITLE } from '../lib/seo.js';
+import { useHydrated } from '../lib/hooks.js';
 import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placesOf, skillsOf, useJobs } from '../lib/jobs.jsx';
 
 const PER_PAGE = 6;
@@ -80,6 +81,7 @@ export default function JobList() {
   const groups = data ? data.groups : {};
   const [params] = useSearchParams();
   const resultsRef = useRef(null);
+  const hydrated = useHydrated(); // the "Sắp hết hạn" badge depends on today's date
 
   const initialQ = params.get('q') || '';
   const [draft, setDraft] = useState(initialQ);
@@ -283,7 +285,7 @@ export default function JobList() {
                   <div className="jl-card__badges">
                     <span className="jl-card__group">{g.label}</span>
                     {j.hot && <span className="pill pill--hot-soft">HOT</span>}
-                    {isUrgent(j.deadline) && <span className="pill pill--urgent">Sắp hết hạn</span>}
+                    {hydrated && isUrgent(j.deadline) && <span className="pill pill--urgent">Sắp hết hạn</span>}
                   </div>
                   <h3><Link to={jobPath(j.id)}>{j.title}</Link></h3>
                   <p>{j.desc}</p>
