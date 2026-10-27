@@ -1,0 +1,3590 @@
+{
+  "groups": {
+    "eng": {
+      "label": "Engineering",
+      "ink": "#1668DC",
+      "soft": "#E7F0FE",
+      "roles": "Fullstack Developer"
+    },
+    "ai": {
+      "label": "AI & Data",
+      "ink": "#6D28D9",
+      "soft": "#F1EAFE",
+      "roles": "AI Engineer · Data Engineer · Data Scientist · AI Consultant"
+    },
+    "biz": {
+      "label": "Product & Business",
+      "ink": "#0F766E",
+      "soft": "#DDF4F0",
+      "roles": "Business Analyst · Product Owner · Project Manager"
+    },
+    "ops": {
+      "label": "DevOps",
+      "ink": "#B43C0B",
+      "soft": "#FFEDE3",
+      "roles": "DevOps Engineer"
+    }
+  },
+  "offices": {
+    "Hà Nội": "Tầng 22, Vinacomin Tower, 3 Dương Đình Nghệ, Cầu Giấy, Hà Nội"
+  },
+  "jobs": [
+    {
+      "id": "ai-research-ai-vision",
+      "hot": true,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "AI Research – AI Vision",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai research – ai vision  python docker linux pytorch tensorflow triton",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-research-ai-vision/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
+          "Thiết kế, triển khai và cải tiến các model cho object detection, tracking, segmentation, OCR, document understanding, nhận diện khuôn mặt, chống giả mạo khuôn mặt (face anti-spoofing), video understanding và Vision-Language Model (VLM).",
+          "Đọc, tái hiện, đánh giá và cải tiến các phương pháp state-of-the-art từ những hội nghị AI hàng đầu và các dự án mã nguồn mở.",
+          "Thiết kế thí nghiệm, phân tích kết quả và đánh giá model bằng các metric phù hợp.",
+          "Xây dựng training pipeline dễ mở rộng và tối ưu model để triển khai hiệu quả với TensorRT, ONNX hoặc các inference framework tương đương.",
+          "Phối hợp với các kỹ sư phần mềm để đưa model AI lên production, đồng thời đóng góp tài liệu kỹ thuật và chia sẻ kiến thức.",
+          "Cập nhật những tiến bộ mới nhất về Computer Vision, Foundation Model, Multimodal AI và Generative AI."
+        ],
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Từ 2 năm kinh nghiệm về Computer Vision, Deep Learning hoặc nghiên cứu AI liên quan. Lập trình Python tốt, có kinh nghiệm thực tế với PyTorch hoặc TensorFlow.",
+              "Hiểu vững các kỹ thuật deep learning hiện đại, bao gồm CNN, transformer",
+              "Kiến thức vững về Computer Vision, gồm object detection, tracking, segmentation, OCR, document understanding, nhận diện khuôn mặt và chống giả mạo khuôn mặt.",
+              "Có kinh nghiệm thực tế training và tối ưu model deep learning trên các bộ dữ liệu lớn.",
+              "Có khả năng thiết kế thí nghiệm, phân tích kết quả định lượng và cải thiện model dựa trên các metric đánh giá.",
+              "Có khả năng đọc hiểu, tái hiện và hiện thực hóa ý tưởng từ các bài báo khoa học.",
+              "Quen thuộc với Git, Linux và Docker."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Trí tuệ nhân tạo, Machine Learning, Computer Vision hoặc các ngành liên quan.",
+              "Có bài báo tại các hội nghị AI hàng đầu (CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI) hoặc đóng góp nghiên cứu tương đương.",
+              "Có kinh nghiệm với Vision-Language Model (VLM)",
+              "Có kinh nghiệm triển khai model AI với TensorRT, ONNX Runtime, Triton Inference Server, NVIDIA DeepStream hoặc framework tương đương.",
+              "Có kinh nghiệm phát triển ứng dụng AI trên NVIDIA Jetson hoặc các nền tảng AI nhúng khác."
+            ]
+          },
+          {
+            "title": "Tố chất chúng tôi tìm kiếm",
+            "items": [
+              "Đam mê nghiên cứu AI và không ngừng học hỏi.",
+              "Có khả năng tự giải quyết các bài toán nghiên cứu mở bằng thí nghiệm bài bản và phân tích dựa trên dữ liệu.",
+              "Tư duy phân tích và kỹ năng giải quyết vấn đề tốt.",
+              "Giao tiếp và phối hợp xuất sắc giữa các team nghiên cứu, kỹ thuật và sản phẩm.",
+              "Cân bằng được giữa đổi mới trong nghiên cứu và kỹ thuật thực tế để tạo ra giải pháp AI sẵn sàng cho production.",
+              "Tinh thần làm chủ, tự tạo động lực và phát huy tốt trong môi trường nhịp độ nhanh."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "PyTorch",
+          "TensorFlow",
+          "Triton"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "0aeab7512c55f941"
+      }
+    },
+    {
+      "id": "product-tester-bss",
+      "hot": true,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Product Tester (BSS)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phối hợp chặt chẽ với development team, Product Owner và Scrum Master để xử lý các vướng mắc trong giai đoạn sprint planning và thực thi sprint",
+      "stack": [
+        "Python",
+        "AWS",
+        "GCP"
+      ],
+      "keywords": "product tester  python aws gcp",
+      "source": "https://fptsmartcloud.com/job_opportunity/product-tester-bss/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phối hợp chặt chẽ với development team, Product Owner và Scrum Master để xử lý các vướng mắc trong giai đoạn sprint planning và thực thi sprint",
+          "Làm việc chặt chẽ với PO và Developer để đảm bảo chất lượng sản phẩm, chuẩn bị cho việc ra mắt sản phẩm và tính năng mới",
+          "Phối hợp với các team liên quan (Infrastructure team, Operation team…) để xử lý vấn đề, chia sẻ thông tin sản phẩm và hỗ trợ khi cần",
+          "Cùng PO và Developer xây dựng user story, định nghĩa Definition of Done và viết Acceptance Criteria trước khi bắt đầu code và test bất kỳ tính năng nào.",
+          "Review và phân tích đặc tả yêu cầu sản phẩm, user story, từ đó hỗ trợ xây dựng SRS (viết đặc tả yêu cầu/user story cho các tính năng đơn giản)",
+          "Xác định test case/test script (manual) phù hợp, bao gồm dữ liệu test sẽ dùng và các test metric cần quản lý.",
+          "Thực thi test case/test script (manual/automation, integration test, system test, regression test, re-test sau khi release bản sửa lỗi) và review kết quả để đảm bảo sản phẩm và các tính năng mới phát hành chạy ổn định, đạt hiệu năng tốt nhất.",
+          "Báo cáo và ghi nhận các vấn đề kỹ thuật, bug và test metric",
+          "Hỗ trợ sản phẩm trước và sau release, xử lý sự cố, xây dựng tài liệu hướng dẫn sử dụng (không bắt buộc)",
+          "Xây dựng test strategy, cách tiếp cận test, test metric và kế hoạch test gồm functional test, performance test, security test và các loại khác (user story được chia thành các task test kèm ước lượng khối lượng công việc từ Tester)",
+          "Đề xuất bổ sung về kỹ thuật và quy trình để nâng cao chất lượng và năng suất test (đặc biệt là các hạng mục automation test để tăng năng suất test và chất lượng sản phẩm)",
+          "Tham gia các hoạt động của cộng đồng nội bộ để nghiên cứu công nghệ mới và chia sẻ kiến thức giữa các team",
+          "Tham gia các buổi 1-1 với team leader/line manager để báo cáo tiến độ, nhận phản hồi và định hướng phát triển nghề nghiệp"
+        ],
+        "experience": "Từ 7 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính hoặc CNTT.",
+              "Tối thiểu 7 năm kinh nghiệm testing: viết test case, thực thi test, log bug và trao đổi với developer; xây dựng test strategy và cách tiếp cận test; lập kế hoạch test; xác định và theo dõi test metric",
+              "Có kinh nghiệm về kỹ thuật test và lập trình.",
+              "Có kiến thức về phát triển phần mềm và quản lý cơ sở dữ liệu",
+              "Automation test",
+              "JIRA / Confluence",
+              "Công cụ phân tích dữ liệu (Google Data Studio, Google Tag Manager, Google Analytics, Excel, Python, Tableau)",
+              "Đã từng làm Senior QC/Tester cho team hoặc công ty sản phẩm trong 2 năm",
+              "Nắm vững Agile/Scrum",
+              "Cập nhật tình hình công việc rõ ràng, hiệu quả cho team và leader",
+              "Phối hợp và làm việc trực tiếp cùng các thành viên khác trong team",
+              "Làm việc độc lập tốt và tập trung cao độ",
+              "Chú ý đến từng chi tiết",
+              "Tư duy phân tích và kỹ năng giải quyết vấn đề",
+              "Kỹ năng thuyết trình",
+              "Cởi mở đón nhận góp ý và biết rút kinh nghiệm từ sai lầm",
+              "Kỹ năng giải quyết vấn đề và hiểu rõ các phương pháp test phù hợp.",
+              "Kỹ năng quản lý dự án và sắp xếp thứ tự ưu tiên công việc",
+              "Quen thuộc với phương pháp quản lý OKR",
+              "Phương pháp Lean Startup/Lean UX",
+              "Hiểu biết chung về các chủ đề khoa học máy tính (client, server)"
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Hiểu cách các nhà cung cấp cloud vận hành. Có kinh nghiệm làm việc với các cloud platform (AWS/GCP/Digital Ocean/Linode)",
+              "Có nền tảng kỹ thuật vững là điểm cộng"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "AWS",
+          "GCP"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "457eebb458a157bf"
+      }
+    },
+    {
+      "id": "ai-engineer-genai",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "AI Engineer (GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "thiết kế, phát triển và fine-tune các model bằng các thuật toán, kỹ thuật AI tiên tiến, bao gồm computer vision và xử lý ngôn ngữ tự nhiên.",
+      "stack": [
+        "Python",
+        "Elasticsearch",
+        "Qdrant",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai engineer genai python elasticsearch qdrant pytorch tensorflow langchain langgraph llamaindex",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phát triển model: thiết kế, phát triển và fine-tune các model bằng các thuật toán, kỹ thuật AI tiên tiến, bao gồm computer vision và xử lý ngôn ngữ tự nhiên. Sử dụng các framework như TensorFlow, PyTorch hoặc tương đương để hiện thực hóa model hiệu quả.",
+          "Nghiên cứu và thử nghiệm: thử nghiệm các kiến trúc và hướng tiếp cận AI tiên tiến nhất để nâng cao hiệu năng và độ chính xác của các sản phẩm hiện có. Luôn cập nhật những bước tiến mới nhất của AI và áp dụng vào dự án thực tế.",
+          "Tiền xử lý dữ liệu: thực hiện tiền xử lý dữ liệu, feature engineering và data augmentation để tối ưu quá trình training model.",
+          "Tích hợp: phát triển API để tương tác với model, phối hợp chặt chẽ với các team phần mềm để tích hợp và deploy model AI vào ứng dụng và hệ thống thực tế, giúp nâng cao tương tác với khách hàng, tự động hóa quy trình và cải thiện năng lực ra quyết định.",
+          "Mentoring: định hướng kỹ thuật và kèm cặp các thành viên junior trong team AI."
+        ],
+        "department": "GenAI",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Nền tảng & kinh nghiệm",
+            "items": [
+              "Học vấn: tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Trí tuệ nhân tạo, Công nghệ thông tin hoặc các ngành liên quan. Yêu cầu nền tảng vững về AI, Machine Learning (ML) và Deep Learning (DL).",
+              "Kinh nghiệm: từ 3 năm kinh nghiệm ở vị trí AI/ML Engineer, trong đó ít nhất 1 năm triển khai ứng dụng LLM/GenAI lên môi trường production."
+            ]
+          },
+          {
+            "title": "Kỹ năng chuyên môn (AI Agent & LLM)",
+            "items": [
+              "Framework: thành thạo các AI Agent framework như LangGraph, LangChain, LlamaIndex…",
+              "Khái niệm cốt lõi: hiểu vững Planning (ReAct), Memory (ngắn hạn/dài hạn), Tool/Function Calling và Agent Harness.",
+              "Kỹ thuật: có kinh nghiệm thực tế với Harness Engineering và đánh giá agent bằng các công cụ như Ragas/TruLens.",
+              "Dữ liệu & hạ tầng: có kinh nghiệm thu nạp tài liệu, thành thạo các Vector Database như Elasticsearch và Qdrant, và đã từng triển khai ứng dụng GenAI.",
+              "Lập trình & thiết kế hệ thống: thành thạo Python và có kỹ năng System Design vững."
+            ]
+          },
+          {
+            "title": "Tư duy & kỹ năng mềm",
+            "items": [
+              "Tư duy sản phẩm: định hướng sản phẩm rõ ràng, biết ứng dụng công nghệ để giải quyết các bài toán thực tế về sản phẩm và kinh doanh.",
+              "R&D: có khả năng tự đọc hiểu và nhanh chóng áp dụng các nghiên cứu AI mới nhất vào thực tế."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Elasticsearch",
+          "Qdrant",
+          "PyTorch",
+          "TensorFlow",
+          "LangChain",
+          "LangGraph",
+          "LlamaIndex"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "cd933392e5864b6c"
+      }
+    },
+    {
+      "id": "senior-business-analyst-bss",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Senior Business Analyst (BSS)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Phân tích thị trường và kinh doanh toàn diện để tìm ra cơ hội tăng trưởng và chiến lược mở rộng",
+      "stack": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "SQL"
+      ],
+      "keywords": "senior business analyst cloud aws azure gcp sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-bss/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phân tích thị trường và kinh doanh toàn diện để tìm ra cơ hội tăng trưởng và chiến lược mở rộng",
+          "Xây dựng business case và nghiên cứu khả thi cho các sáng kiến mới",
+          "Xây dựng và cập nhật tài liệu yêu cầu nghiệp vụ chi tiết (BRD, URD, SRS)",
+          "Phân tích quy trình nghiệp vụ, tìm ra điểm nghẽn và đề xuất giải pháp tối ưu",
+          "Xây dựng báo cáo, dashboard và biểu đồ trực quan để nắm bắt hiệu quả kinh doanh",
+          "Phối hợp với Product Manager trong việc lập roadmap, ưu tiên tính năng và lên kế hoạch release",
+          "Tạo ảnh hưởng và gắn kết các team liên chức năng cùng hướng tới mục tiêu kinh doanh chung",
+          "Xác nhận yêu cầu với các stakeholder và đảm bảo triển khai thành công",
+          "Truyền đạt các phân tích phức tạp sao cho cả người làm kỹ thuật và không chuyên đều hiểu",
+          "Đánh giá các quy trình nghiệp vụ hiện có và đề xuất cải tiến có khả năng mở rộng",
+          "Thực hiện user acceptance testing (UAT) và xác nhận việc triển khai quy trình nghiệp vụ",
+          "Hỗ trợ các hoạt động quản lý thay đổi và việc áp dụng quy trình mới",
+          "Tạo đồng thuận giữa nhiều nhóm có ưu tiên và mục tiêu khác nhau",
+          "Dẫn dắt việc áp dụng quy trình mới và đồng hành cùng các team trong quá trình chuyển đổi tổ chức",
+          "Hỗ trợ các analyst junior và chia sẻ best practice trong toàn tổ chức",
+          "Làm việc với PM/Scrum Master, PO về requirement, vấn đề nghiệp vụ, bug và metrics",
+          "Báo cáo Product Manager/Line manager về công việc hằng ngày, được hỗ trợ và định hướng lộ trình phát triển nghề nghiệp"
+        ],
+        "department": "Cloud",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Quản trị kinh doanh, Khoa học máy tính, Công nghệ thông tin hoặc các ngành liên quan",
+              "Từ 5 năm kinh nghiệm Business Analyst với lộ trình phát triển rõ ràng, từng giữ vai trò dẫn dắt trong các dự án phức tạp",
+              "Đã chứng minh được năng lực quản lý các dự án liên chức năng với nhiều stakeholder",
+              "Có kinh nghiệm với vòng đời phát triển phần mềm (SDLC) và triển khai dự án",
+              "Ưu tiên lớn nếu có kinh nghiệm Microsoft Access và/hoặc SQL",
+              "Có kinh nghiệm làm việc theo Agile/Scrum và các công cụ liên quan",
+              "Quen thuộc với các công cụ business intelligence (BI)"
+            ]
+          },
+          {
+            "title": "Năng lực nghiệp vụ",
+            "items": [
+              "Tỉ mỉ, có tư duy phân tích và tinh thần ham tìm hiểu",
+              "Kỹ năng quản lý stakeholder và điều phối workshop",
+              "Phối hợp liên chức năng và tạo ảnh hưởng mà không cần quyền quản lý trực tiếp",
+              "Quen thuộc với các công cụ business intelligence để làm báo cáo và phân tích"
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Công cụ trực quan hóa dữ liệu: Tableau, Power BI hoặc tương đương (ở mức người dùng, không cần biết phát triển)",
+              "Hiểu các khái niệm về cloud platform: AWS, GCP, Azure (không yêu cầu kinh nghiệm quản trị thực tế)",
+              "Ưu tiên có chứng chỉ PMP, Scrum Master hoặc tương đương"
+            ]
+          }
+        ],
+        "skills": [
+          "AWS",
+          "Azure",
+          "GCP",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "e5f5338b0243d964"
+      }
+    },
+    {
+      "id": "fullstack-software-engineer-agentic-ai-platform-ai-lab",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Fullstack Software Engineer – Agentic AI Platform (AI Lab)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phát triển backend API và các service lõi của nền tảng.",
+      "stack": [
+        "Python",
+        "Golang",
+        "Java",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "keywords": "fullstack software engineer – agentic ai platform ai lab python golang java javascript typescript reactjs node.js postgresql langgraph ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-software-engineer-agentic-ai-platform-ai-lab/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phát triển backend API và các service lõi của nền tảng. Tech stack hiện tại chủ yếu là TypeScript và Bun, nhưng chúng tôi luôn cởi mở với các ngôn ngữ lập trình và runtime khác.",
+          "Xây dựng các ứng dụng web fullstack, đồng thời tham gia phát triển và tích hợp ứng dụng mobile, desktop khi cần.",
+          "Thiết kế, tối ưu và vận hành cơ sở dữ liệu PostgreSQL.",
+          "Phát triển AI Agent Runtime, Workflow Engine, khả năng Tool Calling và tích hợp với Model Context Protocol (MCP).",
+          "Xây dựng các cơ chế Context Management, Memory, Retrieval-Augmented Generation (RAG) và đánh giá output của AI.",
+          "Phát triển các service real-time với WebSocket, Server-Sent Events (SSE) và background job worker.",
+          "Tích hợp model và dịch vụ AI từ nhiều nhà cung cấp.",
+          "Tận dụng hiệu quả các công cụ phát triển dùng AI xuyên suốt vòng đời phát triển phần mềm: từ phân tích yêu cầu, thiết kế hệ thống, viết code, testing, code review đến troubleshooting.",
+          "Tối ưu hiệu năng, khả năng mở rộng, độ tin cậy và chi phí vận hành của hệ thống.",
+          "Tham gia thiết kế kiến trúc hệ thống, lựa chọn công nghệ và các giải pháp tích hợp liên hệ thống.",
+          "Phân tích yêu cầu chức năng và phi chức năng để đề xuất giải pháp kỹ thuật phù hợp.",
+          "Viết tài liệu kiến trúc, sơ đồ luồng dữ liệu, API contract và ghi lại các quyết định thiết kế kỹ thuật quan trọng.",
+          "Tham gia design review, code review và liên tục nâng cao chuẩn kỹ thuật của cả team."
+        ],
+        "department": "AI Lab",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Từ 3 năm kinh nghiệm phát triển phần mềm với JavaScript, TypeScript hoặc ngôn ngữ lập trình phù hợp khác.",
+              "Thành thạo ít nhất một công nghệ backend như Node.js, Bun, Java, Go, Python hoặc nền tảng tương đương.",
+              "Có kinh nghiệm thực tế phát triển ứng dụng web hiện đại với React hoặc frontend framework tương đương.",
+              "Tư duy fullstack vững, hiểu rõ toàn bộ vòng đời sản phẩm: frontend, backend API, database, deployment và vận hành production.",
+              "Có thể làm việc hoặc nhanh chóng mở rộng sang phát triển ứng dụng mobile và desktop khi sản phẩm cần.",
+              "Có kinh nghiệm làm việc với PostgreSQL hoặc các hệ quản trị cơ sở dữ liệu quan hệ khác.",
+              "Hiểu vững REST API, HTTP, WebSocket và các mô hình giao tiếp giữa các hệ thống.",
+              "Kiến thức vững về kiến trúc phần mềm, thiết kế hệ thống, khả năng mở rộng, bảo mật và độ tin cậy.",
+              "Có khả năng phân tích yêu cầu nghiệp vụ, kỹ thuật và chuyển hóa thành giải pháp thực tế ở cấp hệ thống.",
+              "Sử dụng hiệu quả các công cụ phát triển có hỗ trợ AI, đồng thời kiểm chứng được tính đúng đắn, chất lượng và độ an toàn của output do AI tạo ra.",
+              "Thành thạo Git và quy trình phát triển phần mềm theo nhóm.",
+              "Đọc hiểu tốt tài liệu kỹ thuật bằng tiếng Anh."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm xây dựng AI Agent hoặc ứng dụng Generative AI.",
+              "Có kinh nghiệm thực tế với các framework như LangGraph, CrewAI, OpenAI Agents SDK hoặc công nghệ tương đương.",
+              "Có kinh nghiệm với Workflow Engine, Tool Calling, Model Context Protocol (MCP), Memory, Context Management hoặc Retrieval-Augmented Generation (RAG).",
+              "Có kinh nghiệm thiết kế kiến trúc giải pháp: tích hợp hệ thống, phân tách service và lựa chọn công nghệ.",
+              "Có kinh nghiệm phát triển ứng dụng mobile với React Native, Flutter hoặc công nghệ tương đương.",
+              "Có kinh nghiệm phát triển ứng dụng desktop với Electron, Tauri hoặc framework tương đương.",
+              "Có kinh nghiệm xây dựng hệ thống phân tán, nền tảng real-time hoặc ứng dụng phục vụ lượng lớn người dùng đồng thời.",
+              "Có kinh nghiệm với container, cloud platform, CI/CD, observability và vận hành hệ thống chuẩn production."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Java",
+          "JavaScript",
+          "TypeScript",
+          "ReactJS",
+          "Node.js",
+          "PostgreSQL",
+          "LangGraph",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "706e8351a751c31f"
+      }
+    },
+    {
+      "id": "fullstack-engineer-isdd",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Fullstack Engineer (ISDD)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Làm việc trực tiếp với các team Sales, Kế toán và Marketing.",
+      "stack": [
+        "JavaScript",
+        "ReactJS",
+        "Node.js",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "fullstack engineer isdd javascript reactjs node.js kubernetes docker linux mysql mongodb jenkins gitlab ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-isdd/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Làm việc trực tiếp với các team Sales, Kế toán và Marketing.",
+          "Phát triển và nâng cấp tính năng cho hệ thống CRM và Quản lý tài sản của công ty.",
+          "Thiết kế, xây dựng và tối ưu RESTful API, đảm bảo hiệu năng cao, bảo mật và khả năng mở rộng.",
+          "Làm việc với cơ sở dữ liệu SQL/NoSQL, tối ưu query và xử lý dữ liệu phía server.",
+          "Phối hợp với Frontend Developer, Data Engineer và DevOps Engineer để deploy và vận hành hệ thống.",
+          "Tích hợp các hệ thống nội bộ để trao đổi dữ liệu liền mạch.",
+          "Nghiên cứu và phát triển công cụ nội bộ hỗ trợ vận hành kinh doanh, bán hàng, chăm sóc khách hàng và quản trị hệ thống."
+        ],
+        "department": "ISDD",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Công nghệ thông tin hoặc các ngành liên quan.",
+              "Từ 3 năm kinh nghiệm ở vị trí PHP Developer.",
+              "Có kinh nghiệm thực tế với các PHP framework như Laravel, CodeIgniter hoặc tương đương.",
+              "Có kinh nghiệm với HTML/CSS, JavaScript (jQuery, Ajax, JSON) và Bootstrap.",
+              "Có kinh nghiệm làm việc với MySQL và MongoDB.",
+              "Có kinh nghiệm phát triển PHP web service và RESTful API.",
+              "Quen thuộc với các frontend framework như AngularJS hoặc React.",
+              "Có kinh nghiệm với template engine như Smarty hoặc Blade.",
+              "Nắm vững các khái niệm lập trình hướng đối tượng (OOP), MVC và ORM.",
+              "Hiểu biết tốt về web server như Apache và Nginx.",
+              "Có kinh nghiệm làm việc trên môi trường Linux (CentOS, Ubuntu…).",
+              "Kỹ năng thiết kế cơ sở dữ liệu tốt, gồm thiết kế cơ sở dữ liệu quan hệ và tối ưu câu lệnh SQL.",
+              "Viết code sạch, dễ bảo trì, có cấu trúc rõ ràng, tuân thủ coding standard và best practice.",
+              "Có kinh nghiệm dùng các hệ thống quản lý phiên bản như Git, GitHub hoặc GitLab.",
+              "Kỹ năng phân tích và giải quyết vấn đề tốt, tư duy có hệ thống và học nhanh công nghệ mới."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Trẻ trung, chủ động, ham học hỏi và sáng tạo.",
+              "Có kinh nghiệm với các khái niệm bảo mật hệ thống như Authentication, Authorization và JWT.",
+              "Có kinh nghiệm với Node.js và NestJS.",
+              "Có kinh nghiệm với Docker và Kubernetes (K8s).",
+              "Có kinh nghiệm xây dựng và duy trì CI/CD pipeline với các công cụ như Jenkins, GitLab CI/CD hoặc GitHub Actions.",
+              "Tư duy sản phẩm tốt và tinh thần làm chủ công việc cao.",
+              "Có kinh nghiệm làm việc với hệ thống ERP và CRM."
+            ]
+          }
+        ],
+        "skills": [
+          "JavaScript",
+          "ReactJS",
+          "Node.js",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "MySQL",
+          "MongoDB",
+          "Jenkins",
+          "GitLab",
+          "CI/CD",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "f699cc78b0e8c767"
+      }
+    },
+    {
+      "id": "business-analyst-isdd",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst (ISDD)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thu thập và làm rõ yêu cầu từ các phòng ban nội bộ, chủ động đặt câu hỏi để hiểu rõ quy trình làm việc và các edge case.",
+      "stack": [],
+      "keywords": "business analyst isdd",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-isdd/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thu thập và làm rõ yêu cầu từ các phòng ban nội bộ, chủ động đặt câu hỏi để hiểu rõ quy trình làm việc và các edge case.",
+          "Tư vấn nghiệp vụ và thiết kế quy trình vận hành chuẩn hóa, phù hợp với nhu cầu kinh doanh thực tế.",
+          "Phối hợp chặt chẽ với người dùng cuối và đội dự án để chuẩn hóa dữ liệu đầu vào và xây dựng mô hình dữ liệu có cấu trúc.",
+          "Xây dựng tài liệu chi tiết gồm SRS, Wireframe và User Story.",
+          "Phối hợp với các team kỹ thuật cho các yêu cầu customize, tích hợp và báo cáo chuyên biệt.",
+          "Hỗ trợ vận hành hệ thống sau Go-live; tiếp nhận và xử lý các yêu cầu, vấn đề phát sinh.",
+          "Thu thập phản hồi của người dùng, phân tích vấn đề là lỗi hệ thống hay do thao tác của người dùng, và báo cáo kết quả cho team PM/Dev."
+        ],
+        "department": "ISDD",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tối thiểu 3 năm kinh nghiệm Business Analyst, có kinh nghiệm thực tế vững với hệ thống ERP, CRM hoặc HRM (bắt buộc).",
+              "Tư duy logic tốt, có khả năng phát hiện các edge case có thể gây lỗi hệ thống.",
+              "Nắm vững các kỹ thuật phân tích nghiệp vụ và mô hình hóa quy trình nghiệp vụ: mô hình chức năng nghiệp vụ, mô hình dữ liệu quan hệ, UML, Use Case, BPMN…",
+              "Kỹ năng viết tài liệu tốt (đặc biệt là SRS) và vẽ Flowchart/BPMN đúng chuẩn.",
+              "Có khả năng xây dựng prototype/mockup sản phẩm.",
+              "Kỹ năng giao tiếp, thuyết trình, tư duy phản biện, đàm phán và điều phối cuộc họp tốt."
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "b0c2ffe589433c93"
+      }
+    },
+    {
+      "id": "ai-evaluation-specialist-ai-quality-control-engineer-ai-lab",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "AI Evaluation Specialist/ AI Quality Control Engineer (AI Delivery)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Đánh giá output của AI về độ chính xác, khả năng hiểu ý định, chất lượng phản hồi, tính nhất quán và trải nghiệm người dùng.",
+      "stack": [
+        "Python",
+        "SQL"
+      ],
+      "keywords": "ai evaluation specialist/ ai quality control engineer ai delivery python sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-evaluation-specialist-ai-quality-control-engineer-ai-lab/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Đánh giá output của AI về độ chính xác, khả năng hiểu ý định, chất lượng phản hồi, tính nhất quán và trải nghiệm người dùng.",
+          "Kiểm định chất lượng các giải pháp AI Agent trước khi bàn giao cho khách hàng và go-live",
+          "Phát hiện các phản hồi sai, edge case, hội thoại bị đứt mạch và",
+          "Kiểm chứng hành vi của AI theo luồng nghiệp vụ, kịch bản và tiêu chí nghiệm thu của doanh nghiệp",
+          "Thực thi và đóng góp vào các framework đánh giá AI, test case và checklist chất lượng.",
+          "Thiết kế kịch bản đánh giá dựa trên use case và luồng nghiệp vụ thực tế của khách hàng.",
+          "Hỗ trợ regression testing cho các bản release mới, thay đổi prompt và cập nhật model.",
+          "Ghi nhận rõ ràng kết quả test, lỗi và rủi ro về chất lượng.",
+          "Theo dõi chất lượng AI sau khi deploy qua log, báo cáo và phản hồi của khách hàng.",
+          "Gửi phản hồi có cấu trúc cho AI Builder và PM để tối ưu prompt và cải thiện model.",
+          "Hỗ trợ phân tích nguyên nhân gốc rễ các sự cố chất lượng AI trên production. Phối hợp liên chức năng",
+          "Làm việc chặt chẽ với PM, BA, AI Builder và team Customer Success.",
+          "Hỗ trợ UAT, nghiệm thu với khách hàng và kiểm định chất lượng khi go-live.",
+          "Đóng vai trò đối tác đảm bảo chất lượng trong giai đoạn thiết kế và triển khai giải pháp."
+        ],
+        "department": "AI Delivery",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, CNTT, Data Science, AI hoặc các ngành liên quan.",
+              "Tư duy phân tích tốt và chú ý đến từng chi tiết.",
+              "Có khả năng đánh giá hành vi của AI từ cả góc độ kỹ thuật lẫn nghiệp vụ.",
+              "Kỹ năng viết tài liệu và giao tiếp tốt."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm với Conversational AI và Vision AI.",
+              "Quen thuộc với các dự án triển khai AI hoặc dự án AI làm việc trực tiếp với khách hàng.",
+              "Có kiến thức cơ bản về Python, SQL hoặc các công cụ phân tích log."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "4dc289a779b93b0c"
+      }
+    },
+    {
+      "id": "project-manager-ai-lab",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Project Manager (AI Lab)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Dẫn dắt triển khai các dự án AI (VoiceBot, ChatBot, AI Agent, OCR/KYC và các giải pháp AI khác) cho các cơ quan nhà nước, bộ ngành và tổ chức khu vực công.",
+      "stack": [],
+      "keywords": "project manager ai lab",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-ai-lab/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Dẫn dắt triển khai các dự án AI (VoiceBot, ChatBot, AI Agent, OCR/KYC và các giải pháp AI khác) cho các cơ quan nhà nước, bộ ngành và tổ chức khu vực công.",
+          "Chịu trách nhiệm toàn bộ vòng đời dự án, từ kickoff đến Go-Live và nghiệm thu cuối cùng, đảm bảo dự án đúng tiến độ, đúng phạm vi, chất lượng cao và khách hàng hài lòng."
+        ],
+        "department": "AI Lab",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Công nghệ thông tin, Khoa học máy tính hoặc các ngành liên quan tại các trường uy tín.",
+              "Tối thiểu 3 năm kinh nghiệm quản lý dự án CNTT, ưu tiên đã từng triển khai dự án cho khách hàng là cơ quan nhà nước hoặc khu vực công.",
+              "Hiểu rõ các công nghệ AI như Xử lý ngôn ngữ tự nhiên (NLP), Chatbot, Voice AI, mô hình ngôn ngữ lớn (LLM) và làm việc hiệu quả với các team kỹ thuật.",
+              "Có chứng chỉ PMI-PMP là một lợi thế.",
+              "Kỹ năng giao tiếp và quản lý stakeholder xuất sắc, phối hợp tốt với khách hàng, team kỹ thuật và ban lãnh đạo.",
+              "Am hiểu quy trình hành chính, quy định và cách vận hành của cơ quan nhà nước là điểm cộng lớn."
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "7222b9db58a705ac"
+      }
+    },
+    {
+      "id": "business-analyst-product-owner-ncp",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst & Product Owner (NCP)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Làm chủ product vision, roadmap và thứ tự ưu tiên tính năng cho các sản phẩm AI Platform, gồm: AI Inference Services (LLM API, Model Serving, AI Gateway, AI…",
+      "stack": [
+        "Kubernetes",
+        "OpenStack",
+        "AWS",
+        "Azure",
+        "vLLM"
+      ],
+      "keywords": "business analyst & product owner ncp kubernetes openstack aws azure vllm triton sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-product-owner-ncp/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Làm chủ product vision, roadmap và thứ tự ưu tiên tính năng cho các sản phẩm AI Platform, gồm: AI Inference Services (LLM API, Model Serving, AI Gateway, AI Studio, AI Agent Platform) và AI Infrastructure Services (GPU VM, GPU Container, Bare Metal, Storage, Networking, AI Cloud Platform).",
+          "Nghiên cứu thị trường, benchmark đối thủ và tìm hiểu khách hàng để nhận diện cơ hội và định hình chiến lược sản phẩm.",
+          "Chuyển hóa mục tiêu kinh doanh thành kết quả sản phẩm và KPI đo lường được.",
+          "Thu thập và phân tích yêu cầu từ khách hàng, stakeholder nội bộ, các team kỹ thuật và các đơn vị kinh doanh.",
+          "Xây dựng PRD, BRD, User Story, Acceptance Criteria, Process Flow và SRS.",
+          "Định nghĩa workflow sản phẩm, vòng đời dịch vụ, kịch bản tính cước, quản lý quota, IAM, cấp phát tài nguyên và các quy trình vận hành.",
+          "Làm chủ và quản lý product backlog cùng thứ tự ưu tiên của từng sprint.",
+          "Phối hợp chặt chẽ với các team Engineering, Architecture, Operations, UI/UX và GTM xuyên suốt vòng đời sản phẩm.",
+          "Dẫn dắt các đợt release sản phẩm từ ý tưởng đến launch và liên tục cải tiến.",
+          "Theo dõi hiệu quả sản phẩm và phản hồi người dùng để liên tục tối ưu trải nghiệm sản phẩm và kết quả kinh doanh.",
+          "Trình bày chiến lược sản phẩm, roadmap và business case với ban lãnh đạo.",
+          "Làm việc với các team Sales, Customer Success và Marketing để hỗ trợ định vị sản phẩm và thúc đẩy khách hàng sử dụng.",
+          "Điều phối các team liên chức năng để đảm bảo sản phẩm được bàn giao thành công."
+        ],
+        "department": "NCP",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Từ 5 năm kinh nghiệm ở vị trí Product Owner, Product Manager, Business Analyst hoặc vai trò sản phẩm tương đương.",
+              "Có kinh nghiệm vững trong việc quản lý sản phẩm phần mềm xuyên suốt toàn bộ vòng đời sản phẩm.",
+              "Có kinh nghiệm thực tế với Agile/Scrum và quản lý backlog.",
+              "Kỹ năng phân tích và giải quyết vấn đề tốt.",
+              "Kỹ năng giao tiếp và quản lý stakeholder xuất sắc.",
+              "Thành thạo tiếng Anh để viết tài liệu sản phẩm và phối hợp liên chức năng."
+            ]
+          },
+          {
+            "title": "Ưu tiên cho mảng AI Infrastructure Platform",
+            "items": [
+              "Hiểu vững các khái niệm Cloud Computing: Virtual Machine (VM), Container/Kubernetes, hạ tầng GPU, Networking, hệ thống Storage, dịch vụ Bare Metal",
+              "Quen thuộc với các cloud platform như AWS, Azure, Google Cloud, OpenStack hoặc môi trường tương đương.",
+              "Hiểu về cơ chế tính cước cloud, quản lý quota, IAM/RBAC, monitoring và điều phối tài nguyên."
+            ]
+          },
+          {
+            "title": "Ưu tiên cho mảng AI Inference Platform",
+            "items": [
+              "Hiểu về hệ sinh thái Generative AI và mô hình ngôn ngữ lớn (LLM).",
+              "Quen thuộc với các công nghệ Model Serving như vLLM, NVIDIA NIM, Triton Inference Server, Ray Serve hoặc giải pháp tương đương.",
+              "Hiểu về AI API, AI Agent, Embedding, RAG, Vector Database và kiến trúc ứng dụng AI.",
+              "Ưu tiên lớn nếu có kinh nghiệm làm sản phẩm AI/ML, nền tảng AI hoặc sản phẩm SaaS."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm với các sản phẩm Cloud, AI, SaaS, DevOps, MLOps hoặc Platform.",
+              "Có kinh nghiệm làm việc với API và tích hợp hệ thống.",
+              "Có kiến thức cơ bản về SQL và phân tích dữ liệu.",
+              "Quen thuộc với các công cụ AI hỗ trợ phát triển sản phẩm như Copilot, Claude, Cursor, Lovable hoặc công cụ năng suất AI tương tự."
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "OpenStack",
+          "AWS",
+          "Azure",
+          "vLLM",
+          "Triton",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "959f8cd405338921"
+      }
+    },
+    {
+      "id": "python-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Python Engineer",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phát triển nền tảng Platform as a Service:",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Redis",
+        "Kafka"
+      ],
+      "keywords": "python engineer cloud python kubernetes docker redis kafka ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/python-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phát triển nền tảng Platform as a Service:",
+          "Tham gia phát triển nền tảng Container Engine (Docker, Kubernetes)",
+          "Tham gia phát triển các hệ thống con",
+          "Tham gia các dự án Cloud Migration và dự án chiến lược của FPT",
+          "Application Server, Database as a Service",
+          "Quản lý API (API Management)",
+          "Giám sát hiệu năng ứng dụng (Application Performance Monitoring)"
+        ],
+        "department": "Cloud",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp khoa CNTT, Toán, Khoa học máy tính… tại các trường đại học kỹ thuật, công nghệ (Bách khoa Hà Nội, ĐHQG Hà Nội…)",
+              "Chuyên môn chính: Senior/Lead Backend Engineer với từ 5 năm kinh nghiệm phát triển backend chuyên nghiệp bằng Python",
+              "Có kinh nghiệm phát triển microservices, API, giỏi thiết kế kiến trúc.",
+              "Ngôn ngữ và công nghệ: Python, FastAPI, Kafka, Redis, gRPC",
+              "Tư duy DevOps hiện đại: CI/CD, Docker, Kubernetes",
+              "Cơ sở dữ liệu: SQL và NoSQL",
+              "Có kinh nghiệm sử dụng các công cụ AI Coding và AI Agent"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Redis",
+          "Kafka",
+          "CI/CD",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "cb00cbc1815c5383"
+      }
+    },
+    {
+      "id": "business-analyst-product-owner",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst/Product Owner (Self Driving)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phát triển nền tảng xPlat (Platform as a Service).",
+      "stack": [],
+      "keywords": "business analyst/product owner cloud",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-product-owner/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phát triển nền tảng xPlat (Platform as a Service).",
+          "Chịu trách nhiệm sản phẩm cho một hoặc nhiều sáng kiến. Đảm nhận đúng vai trò Product Owner theo Scrum Guide để đảm bảo các sprint vận hành hiệu quả.",
+          "Phối hợp chặt chẽ với scrum team, gồm Development team và Scrum Master, để cùng làm rõ yêu cầu của khách hàng trong sprint.",
+          "Làm việc với khách hàng để xác định và làm rõ nhu cầu. Phỏng vấn khách hàng, phối hợp với Sales để phát triển và sắp xếp tính năng mới.",
+          "Phối hợp chặt chẽ với Designer và team Marketing để chuẩn bị launch sản phẩm, tính năng mới.",
+          "Làm việc với team Sales để đánh giá nhu cầu khách hàng và xác định lợi thế bán hàng. Phân tích đối thủ và theo dõi tính năng của đối thủ.",
+          "Làm việc với các team kỹ thuật và các scrum team khác trong công ty để cung cấp thông tin sản phẩm khi cần. Tham gia các hoạt động chia sẻ và học hỏi công nghệ.",
+          "Xây dựng và cập nhật user persona",
+          "Xây dựng và cập nhật customer journey",
+          "JIRA / Confluence",
+          "Công cụ phân tích dữ liệu",
+          "Nghe, nói, đọc, viết tiếng Anh tốt"
+        ],
+        "department": "Cloud",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Có kinh nghiệm BA/PO",
+              "Có kiến thức về Agile/Scrum",
+              "Có khả năng nghiên cứu đối thủ, phỏng vấn khách hàng",
+              "Có khả năng làm prototype và làm việc với khách hàng",
+              "Có khả năng viết User Story",
+              "Có khả năng vẽ wireframe và làm việc với Developer",
+              "Có khả năng lên kế hoạch thu thập dữ liệu và phân tích dữ liệu sau khi launch sản phẩm để đánh giá",
+              "Chịu được áp lực cao, có tinh thần trách nhiệm",
+              "Có khả năng làm việc nhóm",
+              "Kỹ năng giải quyết vấn đề tốt",
+              "Ham học hỏi và thích thử nghiệm công nghệ mới",
+              "Đòi hỏi cao về chất lượng sản phẩm"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "d4b2d3fcc607e237"
+      }
+    },
+    {
+      "id": "ai-engineer-ai-global",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "AI Engineer (AI Global)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế và tối ưu luồng hội thoại, luồng tự động hóa và các workflow tích hợp tool/vận hành cho AI Agent, đáp ứng yêu cầu riêng của từng khách hàng.",
+      "stack": [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "LlamaIndex"
+      ],
+      "keywords": "ai engineer ai global python langchain langgraph llamaindex",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-ai-global/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế và tối ưu luồng hội thoại, luồng tự động hóa và các workflow tích hợp tool/vận hành cho AI Agent, đáp ứng yêu cầu riêng của từng khách hàng.",
+          "Phát triển và triển khai các ứng dụng AI dựa trên LLM, bao gồm xây dựng RAG pipeline (xử lý dữ liệu, embedding, vector search và tối ưu prompt) với vector database và các công cụ search/embedding.",
+          "Đánh giá hiệu năng và chất lượng của LLM và hệ thống RAG.",
+          "Theo dõi hiệu năng trên production, chủ động phát hiện và xử lý các sự cố vận hành cũng như các câu trả lời AI sai hoặc lệch trọng tâm, bao quát cả latency, chi phí, độ tin cậy và chất lượng phản hồi.",
+          "Kết hợp lập trình (Python, vector database) với phân tích ngôn ngữ để \"dạy\" AI Agent trả lời chính xác, tự nhiên và hạn chế hallucination.",
+          "Xây dựng và tối ưu các công cụ nội bộ giúp tự động hóa việc triển khai và vận hành dự án AI.",
+          "Đề xuất và triển khai các cải tiến cho nền tảng dựa trên xu hướng thị trường và phản hồi của khách hàng.",
+          "Nghiên cứu, đánh giá và áp dụng các công nghệ, framework và best practice mới về LLM."
+        ],
+        "department": "AI Global",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Trí tuệ nhân tạo, Data Science hoặc các ngành liên quan.",
+              "Tối thiểu 2 năm kinh nghiệm phát triển Machine Learning hoặc AI.",
+              "Ưu tiên lớn nếu có kinh nghiệm thực tế về Xử lý ngôn ngữ tự nhiên (NLP).",
+              "Hiểu vững về mô hình ngôn ngữ lớn (LLM) và các công nghệ Generative AI.",
+              "Có kinh nghiệm xây dựng hệ thống RAG chạy production.",
+              "Lập trình Python tốt.",
+              "Có kinh nghiệm với ít nhất một LLM framework như LangChain hoặc LlamaIndex.",
+              "Quen thuộc với vector database và các công nghệ semantic search.",
+              "Có hứng thú hoặc nền tảng về ngôn ngữ học, ngôn ngữ ứng dụng hoặc viết hội thoại/nội dung là điểm cộng, giúp tinh chỉnh độ chính xác, giọng điệu và sự tự nhiên trong câu trả lời của AI.",
+              "Có kinh nghiệm với các công cụ điều phối agent/tự động hóa (như n8n, LangGraph, Flowise) là điểm cộng.",
+              "Hiểu về embedding, transformer, prompt engineering và retrieval pipeline.",
+              "Có kinh nghiệm làm việc với REST API và phát triển backend.",
+              "Kỹ năng giải quyết vấn đề, phân tích và nghiên cứu tốt.",
+              "Giao tiếp tiếng Anh tốt cả nói và viết."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "LangChain",
+          "LangGraph",
+          "LlamaIndex"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "b5f6f12cf1f1f0be"
+      }
+    },
+    {
+      "id": "business-analyst-genai",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst (GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phối hợp với Product Manager và các stakeholder để thu thập, phân tích và làm rõ yêu cầu nghiệp vụ.",
+      "stack": [],
+      "keywords": "business analyst genai",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phối hợp với Product Manager và các stakeholder để thu thập, phân tích và làm rõ yêu cầu nghiệp vụ.",
+          "Chuyển hóa yêu cầu nghiệp vụ thành tài liệu sản phẩm chi tiết, gồm: User Story, Acceptance Criteria, đặc tả tính năng, Business Flow/Process Flow và wireframe cơ bản",
+          "Phân tích quy trình nghiệp vụ và hành trình người dùng để đề xuất giải pháp tối ưu cả về nghiệp vụ lẫn trải nghiệm người dùng.",
+          "Phối hợp chặt chẽ với Designer, Software Engineer và QA xuyên suốt vòng đời phát triển sản phẩm.",
+          "Làm rõ yêu cầu trong quá trình triển khai và hỗ trợ các team kỹ thuật xử lý các vấn đề liên quan đến nghiệp vụ.",
+          "Tham gia kiểm tra tính năng và user acceptance testing để đảm bảo giải pháp bàn giao đáp ứng đúng yêu cầu nghiệp vụ.",
+          "Thu thập phản hồi từ khách hàng, stakeholder và đề xuất cải tiến sản phẩm.",
+          "Cập nhật các công nghệ AI mới, xu hướng thị trường và best practice để đóng góp ý tưởng sản phẩm sáng tạo.",
+          "Có chứng chỉ PMP",
+          "Có kinh nghiệm về AI"
+        ],
+        "department": "GenAI",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Kinh nghiệm",
+            "items": [
+              "Từ 2–4 năm kinh nghiệm ở vị trí Business Analyst, Product Analyst hoặc vai trò tương đương trong phát triển phần mềm.",
+              "Có kinh nghiệm làm việc trong môi trường Agile/Scrum.",
+              "Có kinh nghiệm vững trong việc xây dựng: User Story, Process Flow, Acceptance Criteria và tài liệu phân tích nghiệp vụ",
+              "Đọc hiểu tài liệu kỹ thuật bằng tiếng Anh."
+            ]
+          },
+          {
+            "title": "Kiến thức kỹ thuật",
+            "items": [
+              "Hiểu rõ vòng đời phát triển phần mềm (SDLC).",
+              "Tư duy phân tích tốt và kỹ năng mô hình hóa quy trình.",
+              "Hiểu cơ bản về: REST API, cơ sở dữ liệu, cơ chế xác thực (authentication), tích hợp hệ thống",
+              "Kết nối được yêu cầu nghiệp vụ, trải nghiệm người dùng và giải pháp kỹ thuật."
+            ]
+          },
+          {
+            "title": "Kỹ năng",
+            "items": [
+              "Khả năng phân tích và giải quyết vấn đề tốt.",
+              "Biết đặt đúng câu hỏi để tìm ra nhu cầu thực sự của nghiệp vụ, thay vì chỉ ghi chép lại yêu cầu.",
+              "Có khả năng chia nhỏ vấn đề phức tạp thành các yêu cầu rõ ràng, có thể thực hiện được.",
+              "Tư duy hệ thống, hiểu được mối liên hệ giữa các thành phần khác nhau của sản phẩm.",
+              "Kỹ năng giao tiếp và phối hợp liên chức năng xuất sắc.",
+              "Chủ động, có trách nhiệm và làm việc độc lập tốt.",
+              "Học nhanh, thích nghi nhanh với công nghệ và lĩnh vực nghiệp vụ mới."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm làm các sản phẩm Platform, giải pháp SaaS, Workflow Builder hoặc nền tảng Low-code/No-code.",
+              "Có kiến thức về Generative AI, mô hình ngôn ngữ lớn (LLM), AI Agent hoặc Prompt Engineering.",
+              "Có kinh nghiệm thực tế với các công cụ API như Postman hoặc Swagger/OpenAPI.",
+              "Quen thuộc với các công cụ cộng tác và thiết kế như: Figma, Miro, Draw.io, Notion, Jira"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "af2693c0b865c6d5"
+      }
+    },
+    {
+      "id": "project-manager-ai-delivery-2",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Project Manager (AI Delivery)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phối hợp với ban lãnh đạo và các stakeholder để xác định phạm vi, mục tiêu và sản phẩm bàn giao của dự án, bám sát mục tiêu kinh doanh.",
+      "stack": [],
+      "keywords": "project manager ai delivery",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-ai-delivery-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phối hợp với ban lãnh đạo và các stakeholder để xác định phạm vi, mục tiêu và sản phẩm bàn giao của dự án, bám sát mục tiêu kinh doanh.",
+          "Xây dựng và cập nhật kế hoạch, tiến độ, ngân sách và phân bổ nguồn lực để đảm bảo dự án thành công.",
+          "Quản lý các hoạt động hằng ngày của dự án: lên lịch, cập nhật tình trạng, quản lý rủi ro, xử lý vấn đề và giao tiếp trong team.",
+          "Theo dõi tiến độ và điều chỉnh kế hoạch khi cần để bàn giao giải pháp chất lượng cao, đúng hạn và trong ngân sách.",
+          "Điều phối hoạt động của team dự án, đảm bảo các thành viên giao tiếp và phối hợp hiệu quả (Presale, BA, DA, Dev, AI Engineer…)",
+          "Xây dựng và duy trì quan hệ với các stakeholder trong và ngoài công ty để đảm bảo dự án thành công.",
+          "Đảm bảo tài liệu dự án đầy đủ, luôn được cập nhật và lưu trữ đúng cách.",
+          "Liên tục đánh giá hiệu quả dự án và cải tiến khi cần.",
+          "Có chứng chỉ PMP",
+          "Có kinh nghiệm về AI"
+        ],
+        "department": "AI Delivery",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tối thiểu 3 năm kinh nghiệm ở vị trí tương đương",
+              "Nắm vững các chuẩn mực trong quy trình quản lý dự án",
+              "Có kinh nghiệm quản lý dự án cho khách hàng doanh nghiệp",
+              "Có kinh nghiệm quản lý nhiều dự án cùng lúc"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "1f5e4713c29292b1"
+      }
+    },
+    {
+      "id": "ai-engineer-self-driving-cloud",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "AI Engineer (Self-Driving Cloud)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế, xây dựng và triển khai các model AI/ML để giải quyết bài toán kinh doanh.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Qdrant",
+        "Spark"
+      ],
+      "keywords": "ai engineer cloud python kubernetes docker qdrant spark pytorch tensorflow langchain langgraph llamaindex ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-self-driving-cloud/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế, xây dựng và triển khai các model AI/ML để giải quyết bài toán kinh doanh.",
+          "Phát triển ứng dụng AI dựa trên:",
+          "Mô hình ngôn ngữ lớn (LLM)",
+          "Retrieval-Augmented Generation (RAG)",
+          "AI Agent",
+          "Knowledge Graph",
+          "Semantic Search",
+          "Xây dựng và tối ưu Prompt Engineering, Agent Workflow và các framework Agent Orchestration.",
+          "Fine-tune và tối ưu model AI khi cần.",
+          "Đánh giá và liên tục cải thiện hiệu năng, độ chính xác và chất lượng phản hồi của hệ thống AI.",
+          "AI Platform Engineering",
+          "Thiết kế kiến trúc hệ thống AI dễ mở rộng và dễ bảo trì.",
+          "Xây dựng pipeline cho training, deploy, giám sát và quản lý vòng đời model.",
+          "Tích hợp năng lực AI vào hệ thống doanh nghiệp, cơ sở dữ liệu, API và các ứng dụng hiện có.",
+          "Đảm bảo giải pháp đáp ứng các yêu cầu về:",
+          "Hiệu năng",
+          "Độ tin cậy",
+          "Bảo mật",
+          "Khả năng mở rộng",
+          "Tối ưu chi phí",
+          "Nghiên cứu và đổi mới",
+          "Cập nhật các công nghệ AI mới và xu hướng của ngành.",
+          "Thực hiện Proof of Concept (PoC) cho các giải pháp AI tiềm năng.",
+          "Nghiên cứu và đề xuất model, framework, kiến trúc phù hợp cho từng use case kinh doanh.",
+          "Đánh giá và lựa chọn các model mã nguồn mở và dịch vụ AI thương mại phù hợp.",
+          "Dẫn dắt kỹ thuật và phối hợp",
+          "Phối hợp chặt chẽ với Data Engineer, Software Engineer, Product Manager và các stakeholder kinh doanh.",
+          "Hướng dẫn và hỗ trợ các thành viên trong team khi cần.",
+          "Tham gia technical design review và các quyết định về kiến trúc.",
+          "Đóng góp xây dựng tiêu chuẩn phát triển AI, best practice và quy trình quản trị",
+          "Thành thạo Python và có kinh nghiệm thực tế với: PyTorch, TensorFlow, Hugging Face, LangChain, LangGraph, LlamaIndex, CrewAI, AutoGen hoặc framework tương đương",
+          "Kỹ năng SQL tốt.",
+          "Hiểu vững về cơ sở dữ liệu NoSQL.",
+          "Có kinh nghiệm với các Vector Database như: Milvus, Qdrant, Weaviate, Pinecone, Chroma",
+          "Có kinh nghiệm xử lý dữ liệu quy mô lớn với: Pandas, Apache Spark, Ray hoặc công cụ tương đương",
+          "Có kinh nghiệm thực tế với: Docker, Kubernetes, Git, CI/CD pipeline",
+          "Các công cụ DevOps liên quan",
+          "Có kiến thức về: triển khai AI trên cloud, MLOps, Model Serving",
+          "Monitoring và Observability",
+          "Quản lý vòng đời model",
+          "Kỹ thuật phần mềm",
+          "Nền tảng vững về thiết kế và phát triển phần mềm.",
+          "Hiểu về:",
+          "API stateful và stateless",
+          "Kiến trúc Microservices",
+          "Kiến trúc Event-Driven",
+          "Có khả năng xây dựng các hệ thống AI phức tạp, chạy được trên production."
+        ],
+        "department": "Cloud",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Học vấn",
+            "items": [
+              "Tốt nghiệp Cử nhân hoặc Thạc sĩ một trong các ngành: Khoa học máy tính, Trí tuệ nhân tạo… hoặc ngành liên quan"
+            ]
+          },
+          {
+            "title": "Kinh nghiệm",
+            "items": [
+              "Tối thiểu 5 năm kinh nghiệm ở một hoặc nhiều lĩnh vực sau:",
+              "AI Engineering",
+              "Machine Learning",
+              "Data Science",
+              "Software Engineering",
+              "Tối thiểu 2 năm kinh nghiệm thực tế với Generative AI và mô hình ngôn ngữ lớn (LLM).",
+              "Đã từng triển khai giải pháp AI trên production với yêu cầu về Big Data và xử lý thời gian thực.",
+              "Ưu tiên lớn nếu đã làm các dự án doanh nghiệp quy mô lớn"
+            ]
+          },
+          {
+            "title": "Kỹ năng chuyên môn",
+            "items": [
+              "AI & Machine Learning",
+              "Hiểu vững về:",
+              "Machine Learning",
+              "Deep Learning",
+              "Xử lý ngôn ngữ tự nhiên (NLP)",
+              "Computer Vision",
+              "Generative AI",
+              "Có kinh nghiệm với:",
+              "Foundation Model",
+              "Triển khai production cho:",
+              "Hệ thống RAG",
+              "Hệ thống Agentic AI",
+              "Embedding Model",
+              "Vector Search",
+              "Các framework đánh giá model"
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm xây dựng các nền tảng dữ liệu và AI quy mô lớn, như:",
+              "Trợ lý AI cho doanh nghiệp",
+              "Chatbot nội bộ",
+              "AI Copilot",
+              "Nền tảng AI Agent",
+              "Nền tảng quản lý tri thức",
+              "Nền tảng Data Intelligence"
+            ]
+          },
+          {
+            "title": "Có kiến thức về",
+            "items": [
+              "Responsible AI",
+              "Quản trị AI (AI Governance)",
+              "Bảo mật AI",
+              "Đánh giá LLM",
+              "Bảo mật prompt",
+              "Có đóng góp cho các dự án mã nguồn mở liên quan đến AI.",
+              "Có chứng chỉ chuyên môn về AI, Cloud hoặc Data Engineering."
+            ]
+          },
+          {
+            "title": "Kỹ năng mềm",
+            "items": [
+              "Tư duy phân tích và kỹ năng giải quyết vấn đề tốt.",
+              "Kỹ năng giao tiếp và thuyết trình xuất sắc.",
+              "Chủ động và có khả năng làm việc độc lập.",
+              "Đam mê học hỏi liên tục và yêu thích công nghệ mới.",
+              "Có năng lực dẫn dắt kỹ thuật và mentoring"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Qdrant",
+          "Spark",
+          "PyTorch",
+          "TensorFlow",
+          "LangChain",
+          "LangGraph",
+          "LlamaIndex",
+          "CI/CD",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "82824f9f1465dbed"
+      }
+    },
+    {
+      "id": "fullstack-engineer-self-driving",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Fullstack Engineer (Self driving)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Xây dựng và phát triển Admin Console, Tenant Portal, Observability Dashboard với React/Next.js",
+      "stack": [
+        "Python",
+        "Java",
+        "TypeScript",
+        "ReactJS",
+        "Kubernetes"
+      ],
+      "keywords": "fullstack engineer cloud python java typescript reactjs kubernetes docker postgresql redis kafka gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-self-driving/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Xây dựng và phát triển Admin Console, Tenant Portal, Observability Dashboard với React/Next.js",
+          "Triển khai giao diện API Catalog, Model Catalog, Agent Registry, Event Catalog",
+          "Phát triển dashboard giám sát real-time: metrics, log, trực quan hóa dependency graph",
+          "Xây dựng form và workflow cho quản lý policy, cấp phát tenant, cấu hình rate limit",
+          "Đảm bảo giao diện responsive, dễ tiếp cận và được tối ưu hiệu năng",
+          "Thiết kế và triển khai RESTful/gRPC API cho các service của Core Platform",
+          "Phát triển service Tenant Management: tự động cấp phát, cô lập, quản lý quota",
+          "Triển khai Cost Engine: đo lường mức sử dụng, tính toán chargeback, cảnh báo ngân sách",
+          "Xây dựng API & Event Registry: CRUD catalog, quản lý phiên bản, theo dõi consumer",
+          "Tích hợp với Kafka, PostgreSQL, Redis, Neo4j trong ODS (Operational Data Store)",
+          "Triển khai luồng xác thực và phân quyền với Ory Stack (Kratos/Hydra/Keto), SPIFFE/SPIRE",
+          "Làm việc với Kubernetes (K8s) để deploy, scale và quản lý cấu hình",
+          "Viết Helm chart và cấu hình deploy cho các thành phần",
+          "Triển khai các observability hook: structured logging, thu thập metrics, distributed tracing",
+          "Tham gia code review, viết unit test và integration test",
+          "Phối hợp chặt chẽ với Tech Lead, Product Manager và Solution Architect",
+          "Tham gia sprint planning, backlog grooming và retrospective (Agile/Scrum)",
+          "Viết tài liệu kỹ thuật cho API và các service nội bộ",
+          "Hỗ trợ các developer junior qua code review và pair programming"
+        ],
+        "department": "Cloud",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Công nghệ thông tin, Kỹ thuật phần mềm hoặc tương đương",
+              "Ưu tiên tốt nghiệp Bách khoa Hà Nội, ĐHQG Hà Nội, RMIT, ĐH Công nghệ (UET) hoặc các trường tương đương",
+              "Tối thiểu 2 năm kinh nghiệm phát triển fullstack chuyên nghiệp",
+              "Đã từng xây dựng và đưa các ứng dụng web lên production",
+              "Có kinh nghiệm với kiến trúc microservices và thiết kế RESTful API",
+              "Thành thạo React.js/Next.js, TypeScript",
+              "State management: Redux, React Query",
+              "Thư viện UI component: Tailwind CSS, Material UI",
+              "Thành thạo ít nhất một ngôn ngữ: Java, Go (ưu tiên), Python",
+              "Có kinh nghiệm với PostgreSQL, Kafka, Redis (caching, pub/sub, counter…), Neo4j",
+              "Thiết kế REST API, kiến thức cơ bản về gRPC, đặc tả OpenAPI/Swagger",
+              "Docker và Kubernetes: deployment, config map, service",
+              "CI/CD pipeline: GitHub Actions, GitLab CI hoặc ArgoCD",
+              "Có kiến thức về luồng OAuth2/OIDC, JWT và cơ bản về mTLS",
+              "Tiếng Anh tốt: đọc tài liệu kỹ thuật, viết tài liệu API",
+              "Kỹ năng giải quyết vấn đề và tư duy phân tích tốt",
+              "Tinh thần đồng đội, giao tiếp tốt trong môi trường Agile"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "TypeScript",
+          "ReactJS",
+          "Kubernetes",
+          "Docker",
+          "PostgreSQL",
+          "Redis",
+          "Kafka",
+          "GitLab",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "52c3d051927f39f3"
+      }
+    },
+    {
+      "id": "program-manager-japan-market",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Program Manager (Japan Market)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Dẫn dắt triển khai end-to-end các chương trình kinh doanh AI cho thị trường Nhật Bản.",
+      "stack": [],
+      "keywords": "program manager ai",
+      "source": "https://fptsmartcloud.com/job_opportunity/program-manager-japan-market/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Dẫn dắt triển khai end-to-end các chương trình kinh doanh AI cho thị trường Nhật Bản.",
+          "Điều phối các team liên chức năng gồm Sales, Consulting, Product, Delivery, Customer Success và Operations.",
+          "Xây dựng workflow bài bản, cơ chế quản trị, theo dõi KPI, báo cáo và nhịp vận hành định kỳ.",
+          "Quản lý timeline, rủi ro, sự phụ thuộc và quy trình escalate của chương trình.",
+          "Xây dựng và duy trì khả năng theo dõi xuyên suốt pipeline, POC, pilot, triển khai và các hoạt động sau bán hàng.",
+          "Điều phối triển khai chiến lược GTM tại Nhật cho các giải pháp AI Agent, Voice AI Agent và AI Mentor.",
+          "Phối hợp chặt chẽ với: FPT Japan Holdings, FPT Consulting Japan, các team Sales/account tại Tokyo, Osaka, Nagoya và các đối tác chiến lược.",
+          "Hỗ trợ các sáng kiến thâm nhập thị trường ở các lĩnh vực mục tiêu: Ngân hàng & Dịch vụ tài chính, Sản xuất, Bán lẻ & Thương mại điện tử, Logistics, Y tế",
+          "Làm đầu mối điều phối chính giữa các stakeholder tại Nhật và các team delivery/product tại Việt Nam.",
+          "Đảm bảo sự thống nhất giữa kỳ vọng của Sales, phạm vi giải pháp, năng lực delivery và roadmap sản phẩm.",
+          "Kết nối giao tiếp giữa các team đa ngôn ngữ, đa văn hóa.",
+          "Tổ chức các buổi họp steering, review dự án, cập nhật kinh doanh và báo cáo cho ban lãnh đạo.",
+          "Điều phối các hoạt động presales gồm: lên kế hoạch demo, thu thập yêu cầu, theo dõi proposal, triển khai POC/Pilot",
+          "Đảm bảo bàn giao suôn sẻ từ presales sang team triển khai và team AMS/support.",
+          "Theo dõi chất lượng delivery, timeline, phân bổ nguồn lực và mức độ hài lòng của khách hàng.",
+          "Hỗ trợ liên tục cải tiến quy trình delivery và phối hợp.",
+          "Phát hiện các lỗ hổng trong vận hành và thúc đẩy cải tiến quy trình có khả năng mở rộng.",
+          "Xây dựng các framework, template, SOP và cơ chế báo cáo có thể tái sử dụng.",
+          "Hỗ trợ các sáng kiến bản địa hóa để sẵn sàng cho thị trường Nhật: bản địa hóa sản phẩm, điều chỉnh workflow, đồng bộ với quy trình kinh doanh của Nhật, sẵn sàng hỗ trợ khách hàng",
+          "Đóng góp vào việc mở rộng vận hành dài hạn cho sự tăng trưởng của mảng kinh doanh tại Nhật.",
+          "Số lượng POC/Pilot chuyển đổi thành công lên production.",
+          "Chất lượng delivery của chương trình và mức độ tuân thủ timeline.",
+          "Hiệu quả hỗ trợ điều phối doanh thu/pipeline.",
+          "Mức độ hài lòng của stakeholder ở cả team Nhật và Việt Nam.",
+          "Mức cải thiện hiệu quả vận hành.",
+          "Hỗ trợ giữ chân và mở rộng khách hàng."
+        ],
+        "department": "AI",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Kinh nghiệm",
+            "items": [
+              "Từ 3 năm kinh nghiệm trong các lĩnh vực: Program Management, Business Operations, Consulting, quản lý dự án SaaS/công nghệ, các chương trình AI/Chuyển đổi số",
+              "Có kinh nghiệm làm việc với khách hàng doanh nghiệp hoặc các chương trình liên chức năng quy mô lớn.",
+              "Ưu tiên lớn nếu có kinh nghiệm với thị trường Nhật hoặc khách hàng Nhật"
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm trong các lĩnh vực AI/GenAI, SaaS, Contact Center, Automation hoặc Chuyển đổi số.",
+              "Có kinh nghiệm làm việc với doanh nghiệp Nhật hoặc hệ sinh thái SI.",
+              "Có chứng chỉ PMP, Scrum, Agile hoặc tương đương là điểm cộng.",
+              "Ưu tiên lớn nếu biết tiếng Nhật (tiếng Nhật thương mại/N1).",
+              "Có kinh nghiệm điều phối mô hình delivery offshore/onshore là lợi thế lớn."
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "81ae416c742d5674"
+      }
+    },
+    {
+      "id": "database",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "Database Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "đánh giá hiện trạng hệ thống cơ sở dữ liệu, gồm database engine, mô hình triển khai, phiên bản, dung lượng, cấu trúc dữ liệu, tần suất đọc/ghi và các phụ…",
+      "stack": [
+        "Python",
+        "OpenStack",
+        "AWS",
+        "Azure",
+        "GCP"
+      ],
+      "keywords": "database engineer cloud python openstack aws azure gcp postgresql mysql mongodb redis kafka prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/database/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Khảo sát & thiết kế kiến trúc: đánh giá hiện trạng hệ thống cơ sở dữ liệu, gồm database engine, mô hình triển khai, phiên bản, dung lượng, cấu trúc dữ liệu, tần suất đọc/ghi và các phụ thuộc hệ thống, từ đó đề xuất kiến trúc phù hợp.",
+          "Triển khai hệ thống cơ sở dữ liệu: cài đặt và cấu hình các kiến trúc Single Instance, Primary-Secondary, Multi-Primary và Database Clustering cho các database mã nguồn mở như MySQL/MariaDB, PostgreSQL, MongoDB, Redis, cùng các hệ thống search và streaming như OpenSearch/ELK và Kafka.",
+          "High Availability & Disaster Recovery: thiết kế, triển khai và vận hành các giải pháp HA/DR, gồm Sync/Async Replication, Automated Failover và các cấu hình cluster như Galera, InnoDB Cluster, Patroni, MongoDB Replica Set/Sharded Cluster, Redis Sentinel/Cluster.",
+          "Backup, Restore & Recovery: xây dựng chiến lược backup toàn diện, kiểm thử restore định kỳ và cấu hình Point-in-Time Recovery (PITR) cho các hệ thống quan trọng, đảm bảo RPO ≤ 1 giờ và RTO ≤ 4 giờ.",
+          "Migrate cơ sở dữ liệu: sử dụng các công cụ Database Migration (CDC/Replication) chuyên dụng cho database mã nguồn mở và thực hiện cut-over theo playbook chuẩn: Stop Write → Final Delta Sync → Switch Connection String → Verify. Thiết lập lại reverse replication sau cut-over để đảm bảo có thể rollback.",
+          "Monitoring & Alerting: triển khai và vận hành hệ thống giám sát, cảnh báo cơ sở dữ liệu toàn diện để chủ động phát hiện bất thường về hiệu năng, dung lượng, replication và tình trạng cluster.",
+          "Tối ưu hiệu năng: tối ưu Index, Query, Buffer Pool/Shared Buffers và các tham số Cache, đồng thời lập kế hoạch dung lượng (Capacity Planning) để đảm bảo hiệu năng và khả năng mở rộng.",
+          "Tối ưu Hypervisor cho database: phối hợp với team hạ tầng tối ưu tài nguyên ở tầng ảo hóa (OpenStack, VMware), gồm cấu hình CPU Pinning/NUMA, cấp phát Memory, Storage I/O và tối ưu Network, để các dịch vụ database chạy trên nền tảng ảo hóa đạt hiệu năng tốt nhất.",
+          "Hỗ trợ vận hành: xử lý sự cố và vấn đề liên quan đến cơ sở dữ liệu, xây dựng tài liệu Knowledge Base (KB) và tài liệu đào tạo cho đội vận hành L2."
+        ],
+        "department": "Cloud",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Kỹ năng bắt buộc",
+            "items": [
+              "Quản trị database mã nguồn mở: tối thiểu 2–3 năm kinh nghiệm thực tế thiết kế, triển khai, vận hành và tối ưu chuyên sâu PostgreSQL, MySQL/MariaDB, MongoDB và Redis.",
+              "High Availability & Clustering: có kinh nghiệm thực tế triển khai và quản trị các kiến trúc Cluster/High Availability (HA) như Patroni, Galera Cluster, InnoDB Cluster, MongoDB Replica Set/Sharded Cluster và Redis Sentinel/Cluster. Xử lý tốt các sự cố replication như Replication Lag, Split-brain và Broken Replication.",
+              "Backup/Restore & PITR: có kinh nghiệm thiết kế và vận hành chiến lược backup, restore toàn diện, kiểm thử restore định kỳ và cấu hình Point-in-Time Recovery (PITR) cho các hệ thống quan trọng.",
+              "Migrate database mã nguồn mở: có kinh nghiệm thực tế migrate hệ thống database mã nguồn mở bằng các công cụ CDC/Replication như Debezium, AWS DMS hoặc tương đương. Có kinh nghiệm cut-over và kiểm tra tính toàn vẹn dữ liệu sau migrate.",
+              "Monitoring & Alerting: có kinh nghiệm triển khai và cấu hình các công cụ giám sát database như Prometheus/Grafana, Zabbix, PMM hoặc tương đương để theo dõi hiệu năng, dung lượng, tình trạng cluster và trạng thái replication.",
+              "Performance Tuning & Capacity Planning: có kinh nghiệm vững về tối ưu Index, Query Tuning, cấu hình Cache/Buffer và lập kế hoạch dung lượng để nâng cao hiệu năng và tối ưu chi phí hạ tầng.",
+              "Hệ thống search & streaming: có kinh nghiệm thực tế triển khai và vận hành OpenSearch/ELK Stack và Apache Kafka.",
+              "Kiến thức về Hypervisor: có hiểu biết và kinh nghiệm thực tế với các nền tảng ảo hóa như OpenStack và/hoặc VMware, gồm cấp phát CPU/Memory, Storage I/O và Networking. Có khả năng tối ưu tài nguyên ở tầng hypervisor để cải thiện hiệu năng các dịch vụ database chạy bên trên.",
+              "Tài liệu & giao tiếp: kỹ năng viết tài liệu kỹ thuật và giao tiếp tốt, làm việc hiệu quả với các stakeholder, bao gồm khách hàng và đội vận hành."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm với Debezium, Kafka Connect hoặc các công cụ CDC/Replication khác.",
+              "Có kinh nghiệm vận hành và tối ưu database mã nguồn mở cho nhiều loại workload như OLTP và OLAP.",
+              "Có kinh nghiệm triển khai và vận hành DBaaS (Database as a Service) trên public cloud, như Amazon RDS hoặc dịch vụ tương đương.",
+              "Có kinh nghiệm với các giải pháp Proxy/Connection Pooling như ProxySQL, HAProxy và PgBouncer.",
+              "Biết viết script Python và/hoặc Bash để tự động hóa công việc.",
+              "Có chứng chỉ liên quan về Database, Cloud (AWS/GCP/Azure) hoặc ảo hóa (VMware/OpenStack) là điểm cộng.",
+              "Tiếng Anh: đọc hiểu và giao tiếp tốt."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "OpenStack",
+          "AWS",
+          "Azure",
+          "GCP",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "Kafka",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "d0d6de6e24df7185"
+      }
+    },
+    {
+      "id": "backend-engineer-ai-infrastructure",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Backend Engineer (AI Infrastructure)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Đo lường mức sử dụng (GPU, API, storage)",
+      "stack": [
+        "Python",
+        "Golang",
+        "Kubernetes",
+        "Docker",
+        "AWS"
+      ],
+      "keywords": "backend engineer ncp python golang kubernetes docker aws azure gcp postgresql mysql redis kafka",
+      "source": "https://fptsmartcloud.com/job_opportunity/backend-engineer-ai-infrastructure/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Đo lường mức sử dụng (GPU, API, storage)",
+          "Billing engine và logic tính giá",
+          "Quản lý credit/quota",
+          "Các job training AI",
+          "Inference API",
+          "Vòng đời container/GPU",
+          "Thông lượng cao (khối lượng lớn usage event)",
+          "Độ trễ thấp (trừ credit theo thời gian thực)",
+          "Đảm bảo tính chính xác và nhất quán"
+        ],
+        "department": "NCP",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Từ 3 năm kinh nghiệm phát triển backend",
+              "Thành thạo Golang/Python",
+              "Có kinh nghiệm vững với: hệ thống phân tán, kiến trúc microservices, REST/gRPC API",
+              "Có kinh nghiệm thực tế với: message queue (Kafka/RabbitMQ), cache (Redis), cơ sở dữ liệu (PostgreSQL/MySQL)",
+              "Đã từng xây dựng: hệ thống billing/thanh toán/metering, hệ thống event-driven hoặc stream processing",
+              "Quen thuộc với: Kubernetes/Docker, các cloud platform (AWS/GCP/Azure)"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Kubernetes",
+          "Docker",
+          "AWS",
+          "Azure",
+          "GCP",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "Kafka"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "e6f4bdc209171c85"
+      }
+    },
+    {
+      "id": "full-stack-engineer-ai-infrastructure",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Full-stack Engineer (AI Infrastructure)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Làm việc với kiến trúc microservices và tích hợp với các service nội bộ hoặc bên ngoài.",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "Kubernetes",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "keywords": "full-stack engineer ncp python reactjs kubernetes docker postgresql mysql redis grafana ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/full-stack-engineer-ai-infrastructure/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Làm việc với kiến trúc microservices và tích hợp với các service nội bộ hoặc bên ngoài.",
+          "Thiết kế, phát triển và bảo trì backend API cho các dịch vụ hạ tầng.",
+          "Xây dựng và cải thiện business logic cho cấp phát hạ tầng, quản lý vòng đời tài nguyên, billing, theo dõi mức sử dụng, audit log và đồng bộ dữ liệu.",
+          "Làm việc với cơ sở dữ liệu quan hệ hoặc NoSQL, các công cụ ORM, background job và worker.",
+          "Tích hợp với Redis, message queue, các service nội bộ và dịch vụ hạ tầng cloud.",
+          "Triển khai cơ chế xử lý lỗi, retry, idempotency, logging, monitoring chặt chẽ và đảm bảo khả năng quan sát vận hành cho hệ thống production. Phát triển tính năng frontend với React.js, Next.js hoặc framework tương đương khi cần",
+          "Làm việc với Docker, Kubernetes, CI/CD, Grafana, Sentry hoặc các công cụ hạ tầng và observability tương đương."
+        ],
+        "department": "NCP",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Kinh nghiệm: cấp Middle từ 3 năm kinh nghiệm backend; cấp Senior từ 5 năm kinh nghiệm backend",
+              "Có kinh nghiệm vững về phát triển backend bằng Python với FastAPI hoặc framework tương đương",
+              "Hiểu vững về thiết kế RESTful API, lập trình bất đồng bộ (async), validate request, authentication và authorization",
+              "Cơ sở dữ liệu: MySQL hoặc PostgreSQL với các công cụ ORM như SQLAlchemy hoặc SQLModel; migrate database bằng Alembic hoặc công cụ tương đương",
+              "Có kinh nghiệm với kiến trúc microservices và tích hợp giữa các service",
+              "Có kinh nghiệm với Redis, background job, scheduler hoặc các hệ thống message queue như Celery hoặc Dramatiq",
+              "Quen thuộc với Docker, Kubernetes, Git, CI/CD workflow, Grafana, Sentry hoặc công cụ tương đương",
+              "Kỹ năng debug tốt: đọc log, truy vết lỗi và xử lý sự cố trên môi trường staging hoặc production",
+              "Hiểu các khái niệm thiết kế hệ thống backend: transaction, idempotency, retry, timeout, kiểm soát concurrency và tính nhất quán dữ liệu"
+            ]
+          },
+          {
+            "title": "Tố chất cá nhân",
+            "items": [
+              "Tự hào khi xây dựng hệ thống chất lượng cao và làm chủ công việc của mình",
+              "Giao tiếp rõ ràng và phối hợp hiệu quả giữa các team",
+              "Tò mò và chủ động học hỏi",
+              "Yêu cầu thêm với cấp Senior: ngoài các năng lực trên, ứng viên Senior cần thiết kế được module hoặc service backend từ đầu và cải tiến hệ thống hiện có; review thiết kế kỹ thuật, review code và mentor các kỹ sư Middle/Junior; hiểu sâu về hiệu năng database, distributed job, race condition, locking, chiến lược cache và observability; xử lý sự cố production, tìm nguyên nhân gốc rễ và triển khai giải pháp lâu dài; làm việc trực tiếp với các stakeholder sản phẩm hoặc kinh doanh để chuyển yêu cầu thành thiết kế kỹ thuật; đưa ra quyết định kỹ thuật thực tế, cân bằng giữa tốc độ bàn giao, độ tin cậy và khả năng bảo trì"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "Kubernetes",
+          "Docker",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "Grafana",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "02e39a67be1d7416"
+      }
+    },
+    {
+      "id": "devops-engineer-ncp",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "Devops Engineer (NCP)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Các cụm Kubernetes",
+      "stack": [
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Ansible",
+        "Linux"
+      ],
+      "keywords": "devops engineer ncp kubernetes docker terraform ansible linux kafka prometheus grafana jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/devops-engineer-ncp/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Các cụm Kubernetes",
+          "CI/CD pipeline",
+          "Nền tảng container",
+          "Nền tảng nội bộ cho developer",
+          "Docker image",
+          "Container registry",
+          "Quản lý secret",
+          "Hạ tầng mạng",
+          "Hệ thống observability",
+          "Xây dựng pipeline tự động hóa cho: build, testing, quét bảo mật, deploy",
+          "Tối ưu quy trình release",
+          "Thiết kế và triển khai workflow GitOps",
+          "Tự động hóa việc cấp phát hạ tầng",
+          "Prometheus",
+          "Grafana",
+          "Loki",
+          "ELK Stack",
+          "Tính sẵn sàng của hệ thống",
+          "Hiệu năng",
+          "Tối ưu chi phí",
+          "Xử lý sự cố và troubleshoot hệ thống production",
+          "Áp dụng các best practice về bảo mật",
+          "Quản lý policy IAM/RBAC",
+          "Thiết kế chiến lược backup và disaster recovery",
+          "Lập kế hoạch dung lượng (capacity planning)",
+          "Hỗ trợ deploy trên nhiều môi trường"
+        ],
+        "department": "NCP",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Từ 3 năm kinh nghiệm ở vị trí DevOps/SRE",
+              "Có kinh nghiệm thực tế vững với: Docker, Kubernetes, Linux, Bash scripting",
+              "Có kinh nghiệm với: CI/CD pipeline, GitHub Actions/GitLab CI/Jenkins, Terraform/Ansible, Nginx/API Gateway",
+              "Hiểu vững về: networking, DNS, SSL/TLS, reverse proxy"
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm với: hạ tầng GPU, NVIDIA stack, triển khai AI workload, Kafka, Temporal, ArgoCD, service mesh",
+              "Có kinh nghiệm vận hành: hệ thống lưu lượng cao, môi trường multi-cluster, nền tảng cloud-native"
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "Kafka",
+          "Prometheus",
+          "Grafana",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "cde0a12d60ff5c5d"
+      }
+    },
+    {
+      "id": "mlops-engineer-ai-inference-platform-llm-serving-optimization",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "MLOps Engineer – AI Inference Platform (LLM Serving & Optimization)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế, triển khai và vận hành các dịch vụ LLM inference trên marketplace Model-as-a-Service (MaaS), phục vụ các foundation model mã nguồn mở (Llama 4,…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Linux",
+        "vLLM"
+      ],
+      "keywords": "mlops engineer – ai inference platform ncp python kubernetes docker linux vllm prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/mlops-engineer-ai-inference-platform-llm-serving-optimization/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế, triển khai và vận hành các dịch vụ LLM inference trên marketplace Model-as-a-Service (MaaS), phục vụ các foundation model mã nguồn mở (Llama 4, Qwen3, DeepSeek V3/R1) và workload đa phương thức (text generation, TTS, STT, vision, embedding) ở quy mô production tại các region Việt Nam và Nhật Bản.",
+          "Tinh chỉnh và tối ưu các inference engine (vLLM, TensorRT-LLM, SGLang, NVIDIA Dynamo, LMCache) bằng continuous batching, PagedAttention, Prefix Caching, Chunked Prefill, Speculative Decoding, FlashAttention, FlashInfer để giảm TTFT, tăng throughput và hạ cost-per-token.",
+          "Xây dựng và vận hành API gateway tương thích OpenAI (Kong, LiteLLM), hỗ trợ streaming SSE, function calling, multi-LoRA hot-swap, rate limit và quota theo từng tenant, telemetry tính cước chính xác theo token và định tuyến liên region.",
+          "Giải quyết bài toán cold-start và serverless cho LLM từ 70B tham số trở lên: load model nhanh (safetensors mmap, tensor streaming, Run:AI Model Streamer, Tensorizer), quản lý warm pool, predictive scaling và snapshot/restore (CRIU, Nydus, lazy container layer).",
+          "Vận hành distributed inference ở quy mô lớn: Tensor/Pipeline/Expert Parallelism (cho các model MoE như DeepSeek V3, Qwen3-MoE), tách riêng worker prefill/decode, tính toán dung lượng KV cache và offload xuống CPU/disk trên các cụm GPU H100/H200/B300; áp dụng quantization FP8, FP4 có đo lường đánh đổi giữa độ chính xác và độ trễ.",
+          "Vận hành hạ tầng Kubernetes + GPU theo GitOps (ArgoCD, Helmfile): GPU operator, KEDA và HPA tùy biến theo token throughput, chia sẻ GPU đa tenant (MIG), rollout canary và A/B cho phiên bản model mới, cùng chaos testing (giả lập lỗi GPU, kịch bản OOM).",
+          "Xây dựng observability và SLO riêng cho LLM: GPU metrics (NVIDIA DCGM), inference metrics (TTFT, ITL, tokens/sec, KV cache hit rate, queue time), độ chính xác tính cước theo token, giám sát chất lượng phản hồi, cùng các cơ chế bảo mật và an toàn (chống prompt injection, cô lập prompt/KV cache giữa các tenant, kiểm duyệt nội dung, ẩn PII, audit log đáp ứng tuân thủ xuyên biên giới, bao gồm APPI của Nhật). Chịu trách nhiệm on-call với runbook cho các kiểu lỗi đặc thù của LLM (sinh lặp vô hạn, hỏng KV cache, timeout khi load model)."
+        ],
+        "department": "NCP",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Từ 5 năm kinh nghiệm MLOps/Platform/Infrastructure Engineering, trong đó ít nhất 2 năm vận hành LLM hoặc model serving quy mô lớn trên production.",
+              "Có kinh nghiệm triển khai LLM từ 7B tham số trở lên trên production với số liệu kiểm chứng được (QPS, P95 TTFT/ITL, chi phí trên 1 triệu token), không chỉ gọi các API có sẵn.",
+              "Có kinh nghiệm thực tế tinh chỉnh vLLM, TensorRT-LLM hoặc SGLang vượt ra ngoài cấu hình mặc định; hiểu sâu continuous batching, PagedAttention, prefix caching và quản lý KV cache.",
+              "Kỹ năng Kubernetes vững, có kinh nghiệm lập lịch GPU trên production: GPU operator, KEDA, HPA tùy biến, node feature discovery, MIG và cô lập GPU đa tenant.",
+              "Có khả năng đo lường và tối ưu TTFT (Time To First Token), ITL (Inter-Token Latency), throughput và cost-per-token bằng DCGM, Prometheus và Grafana, chứ không chỉ đo latency HTTP thông thường.",
+              "Có kiến thức thực tế về kiến trúc GPU (H100/H200, NVLink, HBM3, CUDA Core, Tensor Core) và cơ bản về CUDA: đọc hiểu và debug được code CUDA, không yêu cầu viết kernel.",
+              "Có kinh nghiệm với distributed inference: Tensor Parallelism, Pipeline Parallelism, Expert Parallelism cho model MoE và tách riêng prefill/decode.",
+              "(Ưu tiên) Có kinh nghiệm production với multi-LoRA serving (S-LoRA, Punica, vLLM multi-LoRA) và các model MoE (DeepSeek V3, Mixtral, Qwen3-MoE).",
+              "(Ưu tiên) Có kinh nghiệm xây dựng gateway tương thích OpenAI từ đầu hoặc qua LiteLLM/vLLM router, hỗ trợ streaming, tool calling, vision và audio.",
+              "Thành thạo Python đến mức đọc được source (đọc và debug được phần lõi của vLLM/TensorRT-LLM); biết Go hoặc Rust để viết gateway/proxy hiệu năng cao là điểm cộng lớn. Thành thạo Bash, Docker và các công cụ phân tích hiệu năng trên Linux.",
+              "(Ưu tiên) Đã triển khai FP8/FP4 Weight Quantization, KV Cache Quantization trên production; có đóng góp mã nguồn mở cho vLLM/SGLang/TGI, hoặc có bài blog/bài nói chuyên môn về LLM inference."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "vLLM",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "b1f335e462131b9b"
+      }
+    },
+    {
+      "id": "business-analyst-2",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst (Cloud Products)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Tiếp nhận và làm rõ các yêu cầu về sản phẩm cloud mới, cải tiến sản phẩm, quy trình, tính năng, cập nhật giá/đóng gói và tài liệu cho khách hàng từ Product…",
+      "stack": [
+        "AWS",
+        "Azure"
+      ],
+      "keywords": "business analyst cloud products aws azure",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tiếp nhận và làm rõ các yêu cầu về sản phẩm cloud mới, cải tiến sản phẩm, quy trình, tính năng, cập nhật giá/đóng gói và tài liệu cho khách hàng từ Product Owner, Sales, Presales, Vận hành và khách hàng.",
+          "Phân tích nhu cầu khách hàng, bối cảnh kinh doanh, dữ liệu sử dụng, xu hướng thị trường và tham khảo các nhà cung cấp cloud như Google Cloud, Microsoft Azure, AWS, Alibaba Cloud để đề xuất giải pháp khả thi và đóng góp đầu vào cho roadmap sản phẩm/dịch vụ.",
+          "Xây dựng tài liệu yêu cầu sản phẩm, business flow, user story, acceptance criteria, đầu vào DoR/DoD rõ ràng cùng các tài liệu làm việc liên quan cho các team Product, Development, Architecture, Technical và Testing.",
+          "Hỗ trợ testing/UAT để đảm bảo kết quả phát triển đáp ứng yêu cầu nghiệp vụ, nhu cầu tích hợp và sẵn sàng vận hành.",
+          "Chuẩn bị tài nguyên cho các hoạt động ra mắt sản phẩm và go-to-market, gồm Sales Kit, slide giới thiệu dịch vụ, buyer guide, tài liệu giới thiệu sản phẩm nội bộ và tài liệu đào tạo cho Sales/Presales cùng các team nội bộ.",
+          "Tham gia truyền thông nội bộ và chuẩn bị bàn giao cho SRE, Operations Center và Customer Support để sản phẩm/dịch vụ được vận hành và hỗ trợ hiệu quả sau khi ra mắt.",
+          "Làm đầu mối điều phối các yêu cầu phát triển và hoạt động liên team cho nhóm sản phẩm/dịch vụ cloud được phân công, phối hợp với Product, Development, Architecture, Technical, Presales, Sales, SRE, Operations Center và Customer Support.",
+          "Xây dựng gói dịch vụ, thiết kế SKU và định giá dịch vụ cloud; hỗ trợ Sales và Presales khi làm việc, tư vấn, workshop và pitching với khách hàng; thu thập phản hồi khách hàng, insight về mức sử dụng dịch vụ và yêu cầu nghiệp vụ để cải thiện product-market fit.",
+          "Theo dõi và đánh giá hiệu quả kinh doanh, mức độ sử dụng, phản hồi khách hàng và tình trạng vận hành của sản phẩm/dịch vụ được giao; đề xuất cải tiến về tính năng, quy trình, tài liệu, gói dịch vụ và chất lượng dịch vụ.",
+          "Tham gia làm việc theo Agile, đặc biệt là Scrum và Kanban, để backlog rõ ràng hơn và cải thiện việc ưu tiên, phối hợp và cải tiến liên tục."
+        ],
+        "department": "Cloud Products",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Trên 3 năm kinh nghiệm ở vị trí Business Analyst (BA), Product Owner (PO), Product Analyst, Product Specialist hoặc vai trò tương đương cho sản phẩm/dịch vụ công nghệ",
+              "Ưu tiên có kinh nghiệm với sản phẩm/dịch vụ Cloud, platform, SaaS, managed service hoặc công nghệ B2B; có kinh nghiệm hỗ trợ ra mắt sản phẩm hoặc go-to-market là lợi thế.",
+              "Tốt nghiệp Đại học chuyên ngành Công nghệ, CNTT, Viễn thông, Kinh doanh hoặc các ngành liên quan",
+              "Kỹ năng phân tích nghiệp vụ tốt: thu thập yêu cầu, làm rõ với stakeholder, mô hình hóa quy trình, viết tài liệu, viết user story, acceptance criteria và hỗ trợ UAT",
+              "Tư duy sản phẩm và hiểu biết kinh doanh tốt, kết nối được nhu cầu khách hàng, tín hiệu thị trường, định hướng sản phẩm và tính khả thi kỹ thuật",
+              "Kỹ năng điều phối dự án tốt, làm việc hiệu quả với các team Product, Development, Architecture, Technical, Presales, Sales, Operations và Customer Support",
+              "Hiểu cơ bản về các sản phẩm/dịch vụ cloud như IaaS, PaaS, data, security hoặc các nhà cung cấp cloud lớn như AWS, Azure, Google Cloud, Alibaba Cloud là điểm cộng",
+              "Tư duy phân tích/phản biện, kỹ năng giải quyết vấn đề và giao tiếp tốt, lấy khách hàng làm trọng tâm và làm việc độc lập tốt",
+              "Nghe, nói, đọc, viết tiếng Anh tốt; có kiến thức về Agile/Scrum/Kanban hoặc Design Thinking là lợi thế"
+            ]
+          }
+        ],
+        "skills": [
+          "AWS",
+          "Azure"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "9dfc9882af5aee3c"
+      }
+    },
+    {
+      "id": "ai-text-to-speech-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "Senior AI Text-To-Speech Engineer",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Theo dõi công nghệ và lập kế hoạch chiến lược phát triển công nghệ TTS",
+      "stack": [
+        "Python",
+        "Docker",
+        "PyTorch",
+        "vLLM",
+        "Triton"
+      ],
+      "keywords": "senior ai text-to-speech engineer ai python docker pytorch vllm triton sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-text-to-speech-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Theo dõi công nghệ và lập kế hoạch chiến lược phát triển công nghệ TTS",
+          "Làm chủ mảng sản phẩm TTS, đảm bảo chất lượng dịch vụ (QoS), làm đầu mối trao đổi với PM và các stakeholder dự án",
+          "Thiết kế giải pháp TTS tùy biến cho từng thị trường hoặc nhu cầu khách hàng và quản lý quá trình phát triển",
+          "Quản lý và mentor team",
+          "Thúc đẩy best practice cả về chất lượng code/sản phẩm lẫn thu thập và quản lý dữ liệu"
+        ],
+        "department": "AI",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Nắm được các kỹ thuật TTS hiện đại và hiểu tốt về tín hiệu giọng nói.",
+              "Phát triển Python ở mức chuyên gia, quen thuộc với PyTorch/Hugging Face.",
+              "Có hiểu biết về định dạng và cách quản lý dữ liệu giọng nói",
+              "Quen thuộc với các công cụ và thư viện xử lý âm thanh (Audacity, Praat, librosa…)",
+              "Kỹ năng quản lý team và dự án",
+              "Khả năng tổ chức và giao tiếp tốt",
+              "Có kinh nghiệm với LLM đa phương thức",
+              "Có kinh nghiệm làm việc với các inference framework như Triton, Ray Serve, vLLM…",
+              "Có kinh nghiệm về container hóa (Docker), triển khai (K8s, AWX…) và giám sát (Sentry, Monit…)",
+              "Quản lý dữ liệu: cơ sở dữ liệu (SQL), lưu trữ (S3)…"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "PyTorch",
+          "vLLM",
+          "Triton",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "94f5c82d5bd95999"
+      }
+    },
+    {
+      "id": "business-analyst-bss",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst (BSS)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "TP. HCM",
+      "desc": "Phân tích thị trường và kinh doanh toàn diện để tìm ra cơ hội tăng trưởng và chiến lược mở rộng",
+      "stack": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "SQL"
+      ],
+      "keywords": "business analyst bss aws azure gcp sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-bss/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phân tích thị trường và kinh doanh toàn diện để tìm ra cơ hội tăng trưởng và chiến lược mở rộng",
+          "Xây dựng business case và nghiên cứu khả thi cho các sáng kiến mới",
+          "Xây dựng và cập nhật tài liệu yêu cầu nghiệp vụ chi tiết (BRD, URD, SRS)",
+          "Phân tích quy trình nghiệp vụ, tìm ra điểm nghẽn và đề xuất giải pháp tối ưu",
+          "Xây dựng báo cáo, dashboard và biểu đồ trực quan để nắm bắt hiệu quả kinh doanh",
+          "Phối hợp với Product Manager trong việc lập roadmap, ưu tiên tính năng và lên kế hoạch release",
+          "Tạo ảnh hưởng và gắn kết các team liên chức năng cùng hướng tới mục tiêu kinh doanh chung",
+          "Xác nhận yêu cầu với các stakeholder và đảm bảo triển khai thành công",
+          "Truyền đạt các phân tích phức tạp sao cho cả người làm kỹ thuật và không chuyên đều hiểu",
+          "Đánh giá các quy trình nghiệp vụ hiện có và đề xuất cải tiến có khả năng mở rộng",
+          "Thực hiện user acceptance testing (UAT) và xác nhận việc triển khai quy trình nghiệp vụ",
+          "Hỗ trợ các hoạt động quản lý thay đổi và việc áp dụng quy trình mới",
+          "Tạo đồng thuận giữa nhiều nhóm có ưu tiên và mục tiêu khác nhau",
+          "Dẫn dắt việc áp dụng quy trình mới và đồng hành cùng các team trong quá trình chuyển đổi tổ chức",
+          "Hỗ trợ các analyst junior và chia sẻ best practice trong toàn tổ chức",
+          "Làm việc với PM/Scrum Master, PO về requirement, vấn đề nghiệp vụ, bug và metrics",
+          "Báo cáo Product Manager/Line manager về công việc hằng ngày, được hỗ trợ và định hướng lộ trình phát triển nghề nghiệp"
+        ],
+        "department": "BSS",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Quản trị kinh doanh, Khoa học máy tính, Công nghệ thông tin hoặc các ngành liên quan",
+              "Từ 5 năm kinh nghiệm Business Analyst với lộ trình phát triển rõ ràng, từng giữ vai trò dẫn dắt trong các dự án phức tạp",
+              "Đã chứng minh được năng lực quản lý các dự án liên chức năng với nhiều stakeholder",
+              "Có kinh nghiệm với vòng đời phát triển phần mềm (SDLC) và triển khai dự án",
+              "Ưu tiên lớn nếu có kinh nghiệm Microsoft Access và/hoặc SQL",
+              "Có kinh nghiệm làm việc theo Agile/Scrum và các công cụ liên quan",
+              "Quen thuộc với các công cụ business intelligence (BI)",
+              "Tỉ mỉ, có tư duy phân tích và tinh thần ham tìm hiểu",
+              "Kỹ năng quản lý stakeholder và điều phối workshop",
+              "Phối hợp liên chức năng và tạo ảnh hưởng mà không cần quyền quản lý trực tiếp",
+              "Quen thuộc với các công cụ business intelligence để làm báo cáo và phân tích",
+              "Công cụ trực quan hóa dữ liệu: Tableau, Power BI hoặc tương đương (ở mức người dùng, không cần biết phát triển)",
+              "Hiểu các khái niệm về cloud platform: AWS, GCP, Azure (không yêu cầu kinh nghiệm quản trị thực tế)",
+              "Ưu tiên có chứng chỉ PMP, Scrum Master hoặc tương đương",
+              "Có kinh nghiệm dẫn dắt: mentor các analyst junior hoặc quản lý team BA",
+              "Có kinh nghiệm quản lý thay đổi trong các đợt chuyển đổi tổ chức",
+              "Tư duy chiến lược: gắn được công việc hằng ngày với mục tiêu kinh doanh lớn hơn"
+            ]
+          }
+        ],
+        "skills": [
+          "AWS",
+          "Azure",
+          "GCP",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "a9d72838c8c36679"
+      }
+    },
+    {
+      "id": "site-reliability-engineer-sre",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "Site Reliability Engineer (SRE)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM / Remote",
+      "desc": "Hiểu vững vòng đời phát triển phần mềm (SDLC).",
+      "stack": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "site reliability engineer sre python java javascript kubernetes docker linux aws azure gcp sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/site-reliability-engineer-sre/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Hiểu vững vòng đời phát triển phần mềm (SDLC).",
+          "Tuân thủ nghiêm ngặt các quy trình vận hành; tự phát triển hoặc tận dụng công cụ sẵn có để tự động hóa việc quản lý thông tin, quản lý thay đổi và quy trình nâng cấp.",
+          "Ứng dụng và tích hợp AI vào các công cụ vận hành để xử lý sự cố và phân tích nguyên nhân gốc rễ.",
+          "Phân tích, điều tra và xử lý các vấn đề sau sự cố thông qua phân tích log và event.",
+          "Theo dõi, đánh giá và xác định Service Level Objective (SLO) và Service Level Indicator (SLI) để đảm bảo chất lượng hệ thống và dịch vụ.",
+          "Có kiến thức về các công nghệ Big Data, gồm chuẩn hóa dữ liệu, thu thập dữ liệu tập trung, trực quan hóa dữ liệu và báo cáo bằng các công cụ phổ biến như Power BI, Excel, Tableau…",
+          "Xây dựng và cập nhật runbook vận hành, hồ sơ hệ thống và tài liệu triển khai hệ thống/dịch vụ.",
+          "Tham gia triển khai dự án và mở rộng hệ thống, đảm bảo đáp ứng các yêu cầu về tính sẵn sàng cao (HA), cân bằng tải và bảo mật."
+        ],
+        "department": "SRE",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Công nghệ thông tin, Khoa học máy tính, Viễn thông, Toán – Tin hoặc các ngành liên quan tại các trường đại học kỹ thuật, công nghệ uy tín.",
+              "Tối thiểu 2 năm kinh nghiệm ở vị trí System Administrator hoặc Developer hỗ trợ các nền tảng giám sát và vận hành CNTT, có kiến thức nền tảng vững về Linux, networking, Kubernetes và bảo mật.",
+              "Ưu tiên có kiến thức và kinh nghiệm thực tế ở các mảng sau, có chứng chỉ quốc tế liên quan là lợi thế: hệ điều hành Linux và phần mềm mã nguồn mở (ưu tiên chứng chỉ LPI 1/2/3); công nghệ mạng (ưu tiên chứng chỉ CCNA, CCNP); các nền tảng container như Docker, Kubernetes, OKD (ưu tiên chứng chỉ CKA, CKS); API Management; DevOps và/hoặc DevSecOps; các nền tảng public cloud như AWS, Microsoft Azure và Google Cloud Platform (GCP), đặc biệt ưu tiên các chứng chỉ như AWS Certified SysOps Administrator, Azure Administrator Associate hoặc Associate Cloud Engineer"
+            ]
+          },
+          {
+            "title": "Kỹ năng bắt buộc",
+            "items": [
+              "Thành thạo quản trị và cấu hình hệ thống qua giao diện dòng lệnh (CLI); biết tận dụng công cụ AI để giải quyết các vấn đề vận hành và kỹ thuật.",
+              "Lập trình cơ bản với ít nhất một ngôn ngữ phổ biến như Python, Java hoặc JavaScript.",
+              "Có kinh nghiệm làm việc với cơ sở dữ liệu quan hệ (RDBMS) và viết câu lệnh SQL.",
+              "Tư duy phân tích và kỹ năng giải quyết vấn đề tốt, có khả năng điều tra kỹ thuật chuyên sâu.",
+              "Giao tiếp tiếng Anh tốt: nghe, nói, đọc và viết tài liệu kỹ thuật."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "JavaScript",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "c057f472954005fd"
+      }
+    },
+    {
+      "id": "fullstack-engineer-cloud-paas",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Fullstack Engineer (Cloud PaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Nghiên cứu các công nghệ cloud-native mới và đề xuất giải pháp phù hợp.",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "VueJS",
+        "Kubernetes",
+        "AWS"
+      ],
+      "keywords": "fullstack engineer cloud paas python reactjs vuejs kubernetes aws azure gcp postgresql mongodb redis kafka ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-cloud-paas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Nghiên cứu các công nghệ cloud-native mới và đề xuất giải pháp phù hợp.",
+          "Thiết kế, phát triển và bảo trì các ứng dụng PaaS/SaaS cloud-native.",
+          "Xây dựng và cải tiến các component frontend với ReactJS hoặc VueJS.",
+          "Phát triển backend service và RESTful API bằng Python (Flask/FastAPI).",
+          "Tích hợp và quản lý các hệ thống message queue (Redis, RabbitMQ, Kafka).",
+          "Làm việc với các cơ sở dữ liệu như MongoDB và PostgreSQL để mô hình hóa và tối ưu dữ liệu.",
+          "Deploy, giám sát và vận hành ứng dụng trên các cụm Kubernetes.",
+          "Triển khai và duy trì CI/CD pipeline để tự động hóa testing và deploy.",
+          "Phối hợp với DevOps, Product và các team kỹ thuật khác để bàn giao tính năng chất lượng cao.",
+          "Tối ưu hiệu năng, khả năng mở rộng và độ tin cậy của hệ thống.",
+          "Xử lý kịp thời các sự cố trên production.",
+          "Viết code sạch, dễ bảo trì, có tài liệu đầy đủ và tuân thủ best practice.",
+          "Tham gia code review và đóng góp vào các buổi thảo luận kỹ thuật."
+        ],
+        "department": "Cloud PaaS",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tối thiểu 2 năm kinh nghiệm phát triển phần mềm.",
+              "Có kinh nghiệm vững với ReactJS hoặc VueJS cho phát triển frontend.",
+              "Có kinh nghiệm phát triển backend vững với Python (Flask hoặc FastAPI).",
+              "Có kinh nghiệm thực tế với các hệ thống message queue như Redis, RabbitMQ hoặc Kafka.",
+              "Có kinh nghiệm làm việc với MongoDB và PostgreSQL.",
+              "Có kinh nghiệm thực tế với Kubernetes và môi trường container.",
+              "Có kinh nghiệm xây dựng và duy trì CI/CD pipeline.",
+              "Hiểu tốt về kiến trúc microservices và hệ thống phân tán.",
+              "Quen thuộc với thiết kế và tích hợp RESTful API.",
+              "Có kiến thức về cloud platform (AWS, GCP, Azure hoặc private cloud) là điểm cộng.",
+              "Có kinh nghiệm với Git và phương pháp Agile/Scrum.",
+              "Kỹ năng giải quyết vấn đề tốt và làm việc độc lập tốt.",
+              "Đọc hiểu tiếng Anh tốt."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "VueJS",
+          "Kubernetes",
+          "AWS",
+          "Azure",
+          "GCP",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Kafka",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "62566b6d0688d6dd"
+      }
+    },
+    {
+      "id": "kubernetes-platform-engineer-cloud-paas",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "Kubernetes Platform Engineer (Cloud PaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Tham gia xây dựng các tính năng tự động hóa như monitoring, phát hiện bất thường, tự động khắc phục (auto-remediation) và self-healing.",
+      "stack": [
+        "Python",
+        "Golang",
+        "Java",
+        "Node.js",
+        "Kubernetes"
+      ],
+      "keywords": "kubernetes platform engineer cloud paas python golang java node.js kubernetes terraform ansible linux aws azure gcp ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/kubernetes-platform-engineer-cloud-paas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tham gia xây dựng các tính năng tự động hóa như monitoring, phát hiện bất thường, tự động khắc phục (auto-remediation) và self-healing.",
+          "Hỗ trợ vận hành, giám sát và tối ưu nền tảng Managed Kubernetes Engine.",
+          "Phát triển công cụ, script hoặc workflow tự động hóa để giảm thao tác thủ công.",
+          "Tham gia phát triển backend (ưu tiên Golang) cho các module của nền tảng nội bộ.",
+          "Tìm hiểu và làm việc với các dự án mã nguồn mở trong hệ sinh thái Kubernetes.",
+          "Phân tích sự cố cơ bản và phối hợp với các kỹ sư senior để troubleshoot.",
+          "Nghiên cứu các công nghệ cloud-native mới và đề xuất giải pháp phù hợp."
+        ],
+        "department": "Cloud PaaS",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Có kiến thức nền tảng về Kubernetes hoặc kinh nghiệm làm việc với container và ứng dụng cloud-native.",
+              "Có kỹ năng lập trình backend cơ bản (Golang là lợi thế lớn; Python, Java hoặc Node.js cũng được).",
+              "Có kinh nghiệm với các công cụ tự động hóa như Bash, Ansible hoặc Terraform là điểm cộng.",
+              "Hiểu cơ bản về networking, Linux, CI/CD hoặc các khái niệm observability.",
+              "Tinh thần học hỏi cao, tự đọc tài liệu và tìm hiểu công nghệ mới.",
+              "Đọc hiểu được code mã nguồn mở và có hứng thú tìm hiểu cách các hệ thống lớn vận hành."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm phát triển hoặc sử dụng Kubernetes controller/operator/CRD.",
+              "Từng tham gia dự án mã nguồn mở hoặc có GitHub profile hoạt động tích cực, thể hiện khả năng tự học và nghiên cứu",
+              "Có kinh nghiệm deploy ứng dụng trên các môi trường cloud như AWS, GCP, Azure hoặc FPT Cloud."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Java",
+          "Node.js",
+          "Kubernetes",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "8a7d005692053385"
+      }
+    },
+    {
+      "id": "ai-product-manager-ai-conversation-global",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "AI Product Manager (AI Conversation/Global)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Xác định chiến lược, tầm nhìn và kế hoạch thực thi sản phẩm cho mảng bạn phụ trách",
+      "stack": [],
+      "keywords": "ai product manager ai conversation/global",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-product-manager-ai-conversation-global/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Xác định chiến lược, tầm nhìn và kế hoạch thực thi sản phẩm cho mảng bạn phụ trách",
+          "Làm chủ product roadmap từ ý tưởng đến launch và tăng trưởng",
+          "Làm việc với các team engineering, design, data science và GTM",
+          "Nghiên cứu thị trường và tìm hiểu khách hàng tại khu vực mục tiêu",
+          "Nắm bắt nhu cầu khách hàng và chuyển hóa thành những tính năng sản phẩm hấp dẫn",
+          "Phối hợp với Sales và Marketing để thúc đẩy khách hàng sử dụng và gắn bó với sản phẩm"
+        ],
+        "department": "AI Conversation/Global",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Từ 3 năm kinh nghiệm quản lý sản phẩm (ưu tiên mảng AI/phần mềm)",
+              "Có kiến thức chuyên môn về AI, ML hoặc hệ thống hội thoại.",
+              "Tự tin vận hành hoặc dẫn dắt các sáng kiến cho thị trường Việt Nam, Nhật Bản hoặc Đông Nam Á",
+              "Kỹ năng giao tiếp tốt, ưu tiên thành thạo tiếng Anh",
+              "Tạo được ảnh hưởng mà không cần quyền quản lý trực tiếp và phát huy tốt trong môi trường cộng tác. Điểm cộng nếu bạn từng làm việc với: sản phẩm AI/ML",
+              "Voice và Conversational UX",
+              "Các team đa văn hóa/toàn cầu"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "a633424381f23976"
+      }
+    },
+    {
+      "id": "data-analytics-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "Data Analytics Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "TP. HCM",
+      "desc": "Chúng tôi đang tìm một ứng viên kết hợp Data Analyst và Data Engineer, có thể xây dựng giải pháp dữ liệu end-to-end, từ khâu thu nạp dữ liệu thô đến…",
+      "stack": [
+        "Python",
+        "Docker",
+        "Airflow",
+        "SQL"
+      ],
+      "keywords": "data analytics engineer data suite python docker airflow sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/data-analytics-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Chúng tôi đang tìm một ứng viên kết hợp Data Analyst và Data Engineer, có thể xây dựng giải pháp dữ liệu end-to-end, từ khâu thu nạp dữ liệu thô đến dashboard và template báo cáo sẵn sàng cho nghiệp vụ.",
+          "Công việc gồm hai giai đoạn chính:",
+          "Thiết kế báo cáo & mockup",
+          "Phối hợp với team Product để thu thập yêu cầu nghiệp vụ.",
+          "Thiết kế ý tưởng báo cáo, dựng mockup và xác định các chỉ số kinh doanh, KPI quan trọng.",
+          "Mô hình hóa dữ liệu & chỉ số",
+          "Chuẩn bị bộ dữ liệu mẫu (Excel), tải dữ liệu lên và thiết kế data model trong Data Suite.",
+          "Xây dựng các measure và phép tính phục vụ các use case phân tích.",
+          "Đóng gói & xuất bản template",
+          "Chuyển các báo cáo đã hoàn thiện thành template chuẩn hóa.",
+          "Xuất bản template lên Data Suite Marketplace.",
+          "Tài liệu & nội dung sản phẩm",
+          "Viết mô tả sản phẩm, giá trị mang lại và xác định chân dung người dùng mục tiêu.",
+          "Chuẩn bị hình ảnh, ảnh chụp màn hình chất lượng cao để giới thiệu sản phẩm.",
+          "Phân tích hệ thống nguồn",
+          "Phân tích các hệ thống ERP nguồn như MISA và Bravo.",
+          "Nắm rõ cấu trúc cơ sở dữ liệu, logic nghiệp vụ và các vấn đề về chất lượng dữ liệu.",
+          "Thiết kế kiến trúc dữ liệu",
+          "Thiết kế Common Data Model (CDM).",
+          "Xây dựng Data Mart riêng cho từng phòng ban để phục vụ nhu cầu phân tích.",
+          "Phát triển ETL pipeline",
+          "Xây dựng logic biến đổi dữ liệu bằng DBT và SQL.",
+          "Làm sạch, chuẩn hóa dữ liệu và tối ưu hiệu năng truy vấn.",
+          "Triển khai & vận hành",
+          "Cấu hình thu nạp dữ liệu với Logstash và Docker.",
+          "Triển khai kiểm thử dữ liệu (unit test và integration test).",
+          "Triển khai và vận hành data pipeline trên môi trường production."
+        ],
+        "department": "Data Suite",
+        "requirements": [
+          {
+            "title": "Kỹ năng cốt lõi",
+            "items": [
+              "DBT: có kinh nghiệm vững trong quản lý model, source, testing và deploy.",
+              "SQL nâng cao: thành thạo CTE, window function và tối ưu hiệu năng.",
+              "Mô hình hóa dữ liệu: có kinh nghiệm thực tế với dimensional modeling (Star/Snowflake schema) và Data Mart.",
+              "Công cụ BI: thành thạo Power BI hoặc nền tảng BI tương đương để dựng dashboard và quản lý chỉ số."
+            ]
+          },
+          {
+            "title": "Kỹ năng & kiến thức bổ sung",
+            "items": [
+              "Hệ thống nguồn: hiểu cấu trúc dữ liệu ERP (MISA, Bravo) và mối quan hệ giữa các phân hệ.",
+              "Trực quan hóa dữ liệu: có tư duy UI/UX cơ bản, biết chọn loại biểu đồ phù hợp để thể hiện insight rõ ràng.",
+              "Công cụ kỹ thuật: quen thuộc với Git, Docker, Python và các công cụ điều phối như Airflow hoặc Dagster."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Airflow",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "2917ebf686a4f7ca"
+      }
+    },
+    {
+      "id": "business-analyst-ai-global",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst (AI Global)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phân tích yêu cầu nghiệp vụ và nhu cầu khách hàng liên quan đến các sản phẩm, giải pháp AI cho thị trường toàn cầu.",
+      "stack": [],
+      "keywords": "business analyst ai global",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-ai-global/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phân tích yêu cầu nghiệp vụ và nhu cầu khách hàng liên quan đến các sản phẩm, giải pháp AI cho thị trường toàn cầu.",
+          "Xác định và kiểm soát phạm vi PoC/Demo/dự án, gồm đầu vào, đầu ra, KPI, giả định và ràng buộc.",
+          "Xây dựng và chuẩn hóa tài liệu nghiệp vụ như BRD, use case, user flow và process flow cho thị trường toàn cầu.",
+          "Phối hợp với các Global AI Consultant để đảm bảo giải pháp phù hợp với chiến lược sản phẩm và định vị thị trường.",
+          "Làm việc chặt chẽ với Solution Architect để chuyển yêu cầu nghiệp vụ thành giải pháp kỹ thuật khả thi.",
+          "Đảm bảo sản phẩm bàn giao đáp ứng kỳ vọng của khách hàng, hạn chế rủi ro hứa quá mức hoặc bàn giao thiếu.",
+          "Hỗ trợ review proposal, xác nhận phạm vi và thống nhất các giả định trước khi gửi cho khách hàng quốc tế."
+        ],
+        "department": "AI Global",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Từ 2–5 năm kinh nghiệm Business Analyst, ưu tiên mảng AI, Data, SaaS hoặc giải pháp công nghệ.",
+              "Hiểu vững AI/ML, Generative AI, NLP hoặc Computer Vision ở góc độ nghiệp vụ.",
+              "Có kinh nghiệm làm AI PoC, demo hoặc giải pháp AI may đo cho khách hàng.",
+              "Viết tài liệu nghiệp vụ bằng tiếng Anh rõ ràng, mạch lạc.",
+              "Tư duy có cấu trúc, giao tiếp tốt và có kỹ năng quản lý stakeholder.",
+              "Có kinh nghiệm làm việc với team quốc tế hoặc đa văn hóa là điểm cộng."
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "223d46a40b974bbc"
+      }
+    },
+    {
+      "id": "project-manager-2",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Project Manager (AI Global)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Quản lý end-to-end các dự án AI trong phạm vi giai đoạn triển khai đầu, gồm phạm vi, timeline, nguồn lực và ngân sách.",
+      "stack": [],
+      "keywords": "project manager ai global",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Quản lý end-to-end các dự án AI trong phạm vi giai đoạn triển khai đầu, gồm phạm vi, timeline, nguồn lực và ngân sách.",
+          "Điều phối Solution Architect, Business Analyst, AI Consultant, các team kỹ thuật và team Sales/Presales tại địa phương.",
+          "Kiểm soát phạm vi, rủi ro và change request để tránh chậm tiến độ, cam kết quá sức và chênh lệch kỳ vọng.",
+          "Đảm bảo sản phẩm bàn giao đạt KPI, tiêu chí nghiệm thu và cam kết SLA đã thống nhất.",
+          "Làm đầu mối liên hệ chính với khách hàng trong suốt vòng đời dự án.",
+          "Hỗ trợ thống nhất nội bộ để chuyển tiếp suôn sẻ sang các giai đoạn triển khai đầy đủ (nếu có)."
+        ],
+        "department": "AI Global",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tối thiểu 3 năm kinh nghiệm ở vị trí tương đương",
+              "Giao tiếp tốt bằng tiếng Anh/tiếng Nhật, làm việc hiệu quả với các stakeholder trong khu vực và quốc tế.",
+              "Đã có kinh nghiệm quản lý các dự án AI, dữ liệu hoặc công nghệ.",
+              "Ưu tiên lớn nếu có kinh nghiệm với các dự án đa quốc gia hoặc trong khu vực.",
+              "Giỏi quản lý stakeholder, xử lý tình huống chưa rõ ràng và kiểm soát kỳ vọng.",
+              "Thoải mái quản lý các dự án có phạm vi thay đổi liên tục và nguồn lực hạn chế.",
+              "Vị trí này không quản lý các team delivery lớn, dài hạn."
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "47450eb5e1c87ec0"
+      }
+    },
+    {
+      "id": "project-manager-ai",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Project Manager (AI)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "TP. HCM",
+      "desc": "Phối hợp với ban lãnh đạo và các stakeholder để xác định phạm vi, mục tiêu và sản phẩm bàn giao của dự án, bám sát mục tiêu kinh doanh.",
+      "stack": [],
+      "keywords": "project manager ai delivery",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager-ai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phối hợp với ban lãnh đạo và các stakeholder để xác định phạm vi, mục tiêu và sản phẩm bàn giao của dự án, bám sát mục tiêu kinh doanh.",
+          "Xây dựng và cập nhật kế hoạch, tiến độ, ngân sách và phân bổ nguồn lực để đảm bảo dự án thành công.",
+          "Quản lý các hoạt động hằng ngày của dự án: lên lịch, cập nhật tình trạng, quản lý rủi ro, xử lý vấn đề và giao tiếp trong team.",
+          "Theo dõi tiến độ và điều chỉnh kế hoạch khi cần để bàn giao giải pháp chất lượng cao, đúng hạn và trong ngân sách.",
+          "Điều phối hoạt động của team dự án, đảm bảo các thành viên giao tiếp và phối hợp hiệu quả (Presale, BA, DA, Dev, AI Engineer…)",
+          "Xây dựng và duy trì quan hệ với các stakeholder trong và ngoài công ty để đảm bảo dự án thành công.",
+          "Đảm bảo tài liệu dự án đầy đủ, luôn được cập nhật và lưu trữ đúng cách. Liên tục đánh giá hiệu quả dự án và cải tiến khi cần."
+        ],
+        "department": "AI Delivery",
+        "experience": "Từ 4 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tối thiểu 4 năm kinh nghiệm ở vị trí tương đương",
+              "Nắm vững các chuẩn mực trong quy trình quản lý dự án",
+              "Có kinh nghiệm quản lý dự án cho khách hàng doanh nghiệp",
+              "Có kinh nghiệm quản lý nhiều dự án cùng lúc",
+              "Có chứng chỉ PMP",
+              "Có kinh nghiệm về AI"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "badb9597fa49ebad"
+      }
+    },
+    {
+      "id": "data-engineer-2",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "Data Engineer (GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế, xây dựng và vận hành các data pipeline phân tán với Airflow, NiFi và Kafka.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Linux",
+        "Kafka"
+      ],
+      "keywords": "data engineer genai python kubernetes docker linux kafka airflow prometheus",
+      "source": "https://fptsmartcloud.com/job_opportunity/data-engineer-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế, xây dựng và vận hành các data pipeline phân tán với Airflow, NiFi và Kafka.",
+          "Tổ chức, lưu trữ và tối ưu nhiều loại dữ liệu (văn bản, âm thanh…) trên nhiều cơ sở dữ liệu và hệ thống lưu trữ.",
+          "Triển khai và quản lý data governance, phân quyền truy cập và audit với Apache Ranger.",
+          "Container hóa và deploy các data service bằng Docker và Kubernetes.",
+          "Tích hợp dữ liệu vào các hệ thống phân tích, catalog và tìm kiếm như Superset, OpenMetadata, OpenSearch, Nessie và Trino.",
+          "Giám sát tình trạng hệ thống và hiệu năng pipeline bằng Prometheus và các công cụ liên quan.",
+          "Phối hợp với Data Scientist và ML Engineer để chuẩn hóa và cung cấp dữ liệu cho các ứng dụng AI/ML.",
+          "Đảm bảo data pipeline tin cậy, dễ mở rộng và vận hành ổn định."
+        ],
+        "department": "GenAI",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Lập trình: bắt buộc thành thạo Python. Có kinh nghiệm lập trình bất đồng bộ và phát triển API (FastAPI/Flask).",
+              "Generative AI & LLM: hiểu sâu về mô hình ngôn ngữ lớn (LLM), Vision Language Model, năng lực và giới hạn của chúng",
+              "Triển khai: thành thạo triển khai ứng dụng AI bằng container (Docker, Kubernetes)",
+              "Phối hợp: làm việc chặt chẽ với các team liên chức năng để tích hợp giải pháp agentic vào hệ sinh thái sản phẩm.",
+              "Đổi mới: luôn cập nhật các nghiên cứu mới về Generative AI, thử nghiệm framework và kỹ thuật mới để liên tục cải tiến.",
+              "Có kinh nghiệm dùng LLM để trích xuất dữ liệu có cấu trúc.",
+              "Có kinh nghiệm làm việc trên môi trường Linux",
+              "Đã từng xây dựng hoặc vận hành data pipeline",
+              "Có kiến thức về lập lịch workflow (ví dụ Airflow)"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "Kafka",
+          "Airflow",
+          "Prometheus"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "a729bd59a6a8f6a7"
+      }
+    },
+    {
+      "id": "business-analyst-jlpt-n2-n1",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst (JLPT N2/N1)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thu thập, phân tích và viết tài liệu yêu cầu nghiệp vụ.",
+      "stack": [],
+      "keywords": "business analyst ai conversation",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-jlpt-n2-n1/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thu thập, phân tích và viết tài liệu yêu cầu nghiệp vụ.",
+          "Phân tích dữ liệu để nhận diện xu hướng và cơ hội cải tiến.",
+          "Xây dựng và tối ưu các mô hình quy trình nghiệp vụ.",
+          "Viết đặc tả chức năng và đảm bảo các stakeholder trao đổi thông suốt.",
+          "Đánh giá nhu cầu nghiệp vụ và đề xuất khuyến nghị có thể triển khai.",
+          "Phối hợp chặt chẽ với các team kỹ thuật để triển khai giải pháp thành công."
+        ],
+        "department": "AI Conversation",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Quản trị kinh doanh, Hệ thống thông tin hoặc các ngành liên quan.",
+              "Kỹ năng phân tích tốt và đã có kinh nghiệm Business Analysis.",
+              "Nắm vững việc mô hình hóa và tối ưu quy trình nghiệp vụ.",
+              "Thu thập yêu cầu và viết tài liệu xuất sắc.",
+              "Kỹ năng giao tiếp nổi bật cả nói và viết.",
+              "Thành thạo tiếng Nhật (JLPT N2/N1) và tiếng Anh.",
+              "Có thể làm việc trực tiếp tại văn phòng ở khu vực Hà Nội.",
+              "Có kinh nghiệm trong lĩnh vực công nghệ hoặc điện toán đám mây là lợi thế."
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "9486122d60adffca"
+      }
+    },
+    {
+      "id": "site-reliability-engineer-junior-middle",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "Site Reliability Engineer (Junior/Middle)",
+      "level": "Junior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế, xây dựng và vận hành hạ tầng dễ mở rộng, tin cậy và bảo mật.",
+      "stack": [
+        "Python",
+        "Golang",
+        "Kubernetes",
+        "Docker",
+        "Terraform"
+      ],
+      "keywords": "site reliability engineer sre python golang kubernetes docker terraform ansible linux aws azure gcp prometheus grafana ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/site-reliability-engineer-junior-middle/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế, xây dựng và vận hành hạ tầng dễ mở rộng, tin cậy và bảo mật.",
+          "Theo dõi hiệu năng, tính sẵn sàng và dung lượng hệ thống; ứng phó và xử lý sự cố.",
+          "Tự động hóa quy trình vận hành bằng script và các công cụ infrastructure as code.",
+          "Triển khai và duy trì CI/CD pipeline để cải thiện việc bàn giao phần mềm.",
+          "Làm việc với developer để thiết kế ứng dụng có khả năng chịu lỗi và phục hồi tốt.",
+          "Duy trì các công cụ observability (logging, metrics, tracing) để luôn nắm rõ tình trạng hệ thống.",
+          "Tham gia trực on-call và xử lý sự cố.",
+          "Liên tục nâng cao độ tin cậy của hệ thống qua phân tích postmortem và tinh chỉnh hiệu năng."
+        ],
+        "department": "SRE",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Công nghệ thông tin hoặc các ngành liên quan.",
+              "Tối thiểu 2 năm kinh nghiệm ở vị trí SRE, DevOps Engineer hoặc tương đương.",
+              "Hiểu vững hệ thống Linux/Unix và kiến thức nền tảng về networking.",
+              "Có kinh nghiệm thực tế với cloud platform (AWS hoặc Azure/GCP).",
+              "Quen thuộc với container và orchestration (Docker, Kubernetes).",
+              "Có kinh nghiệm với Infrastructure as Code (Terraform, Ansible, CloudFormation…).",
+              "Thành thạo ít nhất một ngôn ngữ scripting (Python, Bash, Go, …).",
+              "Có kinh nghiệm với các hệ thống monitoring và alerting (Prometheus, Grafana, ELK, Datadog…).",
+              "Kỹ năng giải quyết vấn đề tốt và có khả năng troubleshoot các hệ thống phức tạp."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Prometheus",
+          "Grafana",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "627fb204d5c15eae"
+      }
+    },
+    {
+      "id": "ai-solution-architecture",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "AI Solution Architecture",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế kiến trúc AI/GenAI/AI Agent end-to-end, từ xử lý dữ liệu đến triển khai.",
+      "stack": [
+        "Python",
+        "AWS",
+        "Azure",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai solution architecture fpt.ai python aws azure pytorch tensorflow langchain ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-solution-architecture/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế kiến trúc AI/GenAI/AI Agent end-to-end, từ xử lý dữ liệu đến triển khai.",
+          "Đề xuất công cụ, công nghệ và framework phù hợp với nhu cầu từng dự án.",
+          "Dẫn dắt và điều phối team AI developer: phân công công việc, review kết quả và định hướng kỹ thuật.",
+          "Phối hợp với các stakeholder kinh doanh để chuyển yêu cầu thành đặc tả kỹ thuật.",
+          "Tích hợp các module AI (model, API…) vào sản phẩm lớn hơn hoặc hệ thống doanh nghiệp.",
+          "Đảm bảo chất lượng, khả năng mở rộng và khả năng bảo trì của giải pháp trong suốt vòng đời dự án."
+        ],
+        "department": "FPT.AI",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Đã có kinh nghiệm thiết kế và triển khai các giải pháp AI/GenAI/ML/AI Agent.",
+              "Có chuyên môn thực tế về machine learning, NLP, LLM, AI Agent, computer vision hoặc các lĩnh vực AI liên quan.",
+              "Có kinh nghiệm thực tế với các LLM framework như LangChain, RAG hoặc tương đương.",
+              "Thành thạo Python và quen thuộc với các framework AI/ML lớn như TensorFlow hoặc PyTorch.",
+              "Có kinh nghiệm với các cloud platform như AWS, Google Cloud hoặc Azure.",
+              "Có nền tảng vững về dẫn dắt team hoặc quản lý dự án kỹ thuật.",
+              "Kỹ năng giao tiếp và tổ chức xuất sắc.",
+              "Có kiến thức về DevOps, gồm CI/CD, MLOps hoặc LLMOps là điểm cộng.",
+              "Thành thạo tiếng Anh cả nói và viết."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "AWS",
+          "Azure",
+          "PyTorch",
+          "TensorFlow",
+          "LangChain",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "09e93905ec44bbd5"
+      }
+    },
+    {
+      "id": "dataops",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "DataOps / Platform Engineer (PaaS Team)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Phối hợp với team thiết kế kiến trúc kỹ thuật cho các dịch vụ Cloud Data Platform (Data Ingestion, Processing, Storage, Query, Visualization, Security,…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS"
+      ],
+      "keywords": "dataops / platform engineer paas center python kubernetes docker terraform aws azure gcp kafka spark airflow prometheus grafana jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/dataops/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phối hợp với team thiết kế kiến trúc kỹ thuật cho các dịch vụ Cloud Data Platform (Data Ingestion, Processing, Storage, Query, Visualization, Security, Governance).",
+          "Triển khai và tích hợp các thành phần của Data Platform: Kafka, NiFi, Airflow, Spark, Flink, Iceberg, Trino, Superset, dbt…",
+          "Xây dựng và vận hành hệ thống CI/CD và Infrastructure as Code (Terraform, Helm, ArgoCD…).",
+          "Nghiên cứu và đề xuất công nghệ mới để tối ưu hiệu năng và nâng cấp sản phẩm.",
+          "Hỗ trợ triển khai, cấu hình và tối ưu Cloud Data Platform cho khách hàng.",
+          "Giám sát, xử lý sự cố và đảm bảo tuân thủ SLA dịch vụ.",
+          "Vận hành hệ thống monitoring, alerting và logging (Prometheus, Grafana, ELK, Loki…).",
+          "Hỗ trợ xử lý sự cố data pipeline, kết nối nguồn dữ liệu và các sự cố bảo mật.",
+          "Tham gia đào tạo và hướng dẫn khách hàng sử dụng nền tảng."
+        ],
+        "department": "PaaS Center",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Từ 3–5 năm kinh nghiệm ở vị trí DataOps, DevOps, Platform Engineer hoặc Data Engineer.",
+              "Thành thạo Kubernetes, Docker và kiến trúc microservices.",
+              "Có kinh nghiệm thực tế triển khai hoặc vận hành ít nhất một số dịch vụ Data Platform (như Kafka, Airflow, Spark).",
+              "Kỹ năng scripting tốt (Python hoặc Bash).",
+              "Có kinh nghiệm với CI/CD và GitOps (GitLab CI, Jenkins hoặc ArgoCD).",
+              "Hiểu cơ bản về data pipeline và các khái niệm Data Engineering."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có kinh nghiệm thiết kế hoặc vận hành Data Lakehouse/Data Warehouse.",
+              "Có kinh nghiệm cung cấp Managed Service cho khách hàng doanh nghiệp.",
+              "Có kiến thức về bảo mật dữ liệu (IAM, RBAC, TLS, Network Policy…).",
+              "Có chứng chỉ liên quan về Kubernetes (CKA, CKAD) hoặc Cloud (AWS, GCP, Azure)."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Kafka",
+          "Spark",
+          "Airflow",
+          "Prometheus",
+          "Grafana",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "717a79ffb41c03f7"
+      }
+    },
+    {
+      "id": "dataengineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "Data Engineer (Data Suite)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế, phát triển và vận hành các data pipeline hiệu năng cao, dễ mở rộng, đáp ứng nhu cầu xử lý dữ liệu cả batch lẫn real-time.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "AWS",
+        "Azure",
+        "MySQL"
+      ],
+      "keywords": "data engineer data suite python kubernetes aws azure mysql mongodb redis kafka spark ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/dataengineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế, phát triển và vận hành các data pipeline hiệu năng cao, dễ mở rộng, đáp ứng nhu cầu xử lý dữ liệu cả batch lẫn real-time.",
+          "Triển khai và duy trì data model, data mart và data warehouse theo các phương pháp chuẩn như Kimball và giải pháp Slowly Changing Dimensions (SCD).",
+          "Phối hợp với các stakeholder để xác định yêu cầu dữ liệu, xây dựng quy trình ETL/ELT, tối ưu luồng thu nạp dữ liệu và phát triển báo cáo.",
+          "Làm việc với các nguồn dữ liệu cả trên cloud lẫn on-premise (như AWS Redshift, Google BigQuery, ClickHouse, Druid) để thu thập dữ liệu cho quy trình ETL.",
+          "Phát triển giải pháp streaming và xử lý dữ liệu real-time với các công cụ như Apache Spark, Flink, Kafka hoặc tương đương.",
+          "Đảm bảo chất lượng dữ liệu qua giám sát, logging và áp dụng các thực hành data governance.",
+          "Phối hợp chặt chẽ với Data Analyst để thống nhất kiến trúc dữ liệu và yêu cầu báo cáo.",
+          "Tự động hóa và tối ưu các luồng dữ liệu bằng CI/CD pipeline và hạ tầng Kubernetes.",
+          "Cập nhật xu hướng công nghệ big data và best practice của ngành."
+        ],
+        "department": "Data Suite",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Từ 5 năm kinh nghiệm phát triển phần mềm, trong đó ít nhất 3 năm làm Data Engineering.",
+              "Kỹ năng SQL tốt, có kinh nghiệm thực tế với các cơ sở dữ liệu phổ biến (Oracle, MSSQL, MySQL).",
+              "Có kinh nghiệm với các cloud data warehouse như Redshift hoặc Google BigQuery.",
+              "Có kinh nghiệm với các giải pháp data warehouse on-premise như ClickHouse, Postgres, Druid hoặc Kylin.",
+              "Quen thuộc với các cơ sở dữ liệu NoSQL (như MongoDB, Redis, Cassandra, HBase).",
+              "Hiểu sâu các nguyên tắc mô hình hóa dữ liệu như phương pháp Kimball.",
+              "Lập trình Python nâng cao; biết Scala là điểm cộng.",
+              "Có kinh nghiệm với các framework big data như Hadoop, Spark, Trino và Druid.",
+              "Có kinh nghiệm với các nền tảng data streaming (như Spark Streaming, Flink).",
+              "Có kinh nghiệm xây dựng hệ thống giám sát data pipeline và kiểm soát chất lượng dữ liệu.",
+              "Thành thạo xây dựng data platform trên môi trường cloud (Azure, AWS).",
+              "Có kinh nghiệm với CI/CD và Git cho việc deploy lên Kubernetes.",
+              "Hiểu biết về DevOps là điểm cộng.",
+              "Có kiến thức về công cụ BI và các kỹ thuật tối ưu độ trễ truy vấn cũng như chi phí data platform."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "AWS",
+          "Azure",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "Kafka",
+          "Spark",
+          "CI/CD",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "c2b409d2fbf32ccf"
+      }
+    },
+    {
+      "id": "sre-devops-engineer-paas",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "DevOps Engineer (PaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Cùng team xây dựng và vận hành các thành phần cốt lõi của nền tảng FPT Cloud, đảm bảo khả năng mở rộng, độ tin cậy và bảo mật.",
+      "stack": [
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Ansible",
+        "Linux"
+      ],
+      "keywords": "devops engineer cloud paas kubernetes docker terraform ansible linux redis kafka prometheus grafana gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/sre-devops-engineer-paas/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Cùng team xây dựng và vận hành các thành phần cốt lõi của nền tảng FPT Cloud, đảm bảo khả năng mở rộng, độ tin cậy và bảo mật.",
+          "Tham gia triển khai, giám sát và cải tiến hạ tầng cloud-native.",
+          "Đóng góp phát triển và tự động hóa các công cụ nội bộ, CI/CD pipeline và các dịch vụ của nền tảng.",
+          "Làm việc với các công nghệ hiện đại và áp dụng best practice trong vận hành hệ thống và DevOps.",
+          "Liên tục tìm hiểu, thử nghiệm và áp dụng công nghệ mới để nâng cao hiệu năng và hiệu quả hệ thống."
+        ],
+        "department": "Cloud PaaS",
+        "experience": "Từ 4 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tối thiểu 4 năm kinh nghiệm ở vị trí DevOps, SRE hoặc tương đương.",
+              "Kiến thức vững về Linux, Docker và Kubernetes.",
+              "Có kinh nghiệm thực tế với CI/CD, ưu tiên GitLab CI.",
+              "Quen thuộc với Redis, Kafka hoặc các hệ thống phân tán tương tự.",
+              "Hiểu về các công cụ monitoring/logging như Prometheus, Grafana hoặc ELK.",
+              "Có kinh nghiệm với các công cụ tự động hóa như Ansible, Terraform là điểm cộng.",
+              "Tinh thần đồng đội, có trách nhiệm và ham học hỏi công nghệ mới."
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "Redis",
+          "Kafka",
+          "Prometheus",
+          "Grafana",
+          "GitLab",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "e3a91ed0e09edd71"
+      }
+    },
+    {
+      "id": "software-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Software Engineer (Python+Openstack)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế, phát triển và vận hành các thành phần cốt lõi của nền tảng IaaS xây dựng trên OpenStack",
+      "stack": [
+        "Python",
+        "OpenStack",
+        "Linux",
+        "CI/CD"
+      ],
+      "keywords": "software engineer cloud iaas python openstack linux ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/software-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế, phát triển và vận hành các thành phần cốt lõi của nền tảng IaaS xây dựng trên OpenStack",
+          "Phát triển script tự động hóa và công cụ nội bộ bằng Python, Bash hoặc các ngôn ngữ scripting khác",
+          "Tích hợp và xử lý sự cố các giao thức kết nối từ xa (như SSH, VNC, IPMI)",
+          "Phối hợp với các kỹ sư hệ thống và team DevOps để đảm bảo khả năng mở rộng, độ tin cậy và tính sẵn sàng cao của các dịch vụ cloud",
+          "Tham gia tinh chỉnh hiệu năng, giám sát hệ thống và tăng cường bảo mật (security hardening)",
+          "Viết code sạch, dễ bảo trì và duy trì tài liệu rõ ràng"
+        ],
+        "department": "Cloud IaaS",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Kỹ thuật hoặc các ngành liên quan",
+              "Từ 2 năm kinh nghiệm phát triển phần mềm hoặc tích hợp hệ thống",
+              "Lập trình Python tốt",
+              "Có kinh nghiệm thực tế với các thành phần của OpenStack (Nova, Neutron, Glance…)",
+              "Hiểu vững các giao thức kết nối từ xa và công nghệ ảo hóa",
+              "Quen thuộc với REST API, hệ thống Linux và quy trình CI/CD",
+              "Kỹ năng giải quyết vấn đề tốt và tinh thần làm việc nhóm"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "OpenStack",
+          "Linux",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "e784eded0f47e8b2"
+      }
+    },
+    {
+      "id": "text-to-speech-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "Text-to-Speech Engineer (AI Conversation Team)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội / TP. HCM",
+      "desc": "Điều phối và giám sát việc thu thập dữ liệu giọng nói, gồm cả thu âm thủ công lẫn thu thập dữ liệu trực tuyến tự động.",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "Docker",
+        "Linux"
+      ],
+      "keywords": "text-to-speech engineer ai conversation team python javascript docker linux",
+      "source": "https://fptsmartcloud.com/job_opportunity/text-to-speech-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Điều phối và giám sát việc thu thập dữ liệu giọng nói, gồm cả thu âm thủ công lẫn thu thập dữ liệu trực tuyến tự động.",
+          "Xử lý dữ liệu như làm sạch, phân đoạn và gán nhãn tự động.",
+          "Kiểm tra chất lượng và xác thực các bộ dữ liệu giọng nói.",
+          "Từng bước xây dựng pipeline và công cụ tự động để quản lý, xử lý dữ liệu giọng nói hiệu quả.",
+          "Hỗ trợ training và đánh giá model TTS khi đã có thêm kinh nghiệm.",
+          "Phối hợp với các team AI liên chức năng để nâng cao hiệu năng và khả năng mở rộng của hệ thống."
+        ],
+        "department": "AI Conversation Team",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Lập trình Python vững.",
+              "Làm việc thoải mái trên môi trường phát triển Linux, gồm các công cụ dòng lệnh, bash script và Docker.",
+              "Kỹ năng tổ chức và giao tiếp tốt.",
+              "Tiếng Anh ở mức trung cấp (đọc hiểu và trao đổi kỹ thuật).",
+              "Có kiến thức về xử lý tín hiệu âm thanh và các kỹ thuật liên quan.",
+              "Có kinh nghiệm phát triển web backend bằng Python (như Flask, FastAPI).",
+              "Quen thuộc với các khái niệm AI và machine learning.",
+              "Có kinh nghiệm cơ bản với JavaScript để phát triển front-end hoặc công cụ."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "JavaScript",
+          "Docker",
+          "Linux"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "a13a747c0f06b0eb"
+      }
+    },
+    {
+      "id": "devops_engineer_infra",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "DevOps Engineer (Infra)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Tư vấn và triển khai giải pháp cho khách hàng có nhu cầu chuyển hạ tầng lên FPT Cloud.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Ansible",
+        "OpenStack",
+        "Linux"
+      ],
+      "keywords": "devops engineer ncp center python docker ansible openstack linux mysql prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/devops_engineer_infra/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tư vấn và triển khai giải pháp cho khách hàng có nhu cầu chuyển hạ tầng lên FPT Cloud.",
+          "Xây dựng và triển khai hệ thống giám sát với bộ công nghệ: Prometheus, Grafana, VictoriaMetrics, Exporter, Alertmanager.",
+          "Đảm bảo hệ thống giám sát hiện tại vận hành liên tục 24/7.",
+          "Cấu hình giám sát cho các hệ thống mới triển khai hoặc các thành phần mở rộng của hệ thống hiện có.",
+          "Viết exporter để thu thập thêm các chỉ số giám sát theo yêu cầu của hệ thống.",
+          "Xây dựng dashboard Grafana để trực quan hóa dữ liệu phục vụ báo cáo và giám sát hệ thống.",
+          "Thiết lập kênh cảnh báo và rule cảnh báo cho hệ thống giám sát, đảm bảo gửi cảnh báo ngay khi hệ thống có dấu hiệu bất thường.",
+          "Phát triển công cụ và script kiểm tra hệ thống, đảm bảo hệ thống vận hành ổn định.",
+          "Tìm nguyên nhân gốc rễ của các sự cố xảy ra trên hệ thống được giám sát."
+        ],
+        "department": "NCP Center",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Sinh viên đang theo học các khoa Khoa học máy tính, Công nghệ thông tin, Điện tử viễn thông, Điện.",
+              "Có kiến thức về Linux và các phần mềm mã nguồn mở: Ubuntu, Ansible, Docker, HAProxy, Nginx, MySQL, RabbitMQ…",
+              "Có kiến thức về mạng: TCP/IP, TCP, UDP, VLAN, IPv4, DNS, DHCP.",
+              "Có kinh nghiệm với các công cụ giám sát và logging: Prometheus, Grafana, Zabbix, Nagios, Cacti, ELK stack, Graylog.",
+              "Kỹ năng thuyết trình, giao tiếp, viết và quản lý thời gian tốt.",
+              "Có khả năng tự học kiến thức kỹ thuật, sản phẩm và đọc tài liệu bằng tiếng Anh.",
+              "Thái độ làm việc tốt, năng động, có trách nhiệm, đáng tin cậy và chuyên nghiệp."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Có chứng chỉ RHCSA, CCNA.",
+              "Có khả năng/kinh nghiệm viết code Bash shell, Python.",
+              "Có kinh nghiệm với ngôn ngữ lập trình Python.",
+              "Có kinh nghiệm với OpenStack, KVM."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Ansible",
+          "OpenStack",
+          "Linux",
+          "MySQL",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "f960413848c84624"
+      }
+    },
+    {
+      "id": "business-analyst-ai-conversation",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst (AI Conversation Team)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Làm việc với khách hàng, người dùng và các stakeholder nội bộ để thu thập và ưu tiên các yêu cầu sản phẩm cho nền tảng Voicebot GenAI.",
+      "stack": [],
+      "keywords": "business analyst ai conversation team",
+      "source": "https://fptsmartcloud.com/job_opportunity/business-analyst-ai-conversation/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Làm việc với khách hàng, người dùng và các stakeholder nội bộ để thu thập và ưu tiên các yêu cầu sản phẩm cho nền tảng Voicebot GenAI.",
+          "Xây dựng user story, acceptance criteria và workflow chi tiết, bám sát tầm nhìn sản phẩm và mục tiêu kinh doanh.",
+          "Phối hợp chặt chẽ với Product Manager, UX/UI designer và kỹ sư để đảm bảo mọi người hiểu thống nhất và sản phẩm được bàn giao thành công.",
+          "Phân tích hành vi và phản hồi của người dùng để tìm cơ hội cải tiến sản phẩm và phát triển tính năng mới.",
+          "Tham gia tích cực các buổi Agile (planning, refinement, demo) để chu kỳ phát triển sản phẩm diễn ra suôn sẻ.",
+          "Theo dõi các chỉ số hiệu quả sản phẩm và góp phần xác định KPI liên quan đến chất lượng tương tác giọng nói và mức độ hài lòng của người dùng.",
+          "Cập nhật xu hướng Generative AI, conversational AI và công nghệ giọng nói để mang ý tưởng mới vào product roadmap.",
+          "Hỗ trợ quản lý product backlog và cập nhật roadmap theo các ưu tiên kinh doanh thay đổi."
+        ],
+        "department": "AI Conversation Team",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Kinh doanh, Khoa học máy tính hoặc các ngành liên quan.",
+              "Từ 5 năm kinh nghiệm Business Analyst, ưu tiên các vai trò thiên về sản phẩm trong mảng AI, công nghệ giọng nói hoặc giao diện hội thoại.",
+              "Giao tiếp tiếng Anh tốt (nói và viết) để phối hợp với các team toàn cầu và viết tài liệu.",
+              "Có khả năng chuyển nhu cầu người dùng thành yêu cầu sản phẩm và user story rõ ràng, có thể thực hiện được.",
+              "Quen thuộc với Agile/Scrum và các công cụ liên quan (Jira, Confluence…).",
+              "Hiểu cơ bản về AI/ML, đặc biệt là voicebot và NLP, là điểm cộng.",
+              "Tư duy phân tích, kỹ năng giải quyết vấn đề tốt và chú ý đến chi tiết.",
+              "Tinh thần hợp tác và đam mê xây dựng sản phẩm lấy người dùng làm trung tâm."
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "6fd5b319a3d7e106"
+      }
+    },
+    {
+      "id": "fullstack-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Fullstack Engineer",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phát triển và bảo trì ứng dụng web fullstack với Node.js (Express/NestJS) và ReactJS",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "Node.js",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "keywords": "fullstack engineer ai python reactjs node.js docker postgresql redis ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phát triển và bảo trì ứng dụng web fullstack với Node.js (Express/NestJS) và ReactJS",
+          "Thiết kế backend API vững chắc, dễ mở rộng cho các tính năng dùng AI như chatbot, phân tích tài liệu và trợ lý giọng nói",
+          "Xây dựng giao diện frontend tương tác, responsive cho các sản phẩm AI",
+          "Phối hợp với AI/ML engineer để tích hợp và hiển thị kết quả của model trên giao diện người dùng",
+          "Đóng góp vào kiến trúc kỹ thuật, viết code sạch, dễ bảo trì và tham gia code review",
+          "Tối ưu hiệu năng, bảo mật và độ tin cậy cho cả frontend lẫn backend"
+        ],
+        "department": "AI",
+        "experience": "Từ 4 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tối thiểu 4 năm kinh nghiệm phát triển fullstack chuyên nghiệp",
+              "Thành thạo Node.js (như Express, NestJS) và ReactJS",
+              "Hiểu vững RESTful API, lập trình bất đồng bộ và kiến trúc frontend theo component",
+              "Có kinh nghiệm với PostgreSQL, Redis, Git, Docker và CI/CD pipeline",
+              "Kỹ năng giải quyết vấn đề và tư duy hệ thống tốt",
+              "Giao tiếp và làm việc nhóm tốt",
+              "Điểm cộng: có kinh nghiệm với Python (như Flask, FastAPI) và tích hợp các dịch vụ AI/ML"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "Node.js",
+          "Docker",
+          "PostgreSQL",
+          "Redis",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "e44c0930a3c190f9"
+      }
+    },
+    {
+      "id": "project-manager",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Project Manager",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Điều phối nguồn lực nội bộ và bên thứ ba/nhà cung cấp để dự án được triển khai trơn tru",
+      "stack": [],
+      "keywords": "project manager cloud delivery center",
+      "source": "https://fptsmartcloud.com/job_opportunity/project-manager/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Điều phối nguồn lực nội bộ và bên thứ ba/nhà cung cấp để dự án được triển khai trơn tru",
+          "Đảm bảo mọi dự án được bàn giao đúng hạn, đúng phạm vi",
+          "Xây dựng phạm vi và mục tiêu dự án, có sự tham gia của tất cả các stakeholder liên quan và đảm bảo tính khả thi về kỹ thuật",
+          "Đảm bảo nguồn lực sẵn sàng và được phân bổ hợp lý",
+          "Xây dựng kế hoạch dự án chi tiết để theo dõi tiến độ",
+          "Áp dụng các kỹ thuật kiểm soát phù hợp để quản lý thay đổi về phạm vi và tiến độ dự án",
+          "Đo lường hiệu quả dự án bằng hệ thống, công cụ và kỹ thuật phù hợp",
+          "Báo cáo và escalate lên cấp quản lý khi cần",
+          "Quản lý mối quan hệ với khách hàng và tất cả các stakeholder",
+          "Quản lý rủi ro để giảm thiểu rủi ro cho dự án",
+          "Xây dựng và duy trì quan hệ với bên thứ ba/nhà cung cấp",
+          "Xây dựng và cập nhật bộ tài liệu dự án đầy đủ"
+        ],
+        "department": "Cloud Delivery Center",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tối thiểu 3 năm kinh nghiệm quản lý dự án.",
+              "Nền tảng học vấn tốt, ưu tiên chuyên ngành khoa học máy tính hoặc kỹ thuật",
+              "Đã có kinh nghiệm làm quản lý dự án trong lĩnh vực CNTT",
+              "Nền tảng kỹ thuật vững, hiểu hoặc có kinh nghiệm thực tế với công nghệ cloud",
+              "Kỹ năng làm việc với khách hàng và giao tiếp nội bộ xuất sắc",
+              "Kỹ năng giao tiếp bằng văn bản và lời nói xuất sắc",
+              "Kỹ năng tổ chức tốt, chú ý đến chi tiết và xử lý tốt nhiều việc cùng lúc",
+              "Có chứng chỉ PMP/PRINCE2 là điểm cộng"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "7e7b53ed98ab377b"
+      }
+    },
+    {
+      "id": "iaas-software-engineer-fcd-client",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Software Engineer – FCD",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Phối hợp chặt chẽ với Product Owner và team leader để hiểu và hiện thực hóa các chức năng nghiệp vụ.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "CI/CD"
+      ],
+      "keywords": "software engineer – fcd iaas center python docker linux ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/iaas-software-engineer-fcd-client/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phối hợp chặt chẽ với Product Owner và team leader để hiểu và hiện thực hóa các chức năng nghiệp vụ.",
+          "Thiết kế, phát triển và bảo trì ứng dụng đa nền tảng bằng Python và",
+          "Phối hợp với product manager, designer và các kỹ sư khác để bàn giao giải pháp phần mềm chất lượng cao.",
+          "Viết code sạch, dễ bảo trì và hiệu quả. Đảm bảo ứng dụng chạy ổn định và tối ưu dưới các mức tải và áp lực khác nhau.",
+          "Triển khai các biện pháp bảo mật để bảo vệ thông tin nhạy cảm.",
+          "Tham gia quy trình review và test (viết unit test, automation test hoặc test case cho system test) để đảm bảo chất lượng code và tài liệu kỹ thuật.",
+          "Troubleshoot, debug ứng dụng web nhanh và chính xác.",
+          "Ghi lại tài liệu về quy trình phát triển, thay đổi code và các thông tin liên quan."
+        ],
+        "department": "IaaS Center",
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tốt nghiệp Cử nhân hoặc Thạc sĩ chuyên ngành Khoa học máy tính, Hệ thống thông tin hoặc các ngành liên quan.",
+              "Tối thiểu 3 năm kinh nghiệm ở vị trí developer.",
+              "Có kinh nghiệm với toàn bộ vòng đời phát triển phần mềm, gồm thiết kế, testing, deploy và viết tài liệu.",
+              "Có kinh nghiệm phát triển phần mềm bằng Python.",
+              "Kiến thức vững về PyQt để phát triển giao diện đồ họa.",
+              "Có kinh nghiệm build và deploy ứng dụng trên nhiều nền tảng (Windows, Linux, macOS).",
+              "Có kinh nghiệm dùng Git, git-flow, Docker và các công cụ quản lý môi trường ảo (venv, pipenv…). Quen thuộc với CI/CD pipeline.",
+              "Có kinh nghiệm làm việc theo Scrum hoặc các framework Agile khác là điểm cộng.",
+              "Có kinh nghiệm với các khái niệm và giao thức mạng (UDP, TCP, RDP).",
+              "Kỹ năng giao tiếp và tư duy phản biện tốt"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "2bcf25ae02596206"
+      }
+    },
+    {
+      "id": "ai-delivery-business-analyst",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Tham gia nhiều dự án với vai trò Business Analyst",
+      "stack": [],
+      "keywords": "business analyst ai delivery center",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-delivery-business-analyst/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tham gia nhiều dự án với vai trò Business Analyst",
+          "Xây dựng quan hệ hợp tác với các stakeholder chủ chốt, hiểu và đàm phán nhu cầu, kỳ vọng của nhiều bên liên quan.",
+          "Phân tích ở cấp dự án, xây dựng các tài liệu phân tích cần thiết (yêu cầu nghiệp vụ, yêu cầu hệ thống, phạm vi, use case, sequence diagram, đề xuất trạng thái tương lai…).",
+          "Đóng vai trò tư vấn, giúp khách hàng xây dựng các use case mang lại giá trị cao nhất khi ứng dụng công nghệ AI vào từng lĩnh vực.",
+          "Phối hợp chặt chẽ với developer để hiện thực hóa yêu cầu và hướng dẫn tester trong quá trình QA.",
+          "Chủ động và kịp thời nhận diện các cơ hội cải tiến",
+          "Tìm cách tăng mức độ sử dụng và sự hài lòng của khách hàng.",
+          "Phối hợp với Project Manager xây dựng kế hoạch và đặc tả dự án, ước lượng thời gian và nguồn lực, theo dõi các mốc hoàn thành, bám sát mọi giai đoạn của dự án, báo cáo kịp thời các vấn đề ảnh hưởng tiến độ, điều phối hành động và giải quyết xung đột"
+        ],
+        "department": "AI Delivery Center",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tối thiểu 5 năm kinh nghiệm ở vị trí Business Analyst",
+              "Có khả năng xử lý tốt nhiều dự án và nhiều đầu việc cùng lúc",
+              "Kỹ năng làm việc với stakeholder và dẫn dắt hiệu quả.",
+              "Kỹ năng giải quyết vấn đề, giao tiếp, quản lý thời gian và phân tích xuất sắc.",
+              "Tự tin thuyết trình",
+              "Học nhanh, ham học hỏi và áp dụng công nghệ mới",
+              "Có tinh thần đòi hỏi cao về chất lượng sản phẩm",
+              "Các điều kiện ưu tiên khác: tiếng Anh; có kinh nghiệm dự án AI; có kinh nghiệm làm việc với các tập đoàn lớn trong lĩnh vực Ngân hàng – Tài chính – Chứng khoán – Bảo hiểm; tốt nghiệp Đại học chuyên ngành kinh doanh, công nghệ thông tin hoặc các ngành liên quan; thành thạo Microsoft Office: Excel, PowerPoint, Word, Project, Visio, Power BI"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "b02e385551fb57c1"
+      }
+    },
+    {
+      "id": "cloud-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "Cloud Engineer L2 (Cloud Operation Center)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Vận hành và duy trì các sản phẩm, dịch vụ của FPT Cloud, gồm hệ thống cloud nội bộ, nền tảng ảo hóa và hạ tầng máy chủ vật lý.",
+      "stack": [
+        "Python",
+        "Terraform",
+        "Ansible",
+        "Linux",
+        "Prometheus"
+      ],
+      "keywords": "cloud engineer l2 cloud operation center python terraform ansible linux prometheus",
+      "source": "https://fptsmartcloud.com/job_opportunity/cloud-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Vận hành và duy trì các sản phẩm, dịch vụ của FPT Cloud, gồm hệ thống cloud nội bộ, nền tảng ảo hóa và hạ tầng máy chủ vật lý.",
+          "Triển khai, cấu hình và quản lý máy ảo cùng các dịch vụ đi kèm trên môi trường VMware và private cloud.",
+          "Thiết kế và vận hành các công cụ giám sát, cảnh báo hệ thống để đảm bảo hiệu năng, tính sẵn sàng và độ tin cậy.",
+          "Tư vấn và hỗ trợ khách hàng doanh nghiệp sử dụng dịch vụ FPT Cloud; phân tích và xử lý các sự cố dịch vụ.",
+          "Thiết kế và tích hợp các giải pháp mới vào hệ sinh thái cloud (monitoring, logging, HA, cân bằng tải, backup…).",
+          "Tự động hóa các tác vụ vận hành thường xuyên bằng ngôn ngữ scripting (Bash, PowerShell, Python) và công cụ (Ansible, Terraform).",
+          "Phối hợp với các team kỹ thuật khác (network, security, dev) để đảm bảo dịch vụ cloud được cung cấp liền mạch.",
+          "Viết tài liệu quy trình vận hành chuẩn, báo cáo sự cố và kiến trúc hệ thống.",
+          "Xem thêm các vị trí nổi bật khác tại đây: https://fptsmartcloud.com/co-hoi-nghe-nghiep"
+        ],
+        "department": "Cloud Operation Center",
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Từ 2–5 năm kinh nghiệm ở vị trí Cloud, quản trị hệ thống hoặc hạ tầng CNTT.",
+              "Kiến thức vững về triển khai và quản lý môi trường Linux và Windows Server.",
+              "Có kinh nghiệm với các giải pháp VMware (vSphere, vCenter, ESXi…).",
+              "Quen thuộc với phần cứng máy chủ và các công nghệ lưu trữ doanh nghiệp (iSCSI, FC, FCoE).",
+              "Hiểu các dịch vụ hạ tầng cốt lõi: DNS, DHCP, NTP, Firewall, Load Balancer.",
+              "Có kinh nghiệm thực tế với các công cụ giám sát và logging hệ thống (Zabbix, Prometheus, ELK…).",
+              "Có kinh nghiệm tự động hóa hoặc viết script quản trị hệ thống (Bash, PowerShell, Python…)."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Terraform",
+          "Ansible",
+          "Linux",
+          "Prometheus"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "d8d5e89960417d15"
+      }
+    },
+    {
+      "id": "fullstack-engineer-2",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Fullstack Engineer",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "tham gia phân tích yêu cầu dự án và thiết kế kiến trúc phần mềm, đảm bảo bám sát mục tiêu kinh doanh và nhu cầu khách hàng.",
+      "stack": [
+        "Python",
+        "ReactJS",
+        "Docker",
+        "Linux",
+        "MySQL"
+      ],
+      "keywords": "fullstack engineer cloud iaas python reactjs docker linux mysql mongodb redis ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/fullstack-engineer-2/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phân tích & thiết kế: tham gia phân tích yêu cầu dự án và thiết kế kiến trúc phần mềm, đảm bảo bám sát mục tiêu kinh doanh và nhu cầu khách hàng.",
+          "Phát triển phần mềm: thiết kế, phát triển và bảo trì ứng dụng web dễ mở rộng với ReactJS cho frontend và Python (như FastAPI, Flask) cho backend.",
+          "Kiểm thử & xử lý sự cố: áp dụng các phương pháp testing, mocking và công cụ debug để đảm bảo chất lượng phần mềm và xử lý nhanh các vấn đề kỹ thuật.",
+          "Tối ưu hiệu năng: tối ưu codebase để ứng dụng đạt hiệu năng cao, phản hồi nhanh và tin cậy.",
+          "Hỗ trợ kỹ thuật: hỗ trợ các team liên chức năng tích hợp các thành phần phần mềm và giải quyết thách thức kỹ thuật để nâng cao năng suất của team.",
+          "Viết code sạch, dễ bảo trì: tuân thủ best practice trong phát triển phần mềm, viết code sạch, module hóa và có tài liệu đầy đủ."
+        ],
+        "department": "Cloud IaaS",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tối thiểu 3,5 năm kinh nghiệm ở vị trí Fullstack Engineer hoặc tương đương.",
+              "Thành thạo ReactJS và các web framework Python (như FastAPI hoặc Flask).",
+              "Có kinh nghiệm với các cơ sở dữ liệu như MySQL và MongoDB.",
+              "Có kinh nghiệm thực tế thiết kế và tích hợp REST API.",
+              "Quen thuộc với Redis, Docker, Linux và ELK stack.",
+              "Thành thạo Git để quản lý phiên bản và phát triển cộng tác.",
+              "Có kinh nghiệm hoặc quan tâm đến DevOps và CI/CD pipeline là điểm cộng."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "ReactJS",
+          "Docker",
+          "Linux",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "6cd63177db27c3cf"
+      }
+    },
+    {
+      "id": "cloud_openstack_engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "Cloud Openstack Engineer (IaaS)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/11/2026",
+      "location": "Hà Nội",
+      "desc": "Nghiên cứu, xây dựng và vận hành các giải pháp, module/dự án cho hệ thống Cloud nói trên",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Ansible",
+        "OpenStack"
+      ],
+      "keywords": "cloud openstack engineer cloud infrastructure center python kubernetes docker ansible openstack linux aws azure gcp",
+      "source": "https://fptsmartcloud.com/job_opportunity/cloud_openstack_engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Nghiên cứu, xây dựng và vận hành các giải pháp, module/dự án cho hệ thống Cloud nói trên",
+          "Nền tảng OpenStack/Kubernetes/Docker Swarm",
+          "Tìm hiểu, nắm bắt xu hướng cloud trên thế giới, thử nghiệm và tích hợp vào hệ thống",
+          "Kiến trúc Cloud của công ty.",
+          "Vận hành, giám sát, xử lý sự cố và tối ưu hệ thống Cloud OpenStack"
+        ],
+        "department": "Cloud Infrastructure Center",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Có nhiều kinh nghiệm với Linux, đặc biệt là Ubuntu và CentOS",
+              "Có kiến thức và kinh nghiệm lập trình, đặc biệt là Python, Ansible, Bash Script, cùng các kiến trúc microservices, OpenStack, Kubernetes, Docker",
+              "Có kiến thức và kinh nghiệm chuyên sâu về vận hành Cloud, Storage, Compute, Network, Security",
+              "Có kiến thức về các dịch vụ Cloud trên thế giới: Azure, AWS, GCP",
+              "Có chứng chỉ về OpenStack, Linux hoặc AWS/Azure",
+              "Kỹ năng thuyết trình, giao tiếp, viết và quản lý thời gian tốt.",
+              "Có khả năng tự học kiến thức kỹ thuật, sản phẩm và đọc tài liệu bằng tiếng Anh.",
+              "Đọc hiểu và giao tiếp tiếng Anh linh hoạt.",
+              "Kỹ năng làm việc nhóm, biết hỗ trợ và tạo động lực cho đồng nghiệp.",
+              "Thái độ làm việc tốt, năng động, có trách nhiệm, đáng tin cậy và chuyên nghiệp."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Ansible",
+          "OpenStack",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "95b14c0742fb5331"
+      }
+    }
+  ]
+}

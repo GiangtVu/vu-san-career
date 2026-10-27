@@ -3,6 +3,8 @@ import { Link, useSearchParams } from 'react-router-dom';
 import '../styles/jobs.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
+import { LIST_TITLE } from '../lib/seo.js';
+import { useHydrated } from '../lib/hooks.js';
 import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placesOf, skillsOf, useJobs } from '../lib/jobs.jsx';
 
 const PER_PAGE = 6;
@@ -93,6 +95,7 @@ export default function JobList() {
   const groups = data ? data.groups : {};
   const [params] = useSearchParams();
   const resultsRef = useRef(null);
+  const hydrated = useHydrated(); // the "Sắp hết hạn" badge depends on today's date
 
   const [draft, setDraft] = useState(() => filtersFrom(params).q);
   const [q, setQ] = useState(() => filtersFrom(params).q);
@@ -101,7 +104,7 @@ export default function JobList() {
   const [page, setPage] = useState(1);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  useEffect(() => { document.title = 'Việc làm · Vũ San Careers'; }, []);
+  useEffect(() => { document.title = LIST_TITLE; }, []);
 
   // The page stays mounted when only the query string changes (e.g. a tag link while
   // already on /viec-lam), so re-apply the URL's filters whenever it changes.
@@ -300,7 +303,7 @@ export default function JobList() {
                   <div className="jl-card__badges">
                     <span className="jl-card__group">{g.label}</span>
                     {j.hot && <span className="pill pill--hot-soft">HOT</span>}
-                    {isUrgent(j.deadline) && <span className="pill pill--urgent">Sắp hết hạn</span>}
+                    {hydrated && isUrgent(j.deadline) && <span className="pill pill--urgent">Sắp hết hạn</span>}
                   </div>
                   <h3><Link to={jobPath(j.id)}>{j.title}</Link></h3>
                   <p>{j.desc}</p>

@@ -1,16 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useSyncExternalStore } from 'react';
 
+// Pages are prerendered at build time (scripts/prerender.mjs), where there is no window.
+// useSyncExternalStore renders the server value (false) while hydrating, so the first render
+// matches the prerendered HTML, then switches to the real value. Client-only mounts get the
+// real value straight away.
 export function useMediaQuery(query) {
-  const get = () => typeof window !== 'undefined' && window.matchMedia(query).matches;
-  const [match, setMatch] = useState(get);
-  useEffect(() => {
+  const subscribe = useCallback((onChange) => {
     const mq = window.matchMedia(query);
-    const onChange = () => setMatch(mq.matches);
-    onChange();
     mq.addEventListener('change', onChange);
     return () => mq.removeEventListener('change', onChange);
   }, [query]);
-  return match;
+  return useSyncExternalStore(subscribe, () => window.matchMedia(query).matches, () => false);
+}
+
+const subscribeNever = () => () => {};
+
+// False while prerendering and hydrating, true after. Gate anything that reads the clock,
+// localStorage or the like behind it so it can't differ from the prerendered HTML.
+export function useHydrated() {
+  return useSyncExternalStore(subscribeNever, () => true, () => false);
 }
 
 export function usePrefersReducedMotion() {

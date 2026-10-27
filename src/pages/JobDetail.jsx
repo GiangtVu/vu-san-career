@@ -3,8 +3,9 @@ import { Link, useParams } from 'react-router-dom';
 import '../styles/job.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
-import { useMediaQuery } from '../lib/hooks.js';
+import { useHydrated, useMediaQuery } from '../lib/hooks.js';
 import { CONTACT, hotFirst, jobPath, LoadState, placeLabel, placesOf, skillPath, skillsOf, useJobs } from '../lib/jobs.jsx';
+import { jobTitle, SITE_NAME } from '../lib/seo.js';
 
 const SAVED_KEY = 'vs-saved-jobs';
 
@@ -22,7 +23,9 @@ function readSaved() {
 }
 
 function useSavedJob(id) {
-  const [saved, setSaved] = useState(() => readSaved().includes(id));
+  // The prerendered page can't know what this browser saved; read it once hydrated.
+  const hydrated = useHydrated();
+  const [saved, setSaved] = useState(() => hydrated && readSaved().includes(id));
   useEffect(() => { setSaved(readSaved().includes(id)); }, [id]);
   const toggle = () => {
     const list = readSaved().filter((x) => x !== id);
@@ -43,7 +46,10 @@ function relatedJobs(job, jobs) {
   return picked;
 }
 
-// On phones each section collapses into an accordion; one open at a time.
+// On phones each section collapses into an accordion; one open at a time. Closed bodies stay
+// in the page, only hidden, so search engines indexing the phone layout still read them.
+// The prerendered HTML is the desktop layout (isPhone false); `jd-sec--phone-closed` hides,
+// with CSS on phones, the sections the accordion starts closed, so nothing jumps on hydration.
 function Section({ n, title, icon, accordion, children }) {
   const { isPhone, openSec, setOpenSec } = accordion;
   const open = !isPhone || openSec === n;
@@ -55,7 +61,7 @@ function Section({ n, title, icon, accordion, children }) {
     </>
   );
   return (
-    <section className="jd-card jd-sec">
+    <section className={'jd-card jd-sec' + (!isPhone && openSec !== n ? ' jd-sec--phone-closed' : '')}>
       <h2>
         {isPhone ? (
           <button
@@ -70,7 +76,7 @@ function Section({ n, title, icon, accordion, children }) {
           </button>
         ) : <span className="jd-sec__toggle">{label}</span>}
       </h2>
-      {open && <div className="jd-sec__body" id={bodyId}>{children}</div>}
+      <div className="jd-sec__body" id={bodyId} hidden={!open}>{children}</div>
     </section>
   );
 }
@@ -82,10 +88,10 @@ export default function JobDetail() {
   const [openSec, setOpenSec] = useState(2);
   const [saved, toggleSave] = useSavedJob(id);
 
-  const job = data ? data.jobs.find((j) => j.id === id) : null;
+  const job = data ? data.allJobs.find((j) => j.id === id) : null;
 
   useEffect(() => {
-    document.title = (job ? job.title + ' · ' : '') + 'Vũ San Careers';
+    document.title = job ? jobTitle(job) : SITE_NAME;
   }, [job]);
   useEffect(() => { setOpenSec(2); }, [id]);
 
@@ -117,7 +123,7 @@ export default function JobDetail() {
     d.department && ['Phòng ban', d.department],
     d.type && ['Hình thức', d.type],
     ['Địa điểm', job.location],
-    ['Hạn nộp', job.deadline, 'jd-info__deadline']
+    job.closed ? ['Trạng thái', 'Ngừng tuyển từ ' + job.closedAt, 'jd-info__deadline'] : ['Hạn nộp', job.deadline, 'jd-info__deadline']
   ].filter(Boolean);
 
   return (
@@ -145,25 +151,39 @@ export default function JobDetail() {
           <div className="jd-banner__badges">
             <span className="jd-badge">{group.label}{d.department ? ' · ' + d.department : ''}</span>
             {job.hot && <span className="jd-badge jd-badge--hot">HOT</span>}
+            {job.closed && <span className="jd-badge jd-badge--closed">Đã ngừng tuyển</span>}
           </div>
           <h1>{job.title}</h1>
           <ul className="jd-meta">
             <li><Icon name="wallet" size={18} />{job.salary}</li>
             <li><Icon name="level" size={18} />{job.level}</li>
             <li><Icon name="pin" size={18} />{job.location}</li>
-            <li><Icon name="clock" size={18} />Hạn nộp: {job.deadline}</li>
+            <li><Icon name="clock" size={18} />{job.closed ? 'Ngừng tuyển từ ' + job.closedAt : 'Hạn nộp: ' + job.deadline}</li>
           </ul>
           <div className="jd-actions">
-            <a className="btn btn--white jd-actions__apply" href="#nguoi-phu-trach">Ứng tuyển ngay<Icon name="arrow-right" size={18} sw={2.2} /></a>
-            <button type="button" className="jd-actions__save" aria-pressed={saved} onClick={toggleSave}>
-              <Icon name="bookmark" size={18} fill={saved} />{saved ? 'Đã lưu' : 'Lưu tin'}
-            </button>
+            {job.closed ? (
+              <Link className="btn btn--white jd-actions__apply" to="/viec-lam">Xem việc làm đang tuyển<Icon name="arrow-right" size={18} sw={2.2} /></Link>
+            ) : (
+              <>
+                <a className="btn btn--white jd-actions__apply" href="#nguoi-phu-trach">Ứng tuyển ngay<Icon name="arrow-right" size={18} sw={2.2} /></a>
+                <button type="button" className="jd-actions__save" aria-pressed={saved} onClick={toggleSave}>
+                  <Icon name="bookmark" size={18} fill={saved} />{saved ? 'Đã lưu' : 'Lưu tin'}
+                </button>
+              </>
+            )}
           </div>
         </div>
       </section>
 
       <div className="container jd-body">
         <main className="jd-main">
+          {job.closed && (
+            <div className="jd-card jd-closed" role="status">
+              Vị trí này đã ngừng tuyển từ {job.closedAt}. Thông tin bên dưới được giữ lại để tham khảo, bạn có thể xem
+              các <Link to="/viec-lam">vị trí đang tuyển</Link> hoặc nhắn Vũ San để được giới thiệu vị trí phù hợp.
+            </div>
+          )}
+
           <Section n={1} title="Về FPT Smart Cloud" accordion={accordion}>
             <p className="jd-text">FPT Smart Cloud (FCI) là thành viên Tập đoàn FPT, cung cấp giải pháp Trí tuệ nhân tạo và Điện toán đám mây cho doanh nghiệp tại Việt Nam và quốc tế: giải pháp may đo theo nhu cầu, nền tảng all-in-one và công nghệ sẵn sàng cho tương lai.</p>
           </Section>
@@ -246,7 +266,9 @@ export default function JobDetail() {
                 <div key={label}><dt>{label}</dt><dd className={cls}>{value}</dd></div>
               ))}
             </dl>
-            <a className="btn btn--primary jd-side__apply" href="#nguoi-phu-trach">Ứng tuyển ngay</a>
+            {job.closed
+              ? <Link className="btn btn--primary jd-side__apply" to="/viec-lam">Xem việc làm đang tuyển</Link>
+              : <a className="btn btn--primary jd-side__apply" href="#nguoi-phu-trach">Ứng tuyển ngay</a>}
           </section>
 
           <section className="jd-card jd-side__card jd-contact" id="nguoi-phu-trach">

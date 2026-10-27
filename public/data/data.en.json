@@ -1,0 +1,419 @@
+{
+  "groups": {
+    "eng": {
+      "label": "Engineering",
+      "ink": "#1668DC",
+      "soft": "#E7F0FE",
+      "roles": "Fullstack Developer"
+    },
+    "ai": {
+      "label": "AI & Data",
+      "ink": "#6D28D9",
+      "soft": "#F1EAFE",
+      "roles": "AI Engineer · Data Engineer · Data Scientist · AI Consultant"
+    },
+    "biz": {
+      "label": "Product & Business",
+      "ink": "#0F766E",
+      "soft": "#DDF4F0",
+      "roles": "Business Analyst · Product Owner · Project Manager"
+    },
+    "ops": {
+      "label": "DevOps",
+      "ink": "#B43C0B",
+      "soft": "#FFEDE3",
+      "roles": "DevOps Engineer"
+    }
+  },
+  "offices": {
+    "Hanoi": "Floor 22, Vinacomin Tower, 3 Duong Dinh Nghe, Cau Giay, Hanoi"
+  },
+  "jobs": [
+    {
+      "id": "cloud-automation-solution-architecture-self-driving",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Cloud Automation Solution Architecture (Self Driving)",
+      "level": "Senior",
+      "salary": "Negotiable",
+      "deadline": "26/11/2026",
+      "location": "Hanoi",
+      "desc": "Design and build a shared automation test framework and supporting tooling for cloud products (API, integration and end-to-end testing).",
+      "stack": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "Kubernetes"
+      ],
+      "keywords": "cloud automation solution architecture self driving python java javascript typescript kubernetes docker terraform aws azure gcp jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/cloud-automation-solution-architecture-self-driving/",
+      "detail": {
+        "type": "Full-time",
+        "duties": [
+          "Design and build a shared automation test framework and supporting tooling for cloud products (API, integration and end-to-end testing).",
+          "Integrate the framework into CI/CD pipelines to give development teams fast, reliable automated testing.",
+          "Define test automation standards, patterns and best practices across the organization.",
+          "Lead, coach and grow the team of automation engineers.",
+          "Work with development teams to drive framework adoption and raise automation maturity."
+        ],
+        "department": "Self Driving",
+        "experience": "8+ years",
+        "requirements": [
+          {
+            "title": "Technical",
+            "items": [
+              "8+ years of experience in software engineering or test automation engineering, with strong programming skills in at least one mainstream language (Java, Python, Go or TypeScript/JavaScript).",
+              "Have designed and built a test automation framework from scratch (not just written test scripts on top of an existing one).",
+              "Proficient with automation tools at every layer:",
+              "API/service testing: REST Assured, Karate, Postman/Newman or equivalent",
+              "UI/E2E testing: Playwright, Selenium or Cypress",
+              "Unit tests/test runners: JUnit/TestNG, pytest or Jest",
+              "Contract testing: Pact or equivalent",
+              "Performance testing: k6, JMeter or Gatling",
+              "Environments/integration: Testcontainers, WireMock/mock servers",
+              "Solid grasp of testing strategy for distributed systems and microservices: the test pyramid, API testing, integration and contract testing, mocking/stubbing and test data management.",
+              "Strong experience with CI/CD pipelines (Jenkins, GitLab CI, GitHub Actions or Azure DevOps) and with building automated testing into them.",
+              "Familiar with at least one major cloud platform (AWS, Azure or GCP): skilled at testing cloud-hosted services and at using core services (compute, storage, queues, managed databases, IAM) in test setups.",
+              "Solid knowledge of cloud-native technologies: Docker, Kubernetes, Helm and infrastructure as code (Terraform or equivalent).",
+              "Experience keeping tests reliable at scale: parallel runs, environment isolation and flaky test management."
+            ]
+          },
+          {
+            "title": "AI & modern tooling",
+            "items": [
+              "Hands-on experience applying AI to test automation: AI-driven test generation and maintenance (self-healing locators, visual testing), or using LLM tools to speed up test writing and code review.",
+              "Fluent with AI coding assistants (GitHub Copilot, Claude or similar) in daily work, and able to set standards for using them effectively and safely across the team.",
+              "Knowing how to test AI-powered features (non-deterministic output, prompt/response validation) is a plus."
+            ]
+          },
+          {
+            "title": "Leadership & soft skills",
+            "items": [
+              "5+ years of experience leading or mentoring engineers; able to set technical direction and review other people's work.",
+              "Able to drive adoption across multiple teams through communication, coaching and stakeholder management.",
+              "A pragmatic product mindset for internal tooling: build what teams will actually use."
+            ]
+          },
+          {
+            "title": "Nice to have",
+            "items": [
+              "Experience in platform engineering, developer experience (DevEx) or engineering productivity teams.",
+              "Experience automating performance/load testing or security testing.",
+              "Experience in an organization moving from manual QA to developers owning test automation."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "JavaScript",
+          "TypeScript",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "vi",
+        "hash": "69f8869baf777cbd"
+      }
+    },
+    {
+      "id": "lead-fullstack-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "eng",
+      "title": "Lead Fullstack Engineer (BSS)",
+      "level": "Senior",
+      "salary": "Negotiable",
+      "deadline": "26/11/2026",
+      "location": "Hanoi / Ho Chi Minh City",
+      "desc": "Lead the technical direction and make architectural decisions for one or more product teams.",
+      "stack": [
+        "Python",
+        "Golang",
+        "ReactJS",
+        "VueJS",
+        "Node.js"
+      ],
+      "keywords": "lead fullstack engineer cloud python golang reactjs vuejs node.js kubernetes docker linux aws azure gcp mysql ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/lead-fullstack-engineer/",
+      "detail": {
+        "type": "Full-time",
+        "duties": [
+          "Lead the technical direction and make architectural decisions for one or more product teams.",
+          "Work with teammates to build new features (coding, unit, integration and end-to-end tests, code review and DevOps deployment) following Scrum practices.",
+          "Support and maintain live systems, verify bugs and resolve incidents. Monitor system health and overall SLAs, and take action or escalate when needed.",
+          "Work with the Architect to shape the overall architecture and design of the application.",
+          "Keep documentation up to date with the latest state of the system, including its logic and functionality.",
+          "Review architecture designs and the acceptance criteria of key requirements. Take part in functional requirement analysis and design to improve solutions and how the system is built.",
+          "Work with Product Owners/Business Analysts and other stakeholders to turn business requirements into technical solutions.",
+          "Break complex features down into smaller tasks and give accurate technical estimates.",
+          "Make sure high-quality features ship on schedule.",
+          "Proactively identify and mitigate technical risks.",
+          "Mentor and coach engineers and team members on technical skills.",
+          "Do code reviews and give constructive feedback to raise code quality.",
+          "Lead technical discussions and internal knowledge-sharing sessions.",
+          "Identify skill gaps in the team and build development plans to close them."
+        ],
+        "department": "CLoud",
+        "experience": "8+ years",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "8+ years of hands-on software development experience.",
+              "Expert-level skills in building modern web applications with ReactJS or Vue.",
+              "Strong experience with backend languages: NodeJS, Golang or Python.",
+              "Experience writing unit tests (Jest) and practicing Test-Driven Development (TDD).",
+              "Deep understanding of RESTful API design, GraphQL and design patterns (SOLID, DDD, CQRS…).",
+              "Extensive experience with distributed systems, microservices and event-driven architecture.",
+              "Experience with source control, build systems, CI/CD, Docker and Kubernetes.",
+              "Experience working with and tuning relational databases (MySQL) or NoSQL databases.",
+              "Solid understanding of secure coding practices and application security.",
+              "Proficient with Linux (Ubuntu/CentOS) and web servers (Nginx/Apache).",
+              "Hands-on experience with at least one major cloud platform: GCP, AWS or Azure",
+              "Work effectiveness & soft skills",
+              "Strong leadership skills, able to guide and influence engineering teams.",
+              "Excellent communication skills: able to explain complex technical concepts to many different audiences."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Golang",
+          "ReactJS",
+          "VueJS",
+          "Node.js",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP",
+          "MySQL",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "vi",
+        "hash": "da7092e91b9c0b3b"
+      }
+    },
+    {
+      "id": "devops-engineer-cdc",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "DevOps Engineer (CDC)",
+      "level": "Middle",
+      "salary": "Negotiable",
+      "deadline": "26/11/2026",
+      "location": "Hanoi",
+      "desc": "Assess the current state of the customer's Kubernetes systems, applications and CI/CD pipelines.",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Ansible"
+      ],
+      "keywords": "devops engineer cdc python kubernetes docker terraform ansible openstack ceph linux redis kafka prometheus grafana jenkins gitlab ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/devops-engineer-cdc/",
+      "detail": {
+        "type": "Full-time",
+        "duties": [
+          "Assess the current state of the customer's Kubernetes systems, applications and CI/CD pipelines.",
+          "Design new application architectures on FPT Smart Cloud that fit the customer's existing systems: FKE, Ingress Controller, Load Balancer, API Gateway, registries (Quay, Harbor, Nexus), software-defined storage (NFS, Ceph, Longhorn…), CNI, CSI.",
+          "Plan, deploy and migrate manifests (StatefulSet, Deployment, Secret, ConfigMap, CRD…) following the GitOps model (ArgoCD, FluxCD).",
+          "Deploy or migrate middleware stacks (Kafka, RabbitMQ, Redis…), or integrate Kubernetes applications with the PaaS solutions offered by FPT Smart Cloud.",
+          "Plan and carry out data migration with PV backup & restore (Velero, Restic, Kasten K10 (Veeam), Trilio).",
+          "Set up or migrate CI/CD pipelines in the new environment: SCM, SCA, SAST, DAST, container image scanning.",
+          "Build in security and harden the Kubernetes infrastructure: K8s hardening (CIS), runtime security (Falco), Network Policy, service mesh (Istio/Linkerd).",
+          "Set up monitoring, logging and alerting for the infrastructure and applications after migration: FMON, Prometheus, Grafana, Loki/ELK, Alertmanager or equivalent.",
+          "Provide on-call support and work with internal teams and customers to investigate and fix issues during the hypercare period.",
+          "Write design documents, migration procedures, test scenarios, operations runbooks and handover guides for customers."
+        ],
+        "department": "CDC",
+        "requirements": [
+          {
+            "title": "Must-have skills",
+            "items": [
+              "Kubernetes: solid grasp of the architecture and core objects (Deployment, StatefulSet, Service, Ingress, PV/PVC, RBAC, Network Policy); fluent with kubectl and Helm.",
+              "Containers: Docker/containerd, writing optimized Dockerfiles, managing image registries.",
+              "CI/CD: design and run pipelines with at least one tool: GitLab CI, Jenkins, Tekton or equivalent.",
+              "GitOps: hands-on experience with ArgoCD or FluxCD, managing configuration declaratively.",
+              "Observability: deploy and use Prometheus, Grafana and Alertmanager, centralize logs with Loki or ELK, and build dashboards and alerts for systems after migration.",
+              "Post-migration testing: plan and run validation tests (functional, performance/load testing with k6/JMeter or equivalent, HA/failover testing) and assess the results against the baseline.",
+              "Linux & scripting: strong Linux administration, Bash and/or Python scripting for automation.",
+              "Git: fluent with Git workflows (branching, merge requests, reviews).",
+              "Pipeline security basics: image scanning (Trivy or equivalent), secret management (no hardcoded credentials), understanding of TLS/certificates.",
+              "Networking fundamentals: load balancers, DNS, proxies and firewalls for application deployment."
+            ]
+          },
+          {
+            "title": "Nice-to-have skills",
+            "items": [
+              "Experience using self-service offerings in public cloud environments.",
+              "Experience deploying Kubernetes on cloud and virtualization platforms: OpenStack, VMware (vSphere, Tanzu, VCD/VCF), KVM.",
+              "Experience deploying SDS solutions (Ceph, Longhorn, NFS).",
+              "Understanding of VMware and KVM virtualization environments.",
+              "Workload migration/backup tools: Velero, Restic, Kasten K10.",
+              "Tracing/APM: Jaeger, OpenTelemetry, Elastic APM, Apache SkyWalking",
+              "Infrastructure as Code: Terraform, Ansible.",
+              "Advanced secret management: HashiCorp Vault; policy engines: OPA/Gatekeeper, Kyverno.",
+              "Service mesh: Istio/Linkerd.",
+              "Registries: Harbor, Nexus, Quay.",
+              "Keycloak/SSO/OIDC.",
+              "Certifications: CKA, CKAD, CKS.",
+              "Good English reading and communication skills."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "Ansible",
+          "OpenStack",
+          "Ceph",
+          "Linux",
+          "Redis",
+          "Kafka",
+          "Prometheus",
+          "Grafana",
+          "Jenkins",
+          "GitLab",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "vi",
+        "hash": "4a829b7da3bd483f"
+      }
+    },
+    {
+      "id": "senior-business-analyst-pmo",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Senior Business Analyst (PMO)",
+      "level": "Senior",
+      "salary": "Negotiable",
+      "deadline": "26/11/2026",
+      "location": "Hanoi",
+      "desc": "Gather, analyze and clarify business requirements from customers, partners or internal departments.",
+      "stack": [
+        "SQL"
+      ],
+      "keywords": "senior business analyst pmo sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-pmo/",
+      "detail": {
+        "type": "Full-time",
+        "duties": [
+          "Gather, analyze and clarify business requirements from customers, partners or internal departments.",
+          "Analyze current business processes and propose improvements to optimize the operating model.",
+          "Turn business requirements into functional specifications (SRS/FRD/BRD) for the development team.",
+          "Work with architects, developers and QA to make sure the product is built to requirements.",
+          "Help build business flows, screen mockups, use cases and user stories.",
+          "Run user acceptance testing (UAT) and support system rollout.",
+          "Train end users and prepare user guides when needed."
+        ],
+        "department": "PMO",
+        "experience": "5+ years",
+        "requirements": [
+          {
+            "title": "Must-have",
+            "items": [
+              "Bachelor's degree in Information Systems, Information Technology, Computer Science or a related field.",
+              "At least 5 years of experience as a Business Analyst on software systems.",
+              "Solid understanding of: billing systems; customer management (CRM) systems; service subscription, billing reconciliation and customer lifecycle management processes",
+              "Experience analyzing data and business processes in large-scale systems (telecom or finance preferred).",
+              "Able to write clear, logical and easy-to-follow documentation.",
+              "Good communication, presentation and analytical skills."
+            ]
+          },
+          {
+            "title": "Nice to have",
+            "items": [
+              "Experience working in Agile/Scrum. Familiar with tools such as Jira, Confluence, Figma/Balsamiq and basic SQL. Knowledge of APIs, data models and system integration."
+            ]
+          }
+        ],
+        "skills": [
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "vi",
+        "hash": "53c6ef83e901f5e7"
+      }
+    },
+    {
+      "id": "system-infrastructure-operation-engineer",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ops",
+      "title": "System/Infrastructure Operation Engineer",
+      "level": "Middle",
+      "salary": "Negotiable",
+      "deadline": "26/11/2026",
+      "location": "Hanoi",
+      "desc": "Operate, monitor and administer IT infrastructure on the VMware virtualization platform.",
+      "stack": [
+        "Python",
+        "OpenStack",
+        "Linux"
+      ],
+      "keywords": "system/infrastructure operation engineer cloud python openstack linux",
+      "source": "https://fptsmartcloud.com/job_opportunity/system-infrastructure-operation-engineer/",
+      "detail": {
+        "type": "Full-time",
+        "duties": [
+          "Operate, monitor and administer IT infrastructure on the VMware virtualization platform.",
+          "Manage systems: VMware vSphere (ESXi, vCenter, vCloud) and virtual machines (lifecycle, performance, resources)",
+          "Help operate, scale and optimize the Cloud Desktop (Horizon VDI) system.",
+          "Deploy and operate system services: AD, DNS, NTP, DHCP, web servers",
+          "Troubleshoot incidents across layers: OS, virtualization, network, application",
+          "Collect logs, perform root cause analysis (RCA) and write technical reports.",
+          "Explore and apply scripting, automation and AI to streamline operations."
+        ],
+        "department": "Cloud",
+        "experience": "2+ years",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "University or college degree in IT, Electronics & Telecommunications or a related field",
+              "At least 2 years of experience in system/infrastructure operations.",
+              "Hands-on experience with VMware ESXi and vCenter",
+              "Linux experience: installation, configuration, operations, troubleshooting, service, log and performance management",
+              "Solid understanding and operation of TCP/IP, AD, DNS, DHCP",
+              "Able to use scripting, automation and AI: Bash/Shell, PowerShell, Python (basic)…",
+              "Experience with or knowledge of VMware Horizon (VDI); able to operate OpenStack",
+              "Have worked with medium-to-large Cloud, Hybrid Cloud or Data Center systems."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "OpenStack",
+          "Linux"
+        ]
+      },
+      "i18n": {
+        "source": "vi",
+        "hash": "21b8dcf64ee9ba15"
+      }
+    }
+  ]
+}

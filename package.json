@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-server && node scripts/prerender.mjs",
     "preview": "vite preview",
     "crawl": "node scripts/crawl-fptsmartcloud.mjs",
-    "classify": "node scripts/classify-jobs.mjs"
+    "classify": "node scripts/classify-jobs.mjs",
+    "translate": "node scripts/translate-jobs.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

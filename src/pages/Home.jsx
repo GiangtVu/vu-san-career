@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import '../styles/home.css';
 import { listPath, useJobs } from '../lib/jobs.jsx';
+import { HOME_TITLE } from '../lib/seo.js';
 import { usePrefersReducedMotion, useTween } from '../lib/hooks.js';
 import HomeHeader from './home/HomeHeader.jsx';
 import { HeroDesktop, HeroMobile } from './home/Hero.jsx';
@@ -39,7 +40,7 @@ export default function Home() {
   const [greetClosed, setGreetClosed] = useState(false);
 
   useEffect(() => {
-    document.title = 'Vũ San Careers · Tuyển dụng FPT Smart Cloud';
+    document.title = HOME_TITLE;
     const t1 = setTimeout(() => setEntered(true), reduce ? 0 : 60);
     const t2 = setTimeout(() => setGreet(true), 2200);
     return () => { clearTimeout(t1); clearTimeout(t2); };

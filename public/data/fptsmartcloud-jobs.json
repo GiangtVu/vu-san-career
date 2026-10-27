@@ -1,6 +1,288 @@
 {
   "source": "https://fptsmartcloud.com/co-hoi-nghe-nghiep/",
+  "listed": [
+    "platform-engineer-cloud-desktop-iaas",
+    "ai-research-ai-vision",
+    "qc-engineer-ai-global",
+    "product-tester-bss",
+    "consultant-cfs",
+    "account-manager-gov",
+    "ai-engineer-genai",
+    "senior-business-development-manager-token-factory",
+    "software-engineering-manager-ai-platform-architecture",
+    "soc-l3-senior-soc-analyst",
+    "cloud-automation-solution-architecture-self-driving",
+    "pre-sales-chinese-market",
+    "senior-business-analyst-bss",
+    "business-development-executive-chinese-market",
+    "fullstack-software-engineer-agentic-ai-platform-ai-lab",
+    "lead-fullstack-engineer",
+    "fullstack-engineer-isdd",
+    "business-analyst-isdd",
+    "developer-relations-devrel-specialist",
+    "ai-evaluation-specialist-ai-quality-control-engineer-ai-lab",
+    "devops-engineer-cdc",
+    "ai-consultant-ai-lab",
+    "project-manager-ai-lab",
+    "ctv-tts-soc-engineer-cloud-security",
+    "ai-solution-consultant-japan-market",
+    "senior-business-analyst-pmo",
+    "business-analyst-product-owner-ncp",
+    "python-engineer",
+    "business-analyst-product-owner",
+    "ai-engineer-ai-global",
+    "channel-account-manager",
+    "business-analyst-genai",
+    "project-manager-ai-delivery-2",
+    "ai-engineer-self-driving-cloud",
+    "sale-enablement-manager",
+    "growth-strategy-manager",
+    "chuyen-vien-phap-che-2",
+    "fullstack-engineer-self-driving",
+    "program-manager-japan-market",
+    "business-development-japan-market",
+    "database",
+    "backend-engineer-ai-infrastructure",
+    "full-stack-engineer-ai-infrastructure",
+    "devops-engineer-ncp",
+    "mlops-engineer-ai-inference-platform-llm-serving-optimization",
+    "asr-engineer-speech-to-text",
+    "business-analyst-2",
+    "network-service-engineer",
+    "cloud-platform-development-engineer",
+    "system-infrastructure-operation-engineer",
+    "business-enabler-ai-products-japan-2",
+    "sales-operation-jlpt-n2-n1",
+    "ai-text-to-speech-engineer",
+    "deputy-director-ai-delivery",
+    "it-helpdesk-pmo",
+    "business-analyst-bss",
+    "site-reliability-engineer-sre",
+    "soc-specialist-cloud-security",
+    "security-solutions-engineer-cloud-security",
+    "fullstack-engineer-cloud-paas",
+    "kubernetes-platform-engineer-cloud-paas",
+    "solution-engineer-cloud-security",
+    "it-manager",
+    "ai-product-manager-ai-conversation-global",
+    "data-analytics-engineer",
+    "business-analyst-ai-global",
+    "project-manager-2",
+    "solution-architect-ai-cloud",
+    "project-manager-ai",
+    "data-engineer-2",
+    "account-manager",
+    "ai-engineer",
+    "business-analyst-jlpt-n2-n1",
+    "site-reliability-engineer-junior-middle",
+    "senior-business-development",
+    "ai-consultant",
+    "ai-solution-architecture",
+    "cloud-presale-hcmc",
+    "dataops",
+    "dataengineer",
+    "cloud-adoption",
+    "sre-devops-engineer-paas",
+    "customer_success",
+    "software-engineer",
+    "text-to-speech-engineer",
+    "devops_engineer_infra",
+    "business-analyst-ai-conversation",
+    "fullstack-engineer",
+    "ncp-business-development",
+    "cbc-cloud-business-development",
+    "abc-ai-business-development",
+    "project-manager",
+    "iaas-software-engineer-fcd-client",
+    "ai-factory-cloud-operation-manager",
+    "ai-delivery-business-analyst",
+    "cloud-storage-engineer",
+    "ai-factory-data-center-network-engineer",
+    "cfs-presales",
+    "business-development-cfs",
+    "cloud-engineer",
+    "cloud_support_engineer",
+    "fullstack-engineer-2",
+    "cloud_openstack_engineer"
+  ],
   "jobs": [
+    {
+      "id": "platform-engineer-cloud-desktop-iaas",
+      "url": "https://fptsmartcloud.com/job_opportunity/platform-engineer-cloud-desktop-iaas/",
+      "title": "Platform Engineer – Cloud Desktop (IaaS)",
+      "image": "/wp-content/uploads/2022/05/job-news-1.jpeg",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "FPT Smart Cloud (FCI) – a member of FPT Corporation, pioneers AI & Cloud solutions in Vietnam. FCI was founded with the mission to generate an immense leap in productivity and agility in business operations.",
+            "FPT Smart Cloud aims at leading the industry by focusing on building a firm technological foundation, developing diversified ecosystem products, and reaching global connectivity.",
+            "– Providing cloud-based products and solutions customized to each industry.",
+            "– Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a unified ecosystem.",
+            "– Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
+            "– Help customers achieve business outcomes faster by integrating world-class processes and technology."
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Customized to specific needs:"
+              ]
+            },
+            {
+              "title": null,
+              "items": [
+                "All-in-one Platform:"
+              ]
+            },
+            {
+              "title": null,
+              "items": [
+                "Local market leadership:"
+              ]
+            },
+            {
+              "title": null,
+              "items": [
+                "Deliver the future:"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Top Benefits",
+          "text": [
+            "Salary: competitive, paid according to ability; negotiated during the interview."
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Social insurance and health insurance according to labor laws.",
+                "Creative, open-minded working environment that respects individuals.",
+                "FPT Premium Care package.",
+                "Activities and culture with FCI and FPT Corporation.",
+                "Study support package for children of FCI union members.",
+                "Sponsorship for related courses and certifications.",
+                "Own a production DaaS/VDI platform end-to-end, serving thousands of virtual desktops.",
+                "Direct influence on the FCD product roadmap, working closely with Product and customers."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Job description",
+          "text": [
+            "About the team: FPT Cloud Desktop (FCD) is FCI’s DaaS/VDI service, running on FPT Cloud’s OpenStack-based IaaS and serving thousands of virtual desktops for enterprise customers. The Platform Engineer owns the reliability, performance and evolution of the FCD service, and works closely with Product to turn customer needs into technical solutions.",
+            "• Documentation: write runbooks, architecture documents and operational procedures."
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Platform operations: operate, monitor, troubleshoot and optimize the FCD service (virtual desktops, broker, gateway, golden images and service components), ensuring uptime and a stable experience for end-users.",
+                "Feature research & development: research, design and develop new features for the FCD core service according to the product roadmap — from technical evaluation and solution design to implementation and rollout.",
+                "Service components: build and maintain golden images, automated provisioning and broker/client integration.",
+                "Automation & containers: standardize operations with Ansible/Python/Bash; operate FCD service components running on Docker/Kubernetes.",
+                "Incident management: lead RCA, rollback and remediation for FCD service incidents.",
+                "Product & presale support: provide technical input on feasibility, effort and trade-offs for the roadmap, customer PoCs and new deals (supporting role, not a sales role)."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Job Requirements",
+          "text": [],
+          "groups": []
+        },
+        {
+          "title": "Must-have:",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "3+ years as a Cloud/Platform/Infrastructure Engineer operating a cloud or virtualization platform in production (OpenStack, VMware, Proxmox or equivalent).",
+                "Solid virtualization fundamentals (KVM preferred, or VMware ESXi) and ability to troubleshoot production issues (compute, storage, network).",
+                "Strong Linux administration (Ubuntu, CentOS/Rocky) and Linux networking (DNS, routing, VLAN/VXLAN).",
+                "Programming skills (Python preferred) to design and develop service features and integrations.",
+                "Automation with Ansible or Bash, and Git; familiarity with Docker/Kubernetes.",
+                "Experience with monitoring tools (Prometheus, Grafana, Zabbix or equivalent).",
+                "Product mindset: understands requirements from PO/customers and proposes solutions that balance end-user experience, cost and effort.",
+                "Able to read technical documents and communicate in English."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Soft skills:",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Ownership and composure under production pressure.",
+                "Clear communication and coordination with internal teams, vendors and customers.",
+                "Presentation, writing and time management skills.",
+                "Teamwork; willing to mentor and support colleagues.",
+                "Good working attitude, dynamic, responsible, reliable, professional."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Advantages (optional):",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Production experience with OpenStack (Nova, Cinder, Neutron/OVN), especially deployments using Kolla-Ansible.",
+                "Experience with VDI/DaaS (VMware Horizon, Citrix, OpenUDS).",
+                "Knowledge of AD, Kerberos, LDAP, Azure AD DS.",
+                "Certifications: COA, RHCE, CKA, AWS/Azure or equivalent"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working Environment",
+          "text": [
+            "Working location:",
+            "Working hours:"
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Site Hanoi: 7th Floor, FPT Tower, no. 10 Pham Van Bach Street, Dich Vong ward, Cau Giay district, Hanoi.",
+                "Site HCMC: 6th Floor, e.Town 6 Tower, 364 Cong Hoa Street, Tan Binh District, Ho Chi Minh City."
+              ]
+            },
+            {
+              "title": null,
+              "items": [
+                "Full time",
+                "8h30 AM – 12h00 PM",
+                "1h00 PM – 5h30 PM"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Contact Person",
+          "text": [
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "Email: Mypth3@fpt.com",
+            "Phone: 0962456194",
+            "FPT Smart Cloud (FCI) Co., LTD",
+            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
+            "Websites: FPT Cloud | FPT AI"
+          ],
+          "groups": []
+        }
+      ]
+    },
     {
       "id": "ai-research-ai-vision",
       "url": "https://fptsmartcloud.com/job_opportunity/ai-research-ai-vision/",

@@ -15,7 +15,7 @@ concurrency:
 jobs:
   crawl:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -32,15 +32,22 @@ jobs:
       - name: Classify jobs
         run: npm run classify
 
+      - name: Translate jobs
+        # An API outage must not hold back the job data itself; untranslated jobs are retried next run.
+        continue-on-error: true
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: npm run translate
+
       - name: Commit changes
         run: |
-          if [ -z "$(git status --porcelain -- public/data/fptsmartcloud-jobs.json public/data/data.json)" ]; then
+          if [ -z "$(git status --porcelain -- public/data)" ]; then
             echo "No job changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/fptsmartcloud-jobs.json public/data/data.json
+          git add public/data
           git commit -m "chore: update FPT Smart Cloud jobs"
           # Someone may have pushed while the crawl ran; only the bot touches these files, so rebase is clean.
           git pull --rebase
