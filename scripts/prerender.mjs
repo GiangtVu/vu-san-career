@@ -16,7 +16,7 @@ const { render: renderApp } = await import(new URL('../dist-server/entry-server.
 
 const SITE = (process.env.SITE_URL || 'https://www.vusan.site').replace(/\/$/, '');
 const DIST = (p) => fileURLToPath(new URL('../dist/' + p, import.meta.url));
-const OG_IMAGE = { path: '/img/hero-portrait.jpg', width: 800, height: 1000 };
+const OG_IMAGE = { path: '/img/og-share.jpg', width: 1200, height: 630 };
 const LIST_DESCRIPTION = 'Danh sách việc làm FPT Smart Cloud đang tuyển: Engineering, AI & Data, Product & Business, DevOps. Lọc theo nhóm, cấp bậc, địa điểm và kỹ năng.';
 
 const EMPLOYMENT_TYPES = { 'toàn thời gian': 'FULL_TIME', 'bán thời gian': 'PART_TIME', 'thực tập': 'INTERN' };
