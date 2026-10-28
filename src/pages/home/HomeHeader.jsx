@@ -54,24 +54,28 @@ export default function HomeHeader({ total }) {
             aria-controls="mobile-menu"
             onClick={() => setOpen(!open)}
           >
-            <Icon name={open ? 'close' : 'menu'} size={22} />
+            <span className="menu-toggle__icon menu-toggle__open"><Icon name="menu" size={22} /></span>
+            <span className="menu-toggle__icon menu-toggle__close"><Icon name="close" size={22} /></span>
           </button>
         </div>
-        {open && (
-          <nav className="mnav" id="mobile-menu" aria-label={navLabel}>
-            <Link className="nav-jobs nav-jobs--menu" to="/viec-lam">
-              <Icon name="briefcase" size={20} />
-              <span className="nav-jobs__label">{L('Tất cả việc làm', 'All jobs')}</span>
-              <Icon name="arrow-right" size={18} sw={2.2} />
-            </Link>
-            {LINKS.map((l) => (
-              <a key={l.href} href={l.href} onClick={close}>
-                {L(...(l.mobile || l.label))}
-                {l.count && total > 0 && <span className="mnav__count">{roles(total)}</span>}
-              </a>
-            ))}
-          </nav>
-        )}
+        {/* Stays in the page so it can slide shut; inert while closed keeps focus out of it. */}
+        <div className={'mnav-wrap' + (open ? ' is-open' : '')} inert={open ? undefined : ''}>
+          <div className="mnav-wrap__clip">
+            <nav className="mnav" id="mobile-menu" aria-label={navLabel}>
+              <Link className="nav-jobs nav-jobs--menu" to="/viec-lam" style={{ '--i': 0 }}>
+                <Icon name="briefcase" size={20} />
+                <span className="nav-jobs__label">{L('Tất cả việc làm', 'All jobs')}</span>
+                <Icon name="arrow-right" size={18} sw={2.2} />
+              </Link>
+              {LINKS.map((l, i) => (
+                <a key={l.href} href={l.href} onClick={close} style={{ '--i': i + 1 }}>
+                  {L(...(l.mobile || l.label))}
+                  {l.count && total > 0 && <span className="mnav__count">{roles(total)}</span>}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
   );

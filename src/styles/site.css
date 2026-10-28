@@ -235,6 +235,11 @@ button:disabled { cursor: default; opacity: 0.45; }
   .lang-seg__thumb, .lang-seg__btn, .lang-btn svg { transition: none; }
 }
 .nav-link[aria-current="page"] { background: var(--blue-50); color: var(--blue); font-weight: 700; }
+/* Inner-page headers show their links and language switch from 640px; keep them on one line. */
+@media (max-width: 719.98px) {
+  .nav-link { padding: 0 8px; }
+  .main-nav .btn { margin-left: 4px; }
+}
 
 /* ---------- Pills & tags ---------- */
 .pill {

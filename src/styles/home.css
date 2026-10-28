@@ -20,18 +20,51 @@
 .menu-toggle {
   width: 44px;
   height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* The two icons share one spot and turn into each other. */
+  display: grid;
+  place-items: center;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: #FFFFFF;
 }
+.menu-toggle__icon {
+  grid-area: 1 / 1;
+  display: flex;
+  transition: opacity .2s ease, transform .3s cubic-bezier(.22, .61, .36, 1);
+}
 .menu-toggle[aria-expanded="true"] .menu-toggle__open,
-.menu-toggle[aria-expanded="false"] .menu-toggle__close { display: none; }
+.menu-toggle[aria-expanded="false"] .menu-toggle__close { opacity: 0; transform: rotate(-90deg) scale(.6); }
+.menu-toggle[aria-expanded="false"] .menu-toggle__close { transform: rotate(90deg) scale(.6); }
+
+/* The menu slides open (rows 0fr → 1fr) and its items drop in one after another. */
+.mnav-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition: grid-template-rows .28s cubic-bezier(.4, 0, .2, 1), visibility 0s .28s;
+}
+.mnav-wrap.is-open {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows .32s cubic-bezier(.22, .61, .36, 1), visibility 0s;
+}
+.mnav-wrap__clip { min-height: 0; overflow: hidden; }
+.mnav > * {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity .15s ease, transform .15s ease;
+}
+.mnav-wrap.is-open .mnav > * {
+  opacity: 1;
+  transform: none;
+  transition: opacity .25s ease, transform .3s cubic-bezier(.22, .61, .36, 1);
+  transition-delay: calc(60ms + var(--i, 0) * 40ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu-toggle__icon, .mnav-wrap, .mnav-wrap.is-open, .mnav > *, .mnav-wrap.is-open .mnav > * { transition: none; }
+}
 
 .mnav { display: flex; flex-direction: column; padding: 4px 16px 12px; border-top: 1px solid var(--line); }
-.mnav[hidden] { display: none; }
 .mnav a {
   display: flex;
   align-items: center;
@@ -46,11 +79,12 @@
 .mnav a:last-child { border-bottom: 0; }
 .mnav__count { font-size: 13px; font-weight: 600; color: var(--blue); }
 
-/* Full nav from 960px; the compact bar with a menu below that. */
-@media (max-width: 959.98px) { .home-nav--full { display: none !important; } }
-@media (min-width: 960px) { .home-nav--compact { display: none !important; } }
-/* Tighter link spacing so the full nav stays on one line just above 960px. */
-@media (min-width: 960px) and (max-width: 1023.98px) {
+/* Full nav from 1100px, the narrowest it fits on one line with the language switch; the
+   compact bar with a menu below that. */
+@media (max-width: 1099.98px) { .home-nav--full { display: none !important; } }
+@media (min-width: 1100px) { .home-nav--compact { display: none !important; } }
+/* Tighter link spacing so the full nav keeps some room just above 1100px. */
+@media (min-width: 1100px) and (max-width: 1199.98px) {
   .home-nav--full .nav-link { padding: 0 8px; }
   .home-nav--full .nav-sep { margin: 0 4px; }
 }
