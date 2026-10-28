@@ -1,9 +1,11 @@
 import { useId } from 'react';
+import { useLang } from '../lib/lang.jsx';
 
 export default function Logo({ size = 36 }) {
+  const { L } = useLang();
   const gid = 'vs-g' + useId().replace(/:/g, '');
   return (
-    <svg width={size} height={size} viewBox="0 0 32 32" role="img" aria-label="Logo Vũ San Careers">
+    <svg width={size} height={size} viewBox="0 0 32 32" role="img" aria-label={L('Logo Vũ San Careers', 'Vũ San Careers logo')}>
       <defs>
         <linearGradient id={gid} x1="0" y1="1" x2="1" y2="0">
           <stop offset="0" stopColor="#0F4FA8" />

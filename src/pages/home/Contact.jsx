@@ -1,16 +1,19 @@
 import Icon from '../../components/Icon.jsx';
 import { CONTACT } from '../../lib/jobs.jsx';
+import { useLang } from '../../lib/lang.jsx';
+import { SameWidth } from '../../components/LangSwitch.jsx';
 
 export function ContactFooter() {
+  const { L } = useLang();
   return (
     <footer className="site-footer" id="lien-he">
       <div className="container footer__inner">
         <div className="footer-main">
           <div className="footer-main__cta">
-            <span className="eyebrow eyebrow--light">Liên hệ</span>
-            <h2 className="sec-title sec-title--light">FPT Smart Cloud đang chào đón bạn, hãy liên hệ với mình nhé!</h2>
+            <span className="eyebrow eyebrow--light">{L('Liên hệ', 'Get in touch')}</span>
+            <h2 className="sec-title sec-title--light">{L('FPT Smart Cloud đang chào đón bạn, hãy liên hệ với mình nhé!', 'We’d love to welcome you to FPT Smart Cloud. Feel free to reach out anytime.')}</h2>
             <div className="footer-main__actions">
-              <a className="btn btn--white btn--lg" href={'mailto:' + CONTACT.email}><Icon name="mail" size={18} />Gửi CV qua email</a>
+              <a className="btn btn--white btn--lg" href={'mailto:' + CONTACT.email}><Icon name="mail" size={18} />{L('Gửi CV qua email', 'Email your CV')}</a>
             </div>
           </div>
           <ul className="contact-list u-desktop">
@@ -23,7 +26,7 @@ export function ContactFooter() {
             <li>
               <a href={CONTACT.zalo} target="_blank" rel="noopener noreferrer">
                 <Icon name="chat" />
-                <span className="contact-list__text"><span>Zalo / Điện thoại</span><strong>{CONTACT.phone}</strong></span>
+                <span className="contact-list__text"><span>{L('Zalo / Điện thoại', 'Zalo / Phone')}</span><strong>{CONTACT.phone}</strong></span>
               </a>
             </li>
             <li>
@@ -41,18 +44,19 @@ export function ContactFooter() {
           </ul>
         </div>
         <div className="footer-bottom footer-bottom--ruled">
-          <span>Vũ San · Talent Acquisition Business Partner tại FPT Smart Cloud</span>
-          <a href="#top"><Icon name="arrow-up" size={16} />Về đầu trang</a>
+          <span>{L('Vũ San · Talent Acquisition Business Partner tại FPT Smart Cloud', 'Vũ San · Talent Acquisition Business Partner at FPT Smart Cloud')}</span>
+          <a href="#top"><Icon name="arrow-up" size={16} />{L('Về đầu trang', 'Back to top')}</a>
         </div>
       </div>
     </footer>
   );
 }
 
-const GREETING = 'Chào bạn! Cần tư vấn vị trí nào, nhắn mình nhé.';
+const GREETING = ['Chào bạn! Cần tư vấn vị trí nào, nhắn mình nhé.', 'Hi there! Not sure which role fits? I’m happy to help, just message me.'];
 
 // Desktop (≥1280px): floating bubble in the corner.
 export function Greeting({ shown, onClose }) {
+  const { L } = useLang();
   return (
     <div className={'greet u-lg' + (shown ? ' is-shown' : '')} aria-live="polite">
       <span className="greet__avatar">
@@ -61,28 +65,29 @@ export function Greeting({ shown, onClose }) {
       </span>
       <span className="greet__text">
         <strong>Vũ San · Talent Acquisition Business Partner</strong>
-        <span>{GREETING}</span>
-        <a className="greet__cta" href={CONTACT.zalo} target="_blank" rel="noopener noreferrer"><Icon name="chat" size={15} />Nhắn Zalo</a>
+        <span>{L(...GREETING)}</span>
+        <a className="greet__cta" href={CONTACT.zalo} target="_blank" rel="noopener noreferrer"><Icon name="chat" size={15} />{L('Nhắn Zalo', 'Message on Zalo')}</a>
       </span>
-      <button type="button" className="greet__close" aria-label="Đóng lời chào" onClick={onClose}><Icon name="close" size={18} /></button>
+      <button type="button" className="greet__close" aria-label={L('Đóng lời chào', 'Close message')} onClick={onClose}><Icon name="close" size={18} /></button>
     </div>
   );
 }
 
 // Mobile (<720px): sticky action bar with the greeting above it.
 export function ActionBar({ shown, onClose }) {
+  const { L } = useLang();
   return (
     <div className="action-bar u-mobile">
       <div className={'greet greet--mobile' + (shown ? ' is-shown' : '')} aria-live="polite">
         <img src="/img/avatar.jpg" alt="" width="40" height="40" />
         <span className="greet__text">
           <strong>Vũ San · Talent Acquisition Business Partner</strong>
-          <a className="greet__msg" href={CONTACT.zalo} target="_blank" rel="noopener noreferrer">{GREETING}</a>
+          <a className="greet__msg" href={CONTACT.zalo} target="_blank" rel="noopener noreferrer">{L(...GREETING)}</a>
         </span>
-        <button type="button" className="greet__close" aria-label="Đóng lời chào" onClick={onClose}><Icon name="close" size={18} /></button>
+        <button type="button" className="greet__close" aria-label={L('Đóng lời chào', 'Close message')} onClick={onClose}><Icon name="close" size={18} /></button>
       </div>
-      <a className="btn btn--soft action-bar__zalo" href={CONTACT.zalo} target="_blank" rel="noopener noreferrer"><Icon name="chat" size={18} />Nhắn Zalo</a>
-      <a className="btn btn--primary" href="#lien-he"><Icon name="upload" size={18} />Gửi CV</a>
+      <a className="btn btn--soft action-bar__zalo" href={CONTACT.zalo} target="_blank" rel="noopener noreferrer"><Icon name="chat" size={18} />{L('Nhắn Zalo', 'Message on Zalo')}</a>
+      <a className="btn btn--primary" href="#lien-he"><Icon name="upload" size={18} /><SameWidth vi="Gửi CV" en="Send CV" /></a>
     </div>
   );
 }

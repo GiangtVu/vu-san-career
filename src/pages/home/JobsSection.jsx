@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import Icon from '../../components/Icon.jsx';
 import { useMediaQuery } from '../../lib/hooks.js';
-import { hotFirst, jobPath, LoadState, matches, norm, skillPath } from '../../lib/jobs.jsx';
+import { hotFirst, jobPath, LoadState, locationText, matches, norm, skillPath } from '../../lib/jobs.jsx';
+import { useLang } from '../../lib/lang.jsx';
 
 const PREVIEW = 6; // jobs shown on the home page; the rest live on /viec-lam
 const GROUP_ICONS = { eng: 'code', ai: 'database', biz: 'briefcase', ops: 'infinity' };
@@ -10,6 +11,7 @@ const HOME_INK = { ai: '#7C3AED', ops: '#C2410C' };
 const groupColors = (k, g) => ({ '--soft': g.soft, '--ink-c': HOME_INK[k] || g.ink });
 
 function JobCard({ job, group }) {
+  const { L, lang } = useLang();
   return (
     <article className="job-card u-desktop">
       <div className="job-card__head">
@@ -17,28 +19,29 @@ function JobCard({ job, group }) {
           <span className="pill pill--group" style={groupColors(job.group, group)}>{group.label}</span>
           {job.hot && <span className="pill pill--hot"><Icon name="flame" size={12} />HOT</span>}
         </span>
-        <span className="job-card__deadline">Hạn: {job.deadline}</span>
+        <span className="job-card__deadline">{L('Hạn: ', 'Apply by ')}{job.deadline}</span>
       </div>
       <h3><Link to={jobPath(job.id)}>{job.title}</Link></h3>
       <p className="job-card__desc">{job.desc}</p>
       {job.stack.length > 0 && (
         <div className="job-card__stack">
-          {job.stack.map((t) => <Link key={t} to={skillPath(t)} title={'Tìm việc làm cần ' + t}>{t}</Link>)}
+          {job.stack.map((t) => <Link key={t} to={skillPath(t)} title={L('Tìm việc làm cần ', 'Find jobs that need ') + t}>{t}</Link>)}
         </div>
       )}
       <div className="job-card__meta">
         <span><Icon name="bars" size={16} />{job.level}</span>
-        <span><Icon name="pin" size={16} />{job.location}</span>
+        <span><Icon name="pin" size={16} />{locationText(job.location, lang)}</span>
         <span><Icon name="wallet" size={16} />{job.salary}</span>
       </div>
-      <a className="btn btn--soft" href="#lien-he" aria-label={'Ứng tuyển vị trí ' + job.title}>Ứng tuyển</a>
+      <a className="btn btn--soft" href="#lien-he" aria-label={L('Ứng tuyển vị trí ', 'Apply for ') + job.title}>{L('Ứng tuyển', 'Apply')}</a>
     </article>
   );
 }
 
 function JobMini({ job }) {
+  const { L } = useLang();
   return (
-    <Link className="job-mini u-mobile" to={jobPath(job.id)} aria-label={'Xem vị trí ' + job.title}>
+    <Link className="job-mini u-mobile" to={jobPath(job.id)} aria-label={L('Xem vị trí ', 'View ') + job.title}>
       <span className="job-mini__top">
         <span className="job-mini__icon"><Icon name={GROUP_ICONS[job.group] || 'briefcase'} size={18} /></span>
         {job.hot
@@ -49,13 +52,14 @@ function JobMini({ job }) {
       <span className="job-mini__info">
         <span className="job-mini__salary">{job.salary}</span>
         <span><Icon name="bars" size={13} />{job.level}</span>
-        <span><Icon name="calendar" size={13} />Hạn: {job.deadline}</span>
+        <span><Icon name="calendar" size={13} />{L('Hạn: ', 'Apply by ')}{job.deadline}</span>
       </span>
     </Link>
   );
 }
 
 export default function JobsSection({ jobs, groups, status, q, group, setGroup, clear, listUrl }) {
+  const { L, roles } = useLang();
   const isMobile = useMediaQuery('(max-width: 719.98px)');
   const nq = norm(q.trim());
   const list = jobs.filter((j) => (!group || j.group === group) && matches(j, nq));
@@ -74,11 +78,11 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
         <div className="jobs-head">
           <div className="sec-head">
             <span className="sec-num" aria-hidden="true">02</span>
-            <span className="eyebrow">Việc làm</span>
-            <h2 className="sec-title">Chọn nhóm chuyên môn của bạn</h2>
+            <span className="eyebrow">{L('Việc làm', 'Jobs')}</span>
+            <h2 className="sec-title">{L('Chọn nhóm chuyên môn của bạn', 'Find your team')}</h2>
           </div>
           {status === 'ready' && (
-            <p className="jobs-head__result" aria-live="polite">Hiển thị {shown.length} / {list.length} vị trí</p>
+            <p className="jobs-head__result" aria-live="polite">{L('Hiển thị ', 'Showing ')}{shown.length} / {roles(list.length)}</p>
           )}
         </div>
 
@@ -99,7 +103,7 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
                   >
                     <span className="cat-card__top">
                       <span className="cat-card__icon"><Icon name={GROUP_ICONS[k] || 'briefcase'} size={22} /></span>
-                      <span className="cat-card__count">{countOf(k)} vị trí</span>
+                      <span className="cat-card__count">{roles(countOf(k))}</span>
                     </span>
                     <span className="cat-card__name">{g.label}</span>
                     {g.roles && <span className="cat-card__roles">{g.roles}</span>}
@@ -108,7 +112,7 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
               })}
             </div>
 
-            <div className="chip-row u-below-lg" role="group" aria-label="Lọc theo nhóm">
+            <div className="chip-row u-below-lg" role="group" aria-label={L('Lọc theo nhóm', 'Filter by team')}>
               {[null, ...keys].map((k) => (
                 <button
                   key={k || 'all'}
@@ -117,7 +121,7 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
                   aria-pressed={k === null ? !group : group === k}
                   onClick={() => setGroup(k)}
                 >
-                  {k === null ? 'Tất cả' : groups[k].label}
+                  {k === null ? L('Tất cả', 'All') : groups[k].label}
                   <span className="filter-chip__n">{k === null ? jobs.length : countOf(k)}</span>
                 </button>
               ))}
@@ -125,9 +129,9 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
 
             {filterParts.length > 0 && (
               <div className="filter-row">
-                <span className="filter-row__label">Đang lọc:</span>
+                <span className="filter-row__label">{L('Đang lọc:', 'Showing:')}</span>
                 <span className="filter-row__value">{filterParts.join(' · ')}</span>
-                <button type="button" className="link-btn" onClick={clear}>Bỏ lọc</button>
+                <button type="button" className="link-btn" onClick={clear}>{L('Bỏ lọc', 'Clear')}</button>
               </div>
             )}
 
@@ -142,16 +146,16 @@ export default function JobsSection({ jobs, groups, status, q, group, setGroup, 
 
             {list.length === 0 && (
               <div className="empty">
-                <strong>Chưa có vị trí khớp với từ khóa này</strong>
-                <span>Thử từ khóa khác, hoặc gửi CV để mình liên hệ khi có vị trí phù hợp.</span>
-                <a className="btn btn--primary" href="#lien-he">Gửi CV cho mình</a>
+                <strong>{L('Chưa có vị trí khớp với từ khóa này', 'No roles match that search just yet')}</strong>
+                <span>{L('Thử từ khóa khác, hoặc gửi CV để mình liên hệ khi có vị trí phù hợp.', 'Try a different keyword, or send me your CV and I’ll reach out as soon as something fits.')}</span>
+                <a className="btn btn--primary" href="#lien-he">{L('Gửi CV cho mình', 'Send me your CV')}</a>
               </div>
             )}
 
             {list.length > PREVIEW && (
               <div className="see-all">
                 <Link className="btn btn--outline see-all__btn" to={listUrl}>
-                  Xem tất cả {list.length} vị trí<Icon name="arrow-right" size={18} sw={2.2} />
+                  {L('Xem tất cả ', 'See all ') + roles(list.length)}<Icon name="arrow-right" size={18} sw={2.2} />
                 </Link>
               </div>
             )}

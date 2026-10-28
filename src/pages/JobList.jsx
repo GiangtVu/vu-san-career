@@ -5,7 +5,8 @@ import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
 import { LIST_TITLE } from '../lib/seo.js';
 import { useHydrated } from '../lib/hooks.js';
-import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placesOf, skillsOf, useJobs } from '../lib/jobs.jsx';
+import { useLang } from '../lib/lang.jsx';
+import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placeShort, placesOf, skillsOf, useJobs } from '../lib/jobs.jsx';
 
 const PER_PAGE = 6;
 const LEVELS = ['Junior', 'Middle', 'Senior'];
@@ -37,6 +38,7 @@ function isUrgent(deadline) {
 // Location picker in the hero search: a button that opens a list of places with job counts.
 // `options` is [{ value, label, n }], the first one being "all places" (value '').
 function LocationPicker({ value, options, onChange }) {
+  const { L } = useLang();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
   const current = options.find((o) => o.value === value) || options[0];
@@ -55,19 +57,19 @@ function LocationPicker({ value, options, onChange }) {
         className={'jl-loc__btn' + (open ? ' is-open' : '')}
         aria-haspopup="true"
         aria-expanded={open}
-        aria-label={'Địa điểm làm việc: ' + current.label}
+        aria-label={L('Địa điểm làm việc: ', 'Work location: ') + current.label}
         onClick={() => setOpen(!open)}
       >
         <Icon name="pin" className="jl-loc__pin" />
         <span className="jl-loc__text">
-          <span className="jl-loc__eyebrow">Địa điểm</span>
+          <span className="jl-loc__eyebrow">{L('Địa điểm', 'Location')}</span>
           <span className="jl-loc__value">{current.label}</span>
         </span>
         <Icon name="chevron-down" size={18} sw={2.2} className="jl-loc__chev" />
       </button>
       {open && (
         <div className="jl-dd">
-          <span className="jl-dd__title">Chọn địa điểm làm việc</span>
+          <span className="jl-dd__title">{L('Chọn địa điểm làm việc', 'Where would you like to work?')}</span>
           <div className="jl-dd__list">
             {options.map((o) => {
               const sel = o.value === current.value;
@@ -76,7 +78,7 @@ function LocationPicker({ value, options, onChange }) {
                   <span className="jl-opt__icon"><Icon name={o.value ? 'pin' : 'globe'} size={18} /></span>
                   <span className="jl-opt__text">
                     <span className="jl-opt__label">{o.label}</span>
-                    <span className="jl-opt__n">{o.n} vị trí đang tuyển</span>
+                    <span className="jl-opt__n">{o.n} {L('vị trí đang tuyển', 'open roles')}</span>
                   </span>
                   {sel && <Icon name="check" size={18} sw={2.6} className="jl-opt__check" />}
                 </button>
@@ -90,6 +92,7 @@ function LocationPicker({ value, options, onChange }) {
 }
 
 export default function JobList() {
+  const { lang, L } = useLang();
   const { status, data } = useJobs();
   const jobs = data ? data.jobs : [];
   const groups = data ? data.groups : {};
@@ -104,7 +107,7 @@ export default function JobList() {
   const [page, setPage] = useState(1);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  useEffect(() => { document.title = LIST_TITLE; }, []);
+  useEffect(() => { document.title = LIST_TITLE[lang]; }, [lang]);
 
   // The page stays mounted when only the query string changes (e.g. a tag link while
   // already on /viec-lam), so re-apply the URL's filters whenever it changes.
@@ -128,9 +131,9 @@ export default function JobList() {
   };
 
   const locations = useMemo(() => Array.from(new Set(jobs.flatMap(placesOf))), [jobs]);
-  const locOptions = [{ value: '', label: 'Tất cả địa điểm', n: jobs.length }].concat(locations.map((l) => ({
+  const locOptions = [{ value: '', label: L('Tất cả địa điểm', 'All locations'), n: jobs.length }].concat(locations.map((l) => ({
     value: l,
-    label: placeLabel(l),
+    label: placeLabel(l, lang),
     n: jobs.filter((j) => placesOf(j).includes(l)).length
   })));
 
@@ -159,10 +162,10 @@ export default function JobList() {
 
   const active = [];
   if (q.trim()) active.push({ key: 'q', label: '“' + q.trim() + '”', remove: () => search('') });
-  if (sel.skill) active.push({ key: 'skill', label: 'Kỹ năng: ' + sel.skill, remove: () => update({ skill: '' }) });
+  if (sel.skill) active.push({ key: 'skill', label: L('Kỹ năng: ', 'Skill: ') + sel.skill, remove: () => update({ skill: '' }) });
   sel.groups.forEach((g) => groups[g] && active.push({ key: 'g-' + g, label: groups[g].label, remove: () => update({ groups: sel.groups.filter((x) => x !== g) }) }));
   sel.levels.forEach((l) => active.push({ key: 'l-' + l, label: l, remove: () => update({ levels: sel.levels.filter((x) => x !== l) }) }));
-  if (sel.loc) active.push({ key: 'loc', label: sel.loc, remove: () => update({ loc: '' }) });
+  if (sel.loc) active.push({ key: 'loc', label: placeShort(sel.loc, lang), remove: () => update({ loc: '' }) });
   if (sel.hotOnly) active.push({ key: 'hot', label: 'HOT', remove: () => update({ hotOnly: false }) });
   const hasFilter = active.length > 0;
 
@@ -186,30 +189,30 @@ export default function JobList() {
         </div>
         <div className="container container--wide jl-hero__inner">
           <nav className="breadcrumb" aria-label="Breadcrumb">
-            <Link to="/">Trang chủ</Link>
+            <Link to="/">{L('Trang chủ', 'Home')}</Link>
             <span aria-hidden="true">/</span>
-            <span aria-current="page">Việc làm</span>
+            <span aria-current="page">{L('Việc làm', 'Jobs')}</span>
           </nav>
           <div className="jl-hero__titles">
-            <span className="jl-hero__script u-wide">Bước tiếp theo trong sự nghiệp của bạn</span>
-            <h1>Tìm việc làm tại <span className="nowrap">FPT Smart Cloud</span></h1>
+            <span className="jl-hero__script u-wide">{L('Bước tiếp theo trong sự nghiệp của bạn', 'Your next career step starts here')}</span>
+            <h1>{L('Tìm việc làm tại', 'Explore roles at')} <span className="nowrap">FPT Smart Cloud</span></h1>
           </div>
 
           <form className="jl-search" role="search" onSubmit={(e) => { e.preventDefault(); search(draft); }}>
             <label className="jl-search__kw">
               <Icon name="search" size={22} />
-              <span className="sr-only">Từ khóa</span>
-              <input type="search" value={draft} onChange={(e) => setDraft(e.target.value)} placeholder="Vị trí, kỹ năng hoặc công nghệ…" />
+              <span className="sr-only">{L('Từ khóa', 'Keyword')}</span>
+              <input type="search" value={draft} onChange={(e) => setDraft(e.target.value)} placeholder={L('Vị trí, kỹ năng hoặc công nghệ…', 'Role, skill or technology…')} />
             </label>
             <LocationPicker value={sel.loc} options={locOptions} onChange={(loc) => update({ loc })} />
-            <button type="submit" className="jl-search__btn" aria-label="Tìm kiếm">
-              <span className="u-wide">Tìm kiếm</span>
+            <button type="submit" className="jl-search__btn" aria-label={L('Tìm kiếm', 'Search')}>
+              <span className="u-wide">{L('Tìm kiếm', 'Search')}</span>
               <Icon name="search" size={22} sw={2.2} className="u-compact" />
             </button>
           </form>
 
           <div className="jl-popular">
-            <span>Phổ biến:</span>
+            <span>{L('Phổ biến:', 'Popular:')}</span>
             {POPULAR.map((p) => (
               <button key={p} type="button" className="jl-popular__chip" onClick={() => search(p)}>{p}</button>
             ))}
@@ -217,32 +220,32 @@ export default function JobList() {
 
           {status === 'ready' && (
             <ul className="jl-stats u-wide">
-              <li><strong>{jobs.length}</strong><span>vị trí đang tuyển</span></li>
-              <li><strong>{jobs.filter((j) => j.hot).length}</strong><span>vị trí HOT</span></li>
-              <li><strong>{Object.keys(groups).length}</strong><span>lĩnh vực</span></li>
-              <li><strong>{locations.length}</strong><span>thành phố</span></li>
+              <li><strong>{jobs.length}</strong><span>{L('vị trí đang tuyển', 'open roles')}</span></li>
+              <li><strong>{jobs.filter((j) => j.hot).length}</strong><span>{L('vị trí HOT', 'HOT roles')}</span></li>
+              <li><strong>{Object.keys(groups).length}</strong><span>{L('lĩnh vực', 'fields')}</span></li>
+              <li><strong>{locations.length}</strong><span>{L('thành phố', 'cities')}</span></li>
             </ul>
           )}
         </div>
       </section>
 
       <div className="container container--wide jl-body">
-        <aside className={'jl-filters' + (filtersOpen ? ' is-open' : '')} aria-label="Bộ lọc">
+        <aside className={'jl-filters' + (filtersOpen ? ' is-open' : '')} aria-label={L('Bộ lọc', 'Filters')}>
           <div className="jl-filters__head">
             <button type="button" className="jl-filters__toggle u-compact" aria-expanded={filtersOpen} onClick={() => setFiltersOpen(!filtersOpen)}>
               <span className="jl-filters__title">
-                <Icon name="filter" style={{ color: 'var(--blue)' }} />Bộ lọc
+                <Icon name="filter" style={{ color: 'var(--blue)' }} />{L('Bộ lọc', 'Filters')}
                 {hasFilter && <span className="jl-filters__badge">{active.length}</span>}
               </span>
               <Icon name="chevron-down" sw={2.2} className="jl-filters__chev" />
             </button>
-            <h2 className="jl-filters__title u-wide"><Icon name="filter" style={{ color: 'var(--blue)' }} />Bộ lọc</h2>
-            {hasFilter && <button type="button" className="jl-filters__clear" onClick={clearAll}>Xóa tất cả</button>}
+            <h2 className="jl-filters__title u-wide"><Icon name="filter" style={{ color: 'var(--blue)' }} />{L('Bộ lọc', 'Filters')}</h2>
+            {hasFilter && <button type="button" className="jl-filters__clear" onClick={clearAll}>{L('Xóa tất cả', 'Clear all')}</button>}
           </div>
 
           <div className="jl-filters__body">
             <fieldset className="jl-fieldset">
-              <legend>Lĩnh vực</legend>
+              <legend>{L('Lĩnh vực', 'Field')}</legend>
               {Object.keys(groups).map((k) => (
                 <label key={k} className="jl-check">
                   <input type="checkbox" checked={sel.groups.includes(k)} onChange={() => update({ groups: toggleIn(sel.groups, k) })} />
@@ -254,7 +257,7 @@ export default function JobList() {
             </fieldset>
 
             <fieldset className="jl-fieldset">
-              <legend>Cấp bậc</legend>
+              <legend>{L('Cấp bậc', 'Level')}</legend>
               <div className="jl-levels">
                 {LEVELS.map((l) => (
                   <button key={l} type="button" className="jl-level" aria-pressed={sel.levels.includes(l)} onClick={() => update({ levels: toggleIn(sel.levels, l) })}>{l}</button>
@@ -263,9 +266,9 @@ export default function JobList() {
             </fieldset>
 
             <fieldset className="jl-fieldset jl-fieldset--last">
-              <legend className="sr-only">Khác</legend>
+              <legend className="sr-only">{L('Khác', 'More')}</legend>
               <label className="jl-hot">
-                <span className="jl-hot__label"><Icon name="fire" size={18} />Chỉ việc HOT</span>
+                <span className="jl-hot__label"><Icon name="fire" size={18} />{L('Chỉ việc HOT', 'HOT jobs only')}</span>
                 <input type="checkbox" checked={sel.hotOnly} onChange={() => update({ hotOnly: !sel.hotOnly })} />
               </label>
             </fieldset>
@@ -274,12 +277,12 @@ export default function JobList() {
 
         <main className="jl-results" ref={resultsRef}>
           <div className="jl-toolbar">
-            <h2><span className="accent">{list.length}</span> vị trí phù hợp</h2>
+            <h2><span className="accent">{list.length}</span> {L('vị trí phù hợp', list.length === 1 ? 'matching role' : 'matching roles')}</h2>
             <label className="jl-sort">
-              <span className="u-wide">Sắp xếp</span>
-              <select value={sort} onChange={(e) => setSort(e.target.value)} aria-label="Sắp xếp">
-                <option value="hot">Nổi bật</option>
-                <option value="deadline">Hạn nộp gần nhất</option>
+              <span className="u-wide">{L('Sắp xếp', 'Sort by')}</span>
+              <select value={sort} onChange={(e) => setSort(e.target.value)} aria-label={L('Sắp xếp', 'Sort by')}>
+                <option value="hot">{L('Nổi bật', 'Featured')}</option>
+                <option value="deadline">{L('Hạn nộp gần nhất', 'Closing soonest')}</option>
               </select>
             </label>
           </div>
@@ -287,7 +290,7 @@ export default function JobList() {
           {hasFilter && (
             <div className="jl-active">
               {active.map((a) => (
-                <button key={a.key} type="button" onClick={a.remove} aria-label={'Bỏ lọc ' + a.label}>
+                <button key={a.key} type="button" onClick={a.remove} aria-label={L('Bỏ lọc ', 'Remove filter ') + a.label}>
                   {a.label}<Icon name="close" size={14} sw={2.4} />
                 </button>
               ))}
@@ -303,12 +306,12 @@ export default function JobList() {
                   <div className="jl-card__badges">
                     <span className="jl-card__group">{g.label}</span>
                     {j.hot && <span className="pill pill--hot-soft">HOT</span>}
-                    {hydrated && isUrgent(j.deadline) && <span className="pill pill--urgent">Sắp hết hạn</span>}
+                    {hydrated && isUrgent(j.deadline) && <span className="pill pill--urgent">{L('Sắp hết hạn', 'Closing soon')}</span>}
                   </div>
                   <h3><Link to={jobPath(j.id)}>{j.title}</Link></h3>
                   <p>{j.desc}</p>
                   {j.stack.length > 0 && (
-                    <ul className="jl-card__skills" aria-label="Kỹ năng">
+                    <ul className="jl-card__skills" aria-label={L('Kỹ năng', 'Skills')}>
                       {j.stack.map((s) => (
                         <li key={s}>
                           <button
@@ -316,7 +319,7 @@ export default function JobList() {
                             className="jl-card__skill"
                             aria-pressed={sel.skill === s}
                             onClick={() => filterBy({ skill: sel.skill === s ? '' : s })}
-                            title={'Lọc việc làm cần ' + s}
+                            title={L('Lọc việc làm cần ', 'Filter jobs that need ') + s}
                           >{s}</button>
                         </li>
                       ))}
@@ -324,23 +327,23 @@ export default function JobList() {
                   )}
                   <ul className="jl-card__meta">
                     <li>
-                      <button type="button" className="jl-card__tag" onClick={() => filterBy({ levels: [j.level] })} title={'Lọc cấp bậc ' + j.level}>
+                      <button type="button" className="jl-card__tag" onClick={() => filterBy({ levels: [j.level] })} title={L('Lọc cấp bậc ', 'Filter by level ') + j.level}>
                         <Icon name="level" size={14} />{j.level}
                       </button>
                     </li>
                     {placesOf(j).map((p) => (
                       <li key={p}>
-                        <button type="button" className="jl-card__tag" onClick={() => filterBy({ loc: p })} title={'Lọc địa điểm ' + placeLabel(p)}>
-                          <Icon name="pin" size={14} />{p}
+                        <button type="button" className="jl-card__tag" onClick={() => filterBy({ loc: p })} title={L('Lọc địa điểm ', 'Filter by location ') + placeLabel(p, lang)}>
+                          <Icon name="pin" size={14} />{placeShort(p, lang)}
                         </button>
                       </li>
                     ))}
-                    <li><span className="jl-card__tag"><Icon name="clock" size={14} />Hạn: {j.deadline}</span></li>
+                    <li><span className="jl-card__tag"><Icon name="clock" size={14} />{L('Hạn: ', 'Apply by ')}{j.deadline}</span></li>
                   </ul>
                 </div>
                 <div className="jl-card__actions">
-                  <Link className="btn btn--primary" to={jobPath(j.id) + '#nguoi-phu-trach'}>Ứng tuyển</Link>
-                  <Link className="btn jl-card__more" to={jobPath(j.id)}>Xem chi tiết</Link>
+                  <Link className="btn btn--primary" to={jobPath(j.id) + '#nguoi-phu-trach'}>{L('Ứng tuyển', 'Apply')}</Link>
+                  <Link className="btn jl-card__more" to={jobPath(j.id)}>{L('Xem chi tiết', 'View details')}</Link>
                 </div>
               </article>
             );
@@ -349,22 +352,22 @@ export default function JobList() {
           {status === 'ready' && list.length === 0 && (
             <div className="jl-empty">
               <span className="jl-empty__icon"><Icon name="search-minus" size={30} /></span>
-              <strong>Chưa có vị trí khớp với bộ lọc này</strong>
-              <span>Thử bỏ bớt bộ lọc, hoặc gửi CV để mình liên hệ khi có vị trí phù hợp.</span>
+              <strong>{L('Chưa có vị trí khớp với bộ lọc này', 'No roles match these filters just yet')}</strong>
+              <span>{L('Thử bỏ bớt bộ lọc, hoặc gửi CV để mình liên hệ khi có vị trí phù hợp.', 'Try loosening a filter or two, or send me your CV and I’ll reach out as soon as something fits.')}</span>
               <div className="jl-empty__actions">
-                <button type="button" className="btn btn--outline" onClick={clearAll}>Xóa bộ lọc</button>
-                <a className="btn btn--primary" href="#lien-he">Gửi CV cho mình</a>
+                <button type="button" className="btn btn--outline" onClick={clearAll}>{L('Xóa bộ lọc', 'Clear filters')}</button>
+                <a className="btn btn--primary" href="#lien-he">{L('Gửi CV cho mình', 'Send me your CV')}</a>
               </div>
             </div>
           )}
 
           {pageCount > 1 && (
-            <nav className="jl-pager" aria-label="Phân trang">
-              <button type="button" className="jl-pager__btn" onClick={() => goTo(cur - 1)} disabled={cur <= 1} aria-label="Trang trước"><Icon name="chevron-left" size={18} sw={2.2} /></button>
+            <nav className="jl-pager" aria-label={L('Phân trang', 'Pagination')}>
+              <button type="button" className="jl-pager__btn" onClick={() => goTo(cur - 1)} disabled={cur <= 1} aria-label={L('Trang trước', 'Previous page')}><Icon name="chevron-left" size={18} sw={2.2} /></button>
               {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (
                 <button key={n} type="button" className="jl-pager__btn" aria-current={n === cur ? 'page' : undefined} onClick={() => goTo(n)}>{n}</button>
               ))}
-              <button type="button" className="jl-pager__btn" onClick={() => goTo(cur + 1)} disabled={cur >= pageCount} aria-label="Trang sau"><Icon name="chevron-right" size={18} sw={2.2} /></button>
+              <button type="button" className="jl-pager__btn" onClick={() => goTo(cur + 1)} disabled={cur >= pageCount} aria-label={L('Trang sau', 'Next page')}><Icon name="chevron-right" size={18} sw={2.2} /></button>
             </nav>
           )}
         </main>
@@ -373,12 +376,12 @@ export default function JobList() {
       <footer className="site-footer" id="lien-he">
         <div className="container container--wide jl-footer">
           <div className="jl-footer__main">
-            <h2>FPT Smart Cloud đang chào đón bạn, hãy liên hệ với mình nhé!</h2>
-            <a className="btn btn--white btn--lg" href={'mailto:' + CONTACT.email}><Icon name="mail" size={18} />Gửi CV qua email</a>
+            <h2>{L('FPT Smart Cloud đang chào đón bạn, hãy liên hệ với mình nhé!', 'We’d love to welcome you to FPT Smart Cloud. Feel free to reach out anytime.')}</h2>
+            <a className="btn btn--white btn--lg" href={'mailto:' + CONTACT.email}><Icon name="mail" size={18} />{L('Gửi CV qua email', 'Email your CV')}</a>
           </div>
           <div className="footer-bottom jl-footer__bottom">
-            <span>Vũ San · Talent Acquisition Business Partner tại FPT Smart Cloud</span>
-            <Link to="/">Về trang chủ</Link>
+            <span>{L('Vũ San · Talent Acquisition Business Partner tại FPT Smart Cloud', 'Vũ San · Talent Acquisition Business Partner at FPT Smart Cloud')}</span>
+            <Link to="/">{L('Về trang chủ', 'Back to home')}</Link>
           </div>
         </div>
       </footer>

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import '../styles/home.css';
 import { listPath, useJobs } from '../lib/jobs.jsx';
 import { HOME_TITLE } from '../lib/seo.js';
+import { useLang } from '../lib/lang.jsx';
 import { usePrefersReducedMotion, useTween } from '../lib/hooks.js';
 import HomeHeader from './home/HomeHeader.jsx';
 import { HeroDesktop, HeroMobile } from './home/Hero.jsx';
@@ -32,6 +33,7 @@ export default function Home() {
   const jobs = data ? data.jobs : [];
   const groups = data ? data.groups : {};
   const reduce = usePrefersReducedMotion();
+  const { lang } = useLang();
 
   const [q, setQ] = useState('');
   const [group, setGroup] = useState(null);
@@ -40,11 +42,11 @@ export default function Home() {
   const [greetClosed, setGreetClosed] = useState(false);
 
   useEffect(() => {
-    document.title = HOME_TITLE;
     const t1 = setTimeout(() => setEntered(true), reduce ? 0 : 60);
     const t2 = setTimeout(() => setGreet(true), 2200);
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, [reduce]);
+  useEffect(() => { document.title = HOME_TITLE[lang]; }, [lang]);
 
   // Short role names from each group ("AI Engineer · Data Engineer · …"), not the long
   // crawled job titles, so the rotating pill stays on one line. Each links to its group's jobs.

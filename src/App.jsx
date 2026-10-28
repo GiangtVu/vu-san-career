@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { JobsProvider } from './lib/jobs.jsx';
+import { LangProvider } from './lib/lang.jsx';
 import Home from './pages/Home.jsx';
 import JobList from './pages/JobList.jsx';
 import JobDetail from './pages/JobDetail.jsx';
@@ -37,14 +38,16 @@ function ScrollManager() {
 
 export default function App({ initialData }) {
   return (
-    <JobsProvider initialData={initialData}>
-      <ScrollManager />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/viec-lam" element={<JobList />} />
-        <Route path="/viec-lam/:id" element={<JobDetail />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </JobsProvider>
+    <LangProvider>
+      <JobsProvider initialData={initialData}>
+        <ScrollManager />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/viec-lam" element={<JobList />} />
+          <Route path="/viec-lam/:id" element={<JobDetail />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </JobsProvider>
+    </LangProvider>
   );
 }

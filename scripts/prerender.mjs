@@ -80,13 +80,14 @@ function jobPosting(job, offices, url) {
 
 // The built index.html with this page's head tags in place of the generic ones and, unless
 // it's the 404 page, the page content rendered into #root.
-function render(template, data, { path, title, description, robots, jsonLd }) {
+function render(template, appData, { path, title, description, robots, jsonLd }) {
   const url = SITE + path;
   const tags = [
     path !== null && `<link rel="canonical" href="${esc(url)}">`,
     // main.jsx needs the jobs data before it can hydrate; start loading it with the page.
     path !== null && '<link rel="preload" href="/data/data.json" as="fetch" crossorigin>',
     path !== null && '<link rel="preload" href="/data/data.vi.json" as="fetch" crossorigin>',
+    path !== null && '<link rel="preload" href="/data/data.en.json" as="fetch" crossorigin>',
     robots && `<meta name="robots" content="${robots}">`,
     '<meta property="og:type" content="website">',
     '<meta property="og:locale" content="vi_VN">',
@@ -106,7 +107,7 @@ function render(template, data, { path, title, description, robots, jsonLd }) {
     .replace(/<title>[^<]*<\/title>/, () => `<title>${esc(title)}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, () => `<meta name="description" content="${esc(description)}">\n${tags}`);
   if (path !== null) {
-    const body = renderApp(path, data);
+    const body = renderApp(path, appData);
     html = html.replace(ROOT, () => `<div id="root" data-ssr="${esc(path)}">${body}</div>`);
   }
   return html;
@@ -117,16 +118,22 @@ const ROOT = '<div id="root"></div>';
 const template = await readFile(DIST('index.html'), 'utf8');
 if (!template.includes('<meta name="description"')) throw new Error('dist/index.html has no description meta to replace.');
 if (!template.includes(ROOT)) throw new Error(`dist/index.html has no ${ROOT} to render into.`);
-// The same Vietnamese data the app loads (lib/jobs.jsx), so hydration matches the HTML.
+// The same files the app loads (lib/jobs.jsx), so hydration matches the HTML. Pages render in
+// Vietnamese, and the tags and structured data use the Vietnamese text too.
 const readJson = async (file) => JSON.parse(await readFile(DIST(file), 'utf8'));
-const data = withVietnamese(await readJson('data/data.json'), await readJson('data/data.vi.json').catch(() => null));
+const raw = {
+  data: await readJson('data/data.json'),
+  vi: await readJson('data/data.vi.json').catch(() => null),
+  en: await readJson('data/data.en.json').catch(() => null)
+};
+const data = withVietnamese(raw.data, raw.vi);
 const homeDescription = template.match(/<meta name="description" content="([^"]*)">/)[1];
 
 const pages = [
-  { file: 'index.html', path: '/', title: HOME_TITLE, description: homeDescription },
-  { file: 'viec-lam.html', path: '/viec-lam', title: LIST_TITLE, description: LIST_DESCRIPTION },
+  { file: 'index.html', path: '/', title: HOME_TITLE.vi, description: homeDescription },
+  { file: 'viec-lam.html', path: '/viec-lam', title: LIST_TITLE.vi, description: LIST_DESCRIPTION },
   // Served for any unknown URL with a 404 status; the app shows its not-found page.
-  { file: '404.html', path: null, title: NOT_FOUND_TITLE, description: homeDescription, robots: 'noindex' }
+  { file: '404.html', path: null, title: NOT_FOUND_TITLE.vi, description: homeDescription, robots: 'noindex' }
 ];
 for (const job of data.jobs) {
   if (!/^[\w-]+$/.test(job.id)) {
@@ -147,7 +154,7 @@ for (const job of data.jobs) {
 }
 
 await mkdir(DIST('viec-lam'), { recursive: true });
-for (const page of pages) await writeFile(DIST(page.file), render(template, data, page));
+for (const page of pages) await writeFile(DIST(page.file), render(template, raw, page));
 
 const indexed = pages.filter((p) => p.path !== null && !p.robots);
 await writeFile(DIST('sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
