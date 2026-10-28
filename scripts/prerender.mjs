@@ -6,6 +6,7 @@
 // (cleanUrls in vercel.json). Run with: npm run build.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { HOME_TITLE, LIST_TITLE, NOT_FOUND_TITLE, SITE_NAME, jobDescription, jobTitle } from '../src/lib/seo.js';
 import { withVietnamese } from '../src/lib/i18n.js';
 
@@ -16,7 +17,11 @@ const { render: renderApp } = await import(new URL('../dist-server/entry-server.
 
 const SITE = (process.env.SITE_URL || 'https://www.vusan.site').replace(/\/$/, '');
 const DIST = (p) => fileURLToPath(new URL('../dist/' + p, import.meta.url));
-const OG_IMAGE = { path: '/img/og-share.jpg', width: 1200, height: 630 };
+// Facebook/Zalo cache the preview by image URL, so version it by content: a new image
+// gets a new URL and is fetched again.
+const OG_IMAGE_FILE = '/img/og-share.jpg';
+const OG_IMAGE_VERSION = createHash('md5').update(await readFile(DIST(OG_IMAGE_FILE.slice(1)))).digest('hex').slice(0, 8);
+const OG_IMAGE = { path: `${OG_IMAGE_FILE}?v=${OG_IMAGE_VERSION}`, width: 1200, height: 630 };
 const LIST_DESCRIPTION = 'Danh sách việc làm FPT Smart Cloud đang tuyển: Engineering, AI & Data, Product & Business, DevOps. Lọc theo nhóm, cấp bậc, địa điểm và kỹ năng.';
 
 const EMPLOYMENT_TYPES = { 'toàn thời gian': 'FULL_TIME', 'bán thời gian': 'PART_TIME', 'thực tập': 'INTERN' };
