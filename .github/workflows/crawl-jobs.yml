@@ -2,7 +2,7 @@ name: Crawl FPT Smart Cloud jobs
 
 on:
   schedule:
-    - cron: '0 * * * *' # every hour, on the hour
+    - cron: '*/10 * * * *' # every 10 minutes (GitHub may start a run a few minutes late)
   workflow_dispatch:
 
 permissions:

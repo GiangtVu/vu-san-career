@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import '../styles/jobs.css';
 import Icon from '../components/Icon.jsx';
@@ -6,6 +6,7 @@ import SiteHeader from '../components/SiteHeader.jsx';
 import { LIST_TITLE } from '../lib/seo.js';
 import { useHydrated } from '../lib/hooks.js';
 import { useLang } from '../lib/lang.jsx';
+import { cameFromJob, keepScroll, readListState, saveListState } from '../lib/listReturn.js';
 import { CONTACT, dateKey, hotFirst, jobPath, LoadState, matches, norm, parseDate, placeLabel, placeShort, placesOf, skillsOf, useJobs } from '../lib/jobs.jsx';
 
 const PER_PAGE = 6;
@@ -35,23 +36,29 @@ function isUrgent(deadline) {
   return days >= 0 && days <= URGENT_DAYS;
 }
 
-// Location picker in the hero search: a button that opens a list of places with job counts.
-// `options` is [{ value, label, n }], the first one being "all places" (value '').
-function LocationPicker({ value, options, onChange }) {
-  const { L } = useLang();
+// A dropdown's open state; a press outside `ref`, or Escape inside it, closes it.
+function useDropdown() {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
-  const current = options.find((o) => o.value === value) || options[0];
-
   useEffect(() => {
     if (!open) return undefined;
     const onDown = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
     document.addEventListener('pointerdown', onDown);
     return () => document.removeEventListener('pointerdown', onDown);
   }, [open]);
+  const onKeyDown = (e) => { if (e.key === 'Escape') setOpen(false); };
+  return { open, setOpen, ref, onKeyDown };
+}
+
+// Location picker in the hero search: a button that opens a list of places with job counts.
+// `options` is [{ value, label, n }], the first one being "all places" (value '').
+function LocationPicker({ value, options, onChange }) {
+  const { L } = useLang();
+  const { open, setOpen, ref, onKeyDown } = useDropdown();
+  const current = options.find((o) => o.value === value) || options[0];
 
   return (
-    <div className="jl-loc" ref={ref} onKeyDown={(e) => { if (e.key === 'Escape') setOpen(false); }}>
+    <div className="jl-loc" ref={ref} onKeyDown={onKeyDown}>
       <button
         type="button"
         className={'jl-loc__btn' + (open ? ' is-open' : '')}
@@ -91,6 +98,74 @@ function LocationPicker({ value, options, onChange }) {
   );
 }
 
+// Sort orders: [vi, en] label and hint each.
+const SORTS = [
+  { value: 'hot', icon: 'flame', label: ['Nổi bật', 'Featured'], hint: ['Việc HOT lên đầu', 'HOT jobs first'] },
+  { value: 'newest', icon: 'sparkle', label: ['Mới đăng', 'Newest'], hint: ['Đăng gần đây nhất', 'Most recently posted'] },
+  { value: 'deadline', icon: 'clock', label: ['Hạn nộp gần nhất', 'Closing soonest'], hint: ['Sắp hết hạn lên đầu', 'Earliest deadline first'] }
+];
+
+function SortPicker({ value, onChange }) {
+  const { L } = useLang();
+  const { open, setOpen, ref, onKeyDown } = useDropdown();
+  const current = SORTS.find((o) => o.value === value) || SORTS[0];
+  return (
+    <div className="jl-sort" ref={ref} onKeyDown={onKeyDown}>
+      <button
+        type="button"
+        className={'jl-sort__btn' + (open ? ' is-open' : '')}
+        aria-haspopup="true"
+        aria-expanded={open}
+        aria-label={L('Sắp xếp: ', 'Sort by: ') + L(...current.label)}
+        onClick={() => setOpen(!open)}
+      >
+        <Icon name={current.icon} size={16} className="jl-sort__icon" />
+        <span className="jl-sort__label u-wide">{L('Sắp xếp:', 'Sort by:')}</span>
+        <span className="jl-sort__value">{L(...current.label)}</span>
+        <Icon name="chevron-down" size={16} sw={2.2} className="jl-sort__chev" />
+      </button>
+      {open && (
+        <div className="jl-dd jl-dd--sort">
+          <span className="jl-dd__title">{L('Sắp xếp theo', 'Sort by')}</span>
+          <div className="jl-dd__list">
+            {SORTS.map((o) => {
+              const sel = o.value === current.value;
+              return (
+                <button key={o.value} type="button" className="jl-opt" aria-pressed={sel} onClick={() => { onChange(o.value); setOpen(false); }}>
+                  <span className="jl-opt__icon"><Icon name={o.icon} size={18} /></span>
+                  <span className="jl-opt__text">
+                    <span className="jl-opt__label">{L(...o.label)}</span>
+                    <span className="jl-opt__n">{L(...o.hint)}</span>
+                  </span>
+                  {sel && <Icon name="check" size={18} sw={2.6} className="jl-opt__check" />}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Page numbers to show around the current one: all of them when few, else the first, the last
+// and the current one's neighbours, with null where pages are skipped ("1 … 4 5 6 … 10").
+function pageItems(cur, count) {
+  if (count <= 7) return Array.from({ length: count }, (_, i) => i + 1);
+  let from = Math.max(2, Math.min(cur - 1, count - 4));
+  let to = Math.min(count - 1, Math.max(cur + 1, 5));
+  if (from === 3) from = 2; // a "…" standing for one page: show that page instead
+  if (to === count - 2) to = count - 1;
+  const mid = Array.from({ length: to - from + 1 }, (_, i) => from + i);
+  return [1, ...(from > 2 ? [null] : []), ...mid, ...(to < count - 1 ? [null] : []), count];
+}
+
+// Newest first by posting date; posts without one go last. Equal dates keep HOT first.
+function byNewest(list) {
+  const key = (j) => (j.postedAt ? dateKey(j.postedAt) : '');
+  return hotFirst(list).sort((a, b) => key(b).localeCompare(key(a)));
+}
+
 export default function JobList() {
   const { lang, L } = useLang();
   const { status, data } = useJobs();
@@ -100,19 +175,46 @@ export default function JobList() {
   const resultsRef = useRef(null);
   const hydrated = useHydrated(); // the "Sắp hết hạn" badge depends on today's date
 
-  const [draft, setDraft] = useState(() => filtersFrom(params).q);
-  const [q, setQ] = useState(() => filtersFrom(params).q);
-  const [sel, setSel] = useState(() => filtersFrom(params).sel);
-  const [sort, setSort] = useState('hot');
-  const [page, setPage] = useState(1);
+  const query = params.toString();
+  const listSearch = query ? '?' + query : '';
+
+  // Back from a job page to the same list URL: pick up where the visitor left the list. Never
+  // while hydrating, so the first render matches the prerendered HTML.
+  const [restored] = useState(() => {
+    const s = hydrated && cameFromJob() ? readListState() : null;
+    if (!s || s.search !== listSearch) return null;
+    keepScroll();
+    return s;
+  });
+  const [draft, setDraft] = useState(() => (restored ? restored.draft : filtersFrom(params).q));
+  const [q, setQ] = useState(() => (restored ? restored.q : filtersFrom(params).q));
+  const [sel, setSel] = useState(() => (restored ? restored.sel : filtersFrom(params).sel));
+  const [sort, setSort] = useState(() => (restored ? restored.sort : 'hot'));
+  const [page, setPage] = useState(() => (restored ? restored.page : 1));
   const [filtersOpen, setFiltersOpen] = useState(false);
 
   useEffect(() => { document.title = LIST_TITLE[lang]; }, [lang]);
 
+  // Remember the list as it is left; the scroll position is still the list's at this point.
+  const latest = useRef(null);
+  latest.current = { search: listSearch, draft, q, sel, sort, page };
+  useLayoutEffect(() => () => saveListState({ ...latest.current, scrollY: window.scrollY }), []);
+
+  // Before paint, so the list never shows at the top first.
+  const scrolled = useRef(false);
+  useLayoutEffect(() => {
+    if (!restored || scrolled.current || status !== 'ready') return;
+    scrolled.current = true;
+    window.scrollTo({ top: restored.scrollY, behavior: 'instant' });
+  }, [restored, status]);
+
   // The page stays mounted when only the query string changes (e.g. a tag link while
-  // already on /viec-lam), so re-apply the URL's filters whenever it changes.
-  const query = params.toString();
+  // already on /viec-lam), so re-apply the URL's filters whenever it changes. Not on mount:
+  // the state above already starts from the URL, or from where the visitor left it.
+  const appliedQuery = useRef(query);
   useEffect(() => {
+    if (appliedQuery.current === query) return;
+    appliedQuery.current = query;
     const f = filtersFrom(new URLSearchParams(query));
     setDraft(f.q);
     setQ(f.q);
@@ -145,13 +247,20 @@ export default function JobList() {
     && (!sel.hotOnly || j.hot)
     && (!sel.skill || skillsOf(j).includes(sel.skill))
     && matches(j, nq));
-  list = sort === 'deadline'
-    ? list.slice().sort((a, b) => dateKey(a.deadline).localeCompare(dateKey(b.deadline)))
-    : hotFirst(list);
+  if (sort === 'deadline') list = list.slice().sort((a, b) => dateKey(a.deadline).localeCompare(dateKey(b.deadline)));
+  else if (sort === 'newest') list = byNewest(list);
+  else list = hotFirst(list);
 
   const pageCount = Math.max(1, Math.ceil(list.length / PER_PAGE));
   const cur = Math.min(page, pageCount);
   const visible = list.slice((cur - 1) * PER_PAGE, cur * PER_PAGE);
+
+  // Each change of what the list shows (filters, keyword, sort, page) counts up, and the cards,
+  // keyed by it, mount afresh and animate in (jobs.css). The first render doesn't animate.
+  const listKey = [q, JSON.stringify(sel), sort, cur].join('|');
+  const shown = useRef({ key: listKey, n: 0 });
+  if (shown.current.key !== listKey) shown.current = { key: listKey, n: shown.current.n + 1 };
+  const changes = shown.current.n;
 
   const toResults = () => {
     if (resultsRef.current) resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -244,6 +353,7 @@ export default function JobList() {
           </div>
 
           <div className="jl-filters__body">
+            <div className="jl-filters__inner">
             <fieldset className="jl-fieldset">
               <legend>{L('Lĩnh vực', 'Field')}</legend>
               {Object.keys(groups).map((k) => (
@@ -272,19 +382,14 @@ export default function JobList() {
                 <input type="checkbox" checked={sel.hotOnly} onChange={() => update({ hotOnly: !sel.hotOnly })} />
               </label>
             </fieldset>
+            </div>
           </div>
         </aside>
 
         <main className="jl-results" ref={resultsRef}>
           <div className="jl-toolbar">
             <h2><span className="accent">{list.length}</span> {L('vị trí phù hợp', list.length === 1 ? 'matching role' : 'matching roles')}</h2>
-            <label className="jl-sort">
-              <span className="u-wide">{L('Sắp xếp', 'Sort by')}</span>
-              <select value={sort} onChange={(e) => setSort(e.target.value)} aria-label={L('Sắp xếp', 'Sort by')}>
-                <option value="hot">{L('Nổi bật', 'Featured')}</option>
-                <option value="deadline">{L('Hạn nộp gần nhất', 'Closing soonest')}</option>
-              </select>
-            </label>
+            <SortPicker value={sort} onChange={(v) => { setSort(v); setPage(1); }} />
           </div>
 
           {hasFilter && (
@@ -297,10 +402,10 @@ export default function JobList() {
             </div>
           )}
 
-          {status !== 'ready' ? <LoadState status={status} /> : visible.map((j) => {
+          {status !== 'ready' ? <LoadState status={status} /> : visible.map((j, i) => {
             const g = groups[j.group] || { label: j.group, ink: '#3E4450', soft: '#F1F4F9' };
             return (
-              <article key={j.id} className="jl-card" style={{ '--ink-c': g.ink, '--soft': g.soft }}>
+              <article key={j.id + ':' + changes} className={'jl-card' + (changes ? ' jl-card--in' : '')} style={{ '--ink-c': g.ink, '--soft': g.soft, '--i': i }}>
                 <span className="jl-card__icon"><Icon name={GROUP_ICONS[j.group] || 'briefcase'} size={26} /></span>
                 <div className="jl-card__main">
                   <div className="jl-card__badges">
@@ -350,7 +455,7 @@ export default function JobList() {
           })}
 
           {status === 'ready' && list.length === 0 && (
-            <div className="jl-empty">
+            <div key={changes} className={'jl-empty' + (changes ? ' jl-card--in' : '')}>
               <span className="jl-empty__icon"><Icon name="search-minus" size={30} /></span>
               <strong>{L('Chưa có vị trí khớp với bộ lọc này', 'No roles match these filters just yet')}</strong>
               <span>{L('Thử bỏ bớt bộ lọc, hoặc gửi CV để mình liên hệ khi có vị trí phù hợp.', 'Try loosening a filter or two, or send me your CV and I’ll reach out as soon as something fits.')}</span>
@@ -363,11 +468,19 @@ export default function JobList() {
 
           {pageCount > 1 && (
             <nav className="jl-pager" aria-label={L('Phân trang', 'Pagination')}>
-              <button type="button" className="jl-pager__btn" onClick={() => goTo(cur - 1)} disabled={cur <= 1} aria-label={L('Trang trước', 'Previous page')}><Icon name="chevron-left" size={18} sw={2.2} /></button>
-              {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (
-                <button key={n} type="button" className="jl-pager__btn" aria-current={n === cur ? 'page' : undefined} onClick={() => goTo(n)}>{n}</button>
-              ))}
-              <button type="button" className="jl-pager__btn" onClick={() => goTo(cur + 1)} disabled={cur >= pageCount} aria-label={L('Trang sau', 'Next page')}><Icon name="chevron-right" size={18} sw={2.2} /></button>
+              <button type="button" className="jl-pager__btn jl-pager__step" onClick={() => goTo(cur - 1)} disabled={cur <= 1} aria-label={L('Trang trước', 'Previous page')}>
+                <Icon name="chevron-left" size={18} sw={2.2} /><span className="u-phone">{L('Trước', 'Prev')}</span>
+              </button>
+              <div className="jl-pager__nums u-not-phone">
+                {pageItems(cur, pageCount).map((n, i) => (n === null
+                  ? <span key={'gap' + i} className="jl-pager__gap" aria-hidden="true">…</span>
+                  : <button key={n} type="button" className="jl-pager__btn" aria-current={n === cur ? 'page' : undefined} onClick={() => goTo(n)}>{n}</button>))}
+              </div>
+              {/* Phones: where you are instead of a row of numbers. */}
+              <span className="jl-pager__status u-phone">{L('Trang', 'Page')} <strong>{cur}</strong> / {pageCount}</span>
+              <button type="button" className="jl-pager__btn jl-pager__step" onClick={() => goTo(cur + 1)} disabled={cur >= pageCount} aria-label={L('Trang sau', 'Next page')}>
+                <span className="u-phone">{L('Sau', 'Next')}</span><Icon name="chevron-right" size={18} sw={2.2} />
+              </button>
             </nav>
           )}
         </main>

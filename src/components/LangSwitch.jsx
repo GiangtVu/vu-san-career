@@ -14,11 +14,11 @@ export function LangSwitch({ className = '' }) {
 }
 
 // Compact headers: one button that switches to the other language, labelled with it.
-export function LangButton() {
+export function LangButton({ className = '' }) {
   const { lang, setLang, L } = useLang();
   const other = lang === 'en' ? 'vi' : 'en';
   return (
-    <button type="button" className="lang-btn" data-lang={lang} aria-label={L('Switch to English', 'Chuyển sang tiếng Việt')} onClick={() => setLang(other)}>
+    <button type="button" className={'lang-btn ' + className} data-lang={lang} aria-label={L('Switch to English', 'Chuyển sang tiếng Việt')} onClick={() => setLang(other)}>
       <Icon name="globe" size={16} />{other.toUpperCase()}
     </button>
   );

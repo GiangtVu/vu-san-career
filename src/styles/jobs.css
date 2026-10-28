@@ -247,10 +247,26 @@
   font-weight: 600;
   text-decoration: underline;
 }
+/* Phones and tablets: the filters fold away under their heading and slide open (rows 0fr → 1fr). */
 @media (max-width: 1023.98px) {
   .jl-filters { padding: 10px 18px; }
+  .jl-filters__head { transition: padding-bottom .3s cubic-bezier(.22, .61, .36, 1); }
   .jl-filters:not(.is-open) .jl-filters__head { padding-bottom: 0; }
-  .jl-filters:not(.is-open) .jl-filters__body { display: none; }
+  .jl-filters__body {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows .32s cubic-bezier(.22, .61, .36, 1), opacity .25s ease, visibility 0s;
+  }
+  .jl-filters:not(.is-open) .jl-filters__body {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+    transition: grid-template-rows .28s cubic-bezier(.4, 0, .2, 1), opacity .2s ease, visibility 0s .28s;
+  }
+  .jl-filters__inner { min-height: 0; overflow: hidden; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jl-filters__head, .jl-filters__body, .jl-filters:not(.is-open) .jl-filters__body { transition: none; }
 }
 
 .jl-fieldset {
@@ -322,18 +338,31 @@
   .jl-toolbar { flex-wrap: nowrap; }
   .jl-toolbar h2 { font-size: 18px; }
 }
-.jl-sort { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
-.jl-sort select {
-  min-height: 40px;
-  padding: 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+/* Sort picker: a button like the location picker's, with the same kind of list (.jl-dd). */
+.jl-sort { position: relative; flex: none; }
+.jl-sort__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
   background: #FFFFFF;
-  font-size: 14px;
-  font-weight: 600;
   color: var(--ink);
-  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: border-color .2s ease, box-shadow .2s ease;
 }
+.jl-sort__btn:hover { border-color: #9DBBEF; }
+.jl-sort__btn.is-open { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(22, 104, 220, 0.12); }
+.jl-sort__icon { color: var(--blue); }
+.jl-sort__label { color: var(--muted); }
+.jl-sort__value { font-weight: 700; }
+.jl-sort__chev { color: var(--muted); transition: transform .2s ease; }
+.jl-sort__btn.is-open .jl-sort__chev { transform: rotate(180deg); }
+.jl-dd--sort { left: auto; right: 0; top: calc(100% + 8px); width: 280px; min-width: 0; transform-origin: top right; }
+.jl-dd--sort .jl-opt { min-height: 48px; }
 
 .jl-active { display: flex; flex-wrap: wrap; gap: 8px; }
 .jl-active button {
@@ -361,6 +390,19 @@
   border: 1px solid var(--line-soft);
   box-shadow: var(--shadow-soft);
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+/* Cards (and the empty state) slide in one after another when the list changes (JobList.jsx),
+   in place of the scroll reveal (site.css). `translate`, not `transform`, so the hover lift
+   still works. */
+@keyframes jl-card-in { from { opacity: 0; translate: 0 14px; } }
+@keyframes jl-chip-in { from { opacity: 0; scale: .85; } }
+@media (prefers-reduced-motion: no-preference) {
+  .jl-results .jl-card--in {
+    animation: jl-card-in .38s cubic-bezier(.22, .61, .36, 1) backwards;
+    animation-timeline: auto;
+    animation-delay: calc(var(--i, 0) * 45ms);
+  }
+  .jl-active button { animation: jl-chip-in .22s cubic-bezier(.22, .61, .36, 1); }
 }
 .jl-card:hover {
   transform: translateY(-4px);
@@ -478,6 +520,21 @@ button.jl-card__tag:hover { background: var(--blue-50); color: var(--blue); }
   font-weight: 700;
 }
 .jl-pager__btn[aria-current="page"] { border-color: var(--blue); background: var(--blue); color: #FFFFFF; }
+.jl-pager__btn:not(:disabled):not([aria-current="page"]):hover { border-color: #9DBBEF; color: var(--blue); }
+.jl-pager__btn { transition: border-color .15s ease, background-color .15s ease, color .15s ease; }
+.jl-pager__nums { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }
+.jl-pager__gap { min-width: 20px; text-align: center; color: var(--muted); font-weight: 700; }
+
+/* Phones: "‹ Trước", "Trang 2 / 10", "Sau ›" in one row; Next, the usual move, in blue. */
+@media (max-width: 639.98px) {
+  .jl-pager { flex-wrap: nowrap; justify-content: space-between; gap: 12px; }
+  .jl-pager__step { gap: 4px; padding: 0 14px 0 10px; font-size: 14px; }
+  .jl-pager__step:last-child { padding: 0 10px 0 14px; }
+  .jl-pager__step:last-child:not(:disabled) { border-color: var(--blue); background: var(--blue); color: #FFFFFF; }
+  .jl-pager__step:last-child:not(:disabled):hover { border-color: var(--blue-700); background: var(--blue-700); color: #FFFFFF; }
+  .jl-pager__status { flex: 1; min-width: 0; text-align: center; font-size: 14px; color: var(--muted); }
+  .jl-pager__status strong { color: var(--ink); }
+}
 
 /* ---------- Footer ---------- */
 .jl-footer { padding-block: clamp(40px, 6vw, 72px) 28px; display: flex; flex-direction: column; gap: 32px; }

@@ -32,8 +32,12 @@ export default function Benefits() {
   const { L } = useLang();
   // Mobile: a tile shows its details while pressed (or hovered / focused).
   const [hold, setHold] = useState(null);
+  // The last tile held: its details stay in the popup while it fades out after release. The
+  // popup is always in the page (hidden), so even the first press animates it in.
+  const [last, setLast] = useState(0);
+  const press = (i) => { setHold(i); setLast(i); };
   const release = () => setHold(null);
-  const active = hold === null ? null : BENEFITS[hold];
+  const active = BENEFITS[last];
 
   return (
     <section className="section benefits" id="phuc-loi">
@@ -68,12 +72,12 @@ export default function Benefits() {
                 aria-label={L(...b.title)}
                 aria-expanded={hold === i}
                 aria-describedby={hold === i ? 'ben-pop' : undefined}
-                onPointerDown={() => setHold(i)}
+                onPointerDown={() => press(i)}
                 onPointerUp={release}
                 onPointerLeave={release}
                 onPointerCancel={release}
-                onPointerEnter={(e) => { if (e.pointerType === 'mouse') setHold(i); }}
-                onFocus={() => setHold(i)}
+                onPointerEnter={(e) => { if (e.pointerType === 'mouse') press(i); }}
+                onFocus={() => press(i)}
                 onBlur={release}
                 onContextMenu={(e) => e.preventDefault()}
               >
@@ -83,15 +87,13 @@ export default function Benefits() {
             ))}
             {/* Covers the other row of tiles: below for the top row, above for the bottom row,
                 so it never runs into the next section. */}
-            {active && (
-              <div id="ben-pop" className={'ben-pop' + (hold > 2 ? ' is-up' : '')} role="tooltip" style={colorVars(active)}>
-                <span className="ben-pop__icon"><Icon name={active.icon} size={18} /></span>
-                <div className="ben-pop__body">
-                  <strong>{L(...active.title)}</strong>
-                  <div className="ben-pop__text"><BenefitContent b={active} /></div>
-                </div>
+            <div id="ben-pop" className={'ben-pop' + (last > 2 ? ' is-up' : '') + (hold !== null ? ' is-shown' : '')} role="tooltip" aria-hidden={hold === null} style={colorVars(active)}>
+              <span className="ben-pop__icon"><Icon name={active.icon} size={18} /></span>
+              <div className="ben-pop__body">
+                <strong>{L(...active.title)}</strong>
+                <div className="ben-pop__text"><BenefitContent b={active} /></div>
               </div>
-            )}
+            </div>
           </div>
           <span className="ben-m__hint">{L('Nhấn giữ vào từng mục để xem chi tiết', 'Tap and hold any item for details')}</span>
         </div>

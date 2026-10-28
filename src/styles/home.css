@@ -1169,6 +1169,24 @@ a.outline-tag:hover { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
 }
 .ben-pop[hidden] { display: none; }
 .ben-pop.is-up { top: auto; bottom: calc(50% + 4px); } /* ends at the bottom of the first row */
+/* Grows out of the row being held, with a slight overshoot, and fades away on release. */
+.ben-pop {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px) scale(.94);
+  transform-origin: top center;
+  transition: opacity .16s ease, transform .2s ease, visibility 0s .2s;
+}
+.ben-pop.is-up { transform: translateY(10px) scale(.94); transform-origin: bottom center; }
+.ben-pop.is-shown {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: opacity .2s ease, transform .32s cubic-bezier(.34, 1.4, .64, 1), visibility 0s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ben-pop, .ben-pop.is-shown { transition: none; }
+}
 .ben-pop__icon { flex: none; width: 38px; height: 38px; box-shadow: none; }
 .ben-pop__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .ben-pop__body > strong { font-size: 16px; line-height: 1.3; font-weight: 700; color: var(--ink-strong); }

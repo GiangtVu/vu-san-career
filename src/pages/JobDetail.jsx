@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { flushSync } from 'react-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import '../styles/job.css';
 import Icon from '../components/Icon.jsx';
 import SiteHeader from '../components/SiteHeader.jsx';
@@ -7,6 +8,7 @@ import { useHydrated, useMediaQuery } from '../lib/hooks.js';
 import { useLang } from '../lib/lang.jsx';
 import { CONTACT, hotFirst, jobPath, LoadState, locationText, placeLabel, placesOf, skillPath, skillsOf, useJobs } from '../lib/jobs.jsx';
 import { jobTitle, SITE_NAME } from '../lib/seo.js';
+import { listReturnPath } from '../lib/listReturn.js';
 
 const SAVED_KEY = 'vs-saved-jobs';
 
@@ -36,6 +38,53 @@ function useSavedJob(id) {
     setSaved(!saved);
   };
   return [saved, toggle];
+}
+
+// Esc goes back to the job list, unless it's leaving a text field (then it only leaves it).
+function useEscToList() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key !== 'Escape' || e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      const el = e.target;
+      if (el && (el.isContentEditable || /^(input|textarea|select)$/i.test(el.tagName))) { el.blur(); return; }
+      e.preventDefault();
+      navigate(listReturnPath());
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [navigate]);
+}
+
+// Click handler for the links back to the list: they return to the list as the visitor left it
+// (lib/listReturn.js). With `slide` (phones' back links) the job page slides off to the right over
+// the list, like going back in a phone app (job.css); not without View Transitions or with
+// reduced motion. A click meant for a new tab is left to the browser.
+function useBackToList() {
+  const navigate = useNavigate();
+  return (e, slide) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    e.preventDefault();
+    const go = () => navigate(listReturnPath());
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!slide || !document.startViewTransition || reduce) { go(); return; }
+    const root = document.documentElement;
+    root.classList.add('vt-back');
+    const t = document.startViewTransition(() => flushSync(go));
+    t.finished.finally(() => root.classList.remove('vt-back'));
+  };
+}
+
+// True once the page has scrolled past the banner, which holds the back link.
+function useScrolledPast(y) {
+  const [past, setPast] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setPast(window.scrollY > y);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [y]);
+  return past;
 }
 
 // Up to three other jobs: the job's own `related` list first, then same group, then HOT ones.
@@ -90,6 +139,9 @@ export default function JobDetail() {
   const isPhone = useMediaQuery('(max-width: 639.98px)');
   const [openSec, setOpenSec] = useState(2);
   const [saved, toggleSave] = useSavedJob(id);
+  const showFab = useScrolledPast(320);
+  const backToList = useBackToList();
+  useEscToList();
 
   const job = data ? data.allJobs.find((j) => j.id === id) : null;
 
@@ -146,13 +198,18 @@ export default function JobDetail() {
           <rect width="320" height="240" fill="url(#jd-pat)" />
         </svg>
         <div className="container jd-banner__inner">
+          {/* Breadcrumb on wider screens; phones get a back link in its place. */}
           <nav className="breadcrumb u-not-phone" aria-label="Breadcrumb">
             <Link to="/">{L('Trang chủ', 'Home')}</Link>
             <span aria-hidden="true">/</span>
-            <Link to="/viec-lam">{L('Việc làm', 'Jobs')}</Link>
+            <Link to="/viec-lam" aria-keyshortcuts="Escape" onClick={(e) => backToList(e)}>{L('Việc làm', 'Jobs')}</Link>
             <span aria-hidden="true">/</span>
             <span aria-current="page">{job.title}</span>
           </nav>
+          <Link className="jd-back u-phone" to="/viec-lam" onClick={(e) => backToList(e, true)}>
+            <Icon name="arrow-left" size={18} sw={2.2} className="jd-back__icon" />
+            <span className="jd-back__label">{L('Quay lại danh sách việc làm', 'Back to all jobs')}</span>
+          </Link>
           <div className="jd-banner__badges">
             <span className="jd-badge">{group.label}{d.department ? ' · ' + d.department : ''}</span>
             {job.hot && <span className="jd-badge jd-badge--hot">HOT</span>}
@@ -322,6 +379,18 @@ export default function JobDetail() {
           <Link to="/">{L('Về trang chủ', 'Back to home')}</Link>
         </div>
       </footer>
+
+      {/* Phones: once the banner's back link has scrolled away, a floating one takes over. */}
+      <Link
+        className={'jd-fab u-phone' + (showFab ? ' is-shown' : '')}
+        to="/viec-lam"
+        onClick={(e) => backToList(e, true)}
+        aria-label={L('Quay lại danh sách việc làm', 'Back to all jobs')}
+        aria-hidden={!showFab}
+        tabIndex={showFab ? undefined : -1}
+      >
+        <Icon name="arrow-left" size={18} sw={2.2} />{L('Danh sách', 'All jobs')}
+      </Link>
     </div>
   );
 }

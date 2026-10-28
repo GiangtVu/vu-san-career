@@ -2,12 +2,14 @@ import { useEffect, useRef } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { JobsProvider } from './lib/jobs.jsx';
 import { LangProvider } from './lib/lang.jsx';
+import { notePath, takeKeepScroll } from './lib/listReturn.js';
 import Home from './pages/Home.jsx';
 import JobList from './pages/JobList.jsx';
 import JobDetail from './pages/JobDetail.jsx';
 import NotFound from './pages/NotFound.jsx';
 
-// On navigation: jump to the #hash target when there is one, else to the top.
+// On navigation: jump to the #hash target when there is one, else to the top (unless the job
+// list is restoring where the visitor left it, lib/listReturn.js).
 // Content can arrive after the JSON loads, so retry the hash lookup for a moment.
 // Not to the top on the first load: the browser has already placed the page (at the top, or
 // where it was before a reload), and a prerendered page can be scrolled before React loads.
@@ -19,8 +21,10 @@ function ScrollManager() {
     // Same location again is StrictMode re-running the effect in development.
     const firstLoad = handled.current === null || handled.current === here;
     handled.current = here;
+    notePath(pathname);
+    const keep = takeKeepScroll();
     if (!hash) {
-      if (!firstLoad) window.scrollTo(0, 0);
+      if (!firstLoad && !keep) window.scrollTo(0, 0);
       return undefined;
     }
     let tries = 0;

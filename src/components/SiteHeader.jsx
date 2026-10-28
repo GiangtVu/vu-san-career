@@ -1,7 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import Logo from './Logo.jsx';
-import { LangSwitch, SameWidth } from './LangSwitch.jsx';
+import { LangButton, LangSwitch, SameWidth } from './LangSwitch.jsx';
 import { useLang } from '../lib/lang.jsx';
+
+// Where `navClass` hides the links and the VI / EN switch, the compact language button shows.
+const COMPACT = { 'u-not-phone': 'u-phone', 'u-wide': 'u-compact' };
 
 // Header for the inner pages. `navClass` hides the text links and the language switch at
 // narrow widths.
@@ -18,6 +21,7 @@ export default function SiteHeader({ wide, navClass, cvHref }) {
           <Link className={'nav-link ' + navClass} to="/">{L('Trang chủ', 'Home')}</Link>
           <NavLink className={'nav-link ' + navClass} to="/viec-lam">{L('Việc làm', 'Jobs')}</NavLink>
           <LangSwitch className={navClass} />
+          <LangButton className={COMPACT[navClass]} />
           <a className="btn btn--primary" href={cvHref}><SameWidth vi="Gửi CV" en="Send CV" /></a>
         </nav>
       </div>
