@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "og:generate": "node scripts/generate-og-share.mjs",
     "dev": "vite",
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-server && node scripts/prerender.mjs",
     "preview": "vite preview",

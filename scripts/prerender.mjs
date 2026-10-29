@@ -21,7 +21,7 @@ const DIST = (p) => fileURLToPath(new URL('../dist/' + p, import.meta.url));
 // gets a new URL and is fetched again.
 const OG_IMAGE_FILE = '/img/og-share.jpg';
 const OG_IMAGE_VERSION = createHash('md5').update(await readFile(DIST(OG_IMAGE_FILE.slice(1)))).digest('hex').slice(0, 8);
-// A 1200×630 JPEG (quality 82, 4:2:0, progressive, ~110 KB) so link previews load quickly.
+// A 1200×630 JPEG. Regenerate the artwork with npm run og:generate.
 const OG_IMAGE = {
   path: `${OG_IMAGE_FILE}?v=${OG_IMAGE_VERSION}`,
   width: 1200,
