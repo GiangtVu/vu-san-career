@@ -21,7 +21,14 @@ const DIST = (p) => fileURLToPath(new URL('../dist/' + p, import.meta.url));
 // gets a new URL and is fetched again.
 const OG_IMAGE_FILE = '/img/og-share.jpg';
 const OG_IMAGE_VERSION = createHash('md5').update(await readFile(DIST(OG_IMAGE_FILE.slice(1)))).digest('hex').slice(0, 8);
-const OG_IMAGE = { path: `${OG_IMAGE_FILE}?v=${OG_IMAGE_VERSION}`, width: 1200, height: 630 };
+// A 1200×630 JPEG (quality 82, 4:2:0, progressive, ~110 KB) so link previews load quickly.
+const OG_IMAGE = {
+  path: `${OG_IMAGE_FILE}?v=${OG_IMAGE_VERSION}`,
+  width: 1200,
+  height: 630,
+  type: 'image/jpeg',
+  alt: 'Vũ San, phụ trách tuyển dụng tại FPT Smart Cloud'
+};
 const LIST_DESCRIPTION = 'Danh sách việc làm FPT Smart Cloud đang tuyển: Engineering, AI & Data, Product & Business, DevOps. Lọc theo nhóm, cấp bậc, địa điểm và kỹ năng.';
 
 const EMPLOYMENT_TYPES = { 'toàn thời gian': 'FULL_TIME', 'bán thời gian': 'PART_TIME', 'thực tập': 'INTERN' };
@@ -98,6 +105,8 @@ function render(template, appData, { path, title, description, robots, jsonLd })
     `<meta property="og:image" content="${SITE + OG_IMAGE.path}">`,
     `<meta property="og:image:width" content="${OG_IMAGE.width}">`,
     `<meta property="og:image:height" content="${OG_IMAGE.height}">`,
+    `<meta property="og:image:type" content="${OG_IMAGE.type}">`,
+    `<meta property="og:image:alt" content="${esc(OG_IMAGE.alt)}">`,
     '<meta name="twitter:card" content="summary">',
     // "<" escaped so text inside the JSON can't close the script tag.
     jsonLd && `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>`
