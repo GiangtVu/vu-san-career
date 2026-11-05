@@ -114,87 +114,6 @@
       }
     },
     {
-      "id": "ai-research-ai-vision",
-      "hot": true,
-      "postedAt": "27/10/2026",
-      "group": "ai",
-      "title": "AI Research – AI Vision",
-      "level": "Middle",
-      "salary": "Thỏa thuận",
-      "deadline": "05/12/2026",
-      "location": "Hà Nội",
-      "desc": "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
-      "stack": [
-        "Python",
-        "Docker",
-        "Linux",
-        "PyTorch",
-        "TensorFlow"
-      ],
-      "keywords": "ai research – ai vision  python docker linux pytorch tensorflow triton",
-      "source": "https://fptsmartcloud.com/job_opportunity/ai-research-ai-vision/",
-      "detail": {
-        "type": "Toàn thời gian",
-        "duties": [
-          "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
-          "Thiết kế, triển khai và cải tiến các model cho object detection, tracking, segmentation, OCR, document understanding, nhận diện khuôn mặt, chống giả mạo khuôn mặt (face anti-spoofing), video understanding và Vision-Language Model (VLM).",
-          "Đọc, tái hiện, đánh giá và cải tiến các phương pháp state-of-the-art từ những hội nghị AI hàng đầu và các dự án mã nguồn mở.",
-          "Thiết kế thí nghiệm, phân tích kết quả và đánh giá model bằng các metric phù hợp.",
-          "Xây dựng training pipeline dễ mở rộng và tối ưu model để triển khai hiệu quả với TensorRT, ONNX hoặc các inference framework tương đương.",
-          "Phối hợp với các kỹ sư phần mềm để đưa model AI lên production, đồng thời đóng góp tài liệu kỹ thuật và chia sẻ kiến thức.",
-          "Cập nhật những tiến bộ mới nhất về Computer Vision, Foundation Model, Multimodal AI và Generative AI."
-        ],
-        "experience": "Từ 2 năm",
-        "requirements": [
-          {
-            "title": "Yêu cầu bắt buộc",
-            "items": [
-              "Từ 2 năm kinh nghiệm về Computer Vision, Deep Learning hoặc nghiên cứu AI liên quan. Lập trình Python tốt, có kinh nghiệm thực tế với PyTorch hoặc TensorFlow.",
-              "Hiểu vững các kỹ thuật deep learning hiện đại, bao gồm CNN, transformer",
-              "Kiến thức vững về Computer Vision, gồm object detection, tracking, segmentation, OCR, document understanding, nhận diện khuôn mặt và chống giả mạo khuôn mặt.",
-              "Có kinh nghiệm thực tế training và tối ưu model deep learning trên các bộ dữ liệu lớn.",
-              "Có khả năng thiết kế thí nghiệm, phân tích kết quả định lượng và cải thiện model dựa trên các metric đánh giá.",
-              "Có khả năng đọc hiểu, tái hiện và hiện thực hóa ý tưởng từ các bài báo khoa học.",
-              "Quen thuộc với Git, Linux và Docker."
-            ]
-          },
-          {
-            "title": "Điểm cộng",
-            "items": [
-              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Trí tuệ nhân tạo, Machine Learning, Computer Vision hoặc các ngành liên quan.",
-              "Có bài báo tại các hội nghị AI hàng đầu (CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI) hoặc đóng góp nghiên cứu tương đương.",
-              "Có kinh nghiệm với Vision-Language Model (VLM)",
-              "Có kinh nghiệm triển khai model AI với TensorRT, ONNX Runtime, Triton Inference Server, NVIDIA DeepStream hoặc framework tương đương.",
-              "Có kinh nghiệm phát triển ứng dụng AI trên NVIDIA Jetson hoặc các nền tảng AI nhúng khác."
-            ]
-          },
-          {
-            "title": "Tố chất chúng tôi tìm kiếm",
-            "items": [
-              "Đam mê nghiên cứu AI và không ngừng học hỏi.",
-              "Có khả năng tự giải quyết các bài toán nghiên cứu mở bằng thí nghiệm bài bản và phân tích dựa trên dữ liệu.",
-              "Tư duy phân tích và kỹ năng giải quyết vấn đề tốt.",
-              "Giao tiếp và phối hợp xuất sắc giữa các team nghiên cứu, kỹ thuật và sản phẩm.",
-              "Cân bằng được giữa đổi mới trong nghiên cứu và kỹ thuật thực tế để tạo ra giải pháp AI sẵn sàng cho production.",
-              "Tinh thần làm chủ, tự tạo động lực và phát huy tốt trong môi trường nhịp độ nhanh."
-            ]
-          }
-        ],
-        "skills": [
-          "Python",
-          "Docker",
-          "Linux",
-          "PyTorch",
-          "TensorFlow",
-          "Triton"
-        ]
-      },
-      "i18n": {
-        "source": "en",
-        "hash": "0aeab7512c55f941"
-      }
-    },
-    {
       "id": "product-tester-bss",
       "hot": true,
       "postedAt": "27/10/2026",
@@ -278,7 +197,7 @@
     },
     {
       "id": "ai-engineer-genai",
-      "hot": false,
+      "hot": true,
       "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Engineer (GenAI)",
@@ -3434,55 +3353,6 @@
       }
     },
     {
-      "id": "ai-delivery-business-analyst",
-      "hot": false,
-      "postedAt": "27/10/2026",
-      "group": "biz",
-      "title": "Business Analyst",
-      "level": "Senior",
-      "salary": "Thỏa thuận",
-      "deadline": "05/12/2026",
-      "location": "Hà Nội",
-      "desc": "Tham gia nhiều dự án với vai trò Business Analyst",
-      "stack": [],
-      "keywords": "business analyst ai delivery center",
-      "source": "https://fptsmartcloud.com/job_opportunity/ai-delivery-business-analyst/",
-      "detail": {
-        "type": "Toàn thời gian",
-        "duties": [
-          "Tham gia nhiều dự án với vai trò Business Analyst",
-          "Xây dựng quan hệ hợp tác với các stakeholder chủ chốt, hiểu và đàm phán nhu cầu, kỳ vọng của nhiều bên liên quan.",
-          "Phân tích ở cấp dự án, xây dựng các tài liệu phân tích cần thiết (yêu cầu nghiệp vụ, yêu cầu hệ thống, phạm vi, use case, sequence diagram, đề xuất trạng thái tương lai…).",
-          "Đóng vai trò tư vấn, giúp khách hàng xây dựng các use case mang lại giá trị cao nhất khi ứng dụng công nghệ AI vào từng lĩnh vực.",
-          "Phối hợp chặt chẽ với developer để hiện thực hóa yêu cầu và hướng dẫn tester trong quá trình QA.",
-          "Chủ động và kịp thời nhận diện các cơ hội cải tiến",
-          "Tìm cách tăng mức độ sử dụng và sự hài lòng của khách hàng.",
-          "Phối hợp với Project Manager xây dựng kế hoạch và đặc tả dự án, ước lượng thời gian và nguồn lực, theo dõi các mốc hoàn thành, bám sát mọi giai đoạn của dự án, báo cáo kịp thời các vấn đề ảnh hưởng tiến độ, điều phối hành động và giải quyết xung đột"
-        ],
-        "department": "AI Delivery Center",
-        "experience": "Từ 5 năm",
-        "requirements": [
-          {
-            "title": "Yêu cầu công việc",
-            "items": [
-              "Tối thiểu 5 năm kinh nghiệm ở vị trí Business Analyst",
-              "Có khả năng xử lý tốt nhiều dự án và nhiều đầu việc cùng lúc",
-              "Kỹ năng làm việc với stakeholder và dẫn dắt hiệu quả.",
-              "Kỹ năng giải quyết vấn đề, giao tiếp, quản lý thời gian và phân tích xuất sắc.",
-              "Tự tin thuyết trình",
-              "Học nhanh, ham học hỏi và áp dụng công nghệ mới",
-              "Có tinh thần đòi hỏi cao về chất lượng sản phẩm",
-              "Các điều kiện ưu tiên khác: tiếng Anh; có kinh nghiệm dự án AI; có kinh nghiệm làm việc với các tập đoàn lớn trong lĩnh vực Ngân hàng – Tài chính – Chứng khoán – Bảo hiểm; tốt nghiệp Đại học chuyên ngành kinh doanh, công nghệ thông tin hoặc các ngành liên quan; thành thạo Microsoft Office: Excel, PowerPoint, Word, Project, Visio, Power BI"
-            ]
-          }
-        ]
-      },
-      "i18n": {
-        "source": "en",
-        "hash": "b02e385551fb57c1"
-      }
-    },
-    {
       "id": "cloud-engineer",
       "hot": false,
       "postedAt": "27/10/2026",
@@ -3668,6 +3538,140 @@
       "i18n": {
         "source": "en",
         "hash": "95b14c0742fb5331"
+      }
+    },
+    {
+      "id": "ai-research-ai-vision",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "ai",
+      "title": "AI Research – AI Vision",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "05/12/2026",
+      "location": "Hà Nội",
+      "desc": "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai research – ai vision  python docker linux pytorch tensorflow triton",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-research-ai-vision/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
+          "Thiết kế, triển khai và cải tiến các model cho object detection, tracking, segmentation, OCR, document understanding, nhận diện khuôn mặt, chống giả mạo khuôn mặt (face anti-spoofing), video understanding và Vision-Language Model (VLM).",
+          "Đọc, tái hiện, đánh giá và cải tiến các phương pháp state-of-the-art từ những hội nghị AI hàng đầu và các dự án mã nguồn mở.",
+          "Thiết kế thí nghiệm, phân tích kết quả và đánh giá model bằng các metric phù hợp.",
+          "Xây dựng training pipeline dễ mở rộng và tối ưu model để triển khai hiệu quả với TensorRT, ONNX hoặc các inference framework tương đương.",
+          "Phối hợp với các kỹ sư phần mềm để đưa model AI lên production, đồng thời đóng góp tài liệu kỹ thuật và chia sẻ kiến thức.",
+          "Cập nhật những tiến bộ mới nhất về Computer Vision, Foundation Model, Multimodal AI và Generative AI."
+        ],
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Từ 2 năm kinh nghiệm về Computer Vision, Deep Learning hoặc nghiên cứu AI liên quan. Lập trình Python tốt, có kinh nghiệm thực tế với PyTorch hoặc TensorFlow.",
+              "Hiểu vững các kỹ thuật deep learning hiện đại, bao gồm CNN, transformer",
+              "Kiến thức vững về Computer Vision, gồm object detection, tracking, segmentation, OCR, document understanding, nhận diện khuôn mặt và chống giả mạo khuôn mặt.",
+              "Có kinh nghiệm thực tế training và tối ưu model deep learning trên các bộ dữ liệu lớn.",
+              "Có khả năng thiết kế thí nghiệm, phân tích kết quả định lượng và cải thiện model dựa trên các metric đánh giá.",
+              "Có khả năng đọc hiểu, tái hiện và hiện thực hóa ý tưởng từ các bài báo khoa học.",
+              "Quen thuộc với Git, Linux và Docker."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Tốt nghiệp Đại học chuyên ngành Khoa học máy tính, Trí tuệ nhân tạo, Machine Learning, Computer Vision hoặc các ngành liên quan.",
+              "Có bài báo tại các hội nghị AI hàng đầu (CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI) hoặc đóng góp nghiên cứu tương đương.",
+              "Có kinh nghiệm với Vision-Language Model (VLM)",
+              "Có kinh nghiệm triển khai model AI với TensorRT, ONNX Runtime, Triton Inference Server, NVIDIA DeepStream hoặc framework tương đương.",
+              "Có kinh nghiệm phát triển ứng dụng AI trên NVIDIA Jetson hoặc các nền tảng AI nhúng khác."
+            ]
+          },
+          {
+            "title": "Tố chất chúng tôi tìm kiếm",
+            "items": [
+              "Đam mê nghiên cứu AI và không ngừng học hỏi.",
+              "Có khả năng tự giải quyết các bài toán nghiên cứu mở bằng thí nghiệm bài bản và phân tích dựa trên dữ liệu.",
+              "Tư duy phân tích và kỹ năng giải quyết vấn đề tốt.",
+              "Giao tiếp và phối hợp xuất sắc giữa các team nghiên cứu, kỹ thuật và sản phẩm.",
+              "Cân bằng được giữa đổi mới trong nghiên cứu và kỹ thuật thực tế để tạo ra giải pháp AI sẵn sàng cho production.",
+              "Tinh thần làm chủ, tự tạo động lực và phát huy tốt trong môi trường nhịp độ nhanh."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "PyTorch",
+          "TensorFlow",
+          "Triton"
+        ]
+      },
+      "closed": true,
+      "closedAt": "05/11/2026",
+      "i18n": {
+        "source": "en",
+        "hash": "0aeab7512c55f941"
+      }
+    },
+    {
+      "id": "ai-delivery-business-analyst",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "05/12/2026",
+      "location": "Hà Nội",
+      "desc": "Tham gia nhiều dự án với vai trò Business Analyst",
+      "stack": [],
+      "keywords": "business analyst ai delivery center",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-delivery-business-analyst/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tham gia nhiều dự án với vai trò Business Analyst",
+          "Xây dựng quan hệ hợp tác với các stakeholder chủ chốt, hiểu và đàm phán nhu cầu, kỳ vọng của nhiều bên liên quan.",
+          "Phân tích ở cấp dự án, xây dựng các tài liệu phân tích cần thiết (yêu cầu nghiệp vụ, yêu cầu hệ thống, phạm vi, use case, sequence diagram, đề xuất trạng thái tương lai…).",
+          "Đóng vai trò tư vấn, giúp khách hàng xây dựng các use case mang lại giá trị cao nhất khi ứng dụng công nghệ AI vào từng lĩnh vực.",
+          "Phối hợp chặt chẽ với developer để hiện thực hóa yêu cầu và hướng dẫn tester trong quá trình QA.",
+          "Chủ động và kịp thời nhận diện các cơ hội cải tiến",
+          "Tìm cách tăng mức độ sử dụng và sự hài lòng của khách hàng.",
+          "Phối hợp với Project Manager xây dựng kế hoạch và đặc tả dự án, ước lượng thời gian và nguồn lực, theo dõi các mốc hoàn thành, bám sát mọi giai đoạn của dự án, báo cáo kịp thời các vấn đề ảnh hưởng tiến độ, điều phối hành động và giải quyết xung đột"
+        ],
+        "department": "AI Delivery Center",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tối thiểu 5 năm kinh nghiệm ở vị trí Business Analyst",
+              "Có khả năng xử lý tốt nhiều dự án và nhiều đầu việc cùng lúc",
+              "Kỹ năng làm việc với stakeholder và dẫn dắt hiệu quả.",
+              "Kỹ năng giải quyết vấn đề, giao tiếp, quản lý thời gian và phân tích xuất sắc.",
+              "Tự tin thuyết trình",
+              "Học nhanh, ham học hỏi và áp dụng công nghệ mới",
+              "Có tinh thần đòi hỏi cao về chất lượng sản phẩm",
+              "Các điều kiện ưu tiên khác: tiếng Anh; có kinh nghiệm dự án AI; có kinh nghiệm làm việc với các tập đoàn lớn trong lĩnh vực Ngân hàng – Tài chính – Chứng khoán – Bảo hiểm; tốt nghiệp Đại học chuyên ngành kinh doanh, công nghệ thông tin hoặc các ngành liên quan; thành thạo Microsoft Office: Excel, PowerPoint, Word, Project, Visio, Power BI"
+            ]
+          }
+        ]
+      },
+      "closed": true,
+      "closedAt": "05/11/2026",
+      "i18n": {
+        "source": "en",
+        "hash": "b02e385551fb57c1"
       }
     }
   ]

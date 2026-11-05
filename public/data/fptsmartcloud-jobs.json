@@ -3,7 +3,6 @@
   "listed": [
     "public-sector-tender-specialist-cloud-ai",
     "platform-engineer-cloud-desktop-iaas",
-    "ai-research-ai-vision",
     "qc-engineer-ai-global",
     "product-tester-bss",
     "consultant-cfs",
@@ -55,7 +54,6 @@
     "business-enabler-ai-products-japan-2",
     "sales-operation-jlpt-n2-n1",
     "ai-text-to-speech-engineer",
-    "deputy-director-ai-delivery",
     "it-helpdesk-pmo",
     "business-analyst-bss",
     "site-reliability-engineer-sre",
@@ -96,7 +94,6 @@
     "project-manager",
     "iaas-software-engineer-fcd-client",
     "ai-factory-cloud-operation-manager",
-    "ai-delivery-business-analyst",
     "cloud-storage-engineer",
     "ai-factory-data-center-network-engineer",
     "cfs-presales",
@@ -281,116 +278,6 @@
             "Websites: FPT Cloud | FPT AI"
           ],
           "groups": []
-        }
-      ]
-    },
-    {
-      "id": "ai-research-ai-vision",
-      "url": "https://fptsmartcloud.com/job_opportunity/ai-research-ai-vision/",
-      "title": "AI Research – AI Vision",
-      "image": "/wp-content/uploads/2022/05/job-news-1.jpeg",
-      "sections": [
-        {
-          "title": null,
-          "text": [
-            "We are looking for an AI Research to develop advanced Computer Vision and Multimodal AI solutions for our AI products, including Vision Agent Platform, eKYC, Intelligent Document Processing (IDP), and OCR systems.",
-            "Working closely with research and engineering teams, you will explore the latest AI technologies, improve state-of-the-art methods, and transform research ideas into scalable, production-ready AI solutions."
-          ],
-          "groups": []
-        },
-        {
-          "title": "Key Responsibilities",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Research, develop, and optimize deep learning algorithms for Computer Vision and Multimodal AI applications.",
-                "Design, implement, and improve models for object detection, tracking, segmentation, OCR, document understanding, face recognition, face anti-spoofing, video understanding, and Vision-Language Models (VLMs).",
-                "Read, reproduce, evaluate, and improve state-of-the-art methods from leading AI conferences and open-source projects.",
-                "Design experiments, analyze results, and evaluate models using appropriate metrics.",
-                "Build scalable training pipelines and optimize models for efficient deployment using TensorRT, ONNX, or similar inference frameworks.",
-                "Collaborate with software engineers to deploy AI models into production and contribute to technical documentation and knowledge sharing.",
-                "Stay up to date with the latest advances in Computer Vision, Foundation Models, Multimodal AI, and Generative AI."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Must-Have Qualifications",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "2+ years of experience in Computer Vision, Deep Learning, or related AI research. Strong programming skills in Python, with hands-on experience using PyTorch or TensorFlow.",
-                "Solid understanding of modern deep learning techniques, including CNNs, transformers",
-                "Strong knowledge of Computer Vision, including object detection, tracking, segmentation, OCR, document understanding, face recognition, and face anti-spoofing.",
-                "Hands-on experience training and optimizing deep learning models on large-scale datasets.",
-                "Ability to design experiments, analyze quantitative results, and improve models based on evaluation metrics.",
-                "Ability to read, understand, reproduce, and implement ideas from academic papers.",
-                "Familiarity with Git, Linux, and Docker."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Preferred Qualifications",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Bachelor’s degree in Computer Science, Artificial Intelligence, Machine Learning, Computer Vision, or a related field.",
-                "Publications in leading AI conferences (CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI) or equivalent research contributions.",
-                "Experience with Vision-Language Models (VLMs)",
-                "Experience deploying AI models using TensorRT, ONNX Runtime, Triton Inference Server, NVIDIA DeepStream, or similar frameworks.",
-                "Experience developing AI applications on NVIDIA Jetson or other embedded AI platforms."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "What We Look For",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Passion for AI research and continuous learning.",
-                "Ability to independently solve open-ended research problems through systematic experimentation and data-driven analysis.",
-                "Strong analytical thinking and problem-solving skills.",
-                "Excellent communication and collaboration across research, engineering, and product teams.",
-                "Ability to balance research innovation with practical engineering to deliver production-ready AI solutions.",
-                "Ownership mindset, self-motivation, and the ability to thrive in a fast-paced environment."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Working Environment",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Working Location: 22nd Floor, Vinacomin Tower, No. 3 Duong Dinh Nghe, Cau Giay, Hanoi",
-                "Working hours: 8h30 AM – 12h00 PM 1h00 PM – 5h30 PM"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Contact Person",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Pham Thi Ha My (Ms.) – Talent Acquisition Leader Email: Mypth3@fpt.com Phone: 0962456194 FPT Smart Cloud (FCI) Co., LTD Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi Websites: FPT Cloud | FPT AI"
-              ]
-            }
-          ]
         }
       ]
     },
@@ -7231,118 +7118,6 @@
           "text": [
             "Pham Thi Ha My (Ms.) – Talent Acquisition Leader",
             "Email: Mypth3@fpt.com|",
-            "Phone: 0962456194",
-            "FPT Smart Cloud (FCI) Co., LTD",
-            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
-            "Websites: FPT Cloud | FPT AI"
-          ],
-          "groups": []
-        }
-      ]
-    },
-    {
-      "id": "ai-delivery-business-analyst",
-      "url": "https://fptsmartcloud.com/job_opportunity/ai-delivery-business-analyst/",
-      "title": "Business Analyst",
-      "image": "https://fptsmartcloud.com/wp-content/uploads/2025/02/desktop-wallpaper-technology-new-45-hi-tech-for.jpg",
-      "position": "Business Analyst",
-      "department": "AI Delivery Center",
-      "location": "HN",
-      "sections": [
-        {
-          "title": "About FPT Smart Cloud",
-          "text": [
-            "FPT Smart Cloud (FCI) – a member of FPT Corporation, pioneers AI & Cloud solutions in Vietnam. FCI was founded with the mission to generating an immense leap in productivity and agility in business operations.",
-            "FPT Smart Cloud aims at leading the industry by focusing on building a firm technological foundation, developing diversified ecosystem products, and reaching global connectivity."
-          ],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Customized to specific needs: Providing cloud-based products and solutions customized to each industry.",
-                "All-in-one Platform: Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a Unify eco-system.",
-                "Local market leadership: Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
-                "Deliver the future: Help customers achieve business outcomes faster by integrating world-class processes and technology."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Top Benefits:",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Flexible income according to ability, open agreement",
-                "Working in the field of the most advanced technology today, AI – a product that has been greatly invested by FPT in the past 5 years and the most trending now.",
-                "Gain a thorough understanding of the big picture of AI in Vietnam and Asia through different fields.",
-                "Advancement opportunities: recruited personnel can follow a promotion path to become a company-level center product lead BA .",
-                "FPT Premium Care package",
-                "Activities and culture with FCI and FPT Corporation",
-                "Study support package for children of FCI union",
-                "Sponsor-related courses and certifications"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Main Responsibilities:",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Participate in multiple projects as a Business Analyst",
-                "Developing relationships and partnerships with key stakeholders, understand and negotiate needs and expectations of multiple stakeholders.",
-                "Provide project level analysis – producing required project analysis documentation (business requirements, system requirements, scoping, use cases, sequence diagrams, future state proposals ..etc…",
-                "Work as a consultant to help customer build the most value usecase to powered AI technology apply into any domain.",
-                "Collaborate closely with developers to implement the requirements, provide necessary guidance to testers during QA processes.",
-                "Identify improvement opportunities (proactive and reactive)",
-                "Identify ways to increase adoption and customer satisfaction.",
-                "Cooperating with Project Manager in developing project plans and specifications, estimating time and resources, monitoring milestone completion, tracking all phases of the project lifecycle, providing timely reporting of issues that impact project progress, coordinating actions and resolving conflicts"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Job Requirement:",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "At least 5 years of working experience in a Business Analyst",
-                "Ability to successfully handle multiple projects and manage multiple tasks at any given point",
-                "Effective stakeholder engagement and leadership skills.",
-                "Excellent problem-solving, communication, time management and analytical skills.",
-                "Confident presenter",
-                "Be a fast learner, have a desire to learn and apply new technology",
-                "Have a spirit of demanding high-quality product",
-                "Other priority conditions: o English o Experiences in AI projects o Experienced in working with large corporates in Banking – Finance – Securities – Insurance industry o Bachelor’s degree in business, information technology or related field o Microsoft Office: Excel, PowerPoint, Word, Project, Visio, Power BI"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Working Environment:",
-          "text": [],
-          "groups": [
-            {
-              "title": null,
-              "items": [
-                "Working Location: Hanoi: 22nd Floor, Vinacomin Tower, No. 3 Duong Dinh Nghe, Cau Giay, Hanoi",
-                "Working hours: 8h30 AM – 12h00 PM 1h00 PM – 5h30 PM",
-                "Working days: Monday – Friday (weekends off)"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Contact Person:",
-          "text": [
-            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Lead",
-            "Email: Mypth3@fpt.com",
             "Phone: 0962456194",
             "FPT Smart Cloud (FCI) Co., LTD",
             "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
