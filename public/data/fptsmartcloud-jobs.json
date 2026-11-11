@@ -1,6 +1,11 @@
 {
   "source": "https://fptsmartcloud.com/co-hoi-nghe-nghiep/",
   "listed": [
+    "solution-consultant-genai",
+    "senior-business-analyst-genai",
+    "senior-qa-engineer-software-ai-quality",
+    "chuyen-vien-phan-tich-va-kiem-soat-tai-chinh",
+    "general-accounting-specialist",
     "talent-acquisition-specialist-senior-talent-acquisition-specialist",
     "senior-employer-branding-specialist",
     "public-sector-tender-specialist-cloud-ai",
@@ -56,7 +61,6 @@
     "business-enabler-ai-products-japan-2",
     "sales-operation-jlpt-n2-n1",
     "ai-text-to-speech-engineer",
-    "phan-tich-tai-chinh",
     "it-helpdesk-pmo",
     "business-analyst-bss",
     "site-reliability-engineer-sre",
@@ -107,6 +111,266 @@
     "cloud_openstack_engineer"
   ],
   "jobs": [
+    {
+      "id": "senior-business-analyst-genai",
+      "url": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-genai/",
+      "title": "Senior Business Analyst (GenAI)",
+      "image": "https://fptsmartcloud.com/wp-content/uploads/2026/07/img-orientedsDinh-huong-1.png",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "FPT Smart Cloud (FCI) – a member of FPT Corporation, pioneers AI & Cloud solutions in Vietnam. FCI was founded with the mission of generating an immense leap in productivity and agility in business operations.",
+            "FPT Smart Cloud aims at leading the industry by building a firm technological foundation, developing diversified ecosystem products, and reaching global connectivity.",
+            "You will join a product team that builds AI-powered B2B SaaS platforms for enterprise customers. The team works in Agile/Scrum with the Product Owner, Designers, Software Engineers, AI Engineers and QA, and uses AI tools in daily work.",
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "Email: Mypth3@fpt.com · Phone: 0962 456 194",
+            "FPT Smart Cloud (FCI) Co., Ltd. – 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay, Hanoi"
+          ],
+          "groups": [
+            {
+              "title": "About FPT Smart Cloud",
+              "items": []
+            },
+            {
+              "title": "About the Team",
+              "items": []
+            },
+            {
+              "title": "Key Responsibilities",
+              "items": []
+            },
+            {
+              "title": "Requirement analysis & specification",
+              "items": [
+                "Work with the Product Owner and stakeholders to clarify the user problem, business value and success metrics of each feature.",
+                "Write PRDs, User Stories and Acceptance Criteria in Given/When/Then format that Dev and QA can use without asking back.",
+                "Model business flows, roles and permissions, state transitions and data (activity/swimlane, sequence, state diagram, ERD).",
+                "Keep requirements ready at least one sprint ahead of development."
+              ]
+            },
+            {
+              "title": "As-is analysis & integration",
+              "items": [
+                "Analyse existing systems from user manuals, API documents and source code. Document the gaps between current behaviour and target business rules.",
+                "Define data mapping and migration rules together with engineers.",
+                "Specify integrations with third-party systems and platforms through APIs and webhooks."
+              ]
+            },
+            {
+              "title": "AI & non-functional requirements",
+              "items": [
+                "Work with AI Engineers to specify GenAI/LLM features: expected behaviour, edge cases, fallback rules and evaluation criteria.",
+                "Specify multi-tenant, role-based access, audit and personal data protection requirements (Decree 13/2023/ND-CP)."
+              ]
+            },
+            {
+              "title": "Delivery & leadership",
+              "items": [
+                "Join sprint planning, refinement and review. Answer Dev/QA questions and assess the impact of requirement changes.",
+                "Support UAT and feature acceptance with customers. Turn feedback into backlog proposals.",
+                "Coach other BAs. Set up templates, checklists and peer review to keep requirement quality high.",
+                "Use AI assistants to speed up analysis and documentation, and verify every output before hand-off."
+              ]
+            },
+            {
+              "title": "What Success Looks Like (first 6 months)",
+              "items": [
+                "Dev and QA start each sprint with approved stories and rarely need to ask back.",
+                "Requirements for your squad stay one sprint ahead of development.",
+                "Every requirement change has a clear record: what changed, why, and which stories it affects."
+              ]
+            },
+            {
+              "title": "Requirements",
+              "items": []
+            },
+            {
+              "title": "Must-have",
+              "items": [
+                "4+ years as a Business Analyst or Product Analyst in software products, with at least 2 years on B2B SaaS or platform products.",
+                "Proven track record of writing PRDs, User Stories, Acceptance Criteria and process models for complex, multi-role features.",
+                "Experience in Agile/Scrum teams using Jira and Confluence.",
+                "Solid understanding of REST APIs, JSON, relational databases (basic SQL), authentication and authorization (OAuth 2.0/SSO, RBAC), webhooks and system integration.",
+                "Able to read API specifications (Swagger/OpenAPI) and basic code to verify how a system actually behaves.",
+                "Strong analytical thinking: ask the right questions, separate facts from assumptions, and break large problems into small, testable stories.",
+                "Clear written communication in Vietnamese and English. Able to read technical documents in English."
+              ]
+            },
+            {
+              "title": "Nice-to-have",
+              "items": [
+                "Experience with CRM, customer experience (CX) or Conversational AI products.",
+                "Knowledge of Generative AI, LLMs, AI Agents, RAG, prompt engineering or AI evaluation.",
+                "Experience with existing (brownfield) products: reverse engineering, as-built documentation, data migration.",
+                "Experience with enterprise customers in regulated industries.",
+                "Tools: Postman, Figma, Miro, Draw.io, Mermaid or PlantUML.",
+                "Certificates: CBAP/CCBA, PSPO or PSM."
+              ]
+            },
+            {
+              "title": "Top Benefits",
+              "items": [
+                "Salary: competitive, paid according to ability. Negotiable during the interview.",
+                "Social insurance and health insurance according to labor laws.",
+                "Creative, open-minded working environment that respects individuals.",
+                "FPT Premium Care package.",
+                "Activities and culture with FCI and FPT Corporation.",
+                "Study support package for children of FCI union members.",
+                "Sponsorship for related courses and certifications."
+              ]
+            },
+            {
+              "title": "Working Environment",
+              "items": [
+                "Location: 22nd Floor, Vinacomin Tower, No. 3 Duong Dinh Nghe, Cau Giay, Hanoi.",
+                "Working hours: 8:30 AM – 12:00 PM and 1:00 PM – 5:30 PM.",
+                "Working days: Monday to Friday (weekends off)."
+              ]
+            },
+            {
+              "title": "Contact Person",
+              "items": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "senior-qa-engineer-software-ai-quality",
+      "url": "https://fptsmartcloud.com/job_opportunity/senior-qa-engineer-software-ai-quality/",
+      "title": "Senior QA Engineer (Software & AI Quality)",
+      "image": "https://fptsmartcloud.com/wp-content/uploads/2026/10/05-image4-PC-1792596484-4035-1792596790.webp",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "FPT Smart Cloud (FCI), a member of FPT Corporation, is a pioneer in providing AI and Cloud solutions in Vietnam. FCI was founded with the mission of driving significant improvements in business productivity and operational agility.",
+            "FPT Smart Cloud aims to become an industry leader by building a strong technological foundation, developing a diverse ecosystem of products, and expanding global connectivity.",
+            "You will join a product team developing AI-powered B2B SaaS platforms for enterprise customers. The team follows Agile/Scrum methodologies and works closely with Product Owners, Designers, Software Engineers, AI Engineers, and QA Engineers. AI tools are also integrated into our daily workflows.",
+            "As a Senior QA Engineer, you will take ownership of both software quality and AI behavior. Approximately 50% of your time will focus on software testing and test automation, while the remaining 50% will be dedicated to evaluating and improving AI quality.",
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "FPT Smart Cloud (FCI) Co., Ltd.",
+            "7th Floor, FPT Tower, No. 10 Pham Van Bach Street, Cau Giay District, Hanoi."
+          ],
+          "groups": [
+            {
+              "title": "About FPT Smart Cloud",
+              "items": []
+            },
+            {
+              "title": "About the Team",
+              "items": []
+            },
+            {
+              "title": "Key Responsibilities",
+              "items": []
+            },
+            {
+              "title": "Software Quality (Approximately 50%)",
+              "items": [
+                "Define test strategies, test plans, and quality gates for each sprint and release.",
+                "Review User Stories and Acceptance Criteria with BAs and POs before each sprint, identifying gaps and potential risks early.",
+                "Design comprehensive test cases based on Acceptance Criteria, covering user roles, permissions, and multi-tenant data isolation.",
+                "Test web applications, REST APIs, real-time features (WebSocket), and third-party integrations.",
+                "Build and maintain automated UI and API regression test suites using Playwright or similar tools, integrating them into CI/CD pipelines.",
+                "Leverage AI tools to accelerate and optimize test case development.",
+                "Perform data migration testing and collaborate with DevOps engineers on basic performance testing.",
+                "Conduct UAT with customers and monitor defects that escape into the UAT phase."
+              ]
+            },
+            {
+              "title": "AI Quality (Approximately 50%)",
+              "items": [
+                "Build and maintain evaluation datasets based on real-world use cases for LLM-powered features and AI agents.",
+                "Define evaluation criteria and scoring rubrics in collaboration with AI Engineers and BAs, covering accuracy, groundedness, hallucination, safety, and consistency.",
+                "Conduct regression evaluations whenever prompts, models, or knowledge sources are updated. Compare different versions and identify potential quality risks.",
+                "Perform AI safety testing, including prompt injection, personal data leakage, and unauthorized actions beyond defined policies.",
+                "Calibrate automated LLM-as-a-Judge scores against human evaluation results.",
+                "Monitor AI quality in production through logs, reports, and customer feedback.",
+                "Lead root cause analysis for AI quality incidents and recommend improvement actions."
+              ]
+            },
+            {
+              "title": "Leadership & Process Improvement",
+              "items": [
+                "Mentor and provide technical guidance to QA team members.",
+                "Establish QA processes, quality metrics, and reporting standards for the team."
+              ]
+            },
+            {
+              "title": "What Success Looks Like (First 6 Months)",
+              "items": [
+                "Automated regression tests are executed for every release, covering the core workflows of the squad.",
+                "Every AI feature has a defined evaluation dataset, scoring rubric, and pass threshold agreed upon with the Product Owner.",
+                "The number of defects escaping into UAT decreases with each release."
+              ]
+            },
+            {
+              "title": "Requirements",
+              "items": []
+            },
+            {
+              "title": "Must-have Qualifications",
+              "items": [
+                "Bachelor’s degree in Computer Science, Information Technology, Data Science, AI, or a related field.",
+                "4+ years of experience in software testing/QA, including at least 2 years working with web-based or SaaS products.",
+                "Strong knowledge of test design techniques, including equivalence partitioning, boundary value analysis, decision tables, and state transition testing.",
+                "Ability to produce clear and structured test documentation, including test plans, test cases, and bug reports.",
+                "Hands-on experience with API testing tools such as Postman, reading JSON, and using SQL for data validation.",
+                "Practical experience developing automated tests using Playwright, Cypress, Selenium, or similar frameworks, with JavaScript/TypeScript or Python, and integrating automated tests into CI pipelines.",
+                "Hands-on experience testing or evaluating chatbots, LLMs, or other AI-powered features, including building test datasets and identifying hallucinations, edge cases, and conversation breakdowns.",
+                "Experience working in Agile/Scrum teams and using Jira.",
+                "Strong attention to detail and the ability to evaluate AI behavior from both business and technical perspectives.",
+                "Ability to read and understand technical documentation in English."
+              ]
+            },
+            {
+              "title": "Nice-to-have Qualifications",
+              "items": [
+                "Experience with Conversational AI, chatbot/voicebot, or CRM products.",
+                "Familiarity with LLM evaluation tools such as Promptfoo, DeepEval, Ragas, or LangSmith.",
+                "Experience testing real-time systems, multi-tenant platforms, or data migration processes.",
+                "Basic knowledge of security testing, including OWASP Top 10 and authorization bypass testing, as well as performance testing tools such as k6 or JMeter.",
+                "Experience using Python or log analysis tools for quality data analysis.",
+                "ISTQB certification (Foundation or Advanced)."
+              ]
+            },
+            {
+              "title": "Benefits",
+              "items": [
+                "Competitive salary based on qualifications and experience, negotiable during the interview process.",
+                "Social and health insurance in accordance with Vietnamese labor laws.",
+                "A creative, open-minded, and inclusive working environment that values individuality.",
+                "FPT Premium Care healthcare package.",
+                "Various cultural activities and engagement programs across FCI and FPT Corporation.",
+                "Educational support programs for children of FCI trade union members.",
+                "Sponsorship for relevant professional courses and certifications."
+              ]
+            },
+            {
+              "title": "Working Environment",
+              "items": [
+                "Location: 22nd Floor, Vinacomin Tower, No. 3 Duong Dinh Nghe Street, Cau Giay District, Hanoi.",
+                "Working Hours: 8:30 AM – 12:00 PM and 1:00 PM – 5:30 PM.",
+                "Working Days: Monday to Friday (Weekends off)."
+              ]
+            },
+            {
+              "title": "Contact Information",
+              "items": []
+            },
+            {
+              "title": null,
+              "items": [
+                "Email: Mypth3@fpt.com",
+                "Phone: 0962 456 194"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "platform-engineer-cloud-desktop-iaas",
       "url": "https://fptsmartcloud.com/job_opportunity/platform-engineer-cloud-desktop-iaas/",

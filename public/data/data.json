@@ -30,6 +30,96 @@
   },
   "jobs": [
     {
+      "id": "senior-business-analyst-genai",
+      "hot": true,
+      "postedAt": "11/11/2026",
+      "group": "biz",
+      "title": "Senior Business Analyst (GenAI)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "11/12/2026",
+      "location": "Hà Nội",
+      "desc": "Work with the Product Owner and stakeholders to clarify the user problem, business value and success metrics of each feature.",
+      "stack": [
+        "SQL"
+      ],
+      "keywords": "senior business analyst  sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Work with the Product Owner and stakeholders to clarify the user problem, business value and success metrics of each feature.",
+          "Write PRDs, User Stories and Acceptance Criteria in Given/When/Then format that Dev and QA can use without asking back.",
+          "Model business flows, roles and permissions, state transitions and data (activity/swimlane, sequence, state diagram, ERD).",
+          "Keep requirements ready at least one sprint ahead of development.",
+          "Analyse existing systems from user manuals, API documents and source code. Document the gaps between current behaviour and target business rules.",
+          "Define data mapping and migration rules together with engineers.",
+          "Specify integrations with third-party systems and platforms through APIs and webhooks.",
+          "Work with AI Engineers to specify GenAI/LLM features: expected behaviour, edge cases, fallback rules and evaluation criteria.",
+          "Specify multi-tenant, role-based access, audit and personal data protection requirements (Decree 13/2023/ND-CP).",
+          "Join sprint planning, refinement and review. Answer Dev/QA questions and assess the impact of requirement changes.",
+          "Support UAT and feature acceptance with customers. Turn feedback into backlog proposals.",
+          "Coach other BAs. Set up templates, checklists and peer review to keep requirement quality high.",
+          "Use AI assistants to speed up analysis and documentation, and verify every output before hand-off.",
+          "Dev and QA start each sprint with approved stories and rarely need to ask back.",
+          "Requirements for your squad stay one sprint ahead of development."
+        ],
+        "experience": "Từ 4 năm",
+        "skills": [
+          "SQL"
+        ]
+      }
+    },
+    {
+      "id": "senior-qa-engineer-software-ai-quality",
+      "hot": true,
+      "postedAt": "11/11/2026",
+      "group": "eng",
+      "title": "Senior QA Engineer (Software & AI Quality)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "11/12/2026",
+      "location": "Hà Nội",
+      "desc": "Define test strategies, test plans, and quality gates for each sprint and release.",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "CI/CD",
+        "SQL"
+      ],
+      "keywords": "senior qa engineer  python javascript typescript ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-qa-engineer-software-ai-quality/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Define test strategies, test plans, and quality gates for each sprint and release.",
+          "Review User Stories and Acceptance Criteria with BAs and POs before each sprint, identifying gaps and potential risks early.",
+          "Design comprehensive test cases based on Acceptance Criteria, covering user roles, permissions, and multi-tenant data isolation.",
+          "Test web applications, REST APIs, real-time features (WebSocket), and third-party integrations.",
+          "Build and maintain automated UI and API regression test suites using Playwright or similar tools, integrating them into CI/CD pipelines.",
+          "Leverage AI tools to accelerate and optimize test case development.",
+          "Perform data migration testing and collaborate with DevOps engineers on basic performance testing.",
+          "Conduct UAT with customers and monitor defects that escape into the UAT phase.",
+          "Build and maintain evaluation datasets based on real-world use cases for LLM-powered features and AI agents.",
+          "Define evaluation criteria and scoring rubrics in collaboration with AI Engineers and BAs, covering accuracy, groundedness, hallucination, safety, and consistency.",
+          "Conduct regression evaluations whenever prompts, models, or knowledge sources are updated. Compare different versions and identify potential quality risks.",
+          "Perform AI safety testing, including prompt injection, personal data leakage, and unauthorized actions beyond defined policies.",
+          "Calibrate automated LLM-as-a-Judge scores against human evaluation results.",
+          "Monitor AI quality in production through logs, reports, and customer feedback.",
+          "Lead root cause analysis for AI quality incidents and recommend improvement actions."
+        ],
+        "experience": "Từ 4 năm",
+        "skills": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "CI/CD",
+          "SQL"
+        ]
+      }
+    },
+    {
       "id": "platform-engineer-cloud-desktop-iaas",
       "hot": true,
       "postedAt": "27/10/2026",
@@ -111,7 +201,7 @@
     },
     {
       "id": "product-tester-bss",
-      "hot": true,
+      "hot": false,
       "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Product Tester (BSS)",
@@ -189,7 +279,7 @@
     },
     {
       "id": "ai-engineer-genai",
-      "hot": true,
+      "hot": false,
       "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Engineer (GenAI)",

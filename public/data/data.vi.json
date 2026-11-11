@@ -30,6 +30,104 @@
   },
   "jobs": [
     {
+      "id": "senior-business-analyst-genai",
+      "hot": true,
+      "postedAt": "11/11/2026",
+      "group": "biz",
+      "title": "Senior Business Analyst (GenAI)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "11/12/2026",
+      "location": "Hà Nội",
+      "desc": "Làm việc với Product Owner và các stakeholder để làm rõ bài toán người dùng, giá trị kinh doanh và các chỉ số thành công (success metrics) cho từng tính năng.",
+      "stack": [
+        "SQL"
+      ],
+      "keywords": "senior business analyst  sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Làm việc với Product Owner và các stakeholder để làm rõ bài toán người dùng, giá trị kinh doanh và các chỉ số thành công (success metrics) cho từng tính năng.",
+          "Viết PRD, User Story và Acceptance Criteria theo format Given/When/Then rõ ràng, giúp Dev và QA có thể triển khai ngay mà không cần hỏi lại nhiều.",
+          "Mô hình hóa business flow, vai trò và phân quyền, state transition và dữ liệu (activity/swimlane, sequence, state diagram, ERD).",
+          "Chuẩn bị requirement sẵn sàng trước ít nhất 1 sprint so với tiến độ development.",
+          "Phân tích hệ thống hiện tại qua tài liệu hướng dẫn người dùng, tài liệu API và source code. Lập tài liệu gap analysis giữa luồng hiện tại và business rules mục tiêu.",
+          "Phối hợp cùng engineer để xác định các quy tắc data mapping và migration.",
+          "Xác định chi tiết các luồng tích hợp với hệ thống và platform của bên thứ ba qua API và webhook.",
+          "Làm việc với AI Engineer để đặc tả các tính năng GenAI/LLM: expected behaviour, edge case, fallback rule và tiêu chí đánh giá (evaluation criteria).",
+          "Đặc tả các yêu cầu về multi-tenant, phân quyền theo vai trò (RBAC), audit log và bảo vệ dữ liệu cá nhân (Nghị định 13/2023/NĐ-CP).",
+          "Tham gia sprint planning, refinement và review. Giải đáp thắc mắc của Dev/QA và đánh giá tác động khi có thay đổi requirement.",
+          "Hỗ trợ UAT và nghiệm thu tính năng cùng khách hàng. Chuyển đổi feedback thành các đề xuất cụ thể trên backlog.",
+          "Coach các BA khác trong team. Xây dựng template, checklist và quy trình peer review để đảm bảo chất lượng requirement nhất quán.",
+          "Ứng dụng các AI assistant để tăng tốc quá trình phân tích và viết tài liệu, luôn kiểm chứng kỹ output trước khi bàn giao.",
+          "Đảm bảo Dev và QA bước vào mỗi sprint với các story đã được phê duyệt, hạn chế tối đa việc phải hỏi lại.",
+          "Đảm bảo requirement của squad luôn sẵn sàng trước 1 sprint so với tiến độ development."
+        ],
+        "experience": "Từ 4 năm",
+        "skills": [
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "aa6488fa36ddb245"
+      }
+    },
+    {
+      "id": "senior-qa-engineer-software-ai-quality",
+      "hot": true,
+      "postedAt": "11/11/2026",
+      "group": "eng",
+      "title": "Senior QA Engineer (Software & AI Quality)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "11/12/2026",
+      "location": "Hà Nội",
+      "desc": "Xây dựng test strategy, test plan và quality gate cho từng sprint cũng như từng đợt release.",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "CI/CD",
+        "SQL"
+      ],
+      "keywords": "senior qa engineer  python javascript typescript ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/senior-qa-engineer-software-ai-quality/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Xây dựng test strategy, test plan và quality gate cho từng sprint cũng như từng đợt release.",
+          "Review User Story và Acceptance Criteria cùng BA, PO trước mỗi sprint để sớm phát hiện các điểm thiếu sót và rủi ro tiềm ẩn.",
+          "Thiết kế test case toàn diện dựa trên Acceptance Criteria, bao quát các vai trò người dùng, phân quyền và khả năng cô lập dữ liệu multi-tenant.",
+          "Kiểm thử web application, REST API, các tính năng real-time (WebSocket) và tích hợp bên thứ ba.",
+          "Xây dựng và duy trì bộ automated regression test cho UI và API bằng Playwright hoặc các công cụ tương đương, tích hợp trực tiếp vào CI/CD pipeline.",
+          "Ứng dụng các công cụ AI để đẩy nhanh tiến độ và tối ưu hóa việc viết test case.",
+          "Thực hiện kiểm thử data migration và phối hợp với DevOps engineer triển khai performance testing ở mức cơ bản.",
+          "Chủ trì quá trình UAT cùng khách hàng và theo dõi sát các defect bị lọt sang giai đoạn UAT.",
+          "Xây dựng và duy trì bộ evaluation dataset dựa trên các use case thực tế cho các tính năng tích hợp LLM và AI agent.",
+          "Phối hợp với AI Engineer và BA để xác định tiêu chí đánh giá và thang điểm (scoring rubric), bao gồm accuracy, groundedness, hallucination, safety và consistency.",
+          "Thực hiện regression evaluation mỗi khi cập nhật prompt, model hoặc nguồn tri thức (knowledge source); so sánh các phiên bản và chỉ ra các rủi ro chất lượng tiềm ẩn.",
+          "Kiểm thử AI safety, bao gồm prompt injection, rò rỉ dữ liệu cá nhân và các hành động trái phép vượt ngoài policy quy định.",
+          "Hiệu chỉnh (calibrate) điểm số tự động từ LLM-as-a-Judge đối chiếu với kết quả đánh giá thực tế của con người.",
+          "Theo dõi chất lượng AI trên môi trường production thông qua log, báo cáo và feedback từ khách hàng.",
+          "Chủ trì phân tích nguyên nhân gốc rễ (root cause analysis) cho các sự cố chất lượng AI và đề xuất giải pháp cải thiện."
+        ],
+        "experience": "Từ 4 năm",
+        "skills": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "CI/CD",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "f47a5381cbf6b626"
+      }
+    },
+    {
       "id": "platform-engineer-cloud-desktop-iaas",
       "hot": true,
       "postedAt": "27/10/2026",
@@ -115,7 +213,7 @@
     },
     {
       "id": "product-tester-bss",
-      "hot": true,
+      "hot": false,
       "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Product Tester (BSS)",
@@ -197,7 +295,7 @@
     },
     {
       "id": "ai-engineer-genai",
-      "hot": true,
+      "hot": false,
       "postedAt": "27/10/2026",
       "group": "ai",
       "title": "AI Engineer (GenAI)",
