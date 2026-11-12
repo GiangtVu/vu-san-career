@@ -30,6 +30,70 @@
   },
   "jobs": [
     {
+      "id": "ky-su-van-hanh-giam-sat-l1-noc-cloud-monitoring-engineer",
+      "hot": true,
+      "postedAt": "12/11/2026",
+      "group": "eng",
+      "title": "Kỹ sư Vận hành Giám sát (L1 NOC / Cloud Monitoring Engineer)",
+      "level": "Junior",
+      "salary": "Negotiable",
+      "deadline": "12/12/2026",
+      "location": "Hanoi",
+      "desc": "Monitoring & First-Level Escalation",
+      "stack": [
+        "Python",
+        "Linux",
+        "AWS",
+        "Azure",
+        "Prometheus"
+      ],
+      "keywords": "ky su van hanh giam sat  python linux aws azure prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/ky-su-van-hanh-giam-sat-l1-noc-cloud-monitoring-engineer/",
+      "detail": {
+        "type": "Full-time",
+        "duties": [
+          "Monitoring & First-Level Escalation",
+          "Work in 24/7 rotating shifts, continuously monitoring the health and performance of infrastructure systems, platforms, and Cloud services throughout the shift.",
+          "Receive all incoming alerts: for alerts with predefined Runbooks from specialized technical teams, execute actions strictly according to the Runbook within authorized limits; for other alerts, accurately identify the affected service/customer and promptly escalate to the alert owner's point of contact without independently assessing or concluding whether it is an incident. Once confirmed as a real incident by the POC, create a ticket and transition to the incident management process.",
+          "Incident Management",
+          "Create incident tickets, assess priority levels and blast radius; coordinate troubleshooting progress and escalate to higher tiers (L2/L3) with comprehensive handover context.",
+          "For widespread incidents: trigger the Incident Response Team (IRT) process, convene relevant teams, act as Scribe to document the incident timeline, and serve as the main communication liaison for all stakeholders until incident closure.",
+          "Managed Services Operations",
+          "Execute daily, weekly, and monthly routine tasks and checklists for Managed Services: backups, restores, patching, and system health checks.",
+          "Log execution results and provide early warnings for threshold-breaching metrics to guarantee committed customer SLAs.",
+          "Reporting & Compliance",
+          "Prepare shift reports, complete comprehensive shift handovers, and compile regular customer service reports as committed.",
+          "Strictly adhere to operational procedures, incident response regulations, and Center shift discipline; collaborate closely with related engineering teams.",
+          "Bachelor's degree or higher in Information Technology, Computer Science, Telecommunications, or related fields.",
+          "0–2 years of experience in system operations, infrastructure monitoring, or technical support (fresh graduates with solid foundations are welcome).",
+          "Solid foundational knowledge of Linux and Windows Server operating systems (checking service status, process monitoring, log inspection).",
+          "Basic networking knowledge: TCP/IP model, DNS, fundamental routing, VLAN, and network connectivity troubleshooting tools.",
+          "Foundational understanding of cloud computing systems (IaaS/PaaS/SaaS models, virtualization, VM lifecycle, virtual networking, block/object storage).",
+          "Ability to accurately identify impacted services/customers and promptly escalate to the appropriate POC for any technical alert/incident, even without a specific Runbook, leveraging foundational systems/network/infrastructure knowledge.",
+          "Basic understanding of Data Center infrastructure fundamentals (power, cooling, environmental monitoring).",
+          "Willingness to work 24/7 rotating shifts (including night shifts, weekends, and public holidays).",
+          "High sense of responsibility, strong discipline, adherence to operational processes, and ability to remain calm under pressure.",
+          "Hands-on operational shift experience in a Network Operations Center (NOC) or Data Center; familiar with MOP execution, DCIM tools, and PUE metrics.",
+          "Experience using monitoring tools (Zabbix, Grafana, Prometheus, Nagios...) and ticketing systems (Jira Service Management, ITIL framework).",
+          "Basic scripting skills for automation (Bash or Python).",
+          "Relevant professional certifications: CCNA, LPIC-1, AWS Cloud Practitioner, Azure Fundamentals, or ITIL 4 Foundation."
+        ],
+        "experience": "0+ years",
+        "skills": [
+          "Python",
+          "Linux",
+          "AWS",
+          "Azure",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      "i18n": {
+        "source": "vi",
+        "hash": "723e474b16da8edb"
+      }
+    },
+    {
       "id": "cloud-automation-solution-architecture-self-driving",
       "hot": false,
       "postedAt": "27/10/2026",
