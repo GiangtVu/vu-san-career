@@ -1,6 +1,7 @@
 {
   "source": "https://fptsmartcloud.com/co-hoi-nghe-nghiep/",
   "listed": [
+    "data-scientist-ai-scientist-self-driving",
     "solution-consultant-genai",
     "senior-business-analyst-genai",
     "senior-qa-engineer-software-ai-quality",
@@ -111,6 +112,95 @@
     "cloud_openstack_engineer"
   ],
   "jobs": [
+    {
+      "id": "data-scientist-ai-scientist-self-driving",
+      "url": "https://fptsmartcloud.com/job_opportunity/data-scientist-ai-scientist-self-driving/",
+      "title": "Data Scientist/AI Scientist – Self Driving",
+      "image": "/wp-content/uploads/2022/05/job-news-1.jpeg",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "We are looking for a Data Scientist / AI Scientist with a strong foundation in mathematics, statistics, and AI. The ideal candidate should have hands-on experience in building, training, and optimizing models from scratch, rather than merely integrating existing libraries or APIs, as well as practical experience developing AI Agent systems for real-world applications. Candidates with 5+ years of experience are preferred."
+          ],
+          "groups": [
+            {
+              "title": "Over view",
+              "items": []
+            },
+            {
+              "title": "Key Responsibilities",
+              "items": [
+                "Research, design, implement, and evaluate statistical models, Machine Learning, and Deep Learning models.",
+                "Develop models for forecasting, classification, clustering, and other AI-related problems.",
+                "Perform feature engineering, data preprocessing, experiment design, hyperparameter tuning, and model performance optimization.",
+                "Build evaluation and monitoring mechanisms to continuously improve model quality and AI Agent reliability.",
+                "Collaborate with Engineering teams to deploy models as AI services that can operate reliably in production environments."
+              ]
+            },
+            {
+              "title": "Requirements",
+              "items": []
+            },
+            {
+              "title": "Must-Have Technical Qualifications",
+              "items": [
+                "Proficient in Python, with a strong foundation in probability, statistics, linear algebra, calculus, and optimization.",
+                "Proficient in libraries and frameworks such as NumPy, pandas, scikit-learn, and PyTorch or TensorFlow.",
+                "Hands-on experience with the following model categories: Statistical Models Machine Learning Deep Learning",
+                "Proven experience in building, training, evaluating, and optimizing models, with a solid understanding of their underlying principles and fundamental algorithms, rather than simply using existing libraries.",
+                "Practical experience developing AI Agents, with familiarity with LLM applications, tool calling, Retrieval-Augmented Generation (RAG), workflow orchestration, and multi-agent systems.",
+                "Ability to design evaluation methodologies, perform error analysis, control overfitting and data leakage, implement model hardening techniques, and improve model quality."
+              ]
+            },
+            {
+              "title": "Preferred Qualifications",
+              "items": [
+                "Experience implementing algorithms or core model components from scratch.",
+                "Experience combining Statistical Models, Machine Learning/Deep Learning, and LLMs/AI Agents within a single solution.",
+                "Experience with AI/ML R&D projects, research publications, or open-source contributions."
+              ]
+            },
+            {
+              "title": "Expectations",
+              "items": [
+                "Ability to independently analyze problems and select appropriate approaches to solve them.",
+                "Deep understanding of model principles, with the ability to implement, test, and explain experimental results independently.",
+                "Ability to compare different approaches based on data and quantitative evaluation metrics rather than technology trends.",
+                "Ability to translate research ideas into practical models or AI systems.",
+                "Strong collaboration skills when working with AI Engineers and Product Owners (POs) to deliver and release products within agreed timelines."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working Environment:",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Working Location: Site HN: 4th Floor, FPT Tower, no. 10 Pham Van Bach, Cau Giay, Hanoi",
+                "Working hours: 8h30 AM – 12h00 PM 1h00 PM – 5h30 PM",
+                "Working days: Monday to Friday (weekends off)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Contact Person:",
+          "text": [
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Lead",
+            "Email: Mypth3@fpt.com",
+            "Phone: 0962456194",
+            "FPT Smart Cloud (FCI) Co., LTD",
+            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
+            "Websites: FPT Cloud | FPT AI"
+          ],
+          "groups": []
+        }
+      ]
+    },
     {
       "id": "senior-business-analyst-genai",
       "url": "https://fptsmartcloud.com/job_opportunity/senior-business-analyst-genai/",

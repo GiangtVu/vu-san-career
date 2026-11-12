@@ -30,6 +30,51 @@
   },
   "jobs": [
     {
+      "id": "data-scientist-ai-scientist-self-driving",
+      "hot": true,
+      "postedAt": "12/11/2026",
+      "group": "ai",
+      "title": "Data Scientist/AI Scientist – Self Driving",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "12/12/2026",
+      "location": "Hà Nội",
+      "desc": "Research, design, implement, and evaluate statistical models, Machine Learning, and Deep Learning models.",
+      "stack": [
+        "Python",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "data scientist/ai scientist – self driving  python pytorch tensorflow",
+      "source": "https://fptsmartcloud.com/job_opportunity/data-scientist-ai-scientist-self-driving/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Research, design, implement, and evaluate statistical models, Machine Learning, and Deep Learning models.",
+          "Develop models for forecasting, classification, clustering, and other AI-related problems.",
+          "Perform feature engineering, data preprocessing, experiment design, hyperparameter tuning, and model performance optimization.",
+          "Build evaluation and monitoring mechanisms to continuously improve model quality and AI Agent reliability.",
+          "Collaborate with Engineering teams to deploy models as AI services that can operate reliably in production environments.",
+          "Proficient in Python, with a strong foundation in probability, statistics, linear algebra, calculus, and optimization.",
+          "Proficient in libraries and frameworks such as NumPy, pandas, scikit-learn, and PyTorch or TensorFlow.",
+          "Hands-on experience with the following model categories: Statistical Models Machine Learning Deep Learning",
+          "Proven experience in building, training, evaluating, and optimizing models, with a solid understanding of their underlying principles and fundamental algorithms, rather than simply using existing libraries.",
+          "Practical experience developing AI Agents, with familiarity with LLM applications, tool calling, Retrieval-Augmented Generation (RAG), workflow orchestration, and multi-agent systems.",
+          "Ability to design evaluation methodologies, perform error analysis, control overfitting and data leakage, implement model hardening techniques, and improve model quality.",
+          "Experience implementing algorithms or core model components from scratch.",
+          "Experience combining Statistical Models, Machine Learning/Deep Learning, and LLMs/AI Agents within a single solution.",
+          "Experience with AI/ML R&D projects, research publications, or open-source contributions.",
+          "Ability to independently analyze problems and select appropriate approaches to solve them."
+        ],
+        "experience": "Từ 5 năm",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "TensorFlow"
+        ]
+      }
+    },
+    {
       "id": "senior-business-analyst-genai",
       "hot": true,
       "postedAt": "11/11/2026",
@@ -121,7 +166,7 @@
     },
     {
       "id": "platform-engineer-cloud-desktop-iaas",
-      "hot": true,
+      "hot": false,
       "postedAt": "27/10/2026",
       "group": "eng",
       "title": "Platform Engineer – Cloud Desktop (IaaS)",
