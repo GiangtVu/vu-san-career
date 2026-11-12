@@ -30,6 +30,87 @@
   },
   "jobs": [
     {
+      "id": "ai-research-computer-vision",
+      "hot": true,
+      "postedAt": "12/11/2026",
+      "group": "ai",
+      "title": "AI Research (Computer Vision)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "12/12/2026",
+      "location": "Hà Nội",
+      "desc": "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai research  python docker linux pytorch tensorflow triton",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-research-computer-vision/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Nghiên cứu, phát triển và tối ưu các thuật toán deep learning cho các ứng dụng Computer Vision và Multimodal AI.",
+          "Thiết kế, triển khai và cải tiến các model cho object detection, tracking, segmentation, OCR, document understanding, face recognition, face anti-spoofing, video understanding và Vision-Language Models (VLMs).",
+          "Đọc hiểu, tái lập (reproduce), đánh giá và nâng cấp các phương pháp state-of-the-art từ các hội nghị AI hàng đầu và các dự án mã nguồn mở.",
+          "Thiết kế thử nghiệm, phân tích kết quả và đánh giá model dựa trên các metric phù hợp.",
+          "Xây dựng training pipeline có khả năng mở rộng (scale) và tối ưu hóa model để deploy hiệu quả bằng TensorRT, ONNX hoặc các inference framework tương đương.",
+          "Phối hợp với software engineer để deploy các AI model lên production; tham gia viết tài liệu kỹ thuật và chia sẻ kiến thức trong nội bộ.",
+          "Liên tục cập nhật các tiến bộ mới nhất trong lĩnh vực Computer Vision, Foundation Models, Multimodal AI và Generative AI."
+        ],
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu bắt buộc",
+            "items": [
+              "Từ 2 năm kinh nghiệm trong lĩnh vực Computer Vision, Deep Learning hoặc nghiên cứu AI liên quan. Kỹ năng lập trình Python tốt, có kinh nghiệm thực chiến với PyTorch hoặc TensorFlow.",
+              "Nắm vững các kỹ thuật deep learning hiện đại, bao gồm CNNs, transformers.",
+              "Hiểu sâu về Computer Vision, bao gồm object detection, tracking, segmentation, OCR, document understanding, face recognition và face anti-spoofing.",
+              "Có kinh nghiệm thực tế trong việc train và tối ưu deep learning model trên các tập dữ liệu lớn (large-scale datasets).",
+              "Có khả năng thiết kế thử nghiệm, phân tích kết quả định lượng và cải tiến model dựa trên các evaluation metric.",
+              "Có khả năng đọc hiểu, reproduce và triển khai ý tưởng từ các bài báo khoa học (papers).",
+              "Thành thạo Git, Linux và Docker."
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Bằng Thạc sĩ hoặc Tiến sĩ chuyên ngành Khoa học máy tính, Trí tuệ nhân tạo, Machine Learning, Computer Vision hoặc các lĩnh vực liên quan.",
+              "Có công trình nghiên cứu/bài báo xuất bản tại các hội nghị AI hàng đầu (CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI) hoặc các đóng góp nghiên cứu tương đương.",
+              "Có kinh nghiệm làm việc với Vision-Language Models (VLMs).",
+              "Có kinh nghiệm deploy AI model sử dụng TensorRT, ONNX Runtime, Triton Inference Server, NVIDIA DeepStream hoặc các framework tương tự.",
+              "Có kinh nghiệm phát triển ứng dụng AI trên NVIDIA Jetson hoặc các nền tảng embedded AI khác."
+            ]
+          },
+          {
+            "title": "Tố chất chúng tôi tìm kiếm",
+            "items": [
+              "Đam mê nghiên cứu AI và luôn chủ động học hỏi những công nghệ mới.",
+              "Khả năng độc lập giải quyết các bài toán nghiên cứu mở (open-ended research) thông qua thử nghiệm bài bản và phân tích dựa trên dữ liệu.",
+              "Tư duy phân tích và kỹ năng giải quyết vấn đề nhạy bén.",
+              "Kỹ năng giao tiếp và làm việc nhóm xuất sắc, phối hợp hiệu quả với các team research, engineering và product.",
+              "Cân bằng tốt giữa tính đột phá trong nghiên cứu và tính ứng dụng kỹ thuật thực tế để tạo ra các giải pháp AI sẵn sàng chạy trên production.",
+              "Tinh thần trách nhiệm (ownership), chủ động trong công việc và thích ứng tốt với môi trường tốc độ cao."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "PyTorch",
+          "TensorFlow",
+          "Triton"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "25fe0bdcea0587a6"
+      }
+    },
+    {
       "id": "data-scientist-ai-scientist-self-driving",
       "hot": true,
       "postedAt": "12/11/2026",
@@ -80,7 +161,7 @@
     },
     {
       "id": "senior-business-analyst-genai",
-      "hot": true,
+      "hot": false,
       "postedAt": "11/11/2026",
       "group": "biz",
       "title": "Senior Business Analyst (GenAI)",
@@ -125,7 +206,7 @@
     },
     {
       "id": "senior-qa-engineer-software-ai-quality",
-      "hot": true,
+      "hot": false,
       "postedAt": "11/11/2026",
       "group": "eng",
       "title": "Senior QA Engineer (Software & AI Quality)",

@@ -30,6 +30,143 @@
   },
   "jobs": [
     {
+      "id": "ai-research-computer-vision",
+      "hot": true,
+      "postedAt": "12/11/2026",
+      "group": "ai",
+      "title": "AI Research (Computer Vision)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "12/12/2026",
+      "location": "Hà Nội",
+      "desc": "Research, develop, and optimize deep learning algorithms for Computer Vision and Multimodal AI applications.",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "keywords": "ai research  python docker linux pytorch tensorflow triton",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-research-computer-vision/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Research, develop, and optimize deep learning algorithms for Computer Vision and Multimodal AI applications.",
+          "Design, implement, and improve models for object detection, tracking, segmentation, OCR, document understanding, face recognition, face anti-spoofing, video understanding, and Vision-Language Models (VLMs).",
+          "Read, reproduce, evaluate, and improve state-of-the-art methods from leading AI conferences and open-source projects.",
+          "Design experiments, analyze results, and evaluate models using appropriate metrics.",
+          "Build scalable training pipelines and optimize models for efficient deployment using TensorRT, ONNX, or similar inference frameworks.",
+          "Collaborate with software engineers to deploy AI models into production and contribute to technical documentation and knowledge sharing.",
+          "Stay up to date with the latest advances in Computer Vision, Foundation Models, Multimodal AI, and Generative AI."
+        ],
+        "experience": "Từ 2 năm",
+        "requirements": [
+          {
+            "title": "Must-Have Qualifications",
+            "items": [
+              "2+ years of experience in Computer Vision, Deep Learning, or related AI research. Strong programming skills in Python, with hands-on experience using PyTorch or TensorFlow.",
+              "Solid understanding of modern deep learning techniques, including CNNs, transformers",
+              "Strong knowledge of Computer Vision, including object detection, tracking, segmentation, OCR, document understanding, face recognition, and face anti-spoofing.",
+              "Hands-on experience training and optimizing deep learning models on large-scale datasets.",
+              "Ability to design experiments, analyze quantitative results, and improve models based on evaluation metrics.",
+              "Ability to read, understand, reproduce, and implement ideas from academic papers.",
+              "Familiarity with Git, Linux, and Docker."
+            ]
+          },
+          {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Master’s or Ph.D. degree in Computer Science, Artificial Intelligence, Machine Learning, Computer Vision, or a related field.",
+              "Publications in leading AI conferences (CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI) or equivalent research contributions.",
+              "Experience with Vision-Language Models (VLMs)",
+              "Experience deploying AI models using TensorRT, ONNX Runtime, Triton Inference Server, NVIDIA DeepStream, or similar frameworks.",
+              "Experience developing AI applications on NVIDIA Jetson or other embedded AI platforms."
+            ]
+          },
+          {
+            "title": "What We Look For",
+            "items": [
+              "Passion for AI research and continuous learning.",
+              "Ability to independently solve open-ended research problems through systematic experimentation and data-driven analysis.",
+              "Strong analytical thinking and problem-solving skills.",
+              "Excellent communication and collaboration across research, engineering, and product teams.",
+              "Ability to balance research innovation with practical engineering to deliver production-ready AI solutions.",
+              "Ownership mindset, self-motivation, and the ability to thrive in a fast-paced environment."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "PyTorch",
+          "TensorFlow",
+          "Triton"
+        ]
+      }
+    },
+    {
+      "id": "ky-su-van-hanh-giam-sat-l1-noc-cloud-monitoring-engineer",
+      "hot": true,
+      "postedAt": "12/11/2026",
+      "group": "eng",
+      "title": "Kỹ sư Vận hành Giám sát (L1 NOC / Cloud Monitoring Engineer)",
+      "level": "Junior",
+      "salary": "Thỏa thuận",
+      "deadline": "12/12/2026",
+      "location": "Hà Nội",
+      "desc": "Giám sát & Escalate bước đầu",
+      "stack": [
+        "Python",
+        "Linux",
+        "AWS",
+        "Azure",
+        "Prometheus"
+      ],
+      "keywords": "ky su van hanh giam sat  python linux aws azure prometheus grafana",
+      "source": "https://fptsmartcloud.com/job_opportunity/ky-su-van-hanh-giam-sat-l1-noc-cloud-monitoring-engineer/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Giám sát & Escalate bước đầu",
+          "Trực luân phiên 24/7, giám sát liên tục sức khoẻ và hiệu năng của hệ thống hạ tầng, nền tảng và các dịch vụ Cloud trong suốt ca làm việc.",
+          "Tiếp nhận toàn bộ các loại cảnh báo phát sinh: với cảnh báo đã có kịch bản thao tác (Runbook) từ các team kỹ thuật chuyên sâu, thực thi chính xác theo đúng Runbook trong giới hạn được phân quyền; với các cảnh báo còn lại, xác định đúng dịch vụ/khách hàng liên quan và báo ngay (escalate) cho đầu mối của team chủ quản cảnh báo đó — không tự đánh giá, kết luận cảnh báo có phải sự cố hay không. Khi đầu mối xác nhận là sự cố thật, khởi tạo ticket và chuyển sang quy trình xử lý sự cố.",
+          "Quản trị Sự cố (Incident Management)",
+          "Khởi tạo ticket sự cố, xác định mức độ ưu tiên và phạm vi ảnh hưởng; điều phối tiến độ xử lý và leo thang cho các tuyến chuyên sâu (L2/L3) kèm đầy đủ thông tin bàn giao.",
+          "Với sự cố diện rộng: kích hoạt quy trình Ứng cứu sự cố (IRT), triệu tập các đội liên quan và đóng vai trò thư ký (Scribe) ghi nhận timeline diễn biến sự cố; làm đầu mối cập nhật thông tin cho các bên cho đến khi sự cố được đóng.",
+          "Vận hành Managed Services",
+          "Thực hiện các tác vụ và checklist định kỳ theo ngày, tuần, tháng cho dịch vụ Managed Services: sao lưu, khôi phục, vá lỗi, kiểm tra sức khoẻ hệ thống.",
+          "Ghi nhận kết quả thực hiện và cảnh báo sớm các chỉ số vượt ngưỡng, bảo đảm SLA cam kết với khách hàng.",
+          "Báo cáo & Tuân thủ",
+          "Lập báo cáo ca trực, bàn giao ca đầy đủ và tổng hợp báo cáo dịch vụ định kỳ gửi khách hàng theo đúng cam kết.",
+          "Tuân thủ nghiêm ngặt quy trình vận hành, quy định xử lý sự cố và kỷ luật trực ca của Trung tâm; phối hợp chặt chẽ với các nhóm kỹ thuật liên quan.",
+          "Tốt nghiệp Đại học, Học viện trở lên, chuyên ngành Công nghệ thông tin, Khoa học máy tính, Điện tử viễn thông hoặc các chuyên ngành tương đương.",
+          "Có từ 0 – 2 năm kinh nghiệm trong lĩnh vực vận hành hệ thống, giám sát hạ tầng hoặc hỗ trợ kỹ thuật (chấp nhận ứng viên mới ra trường có nền tảng tốt).",
+          "Nắm vững kiến thức nền tảng về hệ điều hành Linux và Windows Server (cách kiểm tra trạng thái dịch vụ, theo dõi tiến trình, đọc log).",
+          "Có kiến thức mạng cơ bản: mô hình TCP/IP, DNS, định tuyến cơ bản, VLAN và các công cụ kiểm tra kết nối.",
+          "Có hiểu biết nền tảng về hệ thống điện toán đám mây (mô hình IaaS/PaaS/SaaS, ảo hoá, vòng đời máy ảo, mạng ảo hoá, lưu trữ khối/đối tượng).",
+          "Có khả năng xác định đúng dịch vụ/khách hàng liên quan và escalate kịp thời tới đúng đầu mối phụ trách đối với mọi loại cảnh báo/sự cố kỹ thuật, kể cả khi chưa có Runbook cụ thể, dựa trên kiến thức nền tảng về hệ thống/mạng/hạ tầng.",
+          "Có kiến thức cơ bản về nguyên lý hoạt động của hạ tầng Data Center (nguồn điện, làm mát, giám sát môi trường).",
+          "Sẵn sàng làm việc theo ca luân phiên 24/7 (bao gồm cả ca đêm, ngày cuối tuần và các dịp Lễ, Tết).",
+          "Có tinh thần trách nhiệm, kỷ luật cao, tuân thủ quy trình vận hành và giữ bình tĩnh khi xử lý vấn đề.",
+          "Từng trực vận hành thực tế tại Trung tâm điều hành mạng (NOC) hoặc Data Center; quen thuộc với thao tác MOP, DCIM và các chỉ số PUE.",
+          "Có kinh nghiệm sử dụng các công cụ giám sát (Zabbix, Grafana, Prometheus, Nagios…) và hệ thống ticket (Jira Service Management, ITIL framework).",
+          "Biết viết script tự động hoá cơ bản (Bash hoặc Python).",
+          "Sở hữu các chứng chỉ chuyên môn liên quan: CCNA, LPIC-1, AWS Cloud Practitioner, Azure Fundamentals, ITIL 4 Foundation"
+        ],
+        "experience": "Từ 0 năm",
+        "skills": [
+          "Python",
+          "Linux",
+          "AWS",
+          "Azure",
+          "Prometheus",
+          "Grafana"
+        ]
+      }
+    },
+    {
       "id": "data-scientist-ai-scientist-self-driving",
       "hot": true,
       "postedAt": "12/11/2026",
@@ -76,7 +213,7 @@
     },
     {
       "id": "senior-business-analyst-genai",
-      "hot": true,
+      "hot": false,
       "postedAt": "11/11/2026",
       "group": "biz",
       "title": "Senior Business Analyst (GenAI)",
@@ -117,7 +254,7 @@
     },
     {
       "id": "senior-qa-engineer-software-ai-quality",
-      "hot": true,
+      "hot": false,
       "postedAt": "11/11/2026",
       "group": "eng",
       "title": "Senior QA Engineer (Software & AI Quality)",
