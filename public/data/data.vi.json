@@ -30,6 +30,63 @@
   },
   "jobs": [
     {
+      "id": "platform-engineer-sre",
+      "hot": true,
+      "postedAt": "13/11/2026",
+      "group": "eng",
+      "title": "Platform Engineer (SRE)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "13/12/2026",
+      "location": "Hà Nội",
+      "desc": "Cung cấp các sản phẩm và giải pháp cloud được may đo cho từng ngành nghề.",
+      "stack": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "platform engineer  python java javascript kubernetes docker linux aws azure gcp",
+      "source": "https://fptsmartcloud.com/job_opportunity/platform-engineer-sre/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tùy biến theo nhu cầu đặc thù: Cung cấp các sản phẩm và giải pháp cloud được may đo cho từng ngành nghề.",
+          "Nền tảng All-in-one: Tích hợp công nghệ của FPT Smart Cloud cùng các giải pháp kinh doanh đa dạng trên một nền tảng duy nhất, biến các dịch vụ AI & Cloud thành một hệ sinh thái đồng nhất.",
+          "Dẫn đầu thị trường trong nước: Sở hữu hạ tầng và nền tảng công nghệ Cloud & AI vượt trội, hỗ trợ doanh nghiệp Việt phát triển sản phẩm và dịch vụ trực tuyến.",
+          "Kiến tạo tương lai: Giúp khách hàng bứt phá hiệu quả kinh doanh thông qua việc ứng dụng công nghệ và quy trình chuẩn quốc tế.",
+          "Đảm bảo vận hành và deploy an toàn, bảo mật và ổn định cho các hệ thống platform, đặc biệt là Platform as a Service (PaaS).",
+          "Nắm vững vòng đời phát triển phần mềm (SDLC) và các quy trình liên quan.",
+          "Tuân thủ nghiêm ngặt quy trình vận hành; phát triển hoặc tận dụng các công cụ sẵn có để tự động hóa quy trình quản lý thông tin, đánh giá tác động và nâng cấp hệ thống.",
+          "Ứng dụng công nghệ AI và tích hợp năng lực AI vào các công cụ vận hành nhằm hỗ trợ quản lý incident, troubleshooting và phân tích nguyên nhân gốc rễ (RCA).",
+          "Điều tra, phân tích và xử lý sự cố sau incident dựa trên system logs, events và các dữ liệu vận hành liên quan.",
+          "Monitoring, đánh giá và theo dõi Service Level Objectives (SLOs) cùng Service Level Indicators (SLIs) nhằm đảm bảo chất lượng hệ thống và dịch vụ.",
+          "Vận dụng kiến thức Big Data để chuẩn hóa dữ liệu, triển khai thu thập dữ liệu tập trung, visualize dữ liệu và xây dựng báo cáo bằng các công cụ phổ biến như Power BI, Excel hoặc ưu tiên Tableau.",
+          "Xây dựng và duy trì tài liệu hướng dẫn vận hành, hồ sơ hệ thống và tài liệu deploy hệ thống/dịch vụ.",
+          "Tham gia triển khai dự án và mở rộng hệ thống, đảm bảo đáp ứng các yêu cầu về tính sẵn sàng cao (HA), cân bằng tải (load balancing) và bảo mật.",
+          "Có khả năng bao quát và quy hoạch kiến trúc hạ tầng, networking và bảo mật.",
+          "Thiết lập tiêu chuẩn cho môi trường deployment và hạ tầng platform landing phù hợp với từng domain dịch vụ cụ thể."
+        ],
+        "experience": "Từ 3 năm",
+        "skills": [
+          "Python",
+          "Java",
+          "JavaScript",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "398ee39b3ec7e43d"
+      }
+    },
+    {
       "id": "ai-research-computer-vision",
       "hot": true,
       "postedAt": "12/11/2026",
