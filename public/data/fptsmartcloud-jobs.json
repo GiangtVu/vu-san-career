@@ -1,6 +1,7 @@
 {
   "source": "https://fptsmartcloud.com/co-hoi-nghe-nghiep/",
   "listed": [
+    "platform-engineer-sre",
     "ai-research-computer-vision",
     "it-comtor-japanese-ai-product-offshore",
     "ky-su-ho-tro-ky-thuat-l1-support-cloud-support-engineer",
@@ -116,6 +117,118 @@
     "cloud_openstack_engineer"
   ],
   "jobs": [
+    {
+      "id": "platform-engineer-sre",
+      "url": "https://fptsmartcloud.com/job_opportunity/platform-engineer-sre/",
+      "title": "Platform Engineer (SRE)",
+      "image": "https://fptsmartcloud.com/wp-content/uploads/2026/04/Screenshot-2026-04-24-133222.jpg",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "FPT Smart Cloud (FCI) – a member of FPT Corporation, pioneers AI & Cloud solutions in Vietnam. FCI was founded with the mission to generate an immense leap in productivity and agility in business operations.",
+            "FPT Smart Cloud aims at leading the industry by focusing on building a firm technological foundation, developing diversified ecosystem products, and reaching global connectivity.",
+            "For candidates with at least 3 years of team leadership experience:",
+            "Knowledge of the following technologies and certifications is preferred:"
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Customized to specific needs: Providing cloud-based products and solutions customized to each industry.",
+                "All-in-one Platform: Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a unified ecosystem.",
+                "Local market leadership: Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
+                "Deliver the future: Help customers achieve business outcomes faster by integrating world-class processes and technology."
+              ]
+            },
+            {
+              "title": "Job Responsibilities",
+              "items": [
+                "Ensure the safe, secure, and reliable operation and deployment of platform systems, particularly Platform as a Service (PaaS).",
+                "Understand the software development lifecycle (SDLC) and related processes.",
+                "Strictly follow established operational procedures and develop or leverage existing tools to automate processes related to information management, impact assessment, and system upgrades.",
+                "Apply AI technologies and integrate AI capabilities into operational tools to support incident management, troubleshooting, and root cause analysis (RCA).",
+                "Investigate, analyze, and resolve issues following incidents by examining system logs, events, and relevant operational data.",
+                "Monitor, evaluate, and track Service Level Objectives (SLOs) and Service Level Indicators (SLIs) to ensure system and service quality.",
+                "Leverage Big Data knowledge to standardize data, implement centralized data collection, visualize data, and develop reports using popular tools such as Power BI, Excel, or Tableau (preferred).",
+                "Develop and maintain operational guides, system profiles, and system/service deployment documentation.",
+                "Participate in project implementation and system expansion, ensuring high availability (HA), load balancing, and security requirements are met."
+              ]
+            },
+            {
+              "title": "Additional Requirements for Lead Position",
+              "items": []
+            },
+            {
+              "title": null,
+              "items": [
+                "Ability to oversee and plan infrastructure architecture, networking, and security.",
+                "Define standards for deployment environments and platform landing infrastructure tailored to specific service domains.",
+                "Demonstrate strong leadership and coaching capabilities, with the ability to train and lead a team of 5–7 members."
+              ]
+            },
+            {
+              "title": "Qualifications and Technical Requirements",
+              "items": [
+                "Bachelor’s degree in Information Technology, Computer Science, Applied Mathematics and Informatics, Telecommunications and Electronics Engineering, or a related field from a technical university (e.g., Hanoi University of Science and Technology, Vietnam National University, or equivalent).",
+                "At least 2 years of experience in system administration (SysAdmin) or software development, particularly involving products and tools for IT system monitoring, operations, and management.",
+                "Solid foundational knowledge of Linux, networking, Kubernetes (K8s), and security."
+              ]
+            },
+            {
+              "title": null,
+              "items": [
+                "Linux Operating Systems & Open-Source Software: LPI Level 1, 2, or 3 certifications.",
+                "Networking: CCNA, CCNP, or equivalent certifications.",
+                "Container Platforms: Docker, Kubernetes, OKD; CKA and CKS certifications.",
+                "API Management.",
+                "DevOps / DevSecOps: Understanding of DevOps and DevSecOps practices.",
+                "Public Cloud Platforms: Familiarity with major cloud providers such as AWS, Microsoft Azure, and Google Cloud Platform (GCP). Relevant certifications include: AWS Certified SysOps Administrator. Microsoft Certified: Azure Administrator Associate. Google Cloud Associate Cloud Engineer."
+              ]
+            },
+            {
+              "title": "Required Skills",
+              "items": [
+                "Proficient in CLI-based configuration and administration, with the ability to leverage AI to troubleshoot and resolve technical issues.",
+                "Basic programming skills in at least one popular programming language, such as Python, Java, or JavaScript.",
+                "Ability to query and work with relational databases (RDS).",
+                "Strong analytical, problem-solving, and in-depth research skills.",
+                "Good English communication skills, including listening, speaking, reading, and technical documentation writing."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working Environment",
+          "text": [
+            "Working location: 7th Floor, FPT Tower, no. 10 Pham Van Bach Street, Dich Vong ward, Cau Giay district, Hanoi.",
+            "Working hours:"
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Full time",
+                "8h30 AM – 12h00 PM",
+                "1h00 PM – 5h30 PM"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Contact Person",
+          "text": [
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "Email: Mypth3@fpt.com",
+            "Phone: 0962456194",
+            "FPT Smart Cloud (FCI) Co., LTD",
+            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
+            "Websites: FPT Cloud | FPT AI"
+          ],
+          "groups": []
+        }
+      ]
+    },
     {
       "id": "ai-research-computer-vision",
       "url": "https://fptsmartcloud.com/job_opportunity/ai-research-computer-vision/",

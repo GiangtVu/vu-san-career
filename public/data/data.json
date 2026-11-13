@@ -30,6 +30,59 @@
   },
   "jobs": [
     {
+      "id": "platform-engineer-sre",
+      "hot": true,
+      "postedAt": "13/11/2026",
+      "group": "eng",
+      "title": "Platform Engineer (SRE)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "13/12/2026",
+      "location": "Hà Nội",
+      "desc": "Providing cloud-based products and solutions customized to each industry.",
+      "stack": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "platform engineer  python java javascript kubernetes docker linux aws azure gcp",
+      "source": "https://fptsmartcloud.com/job_opportunity/platform-engineer-sre/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Customized to specific needs: Providing cloud-based products and solutions customized to each industry.",
+          "All-in-one Platform: Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a unified ecosystem.",
+          "Local market leadership: Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
+          "Deliver the future: Help customers achieve business outcomes faster by integrating world-class processes and technology.",
+          "Ensure the safe, secure, and reliable operation and deployment of platform systems, particularly Platform as a Service (PaaS).",
+          "Understand the software development lifecycle (SDLC) and related processes.",
+          "Strictly follow established operational procedures and develop or leverage existing tools to automate processes related to information management, impact assessment, and system upgrades.",
+          "Apply AI technologies and integrate AI capabilities into operational tools to support incident management, troubleshooting, and root cause analysis (RCA).",
+          "Investigate, analyze, and resolve issues following incidents by examining system logs, events, and relevant operational data.",
+          "Monitor, evaluate, and track Service Level Objectives (SLOs) and Service Level Indicators (SLIs) to ensure system and service quality.",
+          "Leverage Big Data knowledge to standardize data, implement centralized data collection, visualize data, and develop reports using popular tools such as Power BI, Excel, or Tableau (preferred).",
+          "Develop and maintain operational guides, system profiles, and system/service deployment documentation.",
+          "Participate in project implementation and system expansion, ensuring high availability (HA), load balancing, and security requirements are met.",
+          "Ability to oversee and plan infrastructure architecture, networking, and security.",
+          "Define standards for deployment environments and platform landing infrastructure tailored to specific service domains."
+        ],
+        "experience": "Từ 3 năm",
+        "skills": [
+          "Python",
+          "Java",
+          "JavaScript",
+          "Kubernetes",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Azure",
+          "GCP"
+        ]
+      }
+    },
+    {
       "id": "ai-research-computer-vision",
       "hot": true,
       "postedAt": "12/11/2026",
@@ -168,7 +221,7 @@
     },
     {
       "id": "data-scientist-ai-scientist-self-driving",
-      "hot": true,
+      "hot": false,
       "postedAt": "12/11/2026",
       "group": "ai",
       "title": "Data Scientist/AI Scientist – Self Driving",
