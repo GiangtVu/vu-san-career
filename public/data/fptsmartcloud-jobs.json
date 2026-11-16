@@ -1,6 +1,7 @@
 {
   "source": "https://fptsmartcloud.com/co-hoi-nghe-nghiep/",
   "listed": [
+    "ai-engineer-eos-genai",
     "platform-engineer-sre",
     "ai-research-computer-vision",
     "it-comtor-japanese-ai-product-offshore",
@@ -117,6 +118,115 @@
     "cloud_openstack_engineer"
   ],
   "jobs": [
+    {
+      "id": "ai-engineer-eos-genai",
+      "url": "https://fptsmartcloud.com/job_opportunity/ai-engineer-eos-genai/",
+      "title": "AI Engineer (EOS – GenAI)",
+      "image": "https://fptsmartcloud.com/wp-content/uploads/2026/04/Artboard-1-2.jpg",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "Develop AI Agents on the EOS platform and take ownership of deploying these Agents into real-world enterprise environments. The role covers the entire implementation lifecycle, from business requirement analysis, Agent design and development, and integration with customer systems to testing, go-live, handover, and post-deployment support.",
+            "This position goes beyond building Proofs of Concept (PoCs) and takes end-to-end ownership of AI solutions throughout their lifecycle at customer sites, working closely with Solution Consultants and customers’ technical teams."
+          ],
+          "groups": [
+            {
+              "title": "Job Objective",
+              "items": []
+            },
+            {
+              "title": "Key Responsibilities",
+              "items": [
+                "Business Analysis & Agent Design: Work with customers and Solution Consultants to analyze business requirements and translate them into Agent designs, defining scope, workflows, tools, knowledge sources, and control boundaries.",
+                "AI Agent Development: Develop and optimize Agents on the EOS Console by writing Instructions, selecting and evaluating models, building Skills, configuring Guardrails, and implementing Human-in-the-Loop (HITL) mechanisms.",
+                "System Integration: Build connections and integrate with customer systems through Connectors, Custom APIs, MCP Servers, and Webhooks. Handle authentication, authorization, and data security when Agents access or modify real-world data.",
+                "Knowledge Base Preparation: Clean and process business documents, build knowledge pipelines for Agents, implement source citations, and ensure response quality and accuracy.",
+                "Testing & Quality Assurance: Test Agents against real-world scenarios, evaluate performance before and after publishing, troubleshoot issues, analyze logs, and interpret error codes during operations.",
+                "Deployment & Customer Support: Deploy Agents to customer-facing channels, including Web Widgets/Live Chat, Zalo OA, Microsoft Teams, and APIs. Manage go-live activities, prepare technical documentation, conduct handovers, and provide post-deployment support.",
+                "Customer & Stakeholder Communication: Work directly with international customers, partners, and experts in English to discuss technical matters, report project progress, and facilitate knowledge transfer."
+              ]
+            },
+            {
+              "title": "Job Requirements",
+              "items": []
+            },
+            {
+              "title": "Must-have Qualifications",
+              "items": [
+                "At least 3 years of software development experience, including hands-on experience building AI Agents or enterprise LLM-powered applications.",
+                "Proven experience delivering solutions to customers, covering the full implementation lifecycle from requirement analysis and development to testing, go-live, and handover.",
+                "Strong proficiency in Python, with hands-on experience working with APIs/REST, JSON, authentication mechanisms, webhooks, and system integration.",
+                "Experience designing Retrieval-Augmented Generation (RAG) pipelines, writing prompts/instructions, and evaluating LLM output quality.",
+                "Good English communication skills, with the ability to work directly with international customers and partners and handle technical discussions and documentation."
+              ]
+            },
+            {
+              "title": "Technical Skills Required for EOS Development & Customer Implementation",
+              "items": [
+                "EOS Platform Architecture: Understanding of the EOS platform architecture, including Agents, Instructions, Models, Skills, Connectors, Guardrails, Multi-Agent systems, version control, testing, and publishing mechanisms.",
+                "System Integration: Experience with REST APIs, OAuth/API Keys, Webhooks (HMAC signatures, event deduplication, retry/backoff mechanisms), MCP Servers, and Custom APIs. Familiarity with integrations involving Microsoft Outlook, SharePoint, CRM, ERP, HRIS, and Jira.",
+                "AI Engineering: Prompt and instruction design, RAG implementation, document processing, model performance evaluation, and optimization of token costs and latency.",
+                "Deployment Channels: Experience deploying Agents to Web Widgets/Live Chat, Zalo OA, Microsoft Teams, and API channels (webhooks and clients). Ability to analyze logs and error codes to troubleshoot go-live issues.",
+                "DevOps & Infrastructure: Knowledge of Linux servers, Docker/containers, Git, CI/CD, dev–staging–production environment management, SQL, and vector databases.",
+                "Security & Compliance: Understanding of role-based access control (RBAC), Personally Identifiable Information (PII) masking, audit logging, and data governance when sending information to AI models."
+              ]
+            },
+            {
+              "title": "Nice-to-have Qualifications",
+              "items": [
+                "Experience preparing technical documentation, solution proposals, and technical cost estimates.",
+                "Experience delivering customer training and technical knowledge transfer.",
+                "Experience working in the SaaS or enterprise software industry in Vietnam."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Top Benefits",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Salary: Competitive, pay according to ability. Negotiation during the interview.",
+                "Social insurance and health insurance according to labor laws.",
+                "Creative, open-minded working environment that respects individuals",
+                "FPT Premium Care package",
+                "Activities and culture with FCI and FPT Corporation",
+                "Study support package for children of FCI union",
+                "Sponsor related courses and certifications"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working Environment",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Working Location: Site HN: 22rd Floor, Vinacomin Tower, no. 3 Duong Dinh Nghe Street, Cau Giay district, Hanoi. Working hours: 8h30 AM – 12h00 PM 1h00 PM – 5h30 PM",
+                "Working days: Monday to Friday (weekends off)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Contact Person",
+          "text": [
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "Email: Mypth3@fpt.com",
+            "Phone: 0962456194",
+            "FPT Smart Cloud (FCI) Co., LTD",
+            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
+            "Websites: FPT Cloud | FPT AI"
+          ],
+          "groups": []
+        }
+      ]
+    },
     {
       "id": "platform-engineer-sre",
       "url": "https://fptsmartcloud.com/job_opportunity/platform-engineer-sre/",

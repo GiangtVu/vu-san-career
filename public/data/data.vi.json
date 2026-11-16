@@ -30,6 +30,59 @@
   },
   "jobs": [
     {
+      "id": "ai-engineer-eos-genai",
+      "hot": true,
+      "postedAt": "16/11/2026",
+      "group": "ai",
+      "title": "AI Engineer (EOS – GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "16/12/2026",
+      "location": "Hà Nội",
+      "desc": "Làm việc với khách hàng và Solution Consultant để phân tích business requirements, chuyển hóa thành thiết kế Agent; xác định rõ scope, workflow, tools,…",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "CI/CD",
+        "SQL"
+      ],
+      "keywords": "ai engineer  python docker linux ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-eos-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Phân tích nghiệp vụ & thiết kế Agent: Làm việc với khách hàng và Solution Consultant để phân tích business requirements, chuyển hóa thành thiết kế Agent; xác định rõ scope, workflow, tools, nguồn tri thức (knowledge sources) và ranh giới kiểm soát (control boundaries).",
+          "Phát triển AI Agent: Xây dựng và tối ưu Agent trên EOS Console thông qua việc viết Instructions, lựa chọn và đánh giá model, phát triển Skills, cấu hình Guardrails và thiết lập cơ chế Human-in-the-Loop (HITL).",
+          "Tích hợp hệ thống: Xây dựng kết nối và tích hợp với hệ thống của khách hàng qua Connectors, Custom APIs, MCP Servers và Webhooks. Xử lý authentication, authorization và bảo mật dữ liệu khi Agent truy cập hoặc thay đổi dữ liệu thực tế.",
+          "Chuẩn bị Knowledge Base: Làm sạch và xử lý tài liệu nghiệp vụ, xây dựng knowledge pipeline cho Agent, thiết lập trích dẫn nguồn (source citations), đảm bảo độ chính xác và chất lượng câu trả lời.",
+          "Kiểm thử & đảm bảo chất lượng: Test Agent theo các kịch bản thực tế, đánh giá performance trước và sau khi publish, troubleshoot lỗi, phân tích log và xử lý error code trong quá trình vận hành.",
+          "Deploy & hỗ trợ khách hàng: Deploy Agent lên các kênh tương tác của khách hàng như Web Widgets/Live Chat, Zalo OA, Microsoft Teams và API. Quản lý hoạt động go-live, viết tài liệu kỹ thuật, bàn giao và hỗ trợ sau triển khai.",
+          "Giao tiếp với khách hàng & stakeholders: Làm việc trực tiếp bằng tiếng Anh với khách hàng quốc tế, đối tác và chuyên gia để trao đổi kỹ thuật, báo cáo tiến độ dự án và chuyển giao kiến thức.",
+          "Tối thiểu 3 năm kinh nghiệm phát triển phần mềm, trong đó có kinh nghiệm thực tế phát triển AI Agent hoặc các ứng dụng LLM cho doanh nghiệp.",
+          "Kinh nghiệm thực tế trong việc triển khai giải pháp cho khách hàng, bao quát toàn bộ vòng đời dự án từ phân tích requirement, phát triển, kiểm thử đến go-live và bàn giao.",
+          "Thành thạo Python; có kinh nghiệm thực tế làm việc với API/REST, JSON, các cơ chế authentication, webhook và tích hợp hệ thống.",
+          "Kinh nghiệm thiết kế pipeline Retrieval-Augmented Generation (RAG), viết prompt/instruction và đánh giá chất lượng output của LLM.",
+          "Giao tiếp tiếng Anh tốt, có khả năng làm việc trực tiếp với khách hàng và đối tác quốc tế, tự tin trao đổi kỹ thuật và viết tài liệu.",
+          "Kiến trúc nền tảng EOS: Hiểu rõ kiến trúc EOS platform bao gồm Agents, Instructions, Models, Skills, Connectors, Guardrails, Multi-Agent systems, version control cùng cơ chế testing và publishing.",
+          "Tích hợp hệ thống: Có kinh nghiệm với REST API, OAuth/API Keys, Webhooks (HMAC signatures, event deduplication, cơ chế retry/backoff), MCP Servers và Custom APIs. Ưu tiên ứng viên từng tích hợp với Microsoft Outlook, SharePoint, CRM, ERP, HRIS và Jira.",
+          "AI Engineering: Thành thạo thiết kế prompt và instruction, triển khai RAG, xử lý tài liệu, đánh giá performance của model, tối ưu chi phí token và độ trễ (latency)."
+        ],
+        "experience": "Từ 3 năm",
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "CI/CD",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "b2bf84165f53526b"
+      }
+    },
+    {
       "id": "platform-engineer-sre",
       "hot": true,
       "postedAt": "13/11/2026",

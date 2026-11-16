@@ -30,6 +30,55 @@
   },
   "jobs": [
     {
+      "id": "ai-engineer-eos-genai",
+      "hot": true,
+      "postedAt": "16/11/2026",
+      "group": "ai",
+      "title": "AI Engineer (EOS – GenAI)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "16/12/2026",
+      "location": "Hà Nội",
+      "desc": "Work with customers and Solution Consultants to analyze business requirements and translate them into Agent designs, defining scope, workflows, tools,…",
+      "stack": [
+        "Python",
+        "Docker",
+        "Linux",
+        "CI/CD",
+        "SQL"
+      ],
+      "keywords": "ai engineer  python docker linux ci/cd sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-eos-genai/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Business Analysis & Agent Design: Work with customers and Solution Consultants to analyze business requirements and translate them into Agent designs, defining scope, workflows, tools, knowledge sources, and control boundaries.",
+          "AI Agent Development: Develop and optimize Agents on the EOS Console by writing Instructions, selecting and evaluating models, building Skills, configuring Guardrails, and implementing Human-in-the-Loop (HITL) mechanisms.",
+          "System Integration: Build connections and integrate with customer systems through Connectors, Custom APIs, MCP Servers, and Webhooks. Handle authentication, authorization, and data security when Agents access or modify real-world data.",
+          "Knowledge Base Preparation: Clean and process business documents, build knowledge pipelines for Agents, implement source citations, and ensure response quality and accuracy.",
+          "Testing & Quality Assurance: Test Agents against real-world scenarios, evaluate performance before and after publishing, troubleshoot issues, analyze logs, and interpret error codes during operations.",
+          "Deployment & Customer Support: Deploy Agents to customer-facing channels, including Web Widgets/Live Chat, Zalo OA, Microsoft Teams, and APIs. Manage go-live activities, prepare technical documentation, conduct handovers, and provide post-deployment support.",
+          "Customer & Stakeholder Communication: Work directly with international customers, partners, and experts in English to discuss technical matters, report project progress, and facilitate knowledge transfer.",
+          "At least 3 years of software development experience, including hands-on experience building AI Agents or enterprise LLM-powered applications.",
+          "Proven experience delivering solutions to customers, covering the full implementation lifecycle from requirement analysis and development to testing, go-live, and handover.",
+          "Strong proficiency in Python, with hands-on experience working with APIs/REST, JSON, authentication mechanisms, webhooks, and system integration.",
+          "Experience designing Retrieval-Augmented Generation (RAG) pipelines, writing prompts/instructions, and evaluating LLM output quality.",
+          "Good English communication skills, with the ability to work directly with international customers and partners and handle technical discussions and documentation.",
+          "EOS Platform Architecture: Understanding of the EOS platform architecture, including Agents, Instructions, Models, Skills, Connectors, Guardrails, Multi-Agent systems, version control, testing, and publishing mechanisms.",
+          "System Integration: Experience with REST APIs, OAuth/API Keys, Webhooks (HMAC signatures, event deduplication, retry/backoff mechanisms), MCP Servers, and Custom APIs. Familiarity with integrations involving Microsoft Outlook, SharePoint, CRM, ERP, HRIS, and Jira.",
+          "AI Engineering: Prompt and instruction design, RAG implementation, document processing, model performance evaluation, and optimization of token costs and latency."
+        ],
+        "experience": "Từ 3 năm",
+        "skills": [
+          "Python",
+          "Docker",
+          "Linux",
+          "CI/CD",
+          "SQL"
+        ]
+      }
+    },
+    {
       "id": "platform-engineer-sre",
       "hot": true,
       "postedAt": "13/11/2026",
@@ -161,7 +210,7 @@
     },
     {
       "id": "ky-su-van-hanh-giam-sat-l1-noc-cloud-monitoring-engineer",
-      "hot": true,
+      "hot": false,
       "postedAt": "12/11/2026",
       "group": "eng",
       "title": "Kỹ sư Vận hành Giám sát (L1 NOC / Cloud Monitoring Engineer)",
