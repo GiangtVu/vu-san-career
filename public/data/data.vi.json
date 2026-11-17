@@ -3691,6 +3691,55 @@
       }
     },
     {
+      "id": "ai-delivery-business-analyst",
+      "hot": false,
+      "postedAt": "27/10/2026",
+      "group": "biz",
+      "title": "Business Analyst",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "17/12/2026",
+      "location": "Hà Nội",
+      "desc": "Tham gia nhiều dự án với vai trò Business Analyst",
+      "stack": [],
+      "keywords": "business analyst ai delivery center",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-delivery-business-analyst/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tham gia nhiều dự án với vai trò Business Analyst",
+          "Xây dựng quan hệ hợp tác với các stakeholder chủ chốt, hiểu và đàm phán nhu cầu, kỳ vọng của nhiều bên liên quan.",
+          "Phân tích ở cấp dự án, xây dựng các tài liệu phân tích cần thiết (yêu cầu nghiệp vụ, yêu cầu hệ thống, phạm vi, use case, sequence diagram, đề xuất trạng thái tương lai…).",
+          "Đóng vai trò tư vấn, giúp khách hàng xây dựng các use case mang lại giá trị cao nhất khi ứng dụng công nghệ AI vào từng lĩnh vực.",
+          "Phối hợp chặt chẽ với developer để hiện thực hóa yêu cầu và hướng dẫn tester trong quá trình QA.",
+          "Chủ động và kịp thời nhận diện các cơ hội cải tiến",
+          "Tìm cách tăng mức độ sử dụng và sự hài lòng của khách hàng.",
+          "Phối hợp với Project Manager xây dựng kế hoạch và đặc tả dự án, ước lượng thời gian và nguồn lực, theo dõi các mốc hoàn thành, bám sát mọi giai đoạn của dự án, báo cáo kịp thời các vấn đề ảnh hưởng tiến độ, điều phối hành động và giải quyết xung đột"
+        ],
+        "department": "AI Delivery Center",
+        "experience": "Từ 5 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Tối thiểu 5 năm kinh nghiệm ở vị trí Business Analyst",
+              "Có khả năng xử lý tốt nhiều dự án và nhiều đầu việc cùng lúc",
+              "Kỹ năng làm việc với stakeholder và dẫn dắt hiệu quả.",
+              "Kỹ năng giải quyết vấn đề, giao tiếp, quản lý thời gian và phân tích xuất sắc.",
+              "Tự tin thuyết trình",
+              "Học nhanh, ham học hỏi và áp dụng công nghệ mới",
+              "Có tinh thần đòi hỏi cao về chất lượng sản phẩm",
+              "Các điều kiện ưu tiên khác: tiếng Anh; có kinh nghiệm dự án AI; có kinh nghiệm làm việc với các tập đoàn lớn trong lĩnh vực Ngân hàng – Tài chính – Chứng khoán – Bảo hiểm; tốt nghiệp Đại học chuyên ngành kinh doanh, công nghệ thông tin hoặc các ngành liên quan; thành thạo Microsoft Office: Excel, PowerPoint, Word, Project, Visio, Power BI"
+            ]
+          }
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "b02e385551fb57c1"
+      }
+    },
+    {
       "id": "cloud-engineer",
       "hot": false,
       "postedAt": "27/10/2026",
@@ -3959,57 +4008,6 @@
       "i18n": {
         "source": "en",
         "hash": "0aeab7512c55f941"
-      }
-    },
-    {
-      "id": "ai-delivery-business-analyst",
-      "hot": false,
-      "postedAt": "27/10/2026",
-      "group": "biz",
-      "title": "Business Analyst",
-      "level": "Senior",
-      "salary": "Thỏa thuận",
-      "deadline": "05/12/2026",
-      "location": "Hà Nội",
-      "desc": "Tham gia nhiều dự án với vai trò Business Analyst",
-      "stack": [],
-      "keywords": "business analyst ai delivery center",
-      "source": "https://fptsmartcloud.com/job_opportunity/ai-delivery-business-analyst/",
-      "detail": {
-        "type": "Toàn thời gian",
-        "duties": [
-          "Tham gia nhiều dự án với vai trò Business Analyst",
-          "Xây dựng quan hệ hợp tác với các stakeholder chủ chốt, hiểu và đàm phán nhu cầu, kỳ vọng của nhiều bên liên quan.",
-          "Phân tích ở cấp dự án, xây dựng các tài liệu phân tích cần thiết (yêu cầu nghiệp vụ, yêu cầu hệ thống, phạm vi, use case, sequence diagram, đề xuất trạng thái tương lai…).",
-          "Đóng vai trò tư vấn, giúp khách hàng xây dựng các use case mang lại giá trị cao nhất khi ứng dụng công nghệ AI vào từng lĩnh vực.",
-          "Phối hợp chặt chẽ với developer để hiện thực hóa yêu cầu và hướng dẫn tester trong quá trình QA.",
-          "Chủ động và kịp thời nhận diện các cơ hội cải tiến",
-          "Tìm cách tăng mức độ sử dụng và sự hài lòng của khách hàng.",
-          "Phối hợp với Project Manager xây dựng kế hoạch và đặc tả dự án, ước lượng thời gian và nguồn lực, theo dõi các mốc hoàn thành, bám sát mọi giai đoạn của dự án, báo cáo kịp thời các vấn đề ảnh hưởng tiến độ, điều phối hành động và giải quyết xung đột"
-        ],
-        "department": "AI Delivery Center",
-        "experience": "Từ 5 năm",
-        "requirements": [
-          {
-            "title": "Yêu cầu công việc",
-            "items": [
-              "Tối thiểu 5 năm kinh nghiệm ở vị trí Business Analyst",
-              "Có khả năng xử lý tốt nhiều dự án và nhiều đầu việc cùng lúc",
-              "Kỹ năng làm việc với stakeholder và dẫn dắt hiệu quả.",
-              "Kỹ năng giải quyết vấn đề, giao tiếp, quản lý thời gian và phân tích xuất sắc.",
-              "Tự tin thuyết trình",
-              "Học nhanh, ham học hỏi và áp dụng công nghệ mới",
-              "Có tinh thần đòi hỏi cao về chất lượng sản phẩm",
-              "Các điều kiện ưu tiên khác: tiếng Anh; có kinh nghiệm dự án AI; có kinh nghiệm làm việc với các tập đoàn lớn trong lĩnh vực Ngân hàng – Tài chính – Chứng khoán – Bảo hiểm; tốt nghiệp Đại học chuyên ngành kinh doanh, công nghệ thông tin hoặc các ngành liên quan; thành thạo Microsoft Office: Excel, PowerPoint, Word, Project, Visio, Power BI"
-            ]
-          }
-        ]
-      },
-      "closed": true,
-      "closedAt": "05/11/2026",
-      "i18n": {
-        "source": "en",
-        "hash": "b02e385551fb57c1"
       }
     }
   ]
