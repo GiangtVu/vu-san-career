@@ -30,6 +30,72 @@
   },
   "jobs": [
     {
+      "id": "ai-engineer-ai-inference-ncp",
+      "hot": true,
+      "postedAt": "20/11/2026",
+      "group": "ai",
+      "title": "AI Engineer – AI Inference (NCP)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "20/12/2026",
+      "location": "Hà Nội",
+      "desc": "Thiết kế và phát triển backend cùng serving engine cho các AI model sử dụng các framework như vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Redis",
+        "TensorFlow"
+      ],
+      "keywords": "ai engineer – ai inference  python kubernetes docker redis tensorflow vllm prometheus grafana ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-ai-inference-ncp/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Thiết kế và phát triển backend cùng serving engine cho các AI model sử dụng các framework như vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving hoặc các công nghệ tương đương.",
+          "Phát triển cơ chế lazy loading và on-demand loading cho các layer hoặc module của model nhằm tối ưu bộ nhớ và giảm thời gian khởi tạo.",
+          "Tối ưu hiệu năng inference thông qua batching, caching, quantization, model parallelism, tối ưu hiệu suất sử dụng GPU/CPU và system profiling.",
+          "Thiết kế và phát triển REST/gRPC API để cung cấp inference service và tích hợp với các hệ thống nội bộ, gateway cùng client application.",
+          "Xây dựng deployment pipeline và triển khai hệ thống monitoring, alerting cho các AI service trên production, bao gồm logging, metrics và distributed tracing.",
+          "Phối hợp với đội ngũ Research/Applied AI để tiếp nhận bàn giao model và chuẩn hóa các định dạng model như ONNX, TensorRT engine và các định dạng liên quan khác.",
+          "Có kinh nghiệm thực tế triển khai AI model backend/serving engine sử dụng ít nhất một trong các công nghệ: vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving hoặc tương đương. Ưu tiên ứng viên có kinh nghiệm deploy hệ thống production có cam kết SLA rõ ràng.",
+          "Hiểu sâu về kiến trúc deep learning model, đặc biệt là các model dạng Transformer, cùng các cơ chế lazy loading cho layer/module của model (ví dụ: partial model loading, sharded weights, memory mapping và CPU/GPU offloading).",
+          "Thành thạo ít nhất một ngôn ngữ lập trình, ưu tiên Python, cùng kinh nghiệm sử dụng các web framework như FastAPI, Flask hoặc Django để xây dựng inference service.",
+          "Nắm vững kiến thức hệ thống backend, bao gồm HTTP, networking cơ bản, lập trình bất đồng bộ (asynchronous programming), message queue, caching (Redis/in-memory cache) và kiến trúc microservices.",
+          "Có kinh nghiệm thực tế với Docker, container orchestration (ưu tiên Kubernetes) và CI/CD cho các AI service.",
+          "Có hiểu biết về các công cụ monitoring và observability như Prometheus, Grafana, OpenTelemetry hoặc các công nghệ tương đương."
+        ],
+        "requirements": [
+          {
+            "title": "Yêu cầu công việc",
+            "items": [
+              "Có kinh nghiệm thực tế triển khai AI model backend/serving engine sử dụng ít nhất một trong các công nghệ: vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving hoặc tương đương. Ưu tiên ứng viên có kinh nghiệm deploy hệ thống production có cam kết SLA rõ ràng.",
+              "Hiểu sâu về kiến trúc deep learning model, đặc biệt là các model dạng Transformer, cùng các cơ chế lazy loading cho layer/module của model (ví dụ: partial model loading, sharded weights, memory mapping và CPU/GPU offloading).",
+              "Thành thạo ít nhất một ngôn ngữ lập trình, ưu tiên Python, cùng kinh nghiệm sử dụng các web framework như FastAPI, Flask hoặc Django để xây dựng inference service.",
+              "Nắm vững kiến thức hệ thống backend, bao gồm HTTP, networking cơ bản, lập trình bất đồng bộ (asynchronous programming), message queue, caching (Redis/in-memory cache) và kiến trúc microservices.",
+              "Có kinh nghiệm thực tế với Docker, container orchestration (ưu tiên Kubernetes) và CI/CD cho các AI service.",
+              "Có hiểu biết về các công cụ monitoring và observability như Prometheus, Grafana, OpenTelemetry hoặc các công nghệ tương đương."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Redis",
+          "TensorFlow",
+          "vLLM",
+          "Prometheus",
+          "Grafana",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "941e84f59f57ffe1"
+      }
+    },
+    {
       "id": "ai-engineer-eos-genai",
       "hot": true,
       "postedAt": "16/11/2026",
@@ -141,7 +207,7 @@
     },
     {
       "id": "ai-research-computer-vision",
-      "hot": true,
+      "hot": false,
       "postedAt": "12/11/2026",
       "group": "ai",
       "title": "AI Research (Computer Vision)",

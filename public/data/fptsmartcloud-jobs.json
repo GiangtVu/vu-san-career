@@ -1,6 +1,7 @@
 {
   "source": "https://fptsmartcloud.com/co-hoi-nghe-nghiep/",
   "listed": [
+    "ai-engineer-ai-inference-ncp",
     "problem-engineer",
     "process-metrics-specialist",
     "ai-engineer-eos-genai",
@@ -121,6 +122,101 @@
     "cloud_openstack_engineer"
   ],
   "jobs": [
+    {
+      "id": "ai-engineer-ai-inference-ncp",
+      "url": "https://fptsmartcloud.com/job_opportunity/ai-engineer-ai-inference-ncp/",
+      "title": "AI Engineer – AI Inference (NCP)",
+      "image": "/wp-content/uploads/2022/05/job-news-1.jpeg",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "Design, implement, and optimize AI model serving systems, particularly for Large Language Models (LLMs), ensuring optimal performance, reliability, and cost efficiency."
+          ],
+          "groups": [
+            {
+              "title": "Job Objective",
+              "items": []
+            },
+            {
+              "title": "Key Responsibilities",
+              "items": [
+                "Design and implement backend and serving engines for AI models using frameworks such as vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving, or equivalent technologies.",
+                "Develop lazy loading and on-demand loading mechanisms for model layers or modules to optimize memory footprint and reduce initialization time.",
+                "Optimize inference performance through batching, caching, quantization, model parallelism, GPU/CPU utilization optimization, and system profiling.",
+                "Design and develop REST/gRPC APIs to expose inference services and integrate them with internal systems, gateways, and client applications.",
+                "Build deployment pipelines and implement monitoring and alerting systems for production AI services, including logging, metrics, and distributed tracing.",
+                "Collaborate with Research/Applied AI teams to facilitate model handoff and standardize model formats such as ONNX, TensorRT engines, and other relevant formats."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Job Requirements",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Hands-on experience deploying AI model backend/serving engines using at least one of the following technologies: vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving, or equivalent. Candidates with experience deploying production systems with clearly defined SLAs are preferred.",
+                "Strong understanding of deep learning model architectures, particularly Transformer-based models, and lazy loading mechanisms for model layers/modules (e.g., partial model loading, sharded weights, memory mapping, and CPU/GPU offloading).",
+                "Proficiency in at least one programming language, preferably Python, along with experience using web frameworks such as FastAPI, Flask, or Django to build inference services.",
+                "Solid knowledge of backend systems, including HTTP, basic networking, asynchronous programming, message queues, caching (Redis/in-memory cache), and microservices architecture.",
+                "Hands-on experience with Docker, container orchestration (Kubernetes preferred), and CI/CD for AI services.",
+                "Understanding of monitoring and observability tools such as Prometheus, Grafana, OpenTelemetry, or equivalent technologies."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Top Benefits",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Salary: competitive, paid according to ability; negotiated during the interview.",
+                "Social insurance and health insurance according to labor laws.",
+                "Creative, open-minded working environment that respects individuals.",
+                "FPT Premium Care package.",
+                "Activities and culture with FCI and FPT Corporation.",
+                "Sponsorship for related courses and certifications.",
+                "Own a production DaaS/VDI platform end-to-end, serving thousands of virtual desktops.",
+                "Direct influence on the FCD product roadmap, working closely with Product and customers."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working Environment",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Working location: 7th Floor, FPT Tower, no. 10 Pham Van Bach Street, Dich Vong ward, Cau Giay district, Hanoi.",
+                "Working hours:",
+                "Full time",
+                "8h30 AM – 12h00 PM",
+                "1h00 PM – 5h30 PM"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Contact Person",
+          "text": [
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "Email: Mypth3@fpt.com",
+            "Phone: 0962456194",
+            "FPT Smart Cloud (FCI) Co., LTD",
+            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
+            "Websites: FPT Cloud | FPT AI"
+          ],
+          "groups": []
+        }
+      ]
+    },
     {
       "id": "ai-engineer-eos-genai",
       "url": "https://fptsmartcloud.com/job_opportunity/ai-engineer-eos-genai/",

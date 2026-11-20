@@ -30,6 +30,68 @@
   },
   "jobs": [
     {
+      "id": "ai-engineer-ai-inference-ncp",
+      "hot": true,
+      "postedAt": "20/11/2026",
+      "group": "ai",
+      "title": "AI Engineer – AI Inference (NCP)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "20/12/2026",
+      "location": "Hà Nội",
+      "desc": "Design and implement backend and serving engines for AI models using frameworks such as vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving,…",
+      "stack": [
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Redis",
+        "TensorFlow"
+      ],
+      "keywords": "ai engineer – ai inference  python kubernetes docker redis tensorflow vllm prometheus grafana ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/ai-engineer-ai-inference-ncp/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Design and implement backend and serving engines for AI models using frameworks such as vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving, or equivalent technologies.",
+          "Develop lazy loading and on-demand loading mechanisms for model layers or modules to optimize memory footprint and reduce initialization time.",
+          "Optimize inference performance through batching, caching, quantization, model parallelism, GPU/CPU utilization optimization, and system profiling.",
+          "Design and develop REST/gRPC APIs to expose inference services and integrate them with internal systems, gateways, and client applications.",
+          "Build deployment pipelines and implement monitoring and alerting systems for production AI services, including logging, metrics, and distributed tracing.",
+          "Collaborate with Research/Applied AI teams to facilitate model handoff and standardize model formats such as ONNX, TensorRT engines, and other relevant formats.",
+          "Hands-on experience deploying AI model backend/serving engines using at least one of the following technologies: vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving, or equivalent. Candidates with experience deploying production systems with clearly defined SLAs are preferred.",
+          "Strong understanding of deep learning model architectures, particularly Transformer-based models, and lazy loading mechanisms for model layers/modules (e.g., partial model loading, sharded weights, memory mapping, and CPU/GPU offloading).",
+          "Proficiency in at least one programming language, preferably Python, along with experience using web frameworks such as FastAPI, Flask, or Django to build inference services.",
+          "Solid knowledge of backend systems, including HTTP, basic networking, asynchronous programming, message queues, caching (Redis/in-memory cache), and microservices architecture.",
+          "Hands-on experience with Docker, container orchestration (Kubernetes preferred), and CI/CD for AI services.",
+          "Understanding of monitoring and observability tools such as Prometheus, Grafana, OpenTelemetry, or equivalent technologies."
+        ],
+        "requirements": [
+          {
+            "title": "Job Requirements",
+            "items": [
+              "Hands-on experience deploying AI model backend/serving engines using at least one of the following technologies: vLLM, NVIDIA TensorRT-LLM, KServe, TorchServe, TensorFlow Serving, or equivalent. Candidates with experience deploying production systems with clearly defined SLAs are preferred.",
+              "Strong understanding of deep learning model architectures, particularly Transformer-based models, and lazy loading mechanisms for model layers/modules (e.g., partial model loading, sharded weights, memory mapping, and CPU/GPU offloading).",
+              "Proficiency in at least one programming language, preferably Python, along with experience using web frameworks such as FastAPI, Flask, or Django to build inference services.",
+              "Solid knowledge of backend systems, including HTTP, basic networking, asynchronous programming, message queues, caching (Redis/in-memory cache), and microservices architecture.",
+              "Hands-on experience with Docker, container orchestration (Kubernetes preferred), and CI/CD for AI services.",
+              "Understanding of monitoring and observability tools such as Prometheus, Grafana, OpenTelemetry, or equivalent technologies."
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Kubernetes",
+          "Docker",
+          "Redis",
+          "TensorFlow",
+          "vLLM",
+          "Prometheus",
+          "Grafana",
+          "CI/CD"
+        ]
+      }
+    },
+    {
       "id": "ai-engineer-eos-genai",
       "hot": true,
       "postedAt": "16/11/2026",
@@ -133,7 +195,7 @@
     },
     {
       "id": "ai-research-computer-vision",
-      "hot": true,
+      "hot": false,
       "postedAt": "12/11/2026",
       "group": "ai",
       "title": "AI Research (Computer Vision)",
