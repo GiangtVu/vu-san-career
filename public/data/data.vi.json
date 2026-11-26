@@ -30,6 +30,152 @@
   },
   "jobs": [
     {
+      "id": "forward-deployed-engineer-fde",
+      "hot": true,
+      "postedAt": "26/11/2026",
+      "group": "eng",
+      "title": "Forward Deployed Engineer (FDE)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/12/2026",
+      "location": "Nhật Bản",
+      "desc": "Cung cấp các sản phẩm và solution trên nền tảng cloud được may đo cho từng ngành nghề.",
+      "stack": [
+        "Python",
+        "Java",
+        "TypeScript",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "forward deployed engineer  python java typescript kubernetes docker aws azure gcp ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/forward-deployed-engineer-fde/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tùy biến theo nhu cầu đặc thù: Cung cấp các sản phẩm và solution trên nền tảng cloud được may đo cho từng ngành nghề.",
+          "All-in-one Platform: Hợp nhất công nghệ FPT Smart Cloud và đa dạng business solution trên một platform duy nhất. Dịch vụ AI & Cloud tạo nên một hệ sinh thái đồng nhất.",
+          "Dẫn đầu thị trường trong nước: Nền tảng và hạ tầng công nghệ Cloud & AI vượt trội giúp các doanh nghiệp địa phương phát triển sản phẩm và dịch vụ trực tuyến.",
+          "Kiến tạo tương lai: Giúp khách hàng bứt phá hiệu quả kinh doanh nhanh hơn nhờ tích hợp công nghệ và quy trình chuẩn quốc tế.",
+          "Phân tích workflow của khách hàng, sau đó thiết kế và xây dựng AI Agent workflow, prompt cùng knowledge base (RAG)",
+          "Xây dựng tích hợp API với CRM, các hệ thống core business, CTI (telephony), camera/VMS và nguồn dữ liệu nội bộ",
+          "Đánh giá và tối ưu độ chính xác, latency cùng độ ổn định từ giai đoạn PoC đến production",
+          "Phát hiện các vấn đề về chất lượng voice và text tiếng Nhật (độ chính xác nhận diện, keigo, thuật ngữ chuyên ngành) và phối hợp xử lý cùng team R&D tại Việt Nam",
+          "Hỗ trợ deploy theo các yêu cầu bảo mật của khách hàng, bao gồm cloud, on-premise và closed network",
+          "Đóng gói các tác vụ deploy lặp lại thành component và tool tái sử dụng, đồng thời đề xuất cải tiến sản phẩm với PM",
+          "Tiếng Nhật: bản ngữ hoặc tương đương JLPT N1 (có thể thống nhất requirement và giải thích các vấn đề kỹ thuật cho khách hàng)",
+          "Tiếng Anh: trình độ business, phục vụ trao đổi kỹ thuật với engineering team",
+          "3+ năm kinh nghiệm phát triển phần mềm với Python, TypeScript, Java hoặc tương đương",
+          "Kinh nghiệm thực chiến về tích hợp hệ thống với REST API, database và một nền tảng cloud lớn (AWS, Azure hoặc GCP)",
+          "Kinh nghiệm xây dựng ứng dụng LLM (RAG, agent, prompt design) trong công việc hoặc dự án cá nhân"
+        ],
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tiếng Nhật: bản ngữ hoặc tương đương JLPT N1 (có thể thống nhất requirement và giải thích các vấn đề kỹ thuật cho khách hàng)",
+              "Tiếng Anh: trình độ business, phục vụ trao đổi kỹ thuật với engineering team",
+              "3+ năm kinh nghiệm phát triển phần mềm với Python, TypeScript, Java hoặc tương đương",
+              "Kinh nghiệm thực chiến về tích hợp hệ thống với REST API, database và một nền tảng cloud lớn (AWS, Azure hoặc GCP)",
+              "Kinh nghiệm xây dựng ứng dụng LLM (RAG, agent, prompt design) trong công việc hoặc dự án cá nhân"
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Kinh nghiệm deploy tại phía khách hàng, on-site development hoặc solutions engineering",
+              "Hiểu biết về speech recognition/TTS, CTI/IVR, hệ thống contact center hoặc computer vision/video analytics",
+              "Kinh nghiệm phát triển phần mềm cho các tổ chức tài chính hoặc môi trường yêu cầu bảo mật cao",
+              "Kinh nghiệm thực chiến với Docker, Kubernetes và CI/CD"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "TypeScript",
+          "Kubernetes",
+          "Docker",
+          "AWS",
+          "Azure",
+          "GCP",
+          "CI/CD"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "1745f684b7a342ac"
+      }
+    },
+    {
+      "id": "product-manager-ai-product-portfolio",
+      "hot": true,
+      "postedAt": "26/11/2026",
+      "group": "biz",
+      "title": "Product Manager (AI Product Portfolio)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/12/2026",
+      "location": "Nhật Bản",
+      "desc": "Cung cấp các sản phẩm và giải pháp Cloud được tùy biến cho từng ngành nghề.",
+      "stack": [
+        "Kubernetes",
+        "SQL"
+      ],
+      "keywords": "product manager  kubernetes sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/product-manager-ai-product-portfolio/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Tùy biến theo nhu cầu: Cung cấp các sản phẩm và giải pháp Cloud được tùy biến cho từng ngành nghề.",
+          "All-in-one Platform: Hợp nhất công nghệ FPT Smart Cloud và các giải pháp doanh nghiệp đa dạng trên một platform duy nhất. Dịch vụ AI & Cloud tạo nên một hệ sinh thái hợp nhất.",
+          "Dẫn đầu thị trường nội địa: Hạ tầng công nghệ và platform Cloud & AI vượt trội giúp các doanh nghiệp trong nước phát triển sản phẩm và dịch vụ trực tuyến.",
+          "Kiến tạo tương lai: Giúp khách hàng đạt kết quả kinh doanh nhanh hơn nhờ tích hợp quy trình và công nghệ chuẩn quốc tế.",
+          "Xác định chiến lược, độ ưu tiên và use case tại Nhật Bản cho từng dòng trong 4 dòng sản phẩm thông qua phỏng vấn khách hàng và nghiên cứu thị trường ngành tài chính, sản xuất và contact center",
+          "Xây dựng product roadmap và viết PRD, user stories cùng acceptance criteria bằng tiếng Anh cho các engineering team tại Việt Nam",
+          "Dẫn dắt việc localization cho các nhu cầu đặc thù của thị trường Nhật Bản: keigo, chất lượng giọng nói, thuật ngữ chuyên ngành, bảo mật và compliance",
+          "Phối hợp với Presales, FDE và Sales để đưa các bài học kinh nghiệm từ PoC và deployment trở lại cải tiến sản phẩm",
+          "Định hình pricing, packaging và release plan, đồng thời trang bị tài liệu pitch và demo cho Sales",
+          "Thiết lập và theo dõi các KPI như adoption, tỷ lệ tự động hóa và độ hài lòng của khách hàng, đồng thời thúc đẩy cải tiến",
+          "Tiếng Nhật: bản ngữ hoặc tương đương JLPT N1 (có thể thuyết trình trước ban lãnh đạo và soạn thảo tài liệu kinh doanh)",
+          "Tiếng Anh: trình độ business, phục vụ họp và viết specification với các engineering team",
+          "Từ 3+ năm kinh nghiệm làm product management (PM/PdM/PO) cho các sản phẩm B2B SaaS hoặc IT",
+          "Có track record rõ ràng trong việc đưa sản phẩm từ ý tưởng đến khi release với kết quả đo lường cụ thể",
+          "Hiểu rõ cách vận hành cũng như giới hạn của các sản phẩm GenAI, LLM, voice AI hoặc computer vision"
+        ],
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Yêu cầu",
+            "items": [
+              "Tiếng Nhật: bản ngữ hoặc tương đương JLPT N1 (có thể thuyết trình trước ban lãnh đạo và soạn thảo tài liệu kinh doanh)",
+              "Tiếng Anh: trình độ business, phục vụ họp và viết specification với các engineering team",
+              "Từ 3+ năm kinh nghiệm làm product management (PM/PdM/PO) cho các sản phẩm B2B SaaS hoặc IT",
+              "Có track record rõ ràng trong việc đưa sản phẩm từ ý tưởng đến khi release với kết quả đo lường cụ thể",
+              "Hiểu rõ cách vận hành cũng như giới hạn của các sản phẩm GenAI, LLM, voice AI hoặc computer vision"
+            ]
+          },
+          {
+            "title": "Điểm cộng",
+            "items": [
+              "Kinh nghiệm làm sản phẩm trong mảng contact center, tự động hóa quy trình doanh nghiệp (workflow automation), đào tạo & phát triển (L&D) hoặc video analytics",
+              "Kinh nghiệm làm việc với các offshore team, đặc biệt là tại Việt Nam",
+              "Từng launch sản phẩm từ 0→1, hoặc localization sản phẩm nước ngoài cho thị trường Nhật Bản",
+              "Kỹ năng phân tích dữ liệu (như SQL) hoặc kỹ năng làm prototype"
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "SQL"
+        ]
+      },
+      "i18n": {
+        "source": "en",
+        "hash": "bf5c707723765aec"
+      }
+    },
+    {
       "id": "ai-engineer-ai-inference-ncp",
       "hot": true,
       "postedAt": "20/11/2026",
@@ -97,7 +243,7 @@
     },
     {
       "id": "ai-engineer-eos-genai",
-      "hot": true,
+      "hot": false,
       "postedAt": "16/11/2026",
       "group": "ai",
       "title": "AI Engineer (EOS – GenAI)",
@@ -150,7 +296,7 @@
     },
     {
       "id": "platform-engineer-sre",
-      "hot": true,
+      "hot": false,
       "postedAt": "13/11/2026",
       "group": "eng",
       "title": "Platform Engineer (SRE)",

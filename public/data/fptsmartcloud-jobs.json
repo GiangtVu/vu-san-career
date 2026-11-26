@@ -1,6 +1,9 @@
 {
   "source": "https://fptsmartcloud.com/co-hoi-nghe-nghiep/",
   "listed": [
+    "forward-deployed-engineer-fde",
+    "presales-solution-consultant-genai-ai-agents",
+    "product-manager-ai-product-portfolio",
     "ky-su-van-hanh-ipm",
     "head-of-design-fpt-cloud",
     "cloud-adoption-specialist",
@@ -125,6 +128,262 @@
     "cloud_openstack_engineer"
   ],
   "jobs": [
+    {
+      "id": "forward-deployed-engineer-fde",
+      "url": "https://fptsmartcloud.com/job_opportunity/forward-deployed-engineer-fde/",
+      "title": "Forward Deployed Engineer (FDE)",
+      "image": "https://fptsmartcloud.com/wp-content/uploads/2026/01/5431-1768529438.jpg",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "FPT Smart Cloud (FCI) – a member of FPT Corporation, pioneers AI & Cloud solutions in Vietnam. FCI was founded with the mission to generating an immense leap in productivity and agility in business operations.",
+            "FPT Smart Cloud aims at leading the industry by focusing on building a firm technological foundation, developing diversified ecosystem products, and reaching global connectivity.",
+            "FPT Cloud is the cloud platform of FPT Smart Cloud (FCI), a member of FPT Corporation. We run 80+ services across compute, storage, databases, Kubernetes, networking and security, as well as GPU cloud and AI inference services as an NVIDIA Cloud Partner, on FPT data centers in Hanoi and Ho Chi Minh City, certified to Vietnam’s level 4 information security standard. Our customers range from startups and AI teams building on their own to banks, enterprises and public sector organizations running critical systems.",
+            "Customers experience FPT Cloud in many places: our website, presale conversations, proofs of concept, the console, our APIs and documentation, their bills, and our support. Engineers compare that experience directly with global hyperscalers, which makes it one of the clearest ways we can stand out.",
+            "Today, design work is spread across product teams. We are looking for our first Head of Design to build one design organization, one design system and one standard of experience quality across FPT Cloud."
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Customized to specific needs: Providing cloud-based products and solutions customized to each industry.",
+                "All-in-one Platform: Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a Unify eco-system.",
+                "Local market leadership: Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
+                "Deliver the future: Help customers achieve business outcomes faster by integrating world-class processes and technology."
+              ]
+            },
+            {
+              "title": "About FPT Cloud",
+              "items": []
+            },
+            {
+              "title": "Ower View",
+              "items": []
+            },
+            {
+              "title": "Key Responsibilities",
+              "items": [
+                "Analyze customer workflows, then design and build AI Agent workflows, prompts and knowledge bases (RAG)",
+                "Build API integrations with CRM, core business systems, CTI (telephony), cameras/VMS and internal data",
+                "Evaluate and tune accuracy, latency and stability from PoC through production",
+                "Find Japanese voice and text quality issues (recognition accuracy, keigo, industry terms) and fix them with the R&D team in Vietnam",
+                "Support deployment under customers’ security requirements, including cloud, on-premise and closed networks",
+                "Turn repeated deployment work into reusable components and tools, and propose product improvements to the PM"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Job Requirements",
+          "text": [],
+          "groups": []
+        },
+        {
+          "title": "Requirements",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Japanese: native or JLPT N1 equivalent (able to agree requirements and explain technical topics to customers)",
+                "English: business level, for technical discussions with engineering teams",
+                "3+ years of software development in Python, TypeScript, Java or similar",
+                "Hands-on system integration with REST APIs, databases and a major cloud (AWS, Azure or GCP)",
+                "Experience building LLM applications (RAG, agents, prompt design), at work or in personal projects"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Nice to Have",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Customer-site deployment, on-site development or solutions engineering experience",
+                "Knowledge of speech recognition/TTS, CTI/IVR, contact center systems or computer vision/video analytics",
+                "Development for financial institutions or other high-security environments",
+                "Hands-on Docker, Kubernetes and CI/CD"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Top Benefits",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Salary: Competitive, pay according to ability. Negotiation during the interview.",
+                "Social insurance and health insurance according to labor laws.",
+                "Creative, open-minded working environment that respects individuals",
+                "FPT Premium Care package",
+                "Activities and culture with FCI and FPT Corporation",
+                "Study support package for children of FCI union",
+                "Sponsor related courses and certifications"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working Environment",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Working Location: Site JP: 33F, Sumitomo Fudosan Tokyo Mita Garden Tower, 3-5-19 Mita, Minato-ku, Tokyo 108-0073",
+                "Working hours: 8h30 AM – 12h00 PM 1h00 PM – 5h30 PM",
+                "Working days: Monday to Friday (weekends off)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Contact Person",
+          "text": [
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "Email: Mypth3@fpt.com",
+            "Phone: 0962456194",
+            "FPT Smart Cloud (FCI) Co., LTD",
+            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
+            "Websites: FPT Cloud | FPT AI"
+          ],
+          "groups": []
+        }
+      ]
+    },
+    {
+      "id": "product-manager-ai-product-portfolio",
+      "url": "https://fptsmartcloud.com/job_opportunity/product-manager-ai-product-portfolio/",
+      "title": "Product Manager (AI Product Portfolio)",
+      "image": "https://fptsmartcloud.com/wp-content/uploads/2026/04/Screenshot-2026-04-16-112424.jpg",
+      "sections": [
+        {
+          "title": null,
+          "text": [
+            "FPT Smart Cloud (FCI) – a member of FPT Corporation, pioneers AI & Cloud solutions in Vietnam. FCI was founded with the mission to generating an immense leap in productivity and agility in business operations.",
+            "FPT Smart Cloud aims at leading the industry by focusing on building a firm technological foundation, developing diversified ecosystem products, and reaching global connectivity.",
+            "FPT Cloud is the cloud platform of FPT Smart Cloud (FCI), a member of FPT Corporation. We run 80+ services across compute, storage, databases, Kubernetes, networking and security, as well as GPU cloud and AI inference services as an NVIDIA Cloud Partner, on FPT data centers in Hanoi and Ho Chi Minh City, certified to Vietnam’s level 4 information security standard. Our customers range from startups and AI teams building on their own to banks, enterprises and public sector organizations running critical systems.",
+            "Customers experience FPT Cloud in many places: our website, presale conversations, proofs of concept, the console, our APIs and documentation, their bills, and our support. Engineers compare that experience directly with global hyperscalers, which makes it one of the clearest ways we can stand out.",
+            "Today, design work is spread across product teams. We are looking for our first Head of Design to build one design organization, one design system and one standard of experience quality across FPT Cloud."
+          ],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Customized to specific needs: Providing cloud-based products and solutions customized to each industry.",
+                "All-in-one Platform: Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a Unify eco-system.",
+                "Local market leadership: Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
+                "Deliver the future: Help customers achieve business outcomes faster by integrating world-class processes and technology."
+              ]
+            },
+            {
+              "title": "About FPT Cloud",
+              "items": []
+            },
+            {
+              "title": "Ower View",
+              "items": []
+            },
+            {
+              "title": "Key Responsibilities",
+              "items": [
+                "Define the Japan strategy, priorities and use cases for each of the four product lines through customer interviews and market research in finance, manufacturing and contact centers",
+                "Build the product roadmap and write PRDs, user stories and acceptance criteria in English for the Vietnam engineering teams",
+                "Lead localization for Japanese-specific needs: keigo, voice quality, industry terms, security and compliance",
+                "Work with Presales, FDE and Sales to feed lessons from PoCs and deployments back into the product",
+                "Shape pricing, packaging and release plans, and equip Sales with pitch material and demos",
+                "Set and track KPIs such as adoption, automation rate and customer satisfaction, and drive improvements"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Job Requirements",
+          "text": [],
+          "groups": []
+        },
+        {
+          "title": "Requirements",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Japanese: native or JLPT N1 equivalent (able to present to executives and write business documents)",
+                "English: business level, for meetings and specifications with engineering teams",
+                "3+ years in product management (PM/PdM/PO) for B2B SaaS or IT products",
+                "A concrete track record of taking a product from idea to release, with measurable results",
+                "Working understanding of how GenAI, LLM, voice AI or computer vision products work and where they fall short"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Nice to Have",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Product experience in contact center, enterprise workflow automation, learning & development (L&D) or video analytics",
+                "Experience working with offshore teams, especially in Vietnam",
+                "0→1 product launches, or localizing a foreign product for Japan",
+                "Data analysis (e.g. SQL) or prototyping skills"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Top Benefits",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Salary: Competitive, pay according to ability. Negotiation during the interview.",
+                "Social insurance and health insurance according to labor laws.",
+                "Creative, open-minded working environment that respects individuals",
+                "FPT Premium Care package",
+                "Activities and culture with FCI and FPT Corporation",
+                "Study support package for children of FCI union",
+                "Sponsor related courses and certifications"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working Environment",
+          "text": [],
+          "groups": [
+            {
+              "title": null,
+              "items": [
+                "Working Location: Site JP: 33F, Sumitomo Fudosan Tokyo Mita Garden Tower, 3-5-19 Mita, Minato-ku, Tokyo 108-0073",
+                "Working hours: 8h30 AM – 12h00 PM 1h00 PM – 5h30 PM",
+                "Working days: Monday to Friday (weekends off)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Contact Person",
+          "text": [
+            "Pham Thi Ha My (Ms.) – Talent Acquisition Team Leader",
+            "Email: Mypth3@fpt.com",
+            "Phone: 0962456194",
+            "FPT Smart Cloud (FCI) Co., LTD",
+            "Address: 7th Floor, FPT Tower, No. 10 Pham Van Bach, Cau Giay Dist, Hanoi",
+            "Websites: FPT Cloud | FPT AI"
+          ],
+          "groups": []
+        }
+      ]
+    },
     {
       "id": "ai-engineer-ai-inference-ncp",
       "url": "https://fptsmartcloud.com/job_opportunity/ai-engineer-ai-inference-ncp/",

@@ -30,6 +30,144 @@
   },
   "jobs": [
     {
+      "id": "forward-deployed-engineer-fde",
+      "hot": true,
+      "postedAt": "26/11/2026",
+      "group": "eng",
+      "title": "Forward Deployed Engineer (FDE)",
+      "level": "Middle",
+      "salary": "Thỏa thuận",
+      "deadline": "26/12/2026",
+      "location": "Nhật Bản",
+      "desc": "Providing cloud-based products and solutions customized to each industry.",
+      "stack": [
+        "Python",
+        "Java",
+        "TypeScript",
+        "Kubernetes",
+        "Docker"
+      ],
+      "keywords": "forward deployed engineer  python java typescript kubernetes docker aws azure gcp ci/cd",
+      "source": "https://fptsmartcloud.com/job_opportunity/forward-deployed-engineer-fde/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Customized to specific needs: Providing cloud-based products and solutions customized to each industry.",
+          "All-in-one Platform: Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a Unify eco-system.",
+          "Local market leadership: Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
+          "Deliver the future: Help customers achieve business outcomes faster by integrating world-class processes and technology.",
+          "Analyze customer workflows, then design and build AI Agent workflows, prompts and knowledge bases (RAG)",
+          "Build API integrations with CRM, core business systems, CTI (telephony), cameras/VMS and internal data",
+          "Evaluate and tune accuracy, latency and stability from PoC through production",
+          "Find Japanese voice and text quality issues (recognition accuracy, keigo, industry terms) and fix them with the R&D team in Vietnam",
+          "Support deployment under customers’ security requirements, including cloud, on-premise and closed networks",
+          "Turn repeated deployment work into reusable components and tools, and propose product improvements to the PM",
+          "Japanese: native or JLPT N1 equivalent (able to agree requirements and explain technical topics to customers)",
+          "English: business level, for technical discussions with engineering teams",
+          "3+ years of software development in Python, TypeScript, Java or similar",
+          "Hands-on system integration with REST APIs, databases and a major cloud (AWS, Azure or GCP)",
+          "Experience building LLM applications (RAG, agents, prompt design), at work or in personal projects"
+        ],
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Japanese: native or JLPT N1 equivalent (able to agree requirements and explain technical topics to customers)",
+              "English: business level, for technical discussions with engineering teams",
+              "3+ years of software development in Python, TypeScript, Java or similar",
+              "Hands-on system integration with REST APIs, databases and a major cloud (AWS, Azure or GCP)",
+              "Experience building LLM applications (RAG, agents, prompt design), at work or in personal projects"
+            ]
+          },
+          {
+            "title": "Nice to Have",
+            "items": [
+              "Customer-site deployment, on-site development or solutions engineering experience",
+              "Knowledge of speech recognition/TTS, CTI/IVR, contact center systems or computer vision/video analytics",
+              "Development for financial institutions or other high-security environments",
+              "Hands-on Docker, Kubernetes and CI/CD"
+            ]
+          }
+        ],
+        "skills": [
+          "Python",
+          "Java",
+          "TypeScript",
+          "Kubernetes",
+          "Docker",
+          "AWS",
+          "Azure",
+          "GCP",
+          "CI/CD"
+        ]
+      }
+    },
+    {
+      "id": "product-manager-ai-product-portfolio",
+      "hot": true,
+      "postedAt": "26/11/2026",
+      "group": "biz",
+      "title": "Product Manager (AI Product Portfolio)",
+      "level": "Senior",
+      "salary": "Thỏa thuận",
+      "deadline": "26/12/2026",
+      "location": "Nhật Bản",
+      "desc": "Providing cloud-based products and solutions customized to each industry.",
+      "stack": [
+        "Kubernetes",
+        "SQL"
+      ],
+      "keywords": "product manager  kubernetes sql",
+      "source": "https://fptsmartcloud.com/job_opportunity/product-manager-ai-product-portfolio/",
+      "detail": {
+        "type": "Toàn thời gian",
+        "duties": [
+          "Customized to specific needs: Providing cloud-based products and solutions customized to each industry.",
+          "All-in-one Platform: Consolidating FPT Smart Cloud technology and diverse business solutions all in one platform. AI & Cloud services are a Unify eco-system.",
+          "Local market leadership: Outstanding Cloud and AI technology infrastructure and platform to help local businesses grow their products and services online.",
+          "Deliver the future: Help customers achieve business outcomes faster by integrating world-class processes and technology.",
+          "Define the Japan strategy, priorities and use cases for each of the four product lines through customer interviews and market research in finance, manufacturing and contact centers",
+          "Build the product roadmap and write PRDs, user stories and acceptance criteria in English for the Vietnam engineering teams",
+          "Lead localization for Japanese-specific needs: keigo, voice quality, industry terms, security and compliance",
+          "Work with Presales, FDE and Sales to feed lessons from PoCs and deployments back into the product",
+          "Shape pricing, packaging and release plans, and equip Sales with pitch material and demos",
+          "Set and track KPIs such as adoption, automation rate and customer satisfaction, and drive improvements",
+          "Japanese: native or JLPT N1 equivalent (able to present to executives and write business documents)",
+          "English: business level, for meetings and specifications with engineering teams",
+          "3+ years in product management (PM/PdM/PO) for B2B SaaS or IT products",
+          "A concrete track record of taking a product from idea to release, with measurable results",
+          "Working understanding of how GenAI, LLM, voice AI or computer vision products work and where they fall short"
+        ],
+        "experience": "Từ 3 năm",
+        "requirements": [
+          {
+            "title": "Requirements",
+            "items": [
+              "Japanese: native or JLPT N1 equivalent (able to present to executives and write business documents)",
+              "English: business level, for meetings and specifications with engineering teams",
+              "3+ years in product management (PM/PdM/PO) for B2B SaaS or IT products",
+              "A concrete track record of taking a product from idea to release, with measurable results",
+              "Working understanding of how GenAI, LLM, voice AI or computer vision products work and where they fall short"
+            ]
+          },
+          {
+            "title": "Nice to Have",
+            "items": [
+              "Product experience in contact center, enterprise workflow automation, learning & development (L&D) or video analytics",
+              "Experience working with offshore teams, especially in Vietnam",
+              "0→1 product launches, or localizing a foreign product for Japan",
+              "Data analysis (e.g. SQL) or prototyping skills"
+            ]
+          }
+        ],
+        "skills": [
+          "Kubernetes",
+          "SQL"
+        ]
+      }
+    },
+    {
       "id": "ai-engineer-ai-inference-ncp",
       "hot": true,
       "postedAt": "20/11/2026",
@@ -93,7 +231,7 @@
     },
     {
       "id": "ai-engineer-eos-genai",
-      "hot": true,
+      "hot": false,
       "postedAt": "16/11/2026",
       "group": "ai",
       "title": "AI Engineer (EOS – GenAI)",
@@ -142,7 +280,7 @@
     },
     {
       "id": "platform-engineer-sre",
-      "hot": true,
+      "hot": false,
       "postedAt": "13/11/2026",
       "group": "eng",
       "title": "Platform Engineer (SRE)",
